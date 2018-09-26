@@ -998,7 +998,7 @@ select {
   padding: 75px 0 0 45px;
 }
 .promo-banner-1 .promo-banner-brief h2, .promo-banner-1 .promo-banner-brief h3, .promo-banner-1 .promo-banner-brief h4 {
-    color: #fff;
+    color: #333;
     text-transform: uppercase;
 }
 .promo-banner-1 .promo-banner-brief h2 {

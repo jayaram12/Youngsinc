@@ -819,7 +819,7 @@ select {
 }
 .product-photo {
   position: relative;
-  border: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
 }
 .product-brief h2 a{color:#f68541 !important;}
 .primary-photo {}

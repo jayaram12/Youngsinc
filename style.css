@@ -354,7 +354,7 @@ select {
   color: #000;
   display: block;
   font-size: 12px;
-  line-height: 40px;
+  line-height: 25px;
   position: relative;
 }
 .main-menu ul li .submenu li a::before {
@@ -393,22 +393,22 @@ select {
   background: #fff none repeat scroll 0 0;
   border-top: 2px solid #f68541;
   box-shadow: 2px 6px 8px 6px rgba(0, 0, 0, 0.13);
-  left: -340px;
+  left: -275px;
   padding: 30px;
   position: absolute;
-  width: 750px;
+  width: 1250px;
   z-index: 9;
 }
 .mega-menu span {
     float: left;
     padding-right: 30px;
-    width: 22%;
+    width: 16%;
 }
 .mega-menu span a {
   color: #000;
   display: block;
   font-size: 12px;
-  line-height: 40px;
+  line-height: 25px;
   position: relative;
 }
 .mega-menu span a::before {
@@ -426,7 +426,7 @@ select {
 .mega-menu span.mega-menu-photo {
   padding-right: 0;
   padding-top: 15px;
-  width: 34%;
+  width: 17%;
 }
 /* --- Total Cart --- */
 .total-cart {
@@ -3890,8 +3890,12 @@ h1.thank-you {
 .button-4:hover a{
   color:#fff;
 }
-
-
+.seasonal-menu{width:900px !important;}
+.seasonal-menu span{width:19% !important;}
+.seasonal-menu span.mega-menu-photo{width:23% !important;}
+.brands-menu{width:700px !important;}
+.brands-menu span{width:36% !important;}
+.brands-menu span.mega-menu-photo{width:28% !important;}
 
 
 

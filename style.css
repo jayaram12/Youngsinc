@@ -593,7 +593,7 @@ select {
 .banner-brief {
   border: 1px solid #666;
   margin-top: 24px;
-  padding: 25px 53px 66px;
+  padding: 25px 53px 50px;
   z-index: 9;
 }
 .banner-brief.banner-brief-right {
@@ -620,6 +620,7 @@ select {
 .banner-brief h2 span {
   font-weight: 700;
 }
+.banner-brief p{margin-top:10px;}
 .banner-brief h2.line-bottom {
   font-size: 24px;
 }
@@ -1000,7 +1001,7 @@ select {
   min-height: 600px;
 }
 .promo-banner-1 .promo-banner-brief {
-  padding-left: 32%;
+  padding-left: 8%;
   padding-top: 10%;
 }
 .count-down .timer {
@@ -1032,6 +1033,7 @@ select {
   font-weight: 700;
   line-height: 24px;
   margin: 15px 0 0;
+  font-size: 20px;
 }
 .promo-banner-1 .shop-now {
   margin-top: 40px;
@@ -2182,6 +2184,8 @@ select {
   line-height: 51px;
   text-transform: uppercase;
 }
+.widget-categories ul li.active{background-color: #f68541;}
+.widget-categories ul li.active a{color:#fff;}
 .widget-categories ul li:last-child {
   border-bottom: 1px solid #dedede;
 }
@@ -2432,6 +2436,7 @@ select {
 }
 .single-product-tab-content img {
   width: 100%;
+  border: 1px solid #dedede;
 }
 .view-full-screen  {
   color: #333;
@@ -2452,7 +2457,7 @@ select {
   text-transform: uppercase;
 }
 .title-3::before {
-  background: #dedede none repeat scroll 0 0;
+  background: #f68541 none repeat scroll 0 0;
   bottom: -10px;
   content: "";
   height: 2px;
@@ -2505,7 +2510,7 @@ select {
   color: #fff;
 }
 .product-counts {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .cart-plus-minus {
   display: inline-block;
@@ -2577,6 +2582,7 @@ select {
   border-top: 1px solid #999999;
   padding-top: 25px;
 }
+.categories-tags-head h4{color:#f68541;font-size: 16px;line-height: 0px;}
 .categories span {
   min-width: 110px;
 }
@@ -3896,8 +3902,16 @@ h1.thank-you {
 .brands-menu{width:700px !important;}
 .brands-menu span{width:36% !important;}
 .brands-menu span.mega-menu-photo{width:28% !important;}
-
-
+.cust-sign {border-right: 1px solid #c5c5c5;}
+.new-customers{margin-top:75px;}
+.registered-customers {margin-top:35px;}
+.register-click{float: right;margin-top: 15px;}
+.register-click span{color:#f68541;}
+.top-25{    color: #fff !important;
+  background-color: #f68541;
+  text-align: center;
+  border: 1px solid #f68541;
+  margin: 15px;}
 
 
 

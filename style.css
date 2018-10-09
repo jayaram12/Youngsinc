@@ -302,7 +302,7 @@ select {
 .main-header {
   padding: 14px 0 13px;
 }
-.logo {}
+.logo {text-align: center;}
 .main-menu {}
 .main-menu > nav > ul {}
 .main-menu > nav > ul > li {
@@ -3903,7 +3903,7 @@ h1.thank-you {
 .brands-menu span{width:36% !important;}
 .brands-menu span.mega-menu-photo{width:28% !important;}
 .cust-sign {border-right: 1px solid #c5c5c5;}
-.new-customers{margin-top:75px;}
+.new-customers{border: 1px solid #ccc;padding:40px;}
 .registered-customers {margin-top:35px;}
 .register-click{float: right;margin-top: 15px;}
 .register-click span{color:#f68541;}

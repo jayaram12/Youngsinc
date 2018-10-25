@@ -280,7 +280,7 @@ select {
   text-transform: capitalize;
 }
 .header-search {
-  border-left: 1px solid #c5c5c5;
+  /* border-left: 1px solid #c5c5c5; */
   border-right: 1px solid #c5c5c5;
   float: left;
   padding: 12px 20px;
@@ -2534,7 +2534,7 @@ margin-top: 40px;
   height: 2px;
   left: 3px;
   position: absolute;
-  width: 70px;
+  width: 50px;
 }
 .single-product-description h4 {
   font-weight: 500;
@@ -2609,9 +2609,9 @@ margin-top: 40px;
   text-align: center;
   width: 32px;
 }
-.cart-plus-minus div.inc {top: 1px;}
-.cart-plus-minus div.dec {bottom: 20px;}
-.product-list-price .cart-plus-minus div.dec {bottom: 0px !important;}
+.cart-plus-minus div.inc {top: 1px;font-size:22px;border-bottom: 3px solid #dedede;}
+.cart-plus-minus div.dec {bottom: 20px;font-size: 30px;}
+.product-list-price .cart-plus-minus div.dec {bottom: 0px !important;font-size: 30px;}
 .single-pro-add-cart a {
   font-size: 20px;
   font-weight: 500;
@@ -4008,7 +4008,6 @@ h1.thank-you {
   color: #666666 !important;
   font-size: 18px !important;
   line-height: 30px;
-  padding:0 5px;
 }
 .product-head h2{margin-bottom: 0px;}
 .item-color{color:#479800;}
@@ -4037,7 +4036,7 @@ h1.thank-you {
 }
 .product-list-2 .product-list-price{width: 50%;float: left;font-size:18px;}
 .product-list-3{border-bottom: 1px solid #dedede;padding:6px 0;}
-.product-list-3 .product-list-price{width: 100%;font-size:18px;}
+.product-list-3 .product-list-price{width: 100%;font-size:16px;}
 .product-list-case {
   font-size: 18px;
   width: 30%;
@@ -4050,7 +4049,7 @@ h1.thank-you {
   float: left;
   text-align: right;font-size: 18px;
 }
-  .product-breif-head h2{line-height: 52px;}
+  .product-breif-head h2{line-height: 30px;}
 .product-list-disc{
   color: #a7a5a5;
   text-decoration: line-through;
@@ -4235,6 +4234,12 @@ h1.thank-you {
 .breadcrumb {
   margin-bottom: 0px;
   background-color: #fff;
+  font-size: 16px;
+}
+.breadcrumb>.active {
+  color: #777;
+  font-weight: 600;
+  font-size:20px;
 }
 .breadcrumb li a{color: #f68541;}
 /* end of breadcrumb */
@@ -4660,7 +4665,7 @@ input[type="radio"]:disabled + .label-text:before{
 /* media screens */
 .prod-desc-off{
   text-decoration: line-through;
-  color: #f68541;
+  color: #FF0000;
   font-size: 22px;
 }
 .prod-desc-off-2{
@@ -4668,11 +4673,11 @@ input[type="radio"]:disabled + .label-text:before{
   font-size: 24px;
 }
 
-.prod-offer{font-size: 22px;}
+.prod-offer{font-size: 18px;color: #79af13;}
 .prod-desc-off-3{
   text-decoration: line-through;
-  color: #f68541;
-  font-size: 20px;
+  color: #FF0000;
+  font-size: 18px;
 }
 .prod-desc-off-4{
   color: #127900;
@@ -4763,3 +4768,63 @@ input[type="radio"]:disabled + .label-text:before{
 /* checkout tab view css */
 
 /* end of check out tab view */
+.pro-head-left{width:40%;float: left;}
+.pro-head-left h2{
+  margin-bottom: 0px;
+  line-height: 25px;
+}
+.pro-head-left h2 a {
+  color: #666666 !important;
+  font-size: 18px !important;
+  /* line-height: 22px; */
+  padding: 0 5px;
+}
+.pro-head-right h2 {
+  color: #666666 !important;
+  font-size: 18px !important;
+  line-height: 35px;
+  padding: 0 5px;
+  text-align: right;
+  margin-bottom: 0px;
+}
+.fnt-size-16{font-size:16px;}
+.green{color:#79af13}
+/* tab views */
+.nav-tabs { border-bottom: 2px solid #DDD; }
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+    .nav-tabs > li > a { border: none; color: #ffffff;background: #f68541; }
+        .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none;  color: #f68541 !important; background: #fff; }
+        .nav-tabs > li > a::after { content: ""; background: #f68541; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+    .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
+.tab-nav > li > a::after { background: ##f68541 none repeat scroll 0% 0%; color: #fff; }
+
+.checkout-address-tab .tab-content{padding:20px;overflow: hidden;}
+.checkout-address-tab .tab-pane{ padding: 15px 0; }
+.nav-tabs > li  {width:20%; text-align:center;}
+.card {background: #FFF none repeat scroll 0% 0%; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); margin-bottom: 30px; }
+
+@media all and (max-width:724px){
+.nav-tabs > li > a > span {display:none;}	
+.nav-tabs > li > a {padding: 5px 5px;}
+}
+.showaddress{
+  border: 1px solid #dedede;
+  padding: 10px;
+  box-shadow: 3px 2px 10px #a5a5a5;
+  margin-bottom: 30px;
+}
+.showaddress h2{font-size: 20px;color:#f68541;}
+.showaddress p i{color:#f68541;font-size: 16px;}
+.sidemenu {
+  background-color: #231f20;
+  padding: 10px;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  color: #fff;
+  height:100%;
+  transition: 1s;
+} 
+/* end of tab views */

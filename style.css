@@ -855,7 +855,7 @@ select {
   font-size: 20px;
   font-weight: 400;
   margin: 0;
-  text-transform: uppercase;
+  text-transform: inherit;
 
 }
 .product-brief .min-offer{font-size:16px !important;color:#f68541;text-decoration: line-through;}
@@ -2201,7 +2201,7 @@ margin-top: 40px;
 }
 .shop-grid .product-brief h2, .shop-grid .product-brief h3 {
   font-size: 18px;
-  text-transform: uppercase;
+  text-transform: inherit;
 }
 .shop-grid .product-brief {
   padding: 0 10px;
@@ -2603,13 +2603,13 @@ margin-top: 40px;
   cursor: pointer;
   height: 23px;
   line-height: 16px;
-  padding-top: 3px;
+  padding-top: 1px;
   position: absolute;
   right: 1px;
   text-align: center;
   width: 32px;
 }
-.cart-plus-minus div.inc {top: 1px;font-size:22px;border-bottom: 3px solid #dedede;}
+.cart-plus-minus div.inc {top: 1px;font-size:22px;border-bottom: 4px solid #e6e6e6;}
 .cart-plus-minus div.dec {bottom: 20px;font-size: 30px;}
 .product-list-price .cart-plus-minus div.dec {bottom: 0px !important;font-size: 30px;}
 .single-pro-add-cart a {
@@ -3130,7 +3130,7 @@ h3.widget-title-modal {
   font-weight: 600;
   padding: 7px 10px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: inherit;
   vertical-align: middle;
   white-space: nowrap;
 }
@@ -3142,7 +3142,7 @@ h3.widget-title-modal {
   border-top: medium none;
   font-size: 13px;
   padding: 10px 10px;
-  text-transform: uppercase;
+  text-transform: inherit;
   vertical-align: middle;
 }
 .table-content table td input {
@@ -4560,7 +4560,7 @@ input[type="radio"]:disabled + .label-text:before{
   color: #fff;
 }
 .wishlist-table .product-description p{text-align: left;line-height: 9px;}
-.cart-table .product-description p{text-align: left;line-height: 9px;}
+.cart-table .product-description p{text-align: left;line-height: 9px;text-transform: initial;}
 .refresh{
 	background-color: #f68541;
     color: #fff;
@@ -4807,18 +4807,21 @@ input[type="radio"]:disabled + .label-text:before{
 .nav-tabs > li > a > span {display:none;}	
 .nav-tabs > li > a {padding: 5px 5px;}
 }
-.showaddress{
+.showaddress {
   border: 1px solid #dedede;
-  padding: 10px;
-  box-shadow: 3px 2px 10px #a5a5a5;
+  padding: 25px;
+  box-shadow: 3px 2px 10px #dadada;
   margin-bottom: 30px;
+  margin-top: 25px;
+  border-radius: 10px;
+  min-height: 263px;
 }
 .showaddress h2{font-size: 20px;color:#f68541;}
 .showaddress p i{color:#f68541;font-size: 16px;}
 .sidemenu {
   background-color: #231f20;
   padding: 10px;
-  width: 200px;
+  width: 290px;
   position: fixed;
   top: 0;
   left: 0;
@@ -4827,4 +4830,160 @@ input[type="radio"]:disabled + .label-text:before{
   height:100%;
   transition: 1s;
 } 
+.showaddress-action{margin-top:50px;}
+.showaddress-action ul li {
+  display: inline-block;
+  padding: 0 2px;
+  font-weight: 600;
+}
+.show-add-icon{width:6%;float: left;font-size: 18px;}
+.show-add-text {
+  margin-left: 32px;
+}
+.add-plus{
+  text-align: center;
+  font-size: 50px;
+  margin-top: 45px;
+}
+.add-plus p{
+  font-size: 22px;
+  padding-top: 15px;
+}
+.dashed-border-2{border:2px dashed #dedede !important;}
 /* end of tab views */
+.green{color: #79af13;}
+.red{color: #FF0000;}
+.theme-txt-color{color:#f68541;}
+.promotion-code{
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+.promotion-code img{
+  float: left;
+  padding-right: 5px;
+}
+.pad-left-0{padding-left:0px !important;}
+
+/* account page css start */
+.account-card {
+  border: 1px solid #dedede;
+  padding: 25px 0px;
+  
+  margin-bottom: 30px;
+  margin-top: 25px;
+  border-radius: 10px;
+  min-height: 125px;
+}
+.account-card:hover{box-shadow: 3px 2px 10px #dadada;}
+.account-left{
+  width: 25%;
+  float: left;
+}
+.account-left img{margin:0px auto;}
+.account-right{margin-left: 134px;}
+.account-right h2{font-size: 25px;padding-top: 15px;}
+/* account page css end */
+/* countsheet page css */
+.nav-tabs > li.active > a .count-active{
+  background-color: #f68541;
+  margin-left: 5px;
+  padding: 5px 6px;
+  border-radius: 50px;
+  color: #fff;
+}
+.count-inactive{
+  background-color: #fff;
+  padding: 5px 6px;
+  border-radius: 50px;
+  color: #f68541;
+}
+.count-note {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+/* end of countsheet page css */
+.information-table table {margin-bottom: 0px;}
+.information-table table tbody tr td{border-top:none;}
+.information{min-height: 320px !important;}
+.contact-info{min-height: 220px !important;}
+/* information tab 2 view */
+
+/*  bhoechie tab */
+div.bhoechie-tab-container{
+  z-index: 10;
+  background-color: #ffffff;
+  padding: 0 !important;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  border:1px solid #ddd;
+  -webkit-box-shadow: 0 2px 9px rgba(0,0,0,.175);
+  box-shadow: 0 2px 9px rgba(0,0,0,.175);
+  -moz-box-shadow: 0 2px 9px rgba(0,0,0,.175);
+  background-clip: padding-box;
+  opacity: 0.97;
+  filter: alpha(opacity=97);
+}
+div.bhoechie-tab-menu{
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+div.bhoechie-tab-menu div.list-group{
+  margin-bottom: 0;
+}
+div.bhoechie-tab-menu div.list-group>a{
+  margin-bottom: 0;
+  font-size: 20px;
+}
+div.bhoechie-tab-menu div.list-group>a .glyphicon,
+div.bhoechie-tab-menu div.list-group>a .fa {
+  color: #555;
+}
+div.bhoechie-tab-menu div.list-group>a:first-child{
+  border-top-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+}
+div.bhoechie-tab-menu div.list-group>a:last-child{
+  border-bottom-right-radius: 0;
+  -moz-border-bottom-right-radius: 0;
+}
+div.bhoechie-tab-menu div.list-group>a.active,
+div.bhoechie-tab-menu div.list-group>a.active .glyphicon,
+div.bhoechie-tab-menu div.list-group>a.active .fa{
+  background-color: transparent;
+  background-image: #5A55A3;
+  color: #f68541;
+  font-size: 20px;
+}
+div.bhoechie-tab-menu div.list-group>a.active:after{
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -13px;
+  border-left: 0;
+  border-bottom: 13px solid transparent;
+  border-top: 13px solid transparent;
+  border-left: 10px solid #f68541;
+}
+
+div.bhoechie-tab-content{
+  background-color: #ffffff;
+  /* border: 1px solid #eeeeee; */
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+div.bhoechie-tab div.bhoechie-tab-content:not(.active){
+  display: none;
+}
+.list-group-item.active{border-color: #f68541;}
+.main{
+  background-color: #294d8c;
+  color: #fff;
+  font-weight: normal;
+  padding: 0px 10px !important;
+  border-radius: 3px;
+}
+/* information tab 2 view */

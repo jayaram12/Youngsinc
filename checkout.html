@@ -56,11 +56,11 @@
 										<ul>
 												<li>
 													<i class="fa fa-phone"></i>
-													<span>800-323-7799 and 734-529-9330</span>
+													<span>800-323-7799</span>
 												</li>
 												<li>
 														<i class="fa fa-envelope"></i>
-													<span>Helpdesk@youngsinc.com</span>
+													<span>helpdesk@youngsinc.com</span>
 												</li>
 												<li class="text-color">
 													<i class="fa fa-shopping-bag"></i>
@@ -535,7 +535,7 @@
 											
 											<div class="card-right">
 												<h4 class="card-head">Everyday</h4>
-												<h3 class="card-number">$49 <span class="prod-desc-off">$98</span> <span class="prod-desc-off-2">50%</span></h3>
+												<h3 class="card-number">$49 <span class="prod-desc-off">$98</span></h3>
 											</div>
 										</div>
 								</div>
@@ -726,7 +726,7 @@
 										</div>
 								</div>
 							<div class="col-md-6">
-								<h2>SHOPPING CART <span>All items in your Shopping Cart</span></h2>
+								<h2>SHOPPING CART </h2>
 							</div>
 							<!-- <div class="col-md-3 text-right mrg-top-20">
 									<div class="form-check">
@@ -748,19 +748,29 @@
 									<div class="col-md-7">
 										
 										<div class="promotion-code">
-											<P class="promotion-head">Promotion Code</P>
-											<div class="row">
-											<div class="col-md-6">
+											<P class="promotion-head"><img src="img/shopping-bag.png" class="img-responsive"> Hurray!!! You have saved $45.00 today.</P>
+											<div class="row" id="coupon-txt">
+												<div class="col-lg-12">
+														<P class="promotion-head green" id="coupon-click"><img src="img/tag.png"> Have a coupon code?</P>
+												</div>
+											</div>
+											<div class="row" id="coupon-code">
+												<div class="col-md-6">
 													<div class="form-group">
 															<input type="text" class="form-control" id="usr">
 														  </div>
-											</div>
-											<div class="col-md-6">
+												</div>
+												<div class="col-md-6">
 													<div class="promotion-btn">
-															<a href="#">Apply</a>
+															<a href="#" id="coupon-apply">Apply</a>
 														</div>
+												</div>
 											</div>
-										</div>
+											<div class="row" id="coupon-alert">
+													<div class="col-lg-12">
+															<P class="promotion-head green" id="coupon-click">Coupon code applied successfully...!</P>
+													</div>
+												</div>
 											<!-- <p class="promotion-save">You saved $7.60 on this order.</p> -->
 										</div>
 									</div>
@@ -789,7 +799,7 @@
 													</tbody>
 												</table>
 												<div class="we-proceed-to-checkout">
-													<a href="#" class="mrg-rgt-15">Continue Shopping</a><a href="#">Submit Order</a>
+													<a href="#" class="mrg-rgt-15">Continue Shopping</a><a href="checkout-details.html">Proceed to Checkout</a>
 												</div>
 											</div>
 										</div>
@@ -914,6 +924,22 @@
 		<!-- plugins js -->
         <script src="js/plugins.js"></script>
 		<!-- main js -->
-        <script src="js/main.js"></script>
+		<script src="js/main.js"></script>\
+		
+		<script>
+				$(document).ready(function(){
+					$("#coupon-txt").show();
+					$("#coupon-code").hide();
+					$("#coupon-alert").hide();
+					$("#coupon-click").click(function(){
+						$("#coupon-code").show();
+						$("#coupon-txt").hide();
+					});
+					$("#coupon-apply").click(function(){
+						$("#coupon-alert").show();
+					});
+				
+				});
+				</script>
     </body>
 </html>

@@ -505,7 +505,7 @@
 						<div class="col-md-12">
 							<ol class="breadcrumb">
 								<li><a href="#"><img src="img/home.png" class="img-responsive"></a></li>
-								<li class="active"><span>Account</span></li>
+								<li class="active"><span>List Invoices</span></li>
 							</ol>
 						</div>
 					</div>
@@ -519,89 +519,186 @@
 						<div class="col-md-12">
 							<span class="shop-border"></span>
 						</div>
-						<!-- card start -->
-						<div class="col-lg-4">
-							<a href="orders-invoices.html">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/order.png" class="img-responsive" />
-									</div>
-									<div class="account-right">
-										<h2>Order & Invoices</h2>
-										<p></p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-lg-4">
-							<a href="information.html">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/information.png" class="img-responsive" />
-									</div>
-									<div class="account-right">
-										<h2>My Information</h2>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-lg-4">
-							<a href="countsheet.html">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/file.png" class="img-responsive" />
-									</div>
-									<div class="account-right">
-										<h2>Count Sheet</h2>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-lg-4">
-							<div class="account-card">
-								<div class="account-left">
-									<img src="img/payment.png" class="img-responsive" />
-								</div>
-								<div class="account-right">
-									<h2>Make Payments</h2>
-								</div>
+						<div class="col-lg-12">
+							<div class="orders-view-head">
+								<ul>
+									<li><strong>Order#:</strong> 720288-1</li>
+									<li><Strong>Order$:</Strong> $448.00</li>
+									<li><strong>Po#:</strong> </li>
+									<li><strong>Item(s)</strong> 20</li>
+									<li><a href="order-invoice-summary.html"><i class="fa fa-file-text"></i></a></li>
+								</ul>
 							</div>
 						</div>
-						<div class="col-lg-4">
-							<a href="" data-toggle="modal" data-target="#myModal">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/refund.png" class="img-responsive" />
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<!-- Shop-Content start -->
+								<div class="shop-content">
+									<!-- product-toolbar start -->
+									<div class="product-toolbar">
+										<!-- Shop-menu -->
+										<div class="shop-menu view-mode">
+											<h3><i class="fa fa-filter" id="filter"></i></h3>
+										</div>
+										
+										<div class="short-by hidden-xs">
+											<span>sort by</span>
+											<select class="shop-select">
+												<option value="1">Ascending</option>
+												<option value="1">Descending</option>
+												<option value="1">Price</option>
+												<option value="1">By Item#</option>
+												<option value="1">By Newest Items</option>
+												<option value="1">By Availability</option>
+												<option value="1">Best Seller</option>
+											</select>
+										</div>
+										<div class="short-by showing hidden-xs">
+											<span>showing</span>
+											<select class="shop-select">
+												<option value="1">9</option>
+												<option value="1">15</option>
+												<option value="1">24</option>
+												<option value="1">30</option>
+												<option value="1">45</option>
+											</select>
+										</div>
+										<!-- pagination -->
+										<div class="shop-pagination">
+											<ul>
+												<li class="active"><a href="#">1</a></li>
+												<li><a href="#">2</a></li>
+												<li><a href="#">3</a></li>
+												<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+											</ul>
+										</div>
 									</div>
-									<div class="account-right">
-										<h2>Claims & Refunds</h2>
-									</div>
+									<!-- product-toolbar end -->
+									<div class="claim-item-area">
+											<!-- start card -->
+											<div class="col-lg-3">
+												<div class="claim-item-body">
+													<div class="claim-item-header">
+														<div class="claim-item-h-left">
+																<h2>17031</h2>
+														</div>
+														<div class="claim-item-h-right">
+																<h2 class="theme-color pull-right">$45.00</h2>
+														</div>
+													</div>
+													
+													<a href="#">
+														<img src="img/shop/30.jpg" class="img-responsive">
+													</a>
+													<div class="claim-desc-body">
+														<h3>Ceramic 4pc Canister Set</h3>
+														<div class="claim-footer">
+															<ul>
+																<li><strong>Qty:</strong> 1</li>
+																<li>|</li>
+																<li><strong>Ext: </strong>5.00</li>
+																<li>|</li>
+																<li><strong>Instock</strong></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- end card -->
+											<!-- start card -->
+											<div class="col-lg-3">
+													<div class="claim-item-body">
+														<div class="claim-item-header">
+															<div class="claim-item-h-left">
+																	<h2>19053</h2>
+															</div>
+															<div class="claim-item-h-right">
+																	<h2 class="theme-color pull-right">$3.50</h2>
+															</div>
+														</div>
+														
+														<a href="#">
+															<img src="img/shop/23.jpg" class="img-responsive">
+														</a>
+														<div class="claim-desc-body">
+															<h3>Ceramic Coffee ...</h3>
+															<div class="claim-footer">
+																<ul>
+																	<li><strong>Qty:</strong> 1</li>
+																	<li>|</li>
+																	<li><strong>Ext: </strong>5.00</li>
+																	<li>|</li>
+																	<li><strong>Instock</strong></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- end card -->
+												<!-- start card -->
+											<div class="col-lg-3">
+													<div class="claim-item-body">
+														<div class="claim-item-header">
+															<div class="claim-item-h-left">
+																	<h2>18421</h2>
+															</div>
+															<div class="claim-item-h-right">
+																	<h2 class="theme-color pull-right">$12.50</h2>
+															</div>
+														</div>
+														
+														<a href="#">
+															<img src="img/shop/20.jpg" class="img-responsive">
+														</a>
+														<div class="claim-desc-body">
+															<h3>Wood Coffee Tray...</h3>
+															<div class="claim-footer">
+																<ul>
+																	<li><strong>Qty:</strong> 1</li>
+																	<li>|</li>
+																	<li><strong>Ext: </strong>5.00</li>
+																	<li>|</li>
+																	<li><strong>Instock</strong></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- end card -->
+												<!-- start card -->
+											<div class="col-lg-3">
+													<div class="claim-item-body">
+														<div class="claim-item-header">
+															<div class="claim-item-h-left">
+																	<h2>18977</h2>
+															</div>
+															<div class="claim-item-h-right">
+																	<h2 class="theme-color pull-right">$11.00</h2>
+															</div>
+														</div>
+														
+														<a href="#">
+															<img src="img/shop/21.jpg" class="img-responsive">
+														</a>
+														<div class="claim-desc-body">
+															<h3>Wood Coffee Tab...</h3>
+															<div class="claim-footer">
+																<ul>
+																	<li><strong>Qty:</strong> 1</li>
+																	<li>|</li>
+																	<li><strong>Ext: </strong>5.00</li>
+																	<li>|</li>
+																	<li><strong>Instock</strong></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- end card -->
+										</div>
 								</div>
-							</a>
-						</div>
-						<div class="col-lg-4">
-							<a href="catalogs.html">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/catalog.png" class="img-responsive" />
-									</div>
-									<div class="account-right">
-										<h2>Catalogs</h2>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-lg-4">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/customer.png" class="img-responsive" />
-									</div>
-									<div class="account-right">
-										<h2>Help & Support</h2>
-									</div>
-								</div>
-						</div>
-						<!-- card end -->
+								<!-- Shop-Content end -->
+							</div>
+
 						<!-- <div class="col-md-12 text-center mrg-top-15">
 								<div class="promotion-btn">
 									<a href="#" class="mrg-rgt-10">Submit</a><a href="#">Continue Shopping</a>
@@ -697,24 +794,7 @@
 			</footer>
 			<!-- FOOTER-AREA END -->
 
- <!-- Modal -->
- <div class="modal fade" id="myModal" role="dialog">
-		<div class="modal-dialog modal-sm">
-		  <div class="modal-content">
-			<div class="modal-header">
-			  <button type="button" class="close" data-dismiss="modal">&times;</button>
-			  <h4 class="modal-title">Please Select Option</h4>
-			</div>
-			<div class="modal-body">
-			  <div class="claim-modal"><a href=""><img src="img/money-bag.png" class="img-responsive"> Add New Claim</a></div>
-			  <div class="claim-modal"><a href="view-claims.html"><img src="img/money-bag.png" class="img-responsive"> View Existing Claims</a></div>
-			</div>
-			<div class="modal-footer">
-			  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-			</div>
-		  </div>
-		</div>
-	  </div>
+
 		
 		<!-- all js here -->
 		<!-- jquery latest version -->

@@ -505,7 +505,7 @@
 						<div class="col-md-12">
 							<ol class="breadcrumb">
 								<li><a href="#"><img src="img/home.png" class="img-responsive"></a></li>
-								<li class="active"><span>Account</span></li>
+								<li class="active"><span>List Items</span></li>
 							</ol>
 						</div>
 					</div>
@@ -519,89 +519,161 @@
 						<div class="col-md-12">
 							<span class="shop-border"></span>
 						</div>
-						<!-- card start -->
-						<div class="col-lg-4">
-							<a href="orders-invoices.html">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/order.png" class="img-responsive" />
+						<div class="col-md-12">
+								<div class="form-inline mrg-top-8">
+									<div class="form-group">
+									  <label for="text">*Requested Ship date :</label>
+									  <input type="text" class="form-control" name="shipdate">
 									</div>
-									<div class="account-right">
-										<h2>Order & Invoices</h2>
-										<p></p>
+									<div class="form-group">
+									  <label for="text">Cancel date : </label>
+									  <input type="text" class="form-control" name="canceldate">
 									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-lg-4">
-							<a href="information.html">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/information.png" class="img-responsive" />
-									</div>
-									<div class="account-right">
-										<h2>My Information</h2>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-lg-4">
-							<a href="countsheet.html">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/file.png" class="img-responsive" />
-									</div>
-									<div class="account-right">
-										<h2>Count Sheet</h2>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-lg-4">
-							<div class="account-card">
-								<div class="account-left">
-									<img src="img/payment.png" class="img-responsive" />
-								</div>
-								<div class="account-right">
-									<h2>Make Payments</h2>
 								</div>
 							</div>
-						</div>
-						<div class="col-lg-4">
-							<a href="" data-toggle="modal" data-target="#myModal">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/refund.png" class="img-responsive" />
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<!-- Shop-Content start -->
+								<div class="shop-content">
+									<!-- product-toolbar start -->
+									<div class="product-toolbar">
+										<!-- Shop-menu -->
+										<div class="shop-menu view-mode">
+											<h3><i class="fa fa-filter" id="filter"></i></h3>
+										</div>
+										
+										<div class="short-by hidden-xs">
+											<span>sort by</span>
+											<select class="shop-select">
+												<option value="1">Ascending</option>
+												<option value="1">Descending</option>
+												<option value="1">Price</option>
+												<option value="1">By Item#</option>
+												<option value="1">By Newest Items</option>
+												<option value="1">By Availability</option>
+												<option value="1">Best Seller</option>
+											</select>
+										</div>
+										<div class="short-by showing hidden-xs">
+											<span>showing</span>
+											<select class="shop-select">
+												<option value="1">9</option>
+												<option value="1">15</option>
+												<option value="1">24</option>
+												<option value="1">30</option>
+												<option value="1">45</option>
+											</select>
+										</div>
+										<!-- pagination -->
+										<div class="shop-pagination">
+											<ul>
+												<li class="active"><a href="#">1</a></li>
+												<li><a href="#">2</a></li>
+												<li><a href="#">3</a></li>
+												<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+											</ul>
+										</div>
 									</div>
-									<div class="account-right">
-										<h2>Claims & Refunds</h2>
+									<!-- product-toolbar end -->
+									<!-- Item start-->
+									<div class="claim-item-area">
+										<div class="col-lg-3">
+											<div class="claim-item-body">
+												<h2>17031</h2>
+												<a href="#">
+													<img src="img/shop/30.jpg" class="img-responsive">
+												</a>
+												<div class="claim-desc-body">
+													<h3>Ceramic 4pc Canister Set</h3>
+													<div class="clm-dsc">
+														<div class="clm-dsc-lft">
+															Invoice#: <span>711958-1</span>
+														</div>
+														<div class="clm-dsc-rgt text-right">
+															CI-Qty: <span>1</span>
+														</div>
+													</div>
+													<div class="clm-dsc">
+														<div class="clm-dsc-lft">
+															Price: <span>45.00</span>
+														</div>
+														<div class="clm-dsc-rgt text-right">
+															Ext: <span>5.00</span>
+														</div>
+													</div>
+													<div class="claim-code">
+														<h3>Claim Code: <span>Did not Order(Not Changed)</span></h3>
+													</div>
+												</div>
+												<div class="claims-item-more">
+														<ul>
+															<li><i class="fa fa-edit"></i><br>Edit</li>
+															<li><i class="fa fa-trash"></i><br>Delete</li>
+														</ul>
+												</div>
+											</div>
+										</div>
 									</div>
+									<!-- Item end -->
+								
 								</div>
-							</a>
-						</div>
-						<div class="col-lg-4">
-							<a href="catalogs.html">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/catalog.png" class="img-responsive" />
-									</div>
-									<div class="account-right">
-										<h2>Catalogs</h2>
-									</div>
+								<!-- Shop-Content end -->
+							</div>
+
+						
+							<div class="col-md-12">
+									<div class="table-content table-responsive cart-table mrg-top-10">
+											<table>
+												<thead>
+													<tr>
+														<th class="product-thumbnail">Image</th>
+														<th class="product-id">Item Number</th>
+														<th class="product-description">Description</th>
+														<th class="product-availability">Invoice#</th>
+														<th class="product-quantity">CI-Qty</th>
+														<th class="product-price">Price</th>
+														<th class="product-total">Ext</th>
+														<th class="product-remove">Claim Code</th>
+														<th>Action</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="product-thumbnail"><a href="#"><img src="img/shop/23.jpg" alt="" /></a></td>
+														<td class="product-id"><a href="#">19053</a></td>
+														<td class="product-description">
+																Ceramic Coffee Jar
+														</td>
+														<td class="product-availability">714458-1</td>
+														<td class="product-quantity">1</td>
+														<td class="product-price"><span class="amount">$3.50</span></td>
+														<td class="product-subtotal">$1.00</td>
+														<td class="product-remove" style="width:150px;">Did not Order(Not Changed)</td>
+														<td>
+															<a href="#" class="refresh"><i class="fa fa-edit"></i></a>
+															<a href="#" class="refresh"><i class="fa fa-trash"></i></a>
+														</td>
+													</tr>
+													<tr>
+															<td class="product-thumbnail"><a href="#"><img src="img/shop/20.jpg" alt="" /></a></td>
+															<td class="product-id"><a href="#">18421</a></td>
+															<td class="product-description">
+																	Wood Coffee Tray/Wall Sign
+															</td>
+															<td class="product-availability">714558-1</td>
+															<td class="product-quantity">1</td>
+															<td class="product-price"><span class="amount">$12.50</span></td>
+															<td class="product-subtotal">$2.00</td>
+															<td class="product-remove" style="width:150px;">Did not Order(Not Changed)</td>
+															<td>
+																<a href="#" class="refresh"><i class="fa fa-edit"></i></a>
+																<a href="#" class="refresh"><i class="fa fa-trash"></i></a>
+															</td>
+														</tr>
+												</tbody>
+											</table>
+										</div>
 								</div>
-							</a>
-						</div>
-						<div class="col-lg-4">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/customer.png" class="img-responsive" />
-									</div>
-									<div class="account-right">
-										<h2>Help & Support</h2>
-									</div>
-								</div>
-						</div>
-						<!-- card end -->
+
 						<!-- <div class="col-md-12 text-center mrg-top-15">
 								<div class="promotion-btn">
 									<a href="#" class="mrg-rgt-10">Submit</a><a href="#">Continue Shopping</a>
@@ -697,24 +769,7 @@
 			</footer>
 			<!-- FOOTER-AREA END -->
 
- <!-- Modal -->
- <div class="modal fade" id="myModal" role="dialog">
-		<div class="modal-dialog modal-sm">
-		  <div class="modal-content">
-			<div class="modal-header">
-			  <button type="button" class="close" data-dismiss="modal">&times;</button>
-			  <h4 class="modal-title">Please Select Option</h4>
-			</div>
-			<div class="modal-body">
-			  <div class="claim-modal"><a href=""><img src="img/money-bag.png" class="img-responsive"> Add New Claim</a></div>
-			  <div class="claim-modal"><a href="view-claims.html"><img src="img/money-bag.png" class="img-responsive"> View Existing Claims</a></div>
-			</div>
-			<div class="modal-footer">
-			  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-			</div>
-		  </div>
-		</div>
-	  </div>
+
 		
 		<!-- all js here -->
 		<!-- jquery latest version -->
@@ -742,6 +797,14 @@
 		<!-- plugins js -->
         <script src="js/plugins.js"></script>
 		<!-- main js -->
-        <script src="js/main.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+				$(document).ready(function(){
+					$(".claims-item-more").hide();
+					$(".claim-desc-body").click(function(){
+						$(".claims-item-more").slideToggle();
+					});
+				});
+				</script>
     </body>
 </html>

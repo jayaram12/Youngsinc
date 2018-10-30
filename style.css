@@ -2603,13 +2603,13 @@ margin-top: 40px;
   cursor: pointer;
   height: 23px;
   line-height: 16px;
-  padding-top: 1px;
+  padding-top: 4px;
   position: absolute;
   right: 1px;
   text-align: center;
   width: 32px;
 }
-.cart-plus-minus div.inc {top: 1px;font-size:22px;border-bottom: 4px solid #e6e6e6;}
+.cart-plus-minus div.inc {top: 1px;font-size:22px;border-bottom: 1px solid #bfbfbf;z-index: 99;}
 .cart-plus-minus div.dec {bottom: 20px;font-size: 30px;}
 .product-list-price .cart-plus-minus div.dec {bottom: 0px !important;font-size: 30px;}
 .single-pro-add-cart a {
@@ -4523,6 +4523,7 @@ input[type="radio"]:disabled + .label-text:before{
 
 .mrg-rgt-15{margin-right: 15px;}
 .mrg-rgt-10{margin-right: 10px;}
+.mrg-top-0{margin-top:0px !important}
 .mrg-top-8{margin-top:8px;}
 .mrg-top-10{margin-top:10px;}
 .mrg-top-15{margin-top:15px;}
@@ -4987,3 +4988,123 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   border-radius: 3px;
 }
 /* information tab 2 view */
+.order-invoice a:hover{    color: #323232 !important;}
+.orders-invoice-tbl table{margin-bottom: 0px;}
+.orders-invoice-tbl table tbody tr td{border-top:none;}
+.orders-invoice-tbl {
+  border: 1px solid #dedede;
+  padding: 25px 0px;
+  margin-bottom: 30px;
+  margin-top: 25px;
+  border-radius: 10px;
+  min-height: 125px;
+}
+.orders-view-head {
+  padding: 15px 10px;
+  background: #ececec;
+}
+.orders-view-head ul{display: inline-flex;}
+.orders-view-head ul li{padding-right:35px;}
+.order-summary-id{
+  font-size: 18px;
+  padding: 10px 0;
+  font-weight: normal;
+}
+.order-summary-details{
+  border: 1px solid #dedede;
+  padding: 25px 25px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  min-height: 125px;
+}
+.order-summary-details table{margin-bottom: 0px;}
+.order-summary-details table tbody tr td{border-top:none;}
+.order-billing-ship{
+  font-size: 22px;
+}
+
+/* Claims css */
+.claims-view-more{
+  border-top: 1px solid #dedede;
+  margin-top: 7px;
+  padding-top: 16px;
+}
+.claims-view-more-2{
+  border-top: 1px solid #dedede;
+  margin-top: 7px;
+  padding-top: 16px;
+}
+.claims-view-more-3{
+  border-top: 1px solid #dedede;
+  margin-top: 7px;
+  padding-top: 16px;
+}
+.claims-view-more ul{display: inline-flex;}
+.claims-view-more ul li{padding:0 15px;text-align: center;}
+
+.claims-view-more-2 ul{display: inline-flex;}
+.claims-view-more-2 ul li{padding:0 15px;text-align: center;}
+
+.claims-view-more-3 ul{display: inline-flex;}
+.claims-view-more-3 ul li{padding:0 15px;text-align: center;}
+
+.claims-view table{margin-bottom: 0px;}
+.claims-view table tbody tr td{border-top:none;}
+.claims-view {
+  border: 1px solid #dedede;
+  padding: 25px 0px;
+  margin-bottom: 30px;
+  margin-top: 25px;
+  border-radius: 10px;
+  min-height: 125px;
+}
+.claim-item-body{
+  border: 1px solid #dedede;
+  padding: 5px;
+  margin-bottom: 30px;
+  border-radius: 0px;
+  min-height: 125px;
+}
+.claim-item-h-left{width:50%;float: left;}
+.claim-item-h-right h2{color: #79af13 !important;}
+.claim-item-body img {
+  width: 100%;
+}
+.claim-item-body h2 {
+  color: #666666;
+  font-size: 18px !important;
+}
+.claim-footer{width: 100%;font-size: 16px;margin-top:10px;}
+.claim-footer ul{display:inline-flex;}
+.claim-footer ul li{padding-right:10px;}
+.claim-item-body h3 {
+  color: #666666 !important;
+  font-size: 18px !important;
+  padding-top:7px;
+  margin-bottom: 0px;
+}
+.clm-dsc {
+  font-size: 17px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #dedede;
+}
+.clm-dsc-lft{width:50%;float: left;}
+.claim-code h3 {
+  color: #666666 !important;
+  font-size: 17px !important;
+  padding-top:7px;
+  margin-bottom: 0px;
+  font-weight: normal;
+}
+.claims-item-more{
+  border-top: 1px solid #dedede;
+  margin-top: 10px;
+  padding-top: 6px;
+}
+.claims-item-more ul{display: inline-flex;}
+.claims-item-more ul li{padding:0 15px;text-align: center;}
+.view-claims-tbl table thead tr th:last-child{width:240px;}
+.claim-modal{margin-bottom: 15px;}
+.claim-modal img{float: left;padding-right:10px;}
+/* end claims css */

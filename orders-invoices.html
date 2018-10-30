@@ -505,7 +505,7 @@
 						<div class="col-md-12">
 							<ol class="breadcrumb">
 								<li><a href="#"><img src="img/home.png" class="img-responsive"></a></li>
-								<li class="active"><span>Count Sheet</span></li>
+								<li class="active"><span>List Orders</span></li>
 							</ol>
 						</div>
 					</div>
@@ -518,9 +518,6 @@
 					<div class="row">
 						<div class="col-md-12">
 							<span class="shop-border"></span>
-						</div>
-						<div class="col-lg-12">
-							<p class="count-note"><span class="theme-txt-color">Note:</span> Items ordered in last 6 months</p>
 						</div>
 						<div class="col-md-12"> 
 								<!-- Nav tabs -->
@@ -540,8 +537,64 @@
 									<div role="tabpanel" class="tab-pane" id="scheduled">
 											<p>No Orders Found</p>
 									</div>
-									<div role="tabpanel" class="tab-pane" id="shipped">
-											<p>No Orders Found</p>
+									<div role="tabpanel" class="tab-pane order-invoice" id="shipped">
+
+											<div class="table-content table-responsive mrg-top-10">
+													<table>
+														<thead>
+															<tr>
+																<th>Ship Dt</th>
+																<th>Ship Via</th>
+																<th>Total Inv$</th>
+																<th>Item(s)</th>
+																<th>Action</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>18/07/18</td>
+																<td>Customer Routing Guide</td>
+																<td>0</td>
+																<td>20</td>
+																<td>
+																	<a href="order-invoice-view.html" class="refresh"><i class="fa fa-eye"></i></a>
+																	<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
+																</td>
+															</tr>
+															<tr>
+																	<td>25/05/18</td>
+																	<td>Take Me</td>
+																	<td>399.15</td>
+																	<td>4</td>
+																	<td>
+																		<a href="order-invoice-view.html" class="refresh"><i class="fa fa-eye"></i></a>
+																		<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
+																	</td>
+															</tr>
+															<tr>
+																	<td>24/04/18</td>
+																	<td>FedEx Ground</td>
+																	<td>271.80</td>
+																	<td>9</td>
+																	<td>
+																		<a href="order-invoice-view.html" class="refresh"><i class="fa fa-eye"></i></a>
+																		<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
+																	</td>
+															</tr>
+															<tr>
+																	<td>01/12/18</td>
+																	<td>Best Way</td>
+																	<td>167.88</td>
+																	<td>21</td>
+																	<td>
+																		<a href="order-invoice-view.html" class="refresh"><i class="fa fa-eye"></i></a>
+																		<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
+																	</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+
 									</div>
 									<div role="tabpanel" class="tab-pane" id="allItems">
 											<p>No Orders Found</p>

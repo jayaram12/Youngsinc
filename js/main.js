@@ -25,7 +25,7 @@
 		loop:true,
 		margin:3,
 		nav:true,
-		navText:["<i class='sp-arrow-bold-left'></i>","<i class='sp-arrow-bold-right'></i>"],
+		navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
 		responsive:{
 			320: {items: 1 },
 			480: {items: 2 },
@@ -43,7 +43,7 @@
 		margin:3,
 		//transitionStyle : "backSlide", /* [This code for animation ] */	
 		nav:true,
-		navText:["<i class='sp-angle-left'></i>","<i class='sp-angle-right'></i>"],
+		navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
 		responsive:{
 			320: {items: 1 },
 			480: {items: 1 },
@@ -60,7 +60,7 @@
 		loop:true,
 		margin:3,
 		nav:true,
-		navText:["<i class='sp-arrow-bold-left'></i>","<i class='sp-arrow-bold-right'></i>"],
+		navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
 		responsive:{
 			320: {items: 1 },
 			480: {items: 2 },
@@ -76,7 +76,7 @@
 		loop:true,
 		//margin:3,
 		nav:true,
-		navText:["<i class='sp-arrow-bold-left'></i>","<i class='sp-arrow-bold-right'></i>"],
+		navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
 		responsive:{
 			320: {items: 1 },
 			480: {items: 2 },
@@ -158,20 +158,34 @@ $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
 });
 
 /*----- cart-plus-minus-button -----*/	
-	 $(".cart-plus-minus").append('<div class="inc qtybutton">+</div><div class="dec qtybutton">-</div>');
+	 $(".cart-plus-minus").append('<div class="inc qtybutton"><i class="fa fa-angle-up" aria-hidden="true"></i></div><div class="dec qtybutton"><i class="fa fa-angle-down" aria-hidden="true"></i></div>');
 	  $(".qtybutton").on("click", function() {
 		var $button = $(this);
 		var oldValue = $button.parent().find("input").val();
-		if ($button.text() == "+") {
-		  var newVal = parseFloat(oldValue) + 1;
-		} else {
-		   // Don't allow decrementing below zero
-		  if (oldValue > 0) {
-			var newVal = parseFloat(oldValue) - 1;
-			} else {
-			newVal = 0;
-		  }
-		  }
+		debugger;
+		// if ($button.text() == "+") {
+		//   var newVal = parseFloat(oldValue) + 1;
+		// } else {
+		//    // Don't allow decrementing below zero
+		//   if (oldValue > 0) {
+		// 	var newVal = parseFloat(oldValue) - 1;
+		// 	} else {
+		// 	newVal = 0;
+		//   }
+		//   }
+
+		if ($button.children()[0].className == "fa fa-angle-up") {
+			var newVal = parseFloat(oldValue) + 1;
+		  } else {
+			 // Don't allow decrementing below zero
+			if (oldValue > 0) {
+			  var newVal = parseFloat(oldValue) - 1;
+			  } else {
+			  newVal = 0;
+			}
+			}
+
+
 		$button.parent().find("input").val(newVal);
 	  }); 	
 	  
@@ -229,11 +243,11 @@ $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
 		// max: 600,
 		// values: [ 60, 570 ],
 		// slide: function( event, ui ) {
-			// $( "#amount" ).val( "£" + ui.values[ 0 ] + " - £" + ui.values[ 1 ] );
+			// $( "#amount" ).val( "ï¿½" + ui.values[ 0 ] + " - ï¿½" + ui.values[ 1 ] );
 		// }
 	// });
-	// $( "#amount" ).val( "£" + $( "#slider-range" ).slider( "values", 0 ) +
-	// " - £" + $( "#slider-range" ).slider( "values", 1 ) );  
+	// $( "#amount" ).val( "ï¿½" + $( "#slider-range" ).slider( "values", 0 ) +
+	// " - ï¿½" + $( "#slider-range" ).slider( "values", 1 ) );  
 	   
 /*--------------------------
  scrollUp

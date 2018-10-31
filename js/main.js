@@ -162,7 +162,7 @@ $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
 	  $(".qtybutton").on("click", function() {
 		var $button = $(this);
 		var oldValue = $button.parent().find("input").val();
-		debugger;
+		
 		// if ($button.text() == "+") {
 		//   var newVal = parseFloat(oldValue) + 1;
 		// } else {

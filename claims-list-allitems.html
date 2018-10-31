@@ -87,7 +87,7 @@
 										<!-- <li><a href="">wel come to <strong>Jayaram</strong></a></li> -->
 									</ul>
 									<ul>
-										<li><a href="account.html">Account <span><i class="fa fa-cog"></i></span></a>
+										<li><a href="#">Account <span><i class="fa fa-cog"></i></span></a>
 											<ul class="submenu">
 												<li><a href="#">My Account</a></li>
 												<li><a href="#">Wishlist</a></li>
@@ -505,7 +505,7 @@
 						<div class="col-md-12">
 							<ol class="breadcrumb">
 								<li><a href="#"><img src="img/home.png" class="img-responsive"></a></li>
-								<li class="active"><span>Account</span></li>
+								<li class="active"><span>Claims Item List</span></li>
 							</ol>
 						</div>
 					</div>
@@ -519,194 +519,183 @@
 						<div class="col-md-12">
 							<span class="shop-border"></span>
 						</div>
-						<div class="account-section">
-							<div class="col-lg-10 col-lg-offset-1">
-								<div class="col-lg-3">
-									<a href="orders.html">
-										<div class="account-section-area">
-											<div class="account-sec-body">
-												<img src="img/order.png" class="img-responsive">
-											</div>
-											<h2 class="account-section-h2">Orders</h2>
+						<div class="col-lg-6">
+							<p class="count-note"><span class="theme-txt-color">Note:</span> Please select an Item <span class="fnt-size-15">(CL0143529 | Bealls Outlet Stores)</span></p>
+						</div>
+						<div class="col-md-6 text-right">
+								<div class="form-inline mrg-top-8">
+									<div class="form-group">
+									  <label for="text">Invoice#</label>
+									  <input type="text" class="form-control" name="shipdate">
+									</div>
+									<div class="form-group">
+									  <label for="text">Item#</label>
+									  <input type="text" class="form-control" name="canceldate">
+									</div>
+									<div class="form-group">
+										<div class="promotion-btn">
+											<a href="#" class="mrg-rgt-10">Search</a>
 										</div>
-									</a>
-								</div>
-								<div class="col-lg-3">
-									<a href="invoices.html">
-										<div class="account-section-area">
-											<div class="account-sec-body">
-												<img src="img/invoice-2.png" class="img-responsive">
-											</div>
-											<h2 class="account-section-h2">Invoices</h2>
-										</div>
-									</a>
-								</div>
-								<div class="col-lg-3">
-									<a href="information.html">
-										<div class="account-section-area">
-											<div class="account-sec-body">
-													<img src="img/information.png" class="img-responsive">
-											</div>
-											<h2 class="account-section-h2">My Information</h2>
-										</div>
-									</a>
-								</div>
-								<div class="col-lg-3">
-									<a href="countsheet.html">
-										<div class="account-section-area">
-											<div class="account-sec-body">
-												<img src="img/file.png" class="img-responsive">
-											</div>
-											<h2 class="account-section-h2">Count Sheet</h2>
-										</div>
-									</a>
-								</div>
-								<div class="col-lg-3">
-									<a href="#">
-										<div class="account-section-area">
-											<div class="account-sec-body">
-												<img src="img/payment.png" class="img-responsive">
-											</div>
-											<h2 class="account-section-h2">Make Payment</h2>
-										</div>
-									</a>
-								</div>
-								<div class="col-lg-3">
-									<a href="#" class="button_container"  id="toggle">
-										<div class="account-section-area">
-											<div class="account-sec-body">
-												<img src="img/refund.png
-												" class="img-responsive">
-											</div>
-											<h2 class="account-section-h2">Claims & Refunds</h2>
-										</div>
-									</a>
-								</div>
-								<div class="col-lg-3">
-									<a href="catalogs.html">
-										<div class="account-section-area">
-											<div class="account-sec-body">
-												<img src="img/order.png" class="img-responsive">
-											</div>
-											<h2 class="account-section-h2">Catalogs</h2>
-										</div>
-									</a>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="button_container-2">
-								<span class="top"></span>
-								<span class="middle"></span>
-								<span class="bottom"></span>
-							  </div>
-						<div class="overlay" id="overlay">
-								<nav class="overlay-menu">
-										<a href="" id="toggle-2">Close</a>
-								
-								  <ul>
-									<li ><a href="#">Add New Claim</a></li>
-									<li><a href="view-claims.html">View Existing Claim</a></li>
-								  </ul>
-								</nav>
-							  </div>
+						<div class="col-md-12">
+									<div class="table-content table-responsive cart-table mrg-top-10">
+											<table>
+												<thead>
+													<tr>
+														<th class="product-thumbnail">Image</th>
+														<th class="product-id">Item Number</th>
+														<th class="product-description">Description</th>
+														<th class="product-availability">Invoice#</th>
+														<th class="product-quantity">Qty</th>
+														<th class="product-price">Price</th>
+														<th class="product-total">Ext</th>
+														<th class="product-remove">Invoice</th>
+														<th>Ship</th>
+														<th>Remain Qty</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="product-thumbnail"><a href="adding-claim.html"><img src="img/shop/23.jpg" alt="" /></a></td>
+														<td><a href="adding-claim.html" class="theme-txt-color">19053</a></td>
+														<td class="product-description">
+																Ceramic Coffee Jar
+														</td>
+														<td>714458-1</td>
+														<td>1</td>
+														<td><span class="amount">$3.50</span></td>
+														<td>$1.00</td>
+														<td style="width:150px;">711959-1</td>
+														<td>10/01/18</td>
+														<td>2</td>
+													</tr>
+													<tr>
+															<td class="product-thumbnail"><a href="#"><img src="img/shop/20.jpg" alt="" /></a></td>
+															<td><a href="#" class="theme-txt-color">18421</a></td>
+															<td>
+																	Wood Coffee Tray/Wall Sign
+															</td>
+															<td>714558-1</td>
+															<td>1</td>
+															<td><span class="amount">$12.50</span></td>
+															<td>$2.00</td>
+															<td style="width:150px;">711565-1</td>
+															<td>25/05/18</td>
+															<td>5</td>
+														</tr>
+														<tr>
+																<td class="product-thumbnail"><a href="adding-claim.html"><img src="img/shop/23.jpg" alt="" /></a></td>
+																<td><a href="adding-claim.html" class="theme-txt-color">19053</a></td>
+																<td class="product-description">
+																		Ceramic Coffee Jar
+																</td>
+																<td>714458-1</td>
+																<td>1</td>
+																<td><span class="amount">$3.50</span></td>
+																<td>$1.00</td>
+																<td style="width:150px;">711959-1</td>
+																<td>10/01/18</td>
+																<td>2</td>
+															</tr>
+															<tr>
+																	<td class="product-thumbnail"><a href="#"><img src="img/shop/20.jpg" alt="" /></a></td>
+																	<td><a href="#" class="theme-txt-color">18421</a></td>
+																	<td>
+																			Wood Coffee Tray/Wall Sign
+																	</td>
+																	<td>714558-1</td>
+																	<td>1</td>
+																	<td><span class="amount">$12.50</span></td>
+																	<td>$2.00</td>
+																	<td style="width:150px;">711565-1</td>
+																	<td>25/05/18</td>
+																	<td>5</td>
+																</tr>
+												</tbody>
+											</table>
+										</div>
+								</div>
 
-						<!-- card start
-						<div class="col-lg-3">
-							<a href="orders.html">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/invoice-2.png" class="img-responsive" />
-									</div>
-									<div class="account-right">
-										<h2>Orders</h2>
-										<p></p>
-									</div>
+						<div class="col-md-12 text-center mrg-top-15">
+								<div class="promotion-btn add-item-btn">
+									<a href="#" class="mrg-rgt-10">Add Item Manually</a>
 								</div>
-							</a>
 						</div>
-						<div class="col-lg-3">
-								<a href="invoices.html">
-									<div class="account-card">
-										<div class="account-left">
-											<img src="img/invoice-2.png" class="img-responsive" />
+						<div class="add-item-manually">
+							<div class="col-lg-6 col-lg-offset-3">
+								<div class="row">
+										<div class="col-lg-6">
+												<div class="form-group">
+														<label for="sel1">Invoice#</label>
+														<select class="form-control" id="sel1">
+														<option>Select Invoice</option>
+														<option>714674-1</option>
+														<option>711959-1</option>
+														<option>715377-1</option>
+														<option>711958-1</option>
+														</select>
+													</div>
 										</div>
-										<div class="account-right">
-											<h2>Invoices</h2>
-											<p></p>
+										<div class="col-lg-6">
+												<div class="form-group">
+														<label for="sel1">Item#</label>
+														<select class="form-control" id="sel1">
+														<option>Select Item</option>
+														<option>15006</option>
+														<option>16346</option>
+														<option>16530</option>
+														</select>
+													</div>
 										</div>
+								</div>
+								<div class="row">
+										<div class="col-lg-3">
+												<div class="prod-img">
+													<img src="img/shop/20.jpg" class="img-responsive" alt="">
+												</div>
+											</div>
+											<div class="col-lg-9 prod-form">
+												<div class="form-horizontal">
+													<div class="form-group">
+														 <label class="control-label col-sm-3" for="email">Description:</label>
+														<div class="col-sm-9">
+															<p class="form-control-static">WOOD SPRING HANGING DECOR</p>
+														</div>
+													</div>
+													<div class="form-group">
+															<label class="control-label col-sm-3" for="email">Invoice Dt:</label>
+														   <div class="col-sm-9">
+															   <p class="form-control-static">25/05/18</p>
+														   </div>
+													 </div>
+													 <div class="form-group">
+															<label class="control-label col-sm-3" for="email">Invoice Qty:</label>
+														   <div class="col-sm-9">
+															   <p class="form-control-static">128</p>
+														   </div>
+													 </div>
+													 <div class="form-group">
+															<label class="control-label col-sm-3" for="email">Price:</label>
+														   <div class="col-sm-9">
+															   <p class="form-control-static">$4.75</p>
+														   </div>
+													 </div>
+													 <div class="form-group">
+															<label class="control-label col-sm-3" for="email">Ext Price:</label>
+														   <div class="col-sm-9">
+															   <p class="form-control-static">$0.00</p>
+														   </div>
+													 </div>
+												</div>
+											</div>
+								</div>
+								<div class="promotion-btn text-center mrg-top-20">
+										<a href="#" class="mrg-rgt-10">Continue</a>
 									</div>
-								</a>
 							</div>
-						<div class="col-lg-3">
-							<a href="information.html">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/information.png" class="img-responsive" />
-									</div>
-									<div class="account-right">
-										<h2>My Information</h2>
-									</div>
-								</div>
-							</a>
 						</div>
-						<div class="col-lg-3">
-							<a href="countsheet.html">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/file.png" class="img-responsive" />
-									</div>
-									<div class="account-right">
-										<h2>Count Sheet</h2>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-lg-3">
-							<div class="account-card">
-								<div class="account-left">
-									<img src="img/payment.png" class="img-responsive" />
-								</div>
-								<div class="account-right">
-									<h2>Make Payments</h2>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3">
-							<a href="" data-toggle="modal" data-target="#myModal">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/refund.png" class="img-responsive" />
-									</div>
-									<div class="account-right">
-										<h2>Claims & Refunds</h2>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-lg-3">
-							<a href="catalogs.html">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/catalog.png" class="img-responsive" />
-									</div>
-									<div class="account-right">
-										<h2>Catalogs</h2>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-lg-4">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/customer.png" class="img-responsive" />
-									</div>
-									<div class="account-right">
-										<h2>Help & Support</h2>
-									</div>
-								</div>
-						</div> 
-						 card end -->
-					
 					</div>
 				</div>
 			</div>
@@ -748,9 +737,7 @@
 									</div>
 								</div>
 								<div class="col-md-2 hidden-sm col-xs-12">
-									
 									<div class="single-footer footer-menu">
-										
 										<h2>company</h2>
 										<ul>
 											<li><a href="#">Account</a></li>
@@ -799,24 +786,7 @@
 			</footer>
 			<!-- FOOTER-AREA END -->
 
- <!-- Modal -->
- <div class="modal fade" id="myModal" role="dialog">
-		<div class="modal-dialog modal-sm">
-		  <div class="modal-content">
-			<div class="modal-header">
-			  <button type="button" class="close" data-dismiss="modal">&times;</button>
-			  <h4 class="modal-title">Please Select Option</h4>
-			</div>
-			<div class="modal-body">
-			  <div class="claim-modal"><a href=""><img src="img/money-bag.png" class="img-responsive"> Add New Claim</a></div>
-			  <div class="claim-modal"><a href="view-claims.html"><img src="img/money-bag.png" class="img-responsive"> View Existing Claims</a></div>
-			</div>
-			<div class="modal-footer">
-			  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-			</div>
-		  </div>
-		</div>
-	  </div>
+
 		
 		<!-- all js here -->
 		<!-- jquery latest version -->
@@ -845,20 +815,22 @@
         <script src="js/plugins.js"></script>
 		<!-- main js -->
 		<script src="js/main.js"></script>
-		
 		<script>
-			$(document).ready(function(){
-				$('#toggle').click(function() {
-				$(this).toggleClass('active');
-				$('#overlay').toggleClass('open');
+				$(document).ready(function(){
+					$(".claims-item-more").hide();
+					$(".claim-desc-body").click(function(){
+						$(".claims-item-more").slideToggle();
+					});
+
+					$(".add-item-manually").hide();
+					$(".add-item-btn").click(function(){
+						$(".add-item-manually").show();
+					});
 				});
 
-				$('#toggle-2').click(function() {
-				$('#toggle').toggleClass('active');
-				$('#overlay').toggleClass('open');
-				});
-			});
-		</script>
-		
+				
+				</script>
+
+
     </body>
 </html>

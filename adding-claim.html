@@ -36,7 +36,8 @@
 		<link rel="stylesheet" href="style.css">
 		
 		<!-- responsive css -->
-        <link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/personalization.css">
 		<!-- modernizr css -->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -87,7 +88,7 @@
 										<!-- <li><a href="">wel come to <strong>Jayaram</strong></a></li> -->
 									</ul>
 									<ul>
-										<li><a href="account.html">Account <span><i class="fa fa-cog"></i></span></a>
+										<li><a href="#">Account <span><i class="fa fa-cog"></i></span></a>
 											<ul class="submenu">
 												<li><a href="#">My Account</a></li>
 												<li><a href="#">Wishlist</a></li>
@@ -505,7 +506,7 @@
 						<div class="col-md-12">
 							<ol class="breadcrumb">
 								<li><a href="#"><img src="img/home.png" class="img-responsive"></a></li>
-								<li class="active"><span>Account</span></li>
+								<li class="active"><span>Add Claim</span></li>
 							</ol>
 						</div>
 					</div>
@@ -519,194 +520,206 @@
 						<div class="col-md-12">
 							<span class="shop-border"></span>
 						</div>
-						<div class="account-section">
-							<div class="col-lg-10 col-lg-offset-1">
-								<div class="col-lg-3">
-									<a href="orders.html">
-										<div class="account-section-area">
-											<div class="account-sec-body">
-												<img src="img/order.png" class="img-responsive">
-											</div>
-											<h2 class="account-section-h2">Orders</h2>
-										</div>
-									</a>
-								</div>
-								<div class="col-lg-3">
-									<a href="invoices.html">
-										<div class="account-section-area">
-											<div class="account-sec-body">
-												<img src="img/invoice-2.png" class="img-responsive">
-											</div>
-											<h2 class="account-section-h2">Invoices</h2>
-										</div>
-									</a>
-								</div>
-								<div class="col-lg-3">
-									<a href="information.html">
-										<div class="account-section-area">
-											<div class="account-sec-body">
-													<img src="img/information.png" class="img-responsive">
-											</div>
-											<h2 class="account-section-h2">My Information</h2>
-										</div>
-									</a>
-								</div>
-								<div class="col-lg-3">
-									<a href="countsheet.html">
-										<div class="account-section-area">
-											<div class="account-sec-body">
-												<img src="img/file.png" class="img-responsive">
-											</div>
-											<h2 class="account-section-h2">Count Sheet</h2>
-										</div>
-									</a>
-								</div>
-								<div class="col-lg-3">
-									<a href="#">
-										<div class="account-section-area">
-											<div class="account-sec-body">
-												<img src="img/payment.png" class="img-responsive">
-											</div>
-											<h2 class="account-section-h2">Make Payment</h2>
-										</div>
-									</a>
-								</div>
-								<div class="col-lg-3">
-									<a href="#" class="button_container"  id="toggle">
-										<div class="account-section-area">
-											<div class="account-sec-body">
-												<img src="img/refund.png
-												" class="img-responsive">
-											</div>
-											<h2 class="account-section-h2">Claims & Refunds</h2>
-										</div>
-									</a>
-								</div>
-								<div class="col-lg-3">
-									<a href="catalogs.html">
-										<div class="account-section-area">
-											<div class="account-sec-body">
-												<img src="img/order.png" class="img-responsive">
-											</div>
-											<h2 class="account-section-h2">Catalogs</h2>
-										</div>
-									</a>
-								</div>
-							</div>
+						<div class="col-lg-12">
+							<p class="count-note"><span class="theme-txt-color">Note:</span> Add Claim: 1/2 <span class="fnt-size-15">(CL0143529 | Bealls Outlet Stores)</span></p>
 						</div>
-						<div class="button_container-2">
-								<span class="top"></span>
-								<span class="middle"></span>
-								<span class="bottom"></span>
-							  </div>
-						<div class="overlay" id="overlay">
-								<nav class="overlay-menu">
-										<a href="" id="toggle-2">Close</a>
-								
-								  <ul>
-									<li ><a href="#">Add New Claim</a></li>
-									<li><a href="view-claims.html">View Existing Claim</a></li>
-								  </ul>
-								</nav>
-							  </div>
+						<!-- <div class="col-md-6 text-right">
+								<div class="form-inline mrg-top-8">
+									<div class="form-group">
+									  <label for="text">Invoice#</label>
+									  <input type="text" class="form-control" name="shipdate">
+									</div>
+									<div class="form-group">
+									  <label for="text">Item#</label>
+									  <input type="text" class="form-control" name="canceldate">
+									</div>
+									<div class="form-group">
+										<div class="promotion-btn">
+											<a href="#" class="mrg-rgt-10">Search</a>
+										</div>
+									</div>
+								</div>
+							</div> -->
+						<div class="col-md-12">
+									<div class="table-content table-responsive cart-table mrg-top-10">
+											<table>
+												<thead>
+													<tr>
+														<th class="product-thumbnail">Image</th>
+														<th class="product-id">Item Number</th>
+														<th class="product-description">Description</th>
+														<th class="product-availability">Invoice#</th>
+														<th class="product-quantity">Qty</th>
+														<th class="product-price">Price</th>
+														<th class="product-total">Ext</th>
+														<th class="product-remove">Invoice</th>
+														<th>Ship</th>
+														<th>Remain Qty</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="product-thumbnail"><a href="#"><img src="img/shop/23.jpg" alt="" /></a></td>
+														<td><a href="#">19053</a></td>
+														<td class="product-description">
+																Ceramic Coffee Jar
+														</td>
+														<td>714458-1</td>
+														<td>1</td>
+														<td><span class="amount">$3.50</span></td>
+														<td>$1.00</td>
+														<td style="width:150px;">711959-1</td>
+														<td>10/01/18</td>
+														<td>2</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+								</div>
+						<div class="add-claims">
+								<div class="">
+										<div class="col-lg-4">
+												<div class="form-group">
+														<label for="sel1">Why are you returning this items?</label>
+														<select class="form-control" id="sel1">
+														<option>Select Reason</option>
+														<option>Item Defective</option>
+														<option>Product and shipping box both damaged</option>
+														<option>Product damaged but shipping box ok</option>
+														<option>Did not order(Not Charged)</option>
+														<option>Price Correction</option>
+														<option>Did not order(Charged)</option>
+														<option>Item arrived too late</option>
+														<option>Bought by mistake</option>
+														<option>Did not like the item</option>
+														<option>Missing parts or accessories</option>
+														<option>Did not receive an item I was billed for</option>
+														</select>
+													</div>
+										</div>
+										<div class="col-lg-4">
+											<div class="form-group">
+												<label for="usr">How many Pieces</label>
+												<input type="text" class="form-control" id="usr">
+											 </div>
+										</div>
+										<div class="col-lg-4">
+												<div class="form-group">
+													<label for="usr">Description</label>
+													<input type="text" class="form-control" id="usr">
+												 </div>
+											</div>
+								</div>
+								<div>
+										<div class="box NewItem">
+											  <div class="col-md-8 offset-md-2 offset-lg-2 col-lg-8 col-sm-12 col-xs-12 mrg-top-35">
+												
+												<div class="col-md-4 col-xs-12 col-sm-6 col-lg-4">
+												  <!-- <label class="control-label pull-left">Select Main Image :</label><br/><br/> -->
+												  <div class="wrap-custom-file" style="width:200px; height:200px;">
+													  <input type="file" name="image" id="image" accept=".gif, .jpg, .png" />
+													  <label  for="image">
+														  <span>Select Default Image</span>
+													  </label>
+													  <i class="fa fa-times"></i>
+												  </div>
+												</div>
+												<div class="col-md-8 col-xs-12 col-sm-6 col-lg-8">
+													<h4>Image Guidelines to Upload images :</h4>
+													<ul class="imgguidelines">
+														<li>Main Images must have a pure white background, must be a photo </li>
+														<li>Images must be at least 1000 pixels on the longest side and at least 500 pixels on the shortest side to be zoom-able. </li>
+														<li>Images must not exceed 10000 pixels on the longest side. </li>
+														<li>JPEG is the preferred image format, but you also may use TIFF and GIF files. </li>
+													</ul>
+												</div>
+												<div class="col-md-12 MarginTop20">
+												<!-- Our File Inputs -->
+												  <div class="wrap-custom-file">
+												  <input type="file" name="image1" id="image1" accept=".gif, .jpg, .png" />
+												  <label  for="image1">
+													<span>Select Image One</span>
+												  </label>
+												  <i class="fa fa-times"></i>
+												  </div>
 
-						<!-- card start
-						<div class="col-lg-3">
-							<a href="orders.html">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/invoice-2.png" class="img-responsive" />
-									</div>
-									<div class="account-right">
-										<h2>Orders</h2>
-										<p></p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-lg-3">
-								<a href="invoices.html">
-									<div class="account-card">
-										<div class="account-left">
-											<img src="img/invoice-2.png" class="img-responsive" />
+												  <div class="wrap-custom-file">
+												  <input type="file" name="image2" id="image2" accept=".gif, .jpg, .png" />
+												  <label  for="image2">
+													<span>Select Image Two</span>
+												  </label>
+												  <i class="fa fa-times"></i>
+												  </div>
+
+												  <div class="wrap-custom-file">
+												  <input type="file" name="image3" id="image3" accept=".gif, .jpg, .png" />
+												  <label  for="image3">
+													<span>Select Image Three</span>
+												  </label>
+												  <i class="fa fa-times"></i>
+												  </div>
+
+												  <div class="wrap-custom-file">
+												  <input type="file" name="image4" id="image4" accept=".gif, .jpg, .png" />
+												  <label  for="image4">
+													<span>Select Image Four</span>
+												  </label>
+												  <i class="fa fa-times"></i>
+												  </div>
+												</div>
+											  </div>
 										</div>
-										<div class="account-right">
-											<h2>Invoices</h2>
-											<p></p>
+									</div>
+						</div>
+						
+						<div class="add-claim-instruction" style="margin-top:50px;">
+							<div class="add-claim-description-1">
+								<p class="para">How can we resolve this?</p>
+								<p class="para">is this item sellable?</p>
+								<div class="form-radio-block">
+									<div class="form-check pad-left-0 mrg-rgt-50 show-yes-1">
+										<label>
+											<input type="radio" name="radio"> <span class="label-text">Yes</span>
+										</label>
+									</div>
+									<div class="form-check pad-left-0 show-no-1">
+										<label>
+											<input type="radio" name="radio"> <span class="label-text">No</span>
+										</label>
+									</div>
+								</div>
+								<div class="claim-sec-1-no">
+									<p class="para">If your claim is approved, you will be refunded $8.20 to your Young's account.</p>
+								</div>
+								<div class="claim-sec-1-yes">
+									<p class="para">Would you be willing to take a 50% ($4.10) credit on this item. If you cannot sell this item in 60days, we will give you a 100% refund. Are you interested?</p>
+									<div class="form-radio-block">
+											<div class="form-check pad-left-0 mrg-rgt-50 show-yes-2">
+												<label>
+													<input type="radio" name="radio"> <span class="label-text">Yes</span>
+												</label>
+											</div>
+											<div class="form-check pad-left-0 show-no-2">
+												<label>
+													<input type="radio" name="radio"> <span class="label-text">No</span>
+												</label>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						<div class="col-lg-3">
-							<a href="information.html">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/information.png" class="img-responsive" />
-									</div>
-									<div class="account-right">
-										<h2>My Information</h2>
-									</div>
 								</div>
-							</a>
-						</div>
-						<div class="col-lg-3">
-							<a href="countsheet.html">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/file.png" class="img-responsive" />
+								<div class="claim-sec-sub-1-yes">
+									<p class="para">If you claim is approved, you will be refunded $4.10 to your Young's account.</p>
+								</div>
+								<div class="claim-sec-sub-1-no">
+										<p class="para">If your claim is approved, you will be refunded $8.20 to your Young's account.</p>
 									</div>
-									<div class="account-right">
-										<h2>Count Sheet</h2>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-lg-3">
-							<div class="account-card">
-								<div class="account-left">
-									<img src="img/payment.png" class="img-responsive" />
-								</div>
-								<div class="account-right">
-									<h2>Make Payments</h2>
-								</div>
 							</div>
 						</div>
-						<div class="col-lg-3">
-							<a href="" data-toggle="modal" data-target="#myModal">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/refund.png" class="img-responsive" />
-									</div>
-									<div class="account-right">
-										<h2>Claims & Refunds</h2>
-									</div>
+
+						<div class="col-md-12 text-center mrg-top-15">
+								<div class="promotion-btn add-item-btn-filter-1">
+									<a href="#" class="mrg-rgt-10">Save</a>
 								</div>
-							</a>
 						</div>
-						<div class="col-lg-3">
-							<a href="catalogs.html">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/catalog.png" class="img-responsive" />
-									</div>
-									<div class="account-right">
-										<h2>Catalogs</h2>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-lg-4">
-								<div class="account-card">
-									<div class="account-left">
-										<img src="img/customer.png" class="img-responsive" />
-									</div>
-									<div class="account-right">
-										<h2>Help & Support</h2>
-									</div>
-								</div>
-						</div> 
-						 card end -->
-					
 					</div>
 				</div>
 			</div>
@@ -748,9 +761,7 @@
 									</div>
 								</div>
 								<div class="col-md-2 hidden-sm col-xs-12">
-									
 									<div class="single-footer footer-menu">
-										
 										<h2>company</h2>
 										<ul>
 											<li><a href="#">Account</a></li>
@@ -799,24 +810,7 @@
 			</footer>
 			<!-- FOOTER-AREA END -->
 
- <!-- Modal -->
- <div class="modal fade" id="myModal" role="dialog">
-		<div class="modal-dialog modal-sm">
-		  <div class="modal-content">
-			<div class="modal-header">
-			  <button type="button" class="close" data-dismiss="modal">&times;</button>
-			  <h4 class="modal-title">Please Select Option</h4>
-			</div>
-			<div class="modal-body">
-			  <div class="claim-modal"><a href=""><img src="img/money-bag.png" class="img-responsive"> Add New Claim</a></div>
-			  <div class="claim-modal"><a href="view-claims.html"><img src="img/money-bag.png" class="img-responsive"> View Existing Claims</a></div>
-			</div>
-			<div class="modal-footer">
-			  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-			</div>
-		  </div>
-		</div>
-	  </div>
+
 		
 		<!-- all js here -->
 		<!-- jquery latest version -->
@@ -835,7 +829,9 @@
 		<!-- lightbox.min js -->
         <script src="js/lightbox.min.js"></script>
 		<!-- countdon.min js -->
-        <script src="js/countdon.min.js"></script>
+		<script src="js/countdon.min.js"></script>
+		<!-- image upload js -->
+		<script src="js/imageuploadify.js"></script>
 		<!-- wow js -->
         <script src="js/wow.min.js"></script>
 		<script type="text/javascript">
@@ -845,20 +841,77 @@
         <script src="js/plugins.js"></script>
 		<!-- main js -->
 		<script src="js/main.js"></script>
-		
 		<script>
-			$(document).ready(function(){
-				$('#toggle').click(function() {
-				$(this).toggleClass('active');
-				$('#overlay').toggleClass('open');
+				$(document).ready(function(){
+					
+					$(".add-claims").show();
+					$(".add-claim-instruction").hide();
+
+					$(".add-item-btn-filter-1").click(function(){
+						$(".add-claims").hide();
+						$(".add-claim-instruction").show();
+					});
+					
 				});
 
-				$('#toggle-2').click(function() {
-				$('#toggle').toggleClass('active');
-				$('#overlay').toggleClass('open');
-				});
-			});
-		</script>
-		
+				</script>
+			<script>
+					$(document).ready(function(){
+						
+						$(".claim-sec-1-no").hide();
+						$(".claim-sec-1-yes").hide();
+						
+						$(".claim-sec-sub-1-yes").hide();
+						$(".claim-sec-sub-1-no").hide();
+
+						$(".show-yes-1").click(function(){
+							$(".claim-sec-1-yes").show();
+							$(".claim-sec-1-no").hide();
+						});
+
+						$(".show-no-1").click(function(){
+							$(".claim-sec-1-yes").hide();
+							$(".claim-sec-1-no").show();
+						});
+
+						$(".show-yes-2").click(function(){
+							$(".claim-sec-sub-1-yes").show();
+							$(".claim-sec-sub-1-no").hide();
+						});
+						$(".show-no-2").click(function(){
+							$(".claim-sec-sub-1-yes").hide();
+							$(".claim-sec-sub-1-no").show();
+						});
+					});
+	
+					</script>
+				<script>
+						$('input[type="file"]').each(function(){
+						  // Refs
+						  var $file = $(this),
+							  $label = $file.next('label'),
+							  $labelText = $label.find('span'),
+							  labelDefault = $labelText.text();
+						
+						  // When a new file is selected
+						  $file.on('change', function(event){
+							var fileName = $file.val().split( '\\' ).pop(),
+								tmppath = URL.createObjectURL(event.target.files[0]);
+							//Check successfully selection
+							if( fileName ){
+							  $label
+								.addClass('file-ok')
+								.css('background-image', 'url(' + tmppath + ')');
+							  $labelText.text(fileName);
+							}else{
+							  $label.removeClass('file-ok');
+							  $labelText.text(labelDefault);
+							}
+						  });
+						
+						// End loop of file input elements
+						});
+						</script>
+
     </body>
 </html>

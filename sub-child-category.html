@@ -44,9 +44,163 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-		<div class="sidemenu" style="display: none;">
+		<div class="sidemenu side-title-filter" style="display: none;">
 				<h2 style="color:#fff;font-size: 18px;padding:5px;">Filters</h2>
+				<!-- shop-filter start -->
+				<aside class="widget shop-filter price-range">
+						<h5 class="sidebar-title ">price Range</h5>
+						<div class="info_widget">
+							<div id="slider-range"></div>
+							<div id ="amount">
+								<input type ="text" name ="first_price" class="first_price" />
+								<input type ="text" name ="last_price" class="last_price"/>
+							</div>
+							<div class="form-check pad-left-0">
+									<label>
+										<input type="checkbox" name="check"> <span class="label-text">Up yo $5</span>
+									</label>
+								</div>
+								<div class="form-check pad-left-0">
+										<label>
+											<input type="checkbox" name="check"> <span class="label-text">Above $100</span>
+										</label>
+									</div>
+							<!-- <button class="shop-now">Filter</button> -->
+						</div>						
+					</aside>
+					<!-- shop-filter end -->
+					<!-- widget-color start -->
+					<aside class="widget widget-color availability">
+						<h5 class="sidebar-title">Availability</h5>
+						<ul>
+								<li>
+										<div class="form-check pad-left-0 show-no-1 mrg-rgt-10">
+												<label>
+													<input type="radio" name="radio"> <span class="label-text">All</span>
+												</label>
+											</div>
+								</li>
+								<li>
+										<div class="form-check pad-left-0 show-no-1">
+												<label>
+													<input type="radio" name="radio"> <span class="label-text">In Stock By</span>
+												</label>
+											</div>
+								</li>
+								<li>	
+										<div class="form-check pad-left-0 avb-qty">
+											<label>
+												<input type="checkbox" name="check"> <span class="label-text">Qty</span>
+											</label>
+										</div>
+										<div class="case-price">
+												<div class="form-group">
+														<input type="text" class="form-control" id="usr">
+													 </div>
+												<div class="form-check pad-left-0 show-no-1 mrg-rgt-10">
+														<label>
+															<input type="radio" name="radio"> <span class="label-text">Case</span>
+														</label>
+													</div>
+													<div class="form-check pad-left-0 show-no-1 mrg-rgt-10">
+															<label>
+																<input type="radio" name="radio"> <span class="label-text">Pieces</span>
+															</label>
+														</div>
+										</div>
+									</li>
+							</ul>
+						
+							
+					</aside>
+					<!-- widget-color end -->
+					<!-- widget-brand start -->
+					<aside class="widget widget-brand sort-list-item-1">
+						<h5 class="sidebar-title">More</h5>
+						<ul>
+							<li>
+								<div class="form-check pad-left-0">
+									<label>
+										<input type="checkbox" name="check"> <span class="label-text">New</span>
+									</label>
+								</div>
+							</li>
+							<li>
+								<div class="form-check pad-left-0">
+									<label>
+										<input type="checkbox" name="check"> <span class="label-text">All</span>
+									</label>
+								</div>
+							</li>
+						</ul>
+						<div class="promotion-btn mrg-top-15">
+								<a href="#" class="mrg-rgt-10">Cancel</a><a href="#">Apply</a>
+							</div>
+					</aside>
 			</div>
+			<div class="sidemenu-sort side-title-filter" style="display: none;">
+					<aside class="widget widget-brand sort-list-item-1">
+							<h5 class="sidebar-title">Sort</h5>
+							<ul>
+								<li>
+										<div class="sortby">
+												<div class="form-check pad-left-0">
+													<label>
+														<input type="checkbox" name="check"> <span class="label-text">Ascending</span>
+													</label>
+												</div>
+												<div class="form-check pad-left-0">
+														<label>
+															<input type="checkbox" name="check"> <span class="label-text">Descending</span>
+														</label>
+												</div>
+											</div>
+								</li>
+								<li>
+										<div class="sortbylist mrg-top-15 sort-list-item-1 brd-top mrg">
+												<div class="form-check pad-left-0 show-no-1">
+													<label>
+														<input type="radio" name="radio"> <span class="label-text">Price</span>
+													</label>
+												</div>
+												<div class="form-check pad-left-0 show-no-1">
+														<label>
+															<input type="radio" name="radio"> <span class="label-text">By Catalog Page</span>
+														</label>
+												</div>
+												<div class="form-check pad-left-0 show-no-1">
+														<label>
+															<input type="radio" name="radio"> <span class="label-text">By Item#</span>
+														</label>
+												</div>
+												<div class="form-check pad-left-0 show-no-1">
+														<label>
+															<input type="radio" name="radio"> <span class="label-text">By Newest Items</span>
+														</label>
+												</div>
+												<div class="form-check pad-left-0 show-no-1">
+														<label>
+															<input type="radio" name="radio"> <span class="label-text">By Availability</span>
+														</label>
+												</div>
+												<div class="form-check pad-left-0 show-no-1">
+														<label>
+															<input type="radio" name="radio"> <span class="label-text">Best Seller</span>
+														</label>
+												</div>
+												
+											</div>
+								</li>
+							</ul>
+							<div class="promotion-btn mrg-top-15">
+									<a href="#" class="mrg-rgt-10">Cancel</a><a href="#">Apply</a>
+								</div>
+						</aside>
+
+					
+					
+					
+				</div>
 		<!-- HEADER-AREA START -->
         <header class="header-area">
 				<!-- Header-Top Start -->
@@ -564,7 +718,7 @@
 							</aside>
 							<!-- widget-categories end -->
 							<!-- shop-filter start -->
-							<aside class="widget shop-filter">
+							<!-- <aside class="widget shop-filter">
 								<h5 class="sidebar-title">price</h5>
 								<div class="info_widget">
 									<div id="slider-range"></div>
@@ -574,7 +728,7 @@
 									</div>
 									<button class="shop-now">Filter</button>
 								</div>						
-							</aside>
+							</aside> -->
 							<!-- shop-filter end -->
 							<!-- widget-color start -->
 							<!-- <aside class="widget widget-color">
@@ -701,8 +855,10 @@
 									<div class="shop-menu view-mode">
 										<h3><i class="fa fa-filter" id="filter"></i></h3>
 									</div>
-									
-									<div class="short-by hidden-xs">
+									<div class="shop-menu view-mode">
+											<h3><i class="fa fa-random" id="sort"></i></h3>
+										</div>
+									<!-- <div class="short-by hidden-xs">
 										<span>sort by</span>
 										<select class="shop-select">
 											<option value="1">Ascending</option>
@@ -713,7 +869,7 @@
 											<option value="1">By Availability</option>
 											<option value="1">Best Seller</option>
 										</select>
-									</div>
+									</div> -->
 									<div class="short-by showing hidden-xs">
 										<span>showing</span>
 										<select class="shop-select">
@@ -1727,10 +1883,10 @@
 							</div>
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<div class="footer-social text-right">
-									<a href="#"><i class="sp-facebook"></i></a>
-									<a href="#"><i class="sp-twitter"></i></a>
-									<a href="#"><i class="sp-linkedin"></i></a>
-									<a href="#"><i class="sp-google"></i></a>
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-linkedin"></i></a>
+									<a href="#"><i class="fa fa-google"></i></a>
 								</div>
 							</div>
 						</div>
@@ -1841,9 +1997,16 @@
 					$("#remove-wish").hide();
 				});
 				$("#filter").click(function(){
-        $(".sidemenu").toggle();
-    });
-			
+      				  $(".sidemenu").toggle();
+  				});
+				  $("#sort").click(function(){
+      				  $(".sidemenu-sort").toggle();
+  				});
+				  $(".case-price").hide();
+					$(".avb-qty").click(function(){
+						$(".case-price").show();
+					});
+				  
 			});
 			</script>
     </body>

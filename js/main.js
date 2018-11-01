@@ -135,9 +135,9 @@ $('.view-mode a').click(function(){
 ------------------------------ */  
 	 $( "#slider-range" ).slider({
 	 range: true,
-	 min: 15,
-	 max: 721,
-	 values: [ 15, 550 ],
+	 min: 1,
+	 max: 100,
+	 values: [ 1, 80 ],
 	 slide: function( event, ui ) {
 	  $( "#amount" ).val( "$" + ui.values[ 0 ] + " - "+ "$" + ui.values[ 1 ] );
 	  $('input[name="first_price"]').val('$' + ui.values[0]);

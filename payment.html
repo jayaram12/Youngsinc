@@ -500,17 +500,17 @@
 		<section class="page-content">
 			<!-- PAGE-BANNER START -->
 			<div class="breadcrumb">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<ol class="breadcrumb">
-								<li><a href="#"><img src="img/home.png" class="img-responsive"></a></li>
-								<li class="active"><span>View Claims</span></li>
-							</ol>
-						</div>
-					</div>
+						<div class="container">
+								<div class="row">
+									<div class="col-md-12">
+													<ol class="breadcrumb">
+															<li><a href="#"><img src="img/home.png" class="img-responsive"></a></li>
+														<li class="active"><span>Make Payment</span></li>
+													</ol>
+									</div>
+								</div>
+							</div>
 				</div>
-			</div>
 			<!-- PAGE-BANNER END -->
 			<!-- SHOPPING-CART-AREA START -->
 			<div class="shopping-cart-area margin-bottom-80">
@@ -519,366 +519,199 @@
 						<div class="col-md-12">
 							<span class="shop-border"></span>
 						</div>
+					
 						<div class="col-lg-6">
-							<p class="count-note"><span class="theme-txt-color">Note:</span> Items ordered in last 6 months</p>
+								<div class="col-md-12">
+									<div class="cart-head  mrg-btm-20">
+										<h2>Order Information</h2>
+									</div>
+								</div>
+								<div class="checkout-form">
+									<div class="col-lg-12">
+										<div class="form-group">
+											<label for="text">PO#</label>
+											<input type="text" class="form-control" name="canceldate" value="Rp Enterprises- Test Act.">
+										</div>
+									</div>
+									<div class="col-lg-12">
+											<div class="form-group">
+												<label for="text">Department # </label>
+												<input type="text" class="form-control" name="canceldate" value="5073 Ann Arbor Road">
+											</div>
+									</div>
+									<div class="col-lg-12">
+										<div class="form-group">
+											<label for="sel1">Ship Via</label>
+											<select class="form-control" id="sel1">
+												<option>Select Ship</option>
+												<option>Prepaid</option>
+												<option>Freight Collect</option>
+											</select>
+										</div>
+									</div>
+								</div>
 						</div>
 						<div class="col-lg-6">
-							<div class="promotion-btn text-right mrg-top-10 view-claim-btn">
-								<a href="#">Add Claim</a>
-							</div>
-						</div>
-						
-						<div class="view-claim-area-empty">
-							<div class="col-lg-12">
-								<p>There are no items shipped in the last 45 days. Please contact customer service at (800) 323-7799 if you need any assistance.</p>
-							</div>
-						</div>
-						<div class="view-claim-area">
-						<div class="col-lg-12">
-							<div class="product-toolbar btm-border">
-								<!-- Shop-menu -->
-								<div class="shop-menu view-mode">
-									<h3><i class="fa fa-filter"></i></h3>
-								</div>
-								<div class="short-by hidden-xs">
-									<span>sort by</span>
-									<select class="shop-select">
-										<option value="1">Ascending</option>
-										<option value="1">Descending</option>
-										<option value="1">Price</option>
-										<option value="1">By Item#</option>
-										<option value="1">By Newest Items</option>
-										<option value="1">By Availability</option>
-										<option value="1">Best Seller</option>
-									</select>
-								</div>
-								<div class="short-by showing hidden-xs">
-									<span>showing</span>
-									<select class="shop-select">
-										<option value="1">9</option>
-										<option value="1">15</option>
-										<option value="1">24</option>
-										<option value="1">30</option>
-										<option value="1">45</option>
-									</select>
-								</div>
-								<!-- Pagination -->
-								<div class="shop-pagination">
-									<ul>
-										<li class="active"><a href="#">1</a></li>
-										<li><a href="#">2</a></li>
-										<li><a href="#">3</a></li>
-										<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12"> 
-								<!-- Nav tabs -->
-								<div class="card mrg-top-15 checkout-address-tab">
-								  <ul class="nav nav-tabs" role="tablist">
-									<li role="presentation" class="active"><a href="#incomplete" aria-controls="home" role="tab" data-toggle="tab">  <span>Incomplete</span> <span class="count-active">17</span></a></li>
-									<li role="presentation"><a href="#submitted" aria-controls="messages" role="tab" data-toggle="tab"><span>Submitted</span> <span class="count-active">25</span></a></li>
-									<li role="presentation"><a href="#approved" aria-controls="messages" role="tab" data-toggle="tab"><span>Approved</span> <span class="count-active">30</span></a></li>
-								  </ul>
-								  
-								  <!-- Tab panes -->
-								  <div class="tab-content">
-									<div role="tabpanel" class="tab-pane active" id="incomplete">
-											<div class="table-content table-responsive mrg-top-10 view-claims-tbl">
-													<table>
-														<thead>
-															<tr>
-																<th>Claim#</th>
-																<th>Claim Dt</th>
-																<th>Total Claims$</th>
-																<th>Item(s)</th>
-																<th>Action</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<td>CL0143768</td>
-																<td>27/10/18</td>
-																<td>6</td>
-																<td>1</td>
-																<td>
-																	<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																	<a href="#" class="refresh"><i class="fa fa-plus"></i></a>
-																	<a href="#" class="refresh"><i class="fa fa-file-text-o"></i></a>
-																	<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																	<a href="#" class="refresh"><i class="fa fa-trash"></i></a>
-																</td>
-															</tr>
-															<tr>
-																	<td>CL0143788</td>
-																	<td>23/10/18</td>
-																	<td>5</td>
-																	<td>4</td>
-																	<td>
-																		<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																		<a href="#" class="refresh"><i class="fa fa-plus"></i></a>
-																		<a href="#" class="refresh"><i class="fa fa-file-text-o"></i></a>
-																		<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																		<a href="#" class="refresh"><i class="fa fa-trash"></i></a>
-																	</td>
-																</tr>
-																<tr>
-																		<td>CL0143757</td>
-																		<td>23/10/18</td>
-																		<td>8</td>
-																		<td>2</td>
-																		<td>
-																			<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																			<a href="#" class="refresh"><i class="fa fa-plus"></i></a>
-																			<a href="#" class="refresh"><i class="fa fa-file-text-o"></i></a>
-																			<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																			<a href="#" class="refresh"><i class="fa fa-trash"></i></a>
-																		</td>
-																	</tr>
-																	<tr>
-																			<td>CL0143718</td>
-																			<td>16/10/18</td>
-																			<td>30</td>
-																			<td>4</td>
-																			<td>
-																				<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																				<a href="#" class="refresh"><i class="fa fa-plus"></i></a>
-																				<a href="#" class="refresh"><i class="fa fa-file-text-o"></i></a>
-																				<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																				<a href="#" class="refresh"><i class="fa fa-trash"></i></a>
-																			</td>
-																		</tr>
-																		<tr>
-																				<td>CL0143768</td>
-																				<td>27/10/18</td>
-																				<td>6</td>
-																				<td>1</td>
-																				<td>
-																					<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																					<a href="#" class="refresh"><i class="fa fa-plus"></i></a>
-																					<a href="#" class="refresh"><i class="fa fa-file-text-o"></i></a>
-																					<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																					<a href="#" class="refresh"><i class="fa fa-trash"></i></a>
-																				</td>
-																			</tr>
-																			<tr>
-																					<td>CL0143788</td>
-																					<td>23/10/18</td>
-																					<td>5</td>
-																					<td>4</td>
-																					<td>
-																						<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																						<a href="#" class="refresh"><i class="fa fa-plus"></i></a>
-																						<a href="#" class="refresh"><i class="fa fa-file-text-o"></i></a>
-																						<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																						<a href="#" class="refresh"><i class="fa fa-trash"></i></a>
-																					</td>
-																				</tr>
-																				<tr>
-																						<td>CL0143757</td>
-																						<td>23/10/18</td>
-																						<td>8</td>
-																						<td>2</td>
-																						<td>
-																							<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																							<a href="#" class="refresh"><i class="fa fa-plus"></i></a>
-																							<a href="#" class="refresh"><i class="fa fa-file-text-o"></i></a>
-																							<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																							<a href="#" class="refresh"><i class="fa fa-trash"></i></a>
-																						</td>
-																					</tr>
-																					<tr>
-																							<td>CL0143718</td>
-																							<td>16/10/18</td>
-																							<td>30</td>
-																							<td>4</td>
-																							<td>
-																								<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																								<a href="#" class="refresh"><i class="fa fa-plus"></i></a>
-																								<a href="#" class="refresh"><i class="fa fa-file-text-o"></i></a>
-																								<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																								<a href="#" class="refresh"><i class="fa fa-trash"></i></a>
-																							</td>
-																						</tr>
-														</tbody>
-													</table>
-												</div>
+									<div class="col-md-12">
+										<div class="cart-head  mrg-btm-20">
+											<h2>Shipping address</h2>
+										</div>
 									</div>
-									<div role="tabpanel" class="tab-pane order-invoice" id="submitted">
-											<div class="table-content table-responsive mrg-top-10 view-claims-tbl">
-													<table>
-														<thead>
-															<tr>
-																<th>Claim#</th>
-																<th>Claim Dt</th>
-																<th>Total Claims$</th>
-																<th>Item(s)</th>
-																<th>Action</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<td>CL0143768</td>
-																<td>27/10/18</td>
-																<td>6</td>
-																<td>1</td>
-																<td>
-																	<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																	<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																</td>
-															</tr>
-															<tr>
-																	<td>CL0143788</td>
-																	<td>23/10/18</td>
-																	<td>5</td>
-																	<td>4</td>
-																	<td>
-																		<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																		<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																	</td>
-																</tr>
-																<tr>
-																		<td>CL0143757</td>
-																		<td>23/10/18</td>
-																		<td>8</td>
-																		<td>2</td>
-																		<td>
-																			<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																			<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																		</td>
-																	</tr>
-																	<tr>
-																			<td>CL0143718</td>
-																			<td>16/10/18</td>
-																			<td>30</td>
-																			<td>4</td>
-																			<td>
-																				<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																				<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																			</td>
-																		</tr>
-																		<tr>
-																				<td>CL0143768</td>
-																				<td>27/10/18</td>
-																				<td>6</td>
-																				<td>1</td>
-																				<td>
-																					<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																					<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																				</td>
-																			</tr>
-																			<tr>
-																					<td>CL0143788</td>
-																					<td>23/10/18</td>
-																					<td>5</td>
-																					<td>4</td>
-																					<td>
-																						<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																						<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																					</td>
-																				</tr>
-																				<tr>
-																						<td>CL0143757</td>
-																						<td>23/10/18</td>
-																						<td>8</td>
-																						<td>2</td>
-																						<td>
-																							<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																							<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																						</td>
-																					</tr>	
-																			
-														</tbody>
-													</table>
+									<div class="checkout-form">
+											<div class="col-lg-12">
+												<div class="form-radio-block">
+													<div class="form-check pad-left-0 mrg-rgt-50 show-yes-1">
+														<label>
+															<input type="radio" name="radio"> <span class="label-text">Use Existing terms - 30</span>
+														</label>
+													</div>
+													<div class="form-check pad-left-0 show-no-1">
+														<label>
+															<input type="radio" name="radio"> <span class="label-text">Choose existing card</span>
+														</label>
+													</div>
+													<div class="form-check pad-left-0 show-no-1">
+														<label>
+															<input type="radio" name="radio"> <span class="label-text">Pay with new credit card</span>
+														</label>
+													</div>
 												</div>
-									</div>
-									<div role="tabpanel" class="tab-pane" id="approved">
-											<div class="table-content table-responsive mrg-top-10 view-claims-tbl">
-													<table>
-														<thead>
-															<tr>
-																<th>Claim#</th>
-																<th>Claim Dt</th>
-																<th>Total Claims$</th>
-																<th>Item(s)</th>
-																<th>Action</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<td>CL0143768</td>
-																<td>27/10/18</td>
-																<td>6</td>
-																<td>1</td>
-																<td>
-																	<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																	<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-															</tr>
-															<tr>
-																	<td>CL0143788</td>
-																	<td>23/10/18</td>
-																	<td>5</td>
-																	<td>4</td>
-																	<td>
-																		<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																		<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																	</td>
-																</tr>
-																<tr>
-																		<td>CL0143757</td>
-																		<td>23/10/18</td>
-																		<td>8</td>
-																		<td>2</td>
-																		<td>
-																			<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																			<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																		</td>
-																	</tr>
-																	<tr>
-																			<td>CL0143718</td>
-																			<td>16/10/18</td>
-																			<td>30</td>
-																			<td>4</td>
-																			<td>
-																				<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																				<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																			</td>
-																		</tr>
-																		<tr>
-																				<td>CL0143768</td>
-																				<td>27/10/18</td>
-																				<td>6</td>
-																				<td>1</td>
-																				<td>
-																					<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																					<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																				</td>
-																			</tr>
-																			<tr>
-																					<td>CL0143788</td>
-																					<td>23/10/18</td>
-																					<td>5</td>
-																					<td>4</td>
-																					<td>
-																						<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																						<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																					</td>
-																				</tr>
-																			
-														</tbody>
-													</table>
+											</div>
+											<div class="col-lg-12">
+												<div class="form-group">
+													<label for="text">Card # </label>
+													<input type="text" class="form-control" name="canceldate" value="Rp Enterprises- Test Act.">
 												</div>
-									</div>
-								</div>
+											</div>
+											<div class="col-lg-4">
+													<div class="form-group">
+														<label for="sel1">Exp. date</label>
+														<select class="form-control" id="sel1">
+															<option value="">Select Month</option>
+																<option value="1">JAN</option>
+																<option value="2">FEB</option>
+																<option value="3">MAR</option>
+																<option value="4">APR</option>
+																<option value="5">MAY</option>
+																<option value="6">JUN</option>
+																<option value="7">JUL</option>
+																<option value="8">AUG</option>
+																<option value="9">SEP</option>
+																<option value="10">OCT</option>
+																<option value="11">NOV</option>
+																<option value="12">DEC</option>
+														</select>
+													</div>
+											</div>
+											<div class="col-lg-4">
+													<div class="form-group">
+														<label for="sel1">&nbsp;</label>
+														<select class="form-control" id="sel1">
+																<option value="">Select Year</option>
+																<option value="2018">2018</option>
+																<option value="2019">2019</option>
+																<option value="2020">2020</option>
+																<option value="2021">2021</option>
+																<option value="2022">2022</option>
+																<option value="2023">2023</option>
+																<option value="2024">2024</option>
+																<option value="2025">2025</option>
+																<option value="2026">2026</option>
+																<option value="2027">2027</option>
+														</select>
+													</div>
+											</div>
+											<div class="col-lg-4">
+													<div class="form-group">
+														<label for="text">CVV </label>
+														<input type="text" class="form-control" name="canceldate" value="5073 Ann Arbor Road">
+													</div>
+											</div>
+											<div class="col-lg-4">
+													<div class="form-group">
+														<label for="text">Name on card </label>
+														<input type="text" class="form-control" name="canceldate">
+													</div>
+											</div>
+											<div class="col-lg-4">
+													<div class="form-group">
+														<label for="text">Address 1 </label>
+														<input type="text" class="form-control" name="canceldate">
+													</div>
+											</div>
+											<div class="col-lg-4">
+													<div class="form-group">
+														<label for="text">Address 2 </label>
+														<input type="text" class="form-control" name="canceldate">
+													</div>
+											</div>
+											
+											<div class="col-lg-6">
+													<div class="form-group">
+														<label for="sel1">Country</label>
+														<select class="form-control" id="sel1">
+															<option>USA</option>
+															<option>CHINA</option>
+															<option>JAPAN</option>
+															<option>PERU</option>
+														</select>
+													</div>
+												</div>
+											<div class="col-lg-6">
+													<div class="form-group">
+														<label for="sel1">State</label>
+														<select class="form-control" id="sel1">
+																<option value="0">Select State</option>
+																<option value="AK">Alaska</option>
+																<option value="AL">Alabama</option>
+																<option value="AR">Arkansas</option>
+																<option value="AZ">Arizona</option>
+																<option value="BC">British Columbia</option>
+																<option value="CA">California</option>
+																<option value="CO">Colorado</option>
+																<option value="CT">Connecticut</option>
+																<option value="DC">Washington DC</option>
+																<option value="DE">Delaware</option>
+																<option value="FL">Florida</option>
+																<option value="GA">Georgia</option>
+																<option value="HI">Hawaii</option>
+																<option value="IA">Iowa</option>
+																<option value="ID">Idaho</option>
+																<option value="IL">Illinois</option>
+																<option value="IN">Indiana</option>
+																<option value="KS">Kansas</option>
+																<option value="KY">Kentucky</option>
+																<option value="LA">Louisiana</option>
+																<option value="MA">Massachusetts</option>
+																<option value="MD">Maryland</option>
+																<option value="ME">Maine</option>
+														</select>
+													</div>
+											</div>
+											<div class="col-lg-6">
+													<div class="form-group">
+														<label for="text">City </label>
+														<input type="text" class="form-control" name="canceldate">
+													</div>
+											</div>
+											
+											
+											<div class="col-lg-6">
+													<div class="form-group">
+														<label for="text">Zip </label>
+														<input type="text" class="form-control" name="canceldate">
+													</div>
+											</div>
+										</div>
+						</div>
+						<div class="col-md-12">
+								<span class="shop-border"></span>
 							</div>
-						 </div>
-						 </div>
-						<!-- <div class="col-md-12 text-center mrg-top-15">
+						<div class="col-md-12 text-center mrg-top-15">
 								<div class="promotion-btn">
-									<a href="#" class="mrg-rgt-10">Submit</a><a href="#">Continue Shopping</a>
+									<a href="#" class="mrg-rgt-10">Submit</a>
 								</div>
-						</div> -->
+						</div>
 					</div>
 				</div>
 			</div>
@@ -997,20 +830,6 @@
 		<!-- plugins js -->
         <script src="js/plugins.js"></script>
 		<!-- main js -->
-		<script src="js/main.js"></script>
-		<script>
-				$(document).ready(function(){
-					
-					$(".view-claim-area").show();
-					$(".view-claim-area-empty").hide();
-
-					$(".view-claim-btn").click(function(){
-						$(".view-claim-area").hide();
-						$(".view-claim-area-empty").show();
-					});
-					
-				});
-
-				</script>
+        <script src="js/main.js"></script>
     </body>
 </html>

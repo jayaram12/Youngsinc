@@ -502,11 +502,19 @@
 			<div class="breadcrumb">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12">
+						<div class="col-md-8">
 							<ol class="breadcrumb">
 								<li><a href="#"><img src="img/home.png" class="img-responsive"></a></li>
 								<li class="active"><span>View Claims</span></li>
 							</ol>
+						</div>
+						<div class="col-md-4">
+								<div class="shop-menu view-mode pull-right filter-sort" id="filter">
+										<h3><span><i class="fa fa-filter"></i></span> Filter</h3>
+									</div>
+									<div class="shop-menu view-mode pull-right filter-sort" id="sort">
+											<h3><span><i class="fa fa-random"></i></span> Sort</h3>
+										</div>
 						</div>
 					</div>
 				</div>
@@ -523,9 +531,9 @@
 							<p class="count-note"><span class="theme-txt-color">Note:</span> Items ordered in last 6 months</p>
 						</div>
 						<div class="col-lg-6">
-							<div class="promotion-btn text-right mrg-top-10 view-claim-btn">
-								<a href="#">Add Claim</a>
-							</div>
+								<div class="promotion-btn text-right view-claim-btn mrg-top-10">
+										<a href="claims-list-allitems.html">Add Claim Item</a>
+									</div>
 						</div>
 						
 						<div class="view-claim-area-empty">
@@ -537,31 +545,22 @@
 						<div class="col-lg-12">
 							<div class="product-toolbar btm-border">
 								<!-- Shop-menu -->
-								<div class="shop-menu view-mode">
-									<h3><i class="fa fa-filter"></i></h3>
-								</div>
-								<div class="short-by hidden-xs">
-									<span>sort by</span>
-									<select class="shop-select">
-										<option value="1">Ascending</option>
-										<option value="1">Descending</option>
-										<option value="1">Price</option>
-										<option value="1">By Item#</option>
-										<option value="1">By Newest Items</option>
-										<option value="1">By Availability</option>
-										<option value="1">Best Seller</option>
-									</select>
-								</div>
+								
 								<div class="short-by showing hidden-xs">
-									<span>showing</span>
-									<select class="shop-select">
-										<option value="1">9</option>
-										<option value="1">15</option>
-										<option value="1">24</option>
-										<option value="1">30</option>
-										<option value="1">45</option>
-									</select>
-								</div>
+										<span>showing</span>
+										<select class="shop-select">
+											<option value="1">10</option>
+											<option value="1">20</option>
+											<option value="1">30</option>
+											<option value="1">40</option>
+											<option value="1">50</option>
+											<option value="1">60</option>
+											<option value="1">70</option>
+											<option value="1">80</option>
+											<option value="1">90</option>
+											<option value="1">100</option>
+										</select>
+									</div>
 								<!-- Pagination -->
 								<div class="shop-pagination">
 									<ul>
@@ -575,9 +574,9 @@
 						</div>
 						<div class="col-md-12"> 
 								<!-- Nav tabs -->
-								<div class="card mrg-top-15 checkout-address-tab">
+								<div class="card mrg-top-15 checkout-address-tab tab-view-3">
 								  <ul class="nav nav-tabs" role="tablist">
-									<li role="presentation" class="active"><a href="#incomplete" aria-controls="home" role="tab" data-toggle="tab">  <span>Incomplete</span> <span class="count-active">17</span></a></li>
+									<li role="presentation" class="active"><a href="#incomplete" aria-controls="home" role="tab" data-toggle="tab">  <span>Incomplete</span> <span class="count-active">2</span></a></li>
 									<li role="presentation"><a href="#submitted" aria-controls="messages" role="tab" data-toggle="tab"><span>Submitted</span> <span class="count-active">25</span></a></li>
 									<li role="presentation"><a href="#approved" aria-controls="messages" role="tab" data-toggle="tab"><span>Approved</span> <span class="count-active">30</span></a></li>
 								  </ul>
@@ -585,125 +584,77 @@
 								  <!-- Tab panes -->
 								  <div class="tab-content">
 									<div role="tabpanel" class="tab-pane active" id="incomplete">
-											<div class="table-content table-responsive mrg-top-10 view-claims-tbl">
-													<table>
-														<thead>
-															<tr>
-																<th>Claim#</th>
-																<th>Claim Dt</th>
-																<th>Total Claims$</th>
-																<th>Item(s)</th>
-																<th>Action</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<td>CL0143768</td>
-																<td>27/10/18</td>
-																<td>6</td>
-																<td>1</td>
-																<td>
-																	<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																	<a href="#" class="refresh"><i class="fa fa-plus"></i></a>
-																	<a href="#" class="refresh"><i class="fa fa-file-text-o"></i></a>
-																	<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																	<a href="#" class="refresh"><i class="fa fa-trash"></i></a>
-																</td>
-															</tr>
-															<tr>
-																	<td>CL0143788</td>
-																	<td>23/10/18</td>
-																	<td>5</td>
-																	<td>4</td>
-																	<td>
-																		<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																		<a href="#" class="refresh"><i class="fa fa-plus"></i></a>
-																		<a href="#" class="refresh"><i class="fa fa-file-text-o"></i></a>
-																		<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																		<a href="#" class="refresh"><i class="fa fa-trash"></i></a>
-																	</td>
-																</tr>
-																<tr>
-																		<td>CL0143757</td>
-																		<td>23/10/18</td>
-																		<td>8</td>
-																		<td>2</td>
-																		<td>
-																			<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																			<a href="#" class="refresh"><i class="fa fa-plus"></i></a>
-																			<a href="#" class="refresh"><i class="fa fa-file-text-o"></i></a>
-																			<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																			<a href="#" class="refresh"><i class="fa fa-trash"></i></a>
-																		</td>
-																	</tr>
-																	<tr>
-																			<td>CL0143718</td>
-																			<td>16/10/18</td>
-																			<td>30</td>
-																			<td>4</td>
-																			<td>
-																				<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																				<a href="#" class="refresh"><i class="fa fa-plus"></i></a>
-																				<a href="#" class="refresh"><i class="fa fa-file-text-o"></i></a>
-																				<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																				<a href="#" class="refresh"><i class="fa fa-trash"></i></a>
-																			</td>
-																		</tr>
-																		<tr>
-																				<td>CL0143768</td>
-																				<td>27/10/18</td>
-																				<td>6</td>
-																				<td>1</td>
+											
+													
+													<div class="col-md-12">
+															<div class="table-content table-responsive cart-table mrg-top-10">
+																	<table>
+																		<thead>
+																			<tr>
+																				<th class="product-thumbnail">Image</th>
+																				<th class="product-id">Item Number</th>
+																				<th class="product-description">Description</th>
+																				<th class="product-availability">Invoice#</th>
+																				<th class="product-quantity">CI-Qty</th>
+																				<th class="product-price">Price</th>
+																				<th class="product-total">Ext</th>
+																				<th class="product-remove">Claim Code</th>
+																				<th>Action</th>
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td class="product-thumbnail"><a href="#"><img src="img/shop/23.jpg" alt=""></a></td>
+																				<td class="product-id"><a href="#">19053</a></td>
+																				<td class="product-description">
+																						Ceramic Coffee Jar
+																				</td>
+																				<td class="product-availability">714458-1</td>
+																				<td class="product-quantity">1</td>
+																				<td class="product-price"><span class="amount">$3.50</span></td>
+																				<td class="product-subtotal">$1.00</td>
+																				<td class="product-remove" style="width:150px;">Did not Order(Not Changed)</td>
 																				<td>
-																					<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																					<a href="#" class="refresh"><i class="fa fa-plus"></i></a>
-																					<a href="#" class="refresh"><i class="fa fa-file-text-o"></i></a>
-																					<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
+																					<a href="adding-claim.html" class="refresh"><i class="fa fa-edit"></i></a>
 																					<a href="#" class="refresh"><i class="fa fa-trash"></i></a>
 																				</td>
 																			</tr>
 																			<tr>
-																					<td>CL0143788</td>
-																					<td>23/10/18</td>
-																					<td>5</td>
-																					<td>4</td>
+																					<td class="product-thumbnail"><a href="#"><img src="img/shop/20.jpg" alt=""></a></td>
+																					<td class="product-id"><a href="#">18421</a></td>
+																					
+																					<td class="product-description">
+																							Wood Coffee Tray/Wall Sign
+																					</td>
+																					<td class="product-availability">714558-1</td>
+																					<td class="product-quantity">1</td>
+																					<td class="product-price"><span class="amount">$12.50</span></td>
+																					<td class="product-subtotal">$2.00</td>
+																					<td class="product-remove" style="width:150px;">Did not Order(Not Changed)</td>
 																					<td>
-																						<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																						<a href="#" class="refresh"><i class="fa fa-plus"></i></a>
-																						<a href="#" class="refresh"><i class="fa fa-file-text-o"></i></a>
-																						<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
+																						<a href="#" class="refresh"><i class="fa fa-edit"></i></a>
 																						<a href="#" class="refresh"><i class="fa fa-trash"></i></a>
 																					</td>
 																				</tr>
-																				<tr>
-																						<td>CL0143757</td>
-																						<td>23/10/18</td>
-																						<td>8</td>
-																						<td>2</td>
-																						<td>
-																							<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																							<a href="#" class="refresh"><i class="fa fa-plus"></i></a>
-																							<a href="#" class="refresh"><i class="fa fa-file-text-o"></i></a>
-																							<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																							<a href="#" class="refresh"><i class="fa fa-trash"></i></a>
-																						</td>
-																					</tr>
-																					<tr>
-																							<td>CL0143718</td>
-																							<td>16/10/18</td>
-																							<td>30</td>
-																							<td>4</td>
-																							<td>
-																								<a href="claims-list-items.html" class="refresh"><i class="fa fa-list"></i></a>
-																								<a href="#" class="refresh"><i class="fa fa-plus"></i></a>
-																								<a href="#" class="refresh"><i class="fa fa-file-text-o"></i></a>
-																								<a href="#" class="refresh"><i class="fa fa-share-alt"></i></a>
-																								<a href="#" class="refresh"><i class="fa fa-trash"></i></a>
-																							</td>
-																						</tr>
-														</tbody>
-													</table>
-												</div>
+																		</tbody>
+																	</table>
+																</div>
+														</div>
+														<!-- <div class="col-lg-4">
+																<a href="checkout-details.html">
+																	<div class="showaddress dashed-border-2 shipper-block">
+																		<div class="add-plus">
+																			<i class="fa fa-plus"></i>
+																			<p class="text-center">Add Address</p>
+																		</div>
+																	</div>
+																</a>
+															</div> -->
+														<div class="col-md-12 text-center mrg-top-15">
+																<div class="promotion-btn">
+																	<a href="#" class="mrg-rgt-10">Submit Claim</a>
+																</div>
+														</div>
 									</div>
 									<div role="tabpanel" class="tab-pane order-invoice" id="submitted">
 											<div class="table-content table-responsive mrg-top-10 view-claims-tbl">

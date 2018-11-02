@@ -502,20 +502,11 @@
 			<div class="breadcrumb">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-8">
+						<div class="col-md-12">
 							<ol class="breadcrumb">
 								<li><a href="#"><img src="img/home.png" class="img-responsive"></a></li>
-								<li><a href="#">Account</a></li>
-								<li class="active"><span>Invoices</span></li>
+								<li class="active"><span>Order Placed</span></li>
 							</ol>
-						</div>
-						<div class="col-md-4">
-								<div class="shop-menu view-mode pull-right filter-sort" id="filter">
-										<h3><span><i class="fa fa-filter"></i></span> Filter</h3>
-									</div>
-									<div class="shop-menu view-mode pull-right filter-sort" id="sort">
-											<h3><span><i class="fa fa-random"></i></span> Sort</h3>
-										</div>
 						</div>
 					</div>
 				</div>
@@ -528,111 +519,24 @@
 						<div class="col-md-12">
 							<span class="shop-border"></span>
 						</div>
-						<div class="col-md-12">
-								<div class="cart-head">
-									<h2>Please select the invoice from and to dates</h2>
-								</div>
+						<div class="succress-message">
+							<div class="success-img">
+								<img src="img/success.png" class="img-responsive" alt="">
+								<p>Finally your order is been placed!!!</p>
+								<ul>
+									<li><strong>Order No:</strong> 700562</li>
+									<li>|</li>
+									<li><strong>Order$:</strong> 250</li>
+									<li>|</li>
+									<li><a href="#"><strong>Share</strong></a></li>
+								</ul>
 							</div>
-							<div class="col-md-2 col-lg-2">
-								<div class="mrg-top-15">
-									<p><strong>Past Due: $0.00</strong></p>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-2">
-								<div class="form-inline mrg-top-10">
-								<div class="form-group">
-											<label for="text">If multi ship enter Zip</label>
-											<input type="text" class="form-control"  name="shipdate">
-										  </div>
-										</div>	
-							</div>
-							<div class="col-md-8 col-lg-6 text-right">
-								<div class="form-inline mrg-top-8">
-									<div class="form-group">
-									  <label for="text">From Date :</label>
-									  <input type="text" class="form-control"  name="shipdate">
-									</div>
-									<div class="form-group">
-									  <label for="text">To Date : </label>
-									  <input type="text" class="form-control" name="canceldate">
-									</div>
-									<div class="form-group promotion-btn">
-										<a href="#">Go</a>
-									</div>
-								</div>
-							</div>
-								<div class="col-md-12">
-									<div class="table-content table-responsive invoice-table mrg-top-10">
-											<table>
-												<thead>
-													<tr>
-														<th></th>
-														<th>Invoice #</th>
-														<th>PO #</th>
-														<th>Invoice Dt.</th>
-														<th>Invoice $</th>
-														<th>Due Dt.</th>
-														<th>Balance Due</th>
-														<th class="shipto">Ship To</th>
-														<th>Ship Via</th>
-														<th>Tracking #</th>
-														<th class="paynow">Pay Now</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td><a href="#" class="refresh"><i class="fa fa-plus"></i></a></td>
-														<td>712398-1</td>
-														<td>cool beanz</td>
-														<td>4/24/2018</td>
-														<td>271.80</td>
-														<td>05/24/2018</td>
-														<td>0.00</td>
-														<td>Rp Enterprises- Test Act., 5073 Ann Arbor Do Not Mail, Ann Arbor, MI 48197</td>
-														<td>FedEx Ground</td>
-														<td></td>
-														<td>
-															<div class="form-check">
-																<label>
-																	<input type="checkbox" name="check"> <span class="label-text"></span>
-																</label>
-															</div>
-															<div class="form-group">
-																<input type="text" class="form-control" name="canceldate">
-															 </div>
-														</td>
-													</tr>
-													<tr>
-															<td><a href="#" class="refresh"><i class="fa fa-plus"></i></a></td>
-															<td>714840-1</td>
-															<td></td>
-															<td>5/25/2018</td>
-															<td>399.15</td>
-															<td>08/23/2018</td>
-															<td>0.00</td>
-															<td>ABBU RAMAN, 6430 EDGEBROOK CT , MASON, OH 45040</td>
-															<td>FedEx Ground</td>
-															<td>433714703430</td>
-															<td>
-																<div class="form-check">
-																	<label>
-																		<input type="checkbox" name="check"> <span class="label-text"></span>
-																	</label>
-																</div>
-																<div class="form-group">
-																	<input type="text" class="form-control" name="canceldate">
-																 </div>
-															</td>
-														</tr>
-												</tbody>
-											</table>
-										</div>
-								</div>
-						<!-- <div class="col-md-12 text-center mrg-top-15">
+						</div>
+						<div class="col-md-12 text-center mrg-top-15">
 								<div class="promotion-btn">
-									<a href="#" class="mrg-rgt-10">Submit</a><a href="#">Continue Shopping</a>
+									<a href="select-shipping-address.html" class="mrg-rgt-10">Submit Order</a>
 								</div>
-						</div> -->
+						</div>
 					</div>
 				</div>
 			</div>
@@ -751,18 +655,6 @@
 		<!-- plugins js -->
         <script src="js/plugins.js"></script>
 		<!-- main js -->
-		<script src="js/main.js"></script>
-		<script>
-			$(document).ready(function(){
-				$("#tbl-des").hide();
-				$("#tbl-des2").hide();
-				$("#tbl-view").click(function(){
-					$("#tbl-des").slideToggle();
-				});
-				$("#tbl-view2").click(function(){
-					$("#tbl-des2").slideToggle();
-				});
-			});
-		</script>
+        <script src="js/main.js"></script>
     </body>
 </html>

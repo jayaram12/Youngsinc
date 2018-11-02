@@ -502,12 +502,20 @@
 			<div class="breadcrumb">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12">
+						<div class="col-md-8">
 							<ol class="breadcrumb">
 								<li><a href="#"><img src="img/home.png" class="img-responsive"></a></li>
 								<li><a href="#">Account</a></li>
 								<li class="active"><span>Orders</span></li>
 							</ol>
+						</div>
+						<div class="col-md-4">
+								<div class="shop-menu view-mode pull-right filter-sort" id="filter">
+										<h3><span><i class="fa fa-filter"></i></span> Filter</h3>
+									</div>
+									<div class="shop-menu view-mode pull-right filter-sort" id="sort">
+											<h3><span><i class="fa fa-random"></i></span> Sort</h3>
+										</div>
 						</div>
 					</div>
 				</div>
@@ -520,141 +528,639 @@
 						<div class="col-md-12">
 							<span class="shop-border"></span>
 						</div>
-						<div class="col-md-12">
-								<div class="cart-head">
-									<h2>Please select the order from and to dates</h2>
-								</div>
-							</div>
-							<!-- <div class="col-lg-5 col-md-4">
-								<div class="form-inline mrg-top-10">
-								<div class="form-group">
-											<label for="text">If multi ship enter Zip</label>
-											<input type="text" class="form-control"  name="shipdate">
-										  </div>
-										</div>	
-							</div> -->
-							<div class="col-md-12 col-lg-12 text-right">
-								<div class="form-inline mrg-top-8">
-									<div class="form-group">
-									  <label for="text">From Date :</label>
-									  <input type="text" class="form-control"  name="shipdate">
-									</div>
-									<div class="form-group">
-									  <label for="text">To Date : </label>
-									  <input type="text" class="form-control" name="canceldate">
-									</div>
-									<div class="form-group promotion-btn">
-										<a href="#">Go</a>
-									</div>
-								</div>
-							</div>
-								<div class="col-md-12">
-									<div class="table-content table-responsive mrg-top-10">
-											<table>
-												<thead>
-													<tr>
-														<th>Order #</th>
-														<th>PO #</th>
-														<th>Order Dt.</th>
-														<th>Order $</th>
-														<th>Status</th>
-														<th>Pmt. Terms</th>
-														<th>Ship To</th>
-														<th>Req. Ship Dt.</th>
-														<th>Cancel Dt.</th>
-														<th>Est. Ship Dt.</th>
-														<th>Action</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>728409-0</td>
-														<td>Test</td>
-														<td>10/11/2018</td>
-														<td>657.75</td>
-														<td></td>
-														<td>Net 30</td>
-														<td>Rp Enterprises- Test Act., 5073 Ann Arbor Do Not Mail, Dundee, MI 48197</td>
-														<td>10/15/2018</td>
-														<td>12/14/2018</td>
-														<td></td>
-														<td><a href="#" id="tbl-view" class="refresh"><i class="fa fa-bars"></i></a></td>
-													</tr>
-													<tr id="tbl-des">
-														<td colspan="11">
-																<div class="table-content table-responsive tbl-ord-des mrg-top-10">
-																		<table>
-																			<thead>
-																				<tr>
-																					<th class="product-thumbnail">Image</th>
-																					<th class="product-id">Item Number</th>
-																					<th class="product-description">Description</th>
-																					<th class="product-price">Price</th>
-																					<th class="product-total">Ext</th>
-																				</tr>
-																			</thead>
-																			<tbody>
-																				<tr>
-																					<td class="product-thumbnail"><a href="#"><img src="img/shop/23.jpg" alt=""></a></td>
-																					<td class="product-id"><a href="#">19053</a></td>
-																					<td class="product-description">
-																							Ceramic Coffee Jar
-																					</td>
-																					<td class="product-price"><span class="amount">$3.50</span></td>
-																					<td class="product-subtotal">$1.00</td>
-																				</tr>
-																			</tbody>
-																		</table>
-																	</div>
-
-														</td>
-													</tr>
-													<tr>
-															<td>728409-0</td>
-															<td>Test</td>
-															<td>10/11/2018</td>
-															<td>657.75</td>
-															<td></td>
-															<td>Net 30</td>
-															<td>Rp Enterprises- Test Act., 5073 Ann Arbor Do Not Mail, Dundee, MI 48197</td>
-															<td>10/15/2018</td>
-															<td>12/14/2018</td>
-															<td></td>
-															<td><a href="#" id="tbl-view2" class="refresh"><i class="fa fa-bars"></i></a></td>
-														</tr>
-														<tr id="tbl-des2">
-															<td colspan="11">
-																	<div class="table-content table-responsive cart-table mrg-top-10">
-																			<table>
-																				<thead>
-																					<tr>
-																						<th class="product-thumbnail">Image</th>
-																						<th class="product-id">Item Number</th>
-																						<th class="product-description">Description</th>
-																						<th class="product-price">Price</th>
-																						<th class="product-total">Ext</th>
-																					</tr>
-																				</thead>
-																				<tbody>
-																					<tr>
-																						<td class="product-thumbnail"><a href="#"><img src="img/shop/23.jpg" alt=""></a></td>
-																						<td class="product-id"><a href="#">19053</a></td>
-																						<td class="product-description">
-																								Ceramic Coffee Jar
-																						</td>
-																						<td class="product-price"><span class="amount">$3.50</span></td>
-																						<td class="product-subtotal">$1.00</td>
-																					</tr>
-																				</tbody>
-																			</table>
-																		</div>
-
-															</td>
-														</tr>
-												</tbody>
-											</table>
+						<div id="tab-viw-2">
+							<div class="col-md-12">
+								<div class="tab" role="tabpanel">
+									<!-- Nav tabs -->
+									<ul class="nav nav-tabs" role="tablist">
+										<li role="presentation" class="active"><a href="#submittedOrders" aria-controls="home" role="tab" data-toggle="tab">Submitted</a></li>
+										<li role="presentation"><a href="#ScheduledOrder" aria-controls="profile" role="tab" data-toggle="tab">Scheduled</a></li>
+									</ul>
+									<!-- Tab panes -->
+									<div class="tab-content tabs">
+										<div role="tabpanel" class="tab-pane fade in active" id="submittedOrders">
+											<!-- tab area start -->
+											<div class="col-md-12">
+													<div class="cart-head">
+														<h2>Please select the order from and to dates</h2>
+													</div>
+												</div>
+												<!-- <div class="col-lg-5 col-md-4">
+													<div class="form-inline mrg-top-10">
+													<div class="form-group">
+																<label for="text">If multi ship enter Zip</label>
+																<input type="text" class="form-control"  name="shipdate">
+															  </div>
+															</div>	
+												</div> -->
+												<div class="col-lg-6">
+													<div class="form-inline mrg-top-8">
+														<div class="form-group">
+														  <label for="text">From Date :</label>
+														  <input type="text" class="form-control"  name="shipdate">
+														</div>
+														<div class="form-group">
+														  <label for="text">To Date : </label>
+														  <input type="text" class="form-control" name="canceldate">
+														</div>
+														<div class="form-group promotion-btn">
+															<a href="#">Go</a>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+														<!-- pagination -->
+														<div class="shop-pagination mrg-top-10">
+																<ul>
+																	<li class="active"><a href="#">1</a></li>
+																	<li><a href="#">2</a></li>
+																	<li><a href="#">3</a></li>
+																	<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+																</ul>
+															</div>
+											</div>
+													<div class="col-md-12">
+														<div class="table-content table-responsive mrg-top-10">
+																<table>
+																	<thead>
+																		<tr>
+																			<th></th>
+																			<th>Order #</th>
+																			<th>PO #</th>
+																			<th>Order Dt.</th>
+																			<th>Order $</th>
+																			<th>Status</th>
+																			<th>Pmt. Terms</th>
+																			<th>Ship To</th>
+																			<th>Req. Ship Dt.</th>
+																			<th>Cancel Dt.</th>
+																			<th>Est. Ship Dt.</th>
+																			
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td><a href="#" id="tbl-view" class="refresh"><i class="fa fa-plus"></i></a></td>
+																			<td>728409-0</td>
+																			<td>Test</td>
+																			<td>10/11/2018</td>
+																			<td>657.75</td>
+																			<td></td>
+																			<td>Net 30</td>
+																			<td>Rp Enterprises- Test Act., 5073 Ann Arbor Do Not Mail, Dundee, MI 48197</td>
+																			<td>10/15/2018</td>
+																			<td>12/14/2018</td>
+																			<td></td>
+																			
+																		</tr>
+																		<tr id="tbl-des">
+																			<td colspan="11">
+																				<div class="col-lg-2">
+																					<div class="claim-item-body">
+																						<h2>17031</h2>
+																						<a href="#">
+																							<img src="img/shop/30.jpg" class="img-responsive">
+																						</a>
+																						<div class="claim-desc-body">
+																							<h3>Ceramic 4pc Canister Set</h3>
+																						</div>
+																						<div class="order-list">
+																							<ul>
+																								<li><strong>Price:</strong> $3.50</li>
+																								<li><strong>Ext:</strong> $1.00</li>
+																								<li><strong>Qty:</strong> 2</li>
+																							</ul>
+																						</div>
+																						<div class="claims-item-more" style="display: none;">
+																							<ul>
+																								<li><i class="fa fa-edit"></i><br>Edit</li>
+																								<li><i class="fa fa-trash"></i><br>Delete</li>
+																							</ul>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="col-lg-2">
+																						<div class="claim-item-body">
+																							<h2>17031</h2>
+																							<a href="#">
+																								<img src="img/shop/30.jpg" class="img-responsive">
+																							</a>
+																							<div class="claim-desc-body">
+																								<h3>Ceramic 4pc Canister Set</h3>
+																							</div>
+																							<div class="order-list">
+																								<ul>
+																									<li><strong>Price:</strong> $3.50</li>
+																									<li><strong>Ext:</strong> $1.00</li>
+																									<li><strong>Qty:</strong> 2</li>
+																								</ul>
+																							</div>
+																							<div class="claims-item-more" style="display: none;">
+																								<ul>
+																									<li><i class="fa fa-edit"></i><br>Edit</li>
+																									<li><i class="fa fa-trash"></i><br>Delete</li>
+																								</ul>
+																							</div>
+																						</div>
+																					</div>
+																					<div class="col-lg-2">
+																							<div class="claim-item-body">
+																								<h2>17031</h2>
+																								<a href="#">
+																									<img src="img/shop/30.jpg" class="img-responsive">
+																								</a>
+																								<div class="claim-desc-body">
+																									<h3>Ceramic 4pc Canister Set</h3>
+																								</div>
+																								<div class="order-list">
+																									<ul>
+																										<li><strong>Price:</strong> $3.50</li>
+																										<li><strong>Ext:</strong> $1.00</li>
+																										<li><strong>Qty:</strong> 2</li>
+																									</ul>
+																								</div>
+																								<div class="claims-item-more" style="display: none;">
+																									<ul>
+																										<li><i class="fa fa-edit"></i><br>Edit</li>
+																										<li><i class="fa fa-trash"></i><br>Delete</li>
+																									</ul>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="col-lg-2">
+																								<div class="claim-item-body">
+																									<h2>17031</h2>
+																									<a href="#">
+																										<img src="img/shop/30.jpg" class="img-responsive">
+																									</a>
+																									<div class="claim-desc-body">
+																										<h3>Ceramic 4pc Canister Set</h3>
+																									</div>
+																									<div class="order-list">
+																										<ul>
+																											<li><strong>Price:</strong> $3.50</li>
+																											<li><strong>Ext:</strong> $1.00</li>
+																											<li><strong>Qty:</strong> 2</li>
+																										</ul>
+																									</div>
+																									<div class="claims-item-more" style="display: none;">
+																										<ul>
+																											<li><i class="fa fa-edit"></i><br>Edit</li>
+																											<li><i class="fa fa-trash"></i><br>Delete</li>
+																										</ul>
+																									</div>
+																								</div>
+																							</div>
+																							<div class="col-lg-2">
+																									<div class="claim-item-body">
+																										<h2>17031</h2>
+																										<a href="#">
+																											<img src="img/shop/30.jpg" class="img-responsive">
+																										</a>
+																										<div class="claim-desc-body">
+																											<h3>Ceramic 4pc Canister Set</h3>
+																										</div>
+																										<div class="order-list">
+																											<ul>
+																												<li><strong>Price:</strong> $3.50</li>
+																												<li><strong>Ext:</strong> $1.00</li>
+																												<li><strong>Qty:</strong> 2</li>
+																											</ul>
+																										</div>
+																										<div class="claims-item-more" style="display: none;">
+																											<ul>
+																												<li><i class="fa fa-edit"></i><br>Edit</li>
+																												<li><i class="fa fa-trash"></i><br>Delete</li>
+																											</ul>
+																										</div>
+																									</div>
+																								</div>
+																								<div class="col-lg-2">
+																										<div class="claim-item-body">
+																											<h2>17031</h2>
+																											<a href="#">
+																												<img src="img/shop/30.jpg" class="img-responsive">
+																											</a>
+																											<div class="claim-desc-body">
+																												<h3>Ceramic 4pc Canister Set</h3>
+																											</div>
+																											<div class="order-list">
+																												<ul>
+																													<li><strong>Price:</strong> $3.50</li>
+																													<li><strong>Ext:</strong> $1.00</li>
+																													<li><strong>Qty:</strong> 2</li>
+																												</ul>
+																											</div>
+																											<div class="claims-item-more" style="display: none;">
+																												<ul>
+																													<li><i class="fa fa-edit"></i><br>Edit</li>
+																													<li><i class="fa fa-trash"></i><br>Delete</li>
+																												</ul>
+																											</div>
+																										</div>
+																									</div>
+																			</td>
+																		</tr>
+																		<tr>
+																				<td><a href="#" id="tbl-view2" class="refresh"><i class="fa fa-plus"></i></a></td>
+																				<td>728409-0</td>
+																				<td>Test</td>
+																				<td>10/11/2018</td>
+																				<td>657.75</td>
+																				<td></td>
+																				<td>Net 30</td>
+																				<td>Rp Enterprises- Test Act., 5073 Ann Arbor Do Not Mail, Dundee, MI 48197</td>
+																				<td>10/15/2018</td>
+																				<td>12/14/2018</td>
+																				<td></td>
+																				
+																			</tr>
+																			<tr id="tbl-des2">
+																				<td colspan="11">
+																						<div class="table-content table-responsive cart-table mrg-top-10 order-tbl">
+																								<table>
+																									<thead>
+																										<tr>
+																											<th class="product-thumbnail">Image</th>
+																											<th class="product-id">Item Number</th>
+																											<th class="product-description">Description</th>
+																											<th class="product-price">Price</th>
+																											<th class="product-total">Ext</th>
+																											<th>Qty</th>
+																										</tr>
+																									</thead>
+																									<tbody>
+																										<tr>
+																											<td class="product-thumbnail"><a href="#"><img src="img/shop/23.jpg" alt=""></a></td>
+																											<td class="product-id"><a href="#">19053</a></td>
+																											<td class="product-description">
+																													Ceramic Coffee Jar
+																											</td>
+																											<td class="product-price"><span class="amount">$3.50</span></td>
+																											<td class="product-subtotal">$1.00</td>
+																											<td>2</td>
+																										</tr>
+																										<tr>
+																												<td class="product-thumbnail"><a href="#"><img src="img/shop/23.jpg" alt=""></a></td>
+																												<td class="product-id"><a href="#">19053</a></td>
+																												<td class="product-description">
+																														Ceramic Coffee Jar
+																												</td>
+																												<td class="product-price"><span class="amount">$3.50</span></td>
+																												<td class="product-subtotal">$1.00</td>
+																												<td>2</td>
+																											</tr>
+																											<tr>
+																													<td class="product-thumbnail"><a href="#"><img src="img/shop/23.jpg" alt=""></a></td>
+																													<td class="product-id"><a href="#">19053</a></td>
+																													<td class="product-description">
+																															Ceramic Coffee Jar
+																													</td>
+																													<td class="product-price"><span class="amount">$3.50</span></td>
+																													<td class="product-subtotal">$1.00</td>
+																													<td>2</td>
+																												</tr>
+																												<tr>
+																														<td class="product-thumbnail"><a href="#"><img src="img/shop/23.jpg" alt=""></a></td>
+																														<td class="product-id"><a href="#">19053</a></td>
+																														<td class="product-description">
+																																Ceramic Coffee Jar
+																														</td>
+																														<td class="product-price"><span class="amount">$3.50</span></td>
+																														<td class="product-subtotal">$1.00</td>
+																														<td>2</td>
+																													</tr>
+																													<tr>
+																															<td class="product-thumbnail"><a href="#"><img src="img/shop/23.jpg" alt=""></a></td>
+																															<td class="product-id"><a href="#">19053</a></td>
+																															<td class="product-description">
+																																	Ceramic Coffee Jar
+																															</td>
+																															<td class="product-price"><span class="amount">$3.50</span></td>
+																															<td class="product-subtotal">$1.00</td>
+																															<td>2</td>
+																														</tr>
+																									</tbody>
+																								</table>
+																							</div>
+					
+																				</td>
+																			</tr>
+																	</tbody>
+																</table>
+															</div>
+													</div>
+											<!-- tab area end -->
 										</div>
+										<div role="tabpanel" class="tab-pane fade" id="ScheduledOrder">
+											<!-- tab area start -->
+											<div class="col-md-12">
+													<div class="cart-head">
+														<h2>Please select the order from and to dates</h2>
+													</div>
+												</div>
+												<!-- <div class="col-lg-5 col-md-4">
+													<div class="form-inline mrg-top-10">
+													<div class="form-group">
+																<label for="text">If multi ship enter Zip</label>
+																<input type="text" class="form-control"  name="shipdate">
+															  </div>
+															</div>	
+												</div> -->
+												<div class="col-md-12 col-lg-12 text-right">
+													<div class="form-inline mrg-top-8">
+														<div class="form-group">
+														  <label for="text">From Date :</label>
+														  <input type="text" class="form-control"  name="shipdate">
+														</div>
+														<div class="form-group">
+														  <label for="text">To Date : </label>
+														  <input type="text" class="form-control" name="canceldate">
+														</div>
+														<div class="form-group promotion-btn">
+															<a href="#">Go</a>
+														</div>
+													</div>
+												</div>
+													<div class="col-md-12">
+														<div class="table-content table-responsive mrg-top-10">
+																<table>
+																	<thead>
+																		<tr>
+																			<th></th>
+																			<th>Order #</th>
+																			<th>PO #</th>
+																			<th>Order Dt.</th>
+																			<th>Order $</th>
+																			<th>Status</th>
+																			<th>Pmt. Terms</th>
+																			<th>Ship To</th>
+																			<th>Req. Ship Dt.</th>
+																			<th>Cancel Dt.</th>
+																			<th>Est. Ship Dt.</th>
+																			
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td><a href="#" id="tbl-view3" class="refresh"><i class="fa fa-plus"></i></a></td>
+																			<td>728409-0</td>
+																			<td>Test</td>
+																			<td>10/11/2018</td>
+																			<td>657.75</td>
+																			<td></td>
+																			<td>Net 30</td>
+																			<td>Rp Enterprises- Test Act., 5073 Ann Arbor Do Not Mail, Dundee, MI 48197</td>
+																			<td>10/15/2018</td>
+																			<td>12/14/2018</td>
+																			<td></td>
+																			
+																		</tr>
+																		<tr id="tbl-des3">
+																			<td colspan="11">
+																				<div class="col-lg-2">
+																					<div class="claim-item-body">
+																						<h2>17031</h2>
+																						<a href="#">
+																							<img src="img/shop/30.jpg" class="img-responsive">
+																						</a>
+																						<div class="claim-desc-body">
+																							<h3>Ceramic 4pc Canister Set</h3>
+																						</div>
+																						<div class="order-list">
+																							<ul>
+																								<li><strong>Price:</strong> $3.50</li>
+																								<li><strong>Ext:</strong> $1.00</li>
+																								<li><strong>Qty:</strong> 2</li>
+																							</ul>
+																						</div>
+																						<div class="claims-item-more" style="display: none;">
+																							<ul>
+																								<li><i class="fa fa-edit"></i><br>Edit</li>
+																								<li><i class="fa fa-trash"></i><br>Delete</li>
+																							</ul>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="col-lg-2">
+																						<div class="claim-item-body">
+																							<h2>17031</h2>
+																							<a href="#">
+																								<img src="img/shop/30.jpg" class="img-responsive">
+																							</a>
+																							<div class="claim-desc-body">
+																								<h3>Ceramic 4pc Canister Set</h3>
+																							</div>
+																							<div class="order-list">
+																								<ul>
+																									<li><strong>Price:</strong> $3.50</li>
+																									<li><strong>Ext:</strong> $1.00</li>
+																									<li><strong>Qty:</strong> 2</li>
+																								</ul>
+																							</div>
+																							<div class="claims-item-more" style="display: none;">
+																								<ul>
+																									<li><i class="fa fa-edit"></i><br>Edit</li>
+																									<li><i class="fa fa-trash"></i><br>Delete</li>
+																								</ul>
+																							</div>
+																						</div>
+																					</div>
+																					<div class="col-lg-2">
+																							<div class="claim-item-body">
+																								<h2>17031</h2>
+																								<a href="#">
+																									<img src="img/shop/30.jpg" class="img-responsive">
+																								</a>
+																								<div class="claim-desc-body">
+																									<h3>Ceramic 4pc Canister Set</h3>
+																								</div>
+																								<div class="order-list">
+																									<ul>
+																										<li><strong>Price:</strong> $3.50</li>
+																										<li><strong>Ext:</strong> $1.00</li>
+																										<li><strong>Qty:</strong> 2</li>
+																									</ul>
+																								</div>
+																								<div class="claims-item-more" style="display: none;">
+																									<ul>
+																										<li><i class="fa fa-edit"></i><br>Edit</li>
+																										<li><i class="fa fa-trash"></i><br>Delete</li>
+																									</ul>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="col-lg-2">
+																								<div class="claim-item-body">
+																									<h2>17031</h2>
+																									<a href="#">
+																										<img src="img/shop/30.jpg" class="img-responsive">
+																									</a>
+																									<div class="claim-desc-body">
+																										<h3>Ceramic 4pc Canister Set</h3>
+																									</div>
+																									<div class="order-list">
+																										<ul>
+																											<li><strong>Price:</strong> $3.50</li>
+																											<li><strong>Ext:</strong> $1.00</li>
+																											<li><strong>Qty:</strong> 2</li>
+																										</ul>
+																									</div>
+																									<div class="claims-item-more" style="display: none;">
+																										<ul>
+																											<li><i class="fa fa-edit"></i><br>Edit</li>
+																											<li><i class="fa fa-trash"></i><br>Delete</li>
+																										</ul>
+																									</div>
+																								</div>
+																							</div>
+																							<div class="col-lg-2">
+																									<div class="claim-item-body">
+																										<h2>17031</h2>
+																										<a href="#">
+																											<img src="img/shop/30.jpg" class="img-responsive">
+																										</a>
+																										<div class="claim-desc-body">
+																											<h3>Ceramic 4pc Canister Set</h3>
+																										</div>
+																										<div class="order-list">
+																											<ul>
+																												<li><strong>Price:</strong> $3.50</li>
+																												<li><strong>Ext:</strong> $1.00</li>
+																												<li><strong>Qty:</strong> 2</li>
+																											</ul>
+																										</div>
+																										<div class="claims-item-more" style="display: none;">
+																											<ul>
+																												<li><i class="fa fa-edit"></i><br>Edit</li>
+																												<li><i class="fa fa-trash"></i><br>Delete</li>
+																											</ul>
+																										</div>
+																									</div>
+																								</div>
+																								<div class="col-lg-2">
+																										<div class="claim-item-body">
+																											<h2>17031</h2>
+																											<a href="#">
+																												<img src="img/shop/30.jpg" class="img-responsive">
+																											</a>
+																											<div class="claim-desc-body">
+																												<h3>Ceramic 4pc Canister Set</h3>
+																											</div>
+																											<div class="order-list">
+																												<ul>
+																													<li><strong>Price:</strong> $3.50</li>
+																													<li><strong>Ext:</strong> $1.00</li>
+																													<li><strong>Qty:</strong> 2</li>
+																												</ul>
+																											</div>
+																											<div class="claims-item-more" style="display: none;">
+																												<ul>
+																													<li><i class="fa fa-edit"></i><br>Edit</li>
+																													<li><i class="fa fa-trash"></i><br>Delete</li>
+																												</ul>
+																											</div>
+																										</div>
+																									</div>
+																			</td>
+																		</tr>
+																		<tr>
+																				<td><a href="#" id="tbl-view4" class="refresh"><i class="fa fa-plus"></i></a></td>
+																				<td>728409-0</td>
+																				<td>Test</td>
+																				<td>10/11/2018</td>
+																				<td>657.75</td>
+																				<td></td>
+																				<td>Net 30</td>
+																				<td>Rp Enterprises- Test Act., 5073 Ann Arbor Do Not Mail, Dundee, MI 48197</td>
+																				<td>10/15/2018</td>
+																				<td>12/14/2018</td>
+																				<td></td>
+																				
+																			</tr>
+																			<tr id="tbl-des4">
+																				<td colspan="11">
+																						<div class="table-content table-responsive cart-table mrg-top-10 order-tbl">
+																								<table>
+																									<thead>
+																										<tr>
+																											<th class="product-thumbnail">Image</th>
+																											<th class="product-id">Item Number</th>
+																											<th class="product-description">Description</th>
+																											<th class="product-price">Price</th>
+																											<th class="product-total">Ext</th>
+																											<th>Qty</th>
+																										</tr>
+																									</thead>
+																									<tbody>
+																										<tr>
+																											<td class="product-thumbnail"><a href="#"><img src="img/shop/23.jpg" alt=""></a></td>
+																											<td class="product-id"><a href="#">19053</a></td>
+																											<td class="product-description">
+																													Ceramic Coffee Jar
+																											</td>
+																											<td class="product-price"><span class="amount">$3.50</span></td>
+																											<td class="product-subtotal">$1.00</td>
+																											<td>2</td>
+																										</tr>
+																										<tr>
+																												<td class="product-thumbnail"><a href="#"><img src="img/shop/23.jpg" alt=""></a></td>
+																												<td class="product-id"><a href="#">19053</a></td>
+																												<td class="product-description">
+																														Ceramic Coffee Jar
+																												</td>
+																												<td class="product-price"><span class="amount">$3.50</span></td>
+																												<td class="product-subtotal">$1.00</td>
+																												<td>2</td>
+																											</tr>
+																											<tr>
+																													<td class="product-thumbnail"><a href="#"><img src="img/shop/23.jpg" alt=""></a></td>
+																													<td class="product-id"><a href="#">19053</a></td>
+																													<td class="product-description">
+																															Ceramic Coffee Jar
+																													</td>
+																													<td class="product-price"><span class="amount">$3.50</span></td>
+																													<td class="product-subtotal">$1.00</td>
+																													<td>2</td>
+																												</tr>
+																												<tr>
+																														<td class="product-thumbnail"><a href="#"><img src="img/shop/23.jpg" alt=""></a></td>
+																														<td class="product-id"><a href="#">19053</a></td>
+																														<td class="product-description">
+																																Ceramic Coffee Jar
+																														</td>
+																														<td class="product-price"><span class="amount">$3.50</span></td>
+																														<td class="product-subtotal">$1.00</td>
+																														<td>2</td>
+																													</tr>
+																													<tr>
+																															<td class="product-thumbnail"><a href="#"><img src="img/shop/23.jpg" alt=""></a></td>
+																															<td class="product-id"><a href="#">19053</a></td>
+																															<td class="product-description">
+																																	Ceramic Coffee Jar
+																															</td>
+																															<td class="product-price"><span class="amount">$3.50</span></td>
+																															<td class="product-subtotal">$1.00</td>
+																															<td>2</td>
+																														</tr>
+																									</tbody>
+																								</table>
+																							</div>
+					
+																				</td>
+																			</tr>
+																	</tbody>
+																</table>
+															</div>
+													</div>
+											<!-- tab area end -->
+										</div>
+									</div>
 								</div>
+							</div>
+						</div>
+
+						
 
 					
 						<!-- <div class="col-md-12 text-center mrg-top-15">
@@ -785,11 +1291,19 @@
 			$(document).ready(function(){
 				$("#tbl-des").hide();
 				$("#tbl-des2").hide();
+				$("#tbl-des3").hide();
+				$("#tbl-des4").hide();
 				$("#tbl-view").click(function(){
 					$("#tbl-des").slideToggle();
 				});
 				$("#tbl-view2").click(function(){
 					$("#tbl-des2").slideToggle();
+				});
+				$("#tbl-view3").click(function(){
+					$("#tbl-des3").slideToggle();
+				});
+				$("#tbl-view4").click(function(){
+					$("#tbl-des4").slideToggle();
 				});
 			});
 		</script>

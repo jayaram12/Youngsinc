@@ -502,11 +502,19 @@
 			<div class="breadcrumb">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12">
+						<div class="col-md-8">
 							<ol class="breadcrumb">
 								<li><a href="#"><img src="img/home.png" class="img-responsive"></a></li>
 								<li class="active"><span>Count Sheet</span></li>
 							</ol>
+						</div>
+						<div class="col-md-4">
+								<div class="shop-menu view-mode pull-right filter-sort" id="filter">
+										<h3><span><i class="fa fa-filter"></i></span> Filter</h3>
+									</div>
+									<div class="shop-menu view-mode pull-right filter-sort" id="sort">
+											<h3><span><i class="fa fa-random"></i></span> Sort</h3>
+										</div>
 						</div>
 					</div>
 				</div>
@@ -519,11 +527,8 @@
 						<div class="col-md-12">
 							<span class="shop-border"></span>
 						</div>
-						<div class="col-lg-12">
-							<p class="count-note"><span class="theme-txt-color">Note:</span> Items ordered in last 6 months</p>
-						</div>
 						<!-- tab view 2 area -->
-						<div id="tab-viw-2">
+						<div id="tab-viw-2" class="mrg-top-20">
 							<div class="col-md-12">
 									<div class="tab" role="tabpanel">
 										<!-- Nav tabs -->
@@ -541,41 +546,31 @@
 									<!-- product-toolbar start -->
 									<div class="product-toolbar">
 										<!-- Shop-menu -->
-										<div class="shop-menu view-mode">
-											<h3><i class="fa fa-filter" id="filter"></i></h3>
+										<div class="col-lg-6">
+												<div class="form-inline">
+														<div class="form-group">
+														  <label for="text">From Date :</label>
+														  <input type="text" class="form-control" name="shipdate">
+														</div>
+														<div class="form-group">
+														  <label for="text">To Date : </label>
+														  <input type="text" class="form-control" name="canceldate">
+														</div>
+														
+													</div>
+										</div>
+										<div class="col-lg-6">
+													<!-- pagination -->
+													<div class="shop-pagination">
+															<ul>
+																<li class="active"><a href="#">1</a></li>
+																<li><a href="#">2</a></li>
+																<li><a href="#">3</a></li>
+																<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+															</ul>
+														</div>
 										</div>
 										
-										<div class="short-by hidden-xs">
-											<span>sort by</span>
-											<select class="shop-select">
-												<option value="1">Ascending</option>
-												<option value="1">Descending</option>
-												<option value="1">Price</option>
-												<option value="1">By Item#</option>
-												<option value="1">By Newest Items</option>
-												<option value="1">By Availability</option>
-												<option value="1">Best Seller</option>
-											</select>
-										</div>
-										<div class="short-by showing hidden-xs">
-											<span>showing</span>
-											<select class="shop-select">
-												<option value="1">9</option>
-												<option value="1">15</option>
-												<option value="1">24</option>
-												<option value="1">30</option>
-												<option value="1">45</option>
-											</select>
-										</div>
-										<!-- pagination -->
-										<div class="shop-pagination">
-											<ul>
-												<li class="active"><a href="#">1</a></li>
-												<li><a href="#">2</a></li>
-												<li><a href="#">3</a></li>
-												<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-											</ul>
-										</div>
 									</div>
 									<!-- product-toolbar end -->
 									
@@ -945,45 +940,7 @@
 										</div>
 									</div>
 									<!-- Shop-product end -->
-									<!-- product-toolbar start -->
-									<div class="product-toolbar btm-border">
-										<!-- Shop-menu -->
-										 <div class="shop-menu view-mode">
-											<h3><i class="fa fa-filter"></i></h3>
-										</div>
-										<div class="short-by hidden-xs">
-											<span>sort by</span>
-											<select class="shop-select">
-												<option value="1">Ascending</option>
-												<option value="1">Descending</option>
-												<option value="1">Price</option>
-												<option value="1">By Item#</option>
-												<option value="1">By Newest Items</option>
-												<option value="1">By Availability</option>
-												<option value="1">Best Seller</option>
-											</select>
-										</div>
-										<div class="short-by showing hidden-xs">
-											<span>showing</span>
-											<select class="shop-select">
-												<option value="1">9</option>
-												<option value="1">15</option>
-												<option value="1">24</option>
-												<option value="1">30</option>
-												<option value="1">45</option>
-											</select>
-										</div>
-										<!-- Pagination -->
-										<div class="shop-pagination">
-											<ul>
-												<li class="active"><a href="#">1</a></li>
-												<li><a href="#">2</a></li>
-												<li><a href="#">3</a></li>
-												<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-											</ul>
-										</div>
-									</div>
-									<!-- product-toolbar end -->
+									
 								</div>
 										<!-- panel 1 end -->
 											</div>
@@ -994,40 +951,29 @@
 									<!-- product-toolbar start -->
 									<div class="product-toolbar">
 										<!-- Shop-menu -->
-										<div class="shop-menu view-mode">
-											<h3><i class="fa fa-filter" id="filter"></i></h3>
+										<div class="col-lg-6">
+												<div class="form-inline">
+														<div class="form-group">
+														  <label for="text">From Date :</label>
+														  <input type="text" class="form-control" name="shipdate">
+														</div>
+														<div class="form-group">
+														  <label for="text">To Date : </label>
+														  <input type="text" class="form-control" name="canceldate">
+														</div>
+														
+													</div>
 										</div>
-										
-										<div class="short-by hidden-xs">
-											<span>sort by</span>
-											<select class="shop-select">
-												<option value="1">Ascending</option>
-												<option value="1">Descending</option>
-												<option value="1">Price</option>
-												<option value="1">By Item#</option>
-												<option value="1">By Newest Items</option>
-												<option value="1">By Availability</option>
-												<option value="1">Best Seller</option>
-											</select>
-										</div>
-										<div class="short-by showing hidden-xs">
-											<span>showing</span>
-											<select class="shop-select">
-												<option value="1">9</option>
-												<option value="1">15</option>
-												<option value="1">24</option>
-												<option value="1">30</option>
-												<option value="1">45</option>
-											</select>
-										</div>
-										<!-- pagination -->
-										<div class="shop-pagination">
-											<ul>
-												<li class="active"><a href="#">1</a></li>
-												<li><a href="#">2</a></li>
-												<li><a href="#">3</a></li>
-												<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-											</ul>
+										<div class="col-lg-6">
+													<!-- pagination -->
+													<div class="shop-pagination">
+															<ul>
+																<li class="active"><a href="#">1</a></li>
+																<li><a href="#">2</a></li>
+																<li><a href="#">3</a></li>
+																<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+															</ul>
+														</div>
 										</div>
 									</div>
 									<!-- product-toolbar end -->
@@ -1398,45 +1344,7 @@
 										</div>
 									</div>
 									<!-- Shop-product end -->
-									<!-- product-toolbar start -->
-									<div class="product-toolbar btm-border">
-										<!-- Shop-menu -->
-										 <div class="shop-menu view-mode">
-											<h3><i class="fa fa-filter"></i></h3>
-										</div>
-										<div class="short-by hidden-xs">
-											<span>sort by</span>
-											<select class="shop-select">
-												<option value="1">Ascending</option>
-												<option value="1">Descending</option>
-												<option value="1">Price</option>
-												<option value="1">By Item#</option>
-												<option value="1">By Newest Items</option>
-												<option value="1">By Availability</option>
-												<option value="1">Best Seller</option>
-											</select>
-										</div>
-										<div class="short-by showing hidden-xs">
-											<span>showing</span>
-											<select class="shop-select">
-												<option value="1">9</option>
-												<option value="1">15</option>
-												<option value="1">24</option>
-												<option value="1">30</option>
-												<option value="1">45</option>
-											</select>
-										</div>
-										<!-- Pagination -->
-										<div class="shop-pagination">
-											<ul>
-												<li class="active"><a href="#">1</a></li>
-												<li><a href="#">2</a></li>
-												<li><a href="#">3</a></li>
-												<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-											</ul>
-										</div>
-									</div>
-									<!-- product-toolbar end -->
+									
 								</div>
 										<!-- panel 1 end -->
 											</div>
@@ -1447,40 +1355,29 @@
 									<!-- product-toolbar start -->
 									<div class="product-toolbar">
 										<!-- Shop-menu -->
-										<div class="shop-menu view-mode">
-											<h3><i class="fa fa-filter" id="filter"></i></h3>
+										<div class="col-lg-6">
+												<div class="form-inline">
+														<div class="form-group">
+														  <label for="text">From Date :</label>
+														  <input type="text" class="form-control" name="shipdate">
+														</div>
+														<div class="form-group">
+														  <label for="text">To Date : </label>
+														  <input type="text" class="form-control" name="canceldate">
+														</div>
+														
+													</div>
 										</div>
-										
-										<div class="short-by hidden-xs">
-											<span>sort by</span>
-											<select class="shop-select">
-												<option value="1">Ascending</option>
-												<option value="1">Descending</option>
-												<option value="1">Price</option>
-												<option value="1">By Item#</option>
-												<option value="1">By Newest Items</option>
-												<option value="1">By Availability</option>
-												<option value="1">Best Seller</option>
-											</select>
-										</div>
-										<div class="short-by showing hidden-xs">
-											<span>showing</span>
-											<select class="shop-select">
-												<option value="1">9</option>
-												<option value="1">15</option>
-												<option value="1">24</option>
-												<option value="1">30</option>
-												<option value="1">45</option>
-											</select>
-										</div>
-										<!-- pagination -->
-										<div class="shop-pagination">
-											<ul>
-												<li class="active"><a href="#">1</a></li>
-												<li><a href="#">2</a></li>
-												<li><a href="#">3</a></li>
-												<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-											</ul>
+										<div class="col-lg-6">
+													<!-- pagination -->
+													<div class="shop-pagination">
+															<ul>
+																<li class="active"><a href="#">1</a></li>
+																<li><a href="#">2</a></li>
+																<li><a href="#">3</a></li>
+																<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+															</ul>
+														</div>
 										</div>
 									</div>
 									<!-- product-toolbar end -->
@@ -1851,45 +1748,7 @@
 										</div>
 									</div>
 									<!-- Shop-product end -->
-									<!-- product-toolbar start -->
-									<div class="product-toolbar btm-border">
-										<!-- Shop-menu -->
-										 <div class="shop-menu view-mode">
-											<h3><i class="fa fa-filter"></i></h3>
-										</div>
-										<div class="short-by hidden-xs">
-											<span>sort by</span>
-											<select class="shop-select">
-												<option value="1">Ascending</option>
-												<option value="1">Descending</option>
-												<option value="1">Price</option>
-												<option value="1">By Item#</option>
-												<option value="1">By Newest Items</option>
-												<option value="1">By Availability</option>
-												<option value="1">Best Seller</option>
-											</select>
-										</div>
-										<div class="short-by showing hidden-xs">
-											<span>showing</span>
-											<select class="shop-select">
-												<option value="1">9</option>
-												<option value="1">15</option>
-												<option value="1">24</option>
-												<option value="1">30</option>
-												<option value="1">45</option>
-											</select>
-										</div>
-										<!-- Pagination -->
-										<div class="shop-pagination">
-											<ul>
-												<li class="active"><a href="#">1</a></li>
-												<li><a href="#">2</a></li>
-												<li><a href="#">3</a></li>
-												<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-											</ul>
-										</div>
-									</div>
-									<!-- product-toolbar end -->
+									
 								</div>
 										<!-- panel 1 end -->
 											</div>

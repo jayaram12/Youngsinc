@@ -528,6 +528,14 @@
 					</div>
 		</div>
 			<!-- PAGE-BANNER END -->
+			<div class="alert alert-success cust-alert-success">
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+						×</button>
+				   <span class="glyphicon glyphicon-ok"></span> <strong>Success Message</strong>
+					<hr class="message-inner-separator">
+					<p>
+						Your item is successfully added to cart.</p>
+				</div>
 			<!-- SINGLE-PRODUCT-AREA START -->
 			<div class="single-product-aea margin-bottom-80">
 				<div class="container">
@@ -576,7 +584,7 @@
 							<div class="single-product-description">
 								<h3 class="title-3">79412 - Wood Spring Hanging Decor <span class="pull-right font-size-23"><i class="fa fa-heart-o" aria-hidden="true"></i></span><span class="pull-right mrg-rgt-15"><img src="img/share.png" class="img-responsive img-wid-80"></span></h3>
 								<!-- <h3 class="title-5">#Item -   / Availability: Instock </h3> -->
-								<h4><span class="green">$4.75</span> <span class="prod-desc-off">$9.50</span></h4>
+								<h4><span class="prod-desc-off">$9.50</span> <span class="green">$4.75</span></h4>
 								<!-- <div class="pro-color">
 									<span>Color</span>
 									<a class="color-1" href="#"></a>
@@ -615,7 +623,7 @@
 								</div> -->
 								
 								<div class="categories-tags mrg-top-15">
-									<div class="categories-tags-head"><h4>Item Details</h4></div>
+									<div class="categories-tags-head"><h4>Category Page</h4></div>
 									<div class="categories">
 										<span>Page:</span>
 										<a href="#">G006g</a>
@@ -630,7 +638,7 @@
 									</div>
 								</div>
 								<div class="categories-tags">
-										<div class="categories-tags-head"><h4>Item Available in pieces</h4></div>
+										<div class="categories-tags-head"><h4>Item Available</h4></div>
 										<div class="categories">
 											<a href="#">25/10/18: 210 Pieces</a>
 										</div>
@@ -1215,17 +1223,7 @@
 			<div class="service-area margin-bottom-80">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-4 col-sm-4 col-xs-12">
-								<div class="single-service">
-									<div class="service-icon">
-											<img src="img/claim.png" class="img-responsive">
-									</div>
-									<div class="service-brief">
-										<h3>claims</h3>
-										<p>There are many variations of passages of Lorem Ipsum available, alteration</p>
-									</div>
-								</div>
-							</div>
+							
 							<div class="col-md-4 col-sm-4 col-xs-12">
 								<div class="single-service">
 									<div class="service-icon">
@@ -1233,10 +1231,21 @@
 									</div>
 									<div class="service-brief">
 										<h3>help line</h3>
-										<p>800-323-7799 and 734-529-9330 - call any time for any support. </p>
+										<p>800-323-7799 | Email: helpdesk@youngsinc.com </p>
 									</div>
 								</div>
 							</div>
+							<div class="col-md-4 col-sm-4 col-xs-12">
+									<div class="single-service">
+										<div class="service-icon">
+												<img src="img/feedback.png" class="img-responsive">
+										</div>
+										<div class="service-brief">
+											<h3>feedback</h3>
+											<p>There are many variations of passages of Lorem Ipsum available, alteration</p>
+										</div>
+									</div>
+								</div>
 							<div class="col-md-4 col-sm-4 col-xs-12">
 								<div class="single-service">
 									<div class="service-icon">
@@ -1369,10 +1378,14 @@
 			$(document).ready(function(){
 				$("#add-to-cart").show();
 				$("#update-quantity").hide();
+				$(".alert-success").hide();
 				$("#add-to-cart").click(function(){
 					$("#update-quantity").show();
 					$("#add-to-cart").hide();
+					$(".alert-success").show();
 				});
+
+			
 			});
 			</script>
     </body>

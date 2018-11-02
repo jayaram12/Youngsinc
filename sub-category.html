@@ -520,12 +520,20 @@
 				<div class="breadcrumb">
 						<div class="container">
 								<div class="row">
-									<div class="col-md-12">
+									<div class="col-md-8">
 													<ol class="breadcrumb">
 															<li><a href="#"><img src="img/home.png" class="img-responsive"></a></li>
 														<li><a href="#">Gift</a></li>
 														<li class="active"><span>General Gifts</span></li>
 													</ol>
+									</div>
+									<div class="col-md-4">
+											<div class="shop-menu view-mode pull-right">
+													<h3><i class="fa fa-filter" id="filter"></i></h3>
+												</div>
+												<div class="shop-menu view-mode pull-right">
+														<h3><i class="fa fa-random" id="sort"></i></h3>
+													</div>
 									</div>
 								</div>
 							</div>
@@ -562,42 +570,7 @@
 								</ul>
 							</aside>
 							<!-- widget-categories end -->
-							<!-- shop-filter start -->
-							<aside class="widget shop-filter">
-								<h5 class="sidebar-title">price</h5>
-								<div class="info_widget">
-									<div id="slider-range"></div>
-									<div id ="amount">
-										<input type ="text" name ="first_price" class="first_price" />
-										<input type ="text" name ="last_price" class="last_price"/>
-									</div>
-									<button class="shop-now">Filter</button>
-								</div>						
-							</aside>
-							<!-- shop-filter end -->
-							<!-- widget-color start -->
-							<!-- <aside class="widget widget-color">
-								<h5 class="sidebar-title">colore</h5>
-								<ul>
-									<li><a class="color-1" href="#"></a></li>
-									<li><a class="color-2" href="#"></a></li>
-									<li><a class="color-3" href="#"></a></li>
-									<li><a class="color-4" href="#"></a></li>
-									<li><a class="color-5" href="#"></a></li>
-								</ul>
-							</aside> -->
-							<!-- widget-color end -->
-							<!-- widget-brand start -->
-							<!-- <aside class="widget widget-brand">
-								<h5 class="sidebar-title">Brand</h5>
-								<ul>
-									<li><input type="checkbox" /><a href="#">Country Road</a></li>
-									<li><input type="checkbox" /><a href="#">H&M Home</a></li>
-									<li><input type="checkbox" /><a href="#">Urban outfitters</a></li>
-									<li><input type="checkbox" /><a href="#">Zara home</a></li>
-								</ul>
-							</aside> -->
-							<!-- widget-brand end -->
+							
 							<!-- widget-top-brand start -->
 							<aside class="widget top-rated hidden-sm">
 								<h5 class="sidebar-title">Best Sellers</h5>
@@ -698,30 +671,19 @@
 								<!-- product-toolbar start -->
 								<div class="product-toolbar">
 									<!-- Shop-menu -->
-									<div class="shop-menu view-mode">
-										<h3><i class="fa fa-filter" id="filter"></i></h3>
-									</div>
-									
-									<div class="short-by hidden-xs">
-										<span>sort by</span>
-										<select class="shop-select">
-											<option value="1">Ascending</option>
-											<option value="1">Descending</option>
-											<option value="1">Price</option>
-											<option value="1">By Item#</option>
-											<option value="1">By Newest Items</option>
-											<option value="1">By Availability</option>
-											<option value="1">Best Seller</option>
-										</select>
-									</div>
 									<div class="short-by showing hidden-xs">
 										<span>showing</span>
 										<select class="shop-select">
-											<option value="1">9</option>
-											<option value="1">15</option>
-											<option value="1">24</option>
+											<option value="1">10</option>
+											<option value="1">20</option>
 											<option value="1">30</option>
-											<option value="1">45</option>
+											<option value="1">40</option>
+											<option value="1">50</option>
+											<option value="1">60</option>
+											<option value="1">70</option>
+											<option value="1">80</option>
+											<option value="1">90</option>
+											<option value="1">100</option>
 										</select>
 									</div>
 									<!-- pagination -->
@@ -796,7 +758,7 @@
 																	<h2><a href="#">18544</a></h2>
 																</div>
 																<div class="pro-head-right">
-																	<h2><span class="prod-offer">$1.25</span> <span class="prod-desc-off-3">$2.50</span></h2>
+																	<h2><span class="prod-desc-off-3">$2.50</span> <span class="prod-offer">$1.25</span> </h2>
 																</div>
 													</div>
 													<div class="product-photo">
@@ -839,7 +801,7 @@
 																	<h2><a href="#">18817</a></h2>
 																</div>
 																<div class="pro-head-right">
-																	<h2><span class="prod-offer">$2.00</span> <span class="prod-desc-off-3">$4.00</span></h2>
+																	<h2><span class="prod-desc-off-3">$4.00</span> <span class="prod-offer">$2.00</span> </h2>
 																</div>
 													</div>
 													
@@ -1019,7 +981,7 @@
 																		<h2><a href="#">18544</a></h2>
 																	</div>
 																	<div class="pro-head-right">
-																		<h2><span class="prod-offer">$1.25</span> <span class="prod-desc-off-3">$2.50</span></h2>
+																		<h2><span class="prod-desc-off-3">$2.50</span> <span class="prod-offer">$1.25</span> </h2>
 																	</div>
 														</div>
 														<div class="product-photo">
@@ -1062,7 +1024,7 @@
 																		<h2><a href="#">18817</a></h2>
 																	</div>
 																	<div class="pro-head-right">
-																		<h2><span class="prod-offer">$2.00</span> <span class="prod-desc-off-3">$4.00</span></h2>
+																		<h2><span class="prod-desc-off-3">$4.00</span> <span class="prod-offer">$2.00</span> </h2>
 																	</div>
 														</div>
 														
@@ -1191,43 +1153,33 @@
 								</div>
 								<!-- Shop-product end -->
 								<!-- product-toolbar start -->
-								<div class="product-toolbar btm-border">
-									<!-- Shop-menu -->
-									 <div class="shop-menu view-mode">
-										<h3><i class="fa fa-filter"></i></h3>
+								<div class="product-toolbar">
+										<!-- Shop-menu -->
+										<div class="short-by showing hidden-xs">
+											<span>showing</span>
+											<select class="shop-select">
+												<option value="1">10</option>
+												<option value="1">20</option>
+												<option value="1">30</option>
+												<option value="1">40</option>
+												<option value="1">50</option>
+												<option value="1">60</option>
+												<option value="1">70</option>
+												<option value="1">80</option>
+												<option value="1">90</option>
+												<option value="1">100</option>
+											</select>
+										</div>
+										<!-- pagination -->
+										<div class="shop-pagination">
+											<ul>
+												<li class="active"><a href="#">1</a></li>
+												<li><a href="#">2</a></li>
+												<li><a href="#">3</a></li>
+												<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+											</ul>
+										</div>
 									</div>
-									<div class="short-by hidden-xs">
-										<span>sort by</span>
-										<select class="shop-select">
-											<option value="1">Ascending</option>
-											<option value="1">Descending</option>
-											<option value="1">Price</option>
-											<option value="1">By Item#</option>
-											<option value="1">By Newest Items</option>
-											<option value="1">By Availability</option>
-											<option value="1">Best Seller</option>
-										</select>
-									</div>
-									<div class="short-by showing hidden-xs">
-										<span>showing</span>
-										<select class="shop-select">
-											<option value="1">9</option>
-											<option value="1">15</option>
-											<option value="1">24</option>
-											<option value="1">30</option>
-											<option value="1">45</option>
-										</select>
-									</div>
-									<!-- Pagination -->
-									<div class="shop-pagination">
-										<ul>
-											<li class="active"><a href="#">1</a></li>
-											<li><a href="#">2</a></li>
-											<li><a href="#">3</a></li>
-											<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-										</ul>
-									</div>
-								</div>
 								<!-- product-toolbar end -->
 							</div>
 							<!-- Shop-Content end -->
@@ -1268,7 +1220,7 @@
 									<h2><a href="#">18420</a></h2>
 								</div>
 								<div class="pro-head-right">
-									<h2><span class="prod-offer">$6.50</span> <span class="prod-desc-off-3">$12.50</span></h2>
+									<h2><span class="prod-desc-off-3">$12.50</span> <span class="prod-offer">$6.50</span></h2>
 								</div>
 							</div>
 							<div class="product-photo">
@@ -1360,7 +1312,7 @@
 									<h2><a href="#">18977</a></h2>
 								</div>
 								<div class="pro-head-right">
-									<h2><span class="prod-offer">$5.50</span> <span class="prod-desc-off-3">$11.00</span></h2>
+									<h2><span class="prod-desc-off-3">$11.00</span> <span class="prod-offer">$5.50</span> </h2>
 								</div>
 							</div>
 							<div class="product-photo">
@@ -1572,17 +1524,7 @@
 			<div class="service-area margin-bottom-80">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-4 col-sm-4 col-xs-12">
-								<div class="single-service">
-									<div class="service-icon">
-											<img src="img/claim.png" class="img-responsive">
-									</div>
-									<div class="service-brief">
-										<h3>claims</h3>
-										<p>There are many variations of passages of Lorem Ipsum available, alteration</p>
-									</div>
-								</div>
-							</div>
+							
 							<div class="col-md-4 col-sm-4 col-xs-12">
 								<div class="single-service">
 									<div class="service-icon">
@@ -1590,10 +1532,21 @@
 									</div>
 									<div class="service-brief">
 										<h3>help line</h3>
-										<p>800-323-7799 and 734-529-9330 - call any time for any support. </p>
+										<p>800-323-7799 | Email: helpdesk@youngsinc.com </p>
 									</div>
 								</div>
 							</div>
+							<div class="col-md-4 col-sm-4 col-xs-12">
+									<div class="single-service">
+										<div class="service-icon">
+												<img src="img/feedback.png" class="img-responsive">
+										</div>
+										<div class="service-brief">
+											<h3>feedback</h3>
+											<p>There are many variations of passages of Lorem Ipsum available, alteration</p>
+										</div>
+									</div>
+								</div>
 							<div class="col-md-4 col-sm-4 col-xs-12">
 								<div class="single-service">
 									<div class="service-icon">

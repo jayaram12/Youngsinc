@@ -674,13 +674,21 @@
 				<div class="breadcrumb">
 						<div class="container">
 								<div class="row">
-									<div class="col-md-12">
+									<div class="col-md-8">
 													<ol class="breadcrumb">
 															<li><a href="#"><img src="img/home.png" class="img-responsive"></a></li>
 														<li><a href="#">Gift</a></li>
 														<li><a href="#">General Gifts</a></li>
 														<li class="active"><span>Cafe & Chocolate</span></li>
 													</ol>
+									</div>
+									<div class="col-md-4">
+											<div class="shop-menu view-mode pull-right filter-sort" id="filter">
+													<h3><span><i class="fa fa-filter"></i></span> Filter</h3>
+												</div>
+												<div class="shop-menu view-mode pull-right filter-sort" id="sort">
+														<h3><span><i class="fa fa-random"></i></span> Sort</h3>
+													</div>
 									</div>
 								</div>
 							</div>
@@ -852,34 +860,22 @@
 								<!-- product-toolbar start -->
 								<div class="product-toolbar">
 									<!-- Shop-menu -->
-									<div class="shop-menu view-mode">
-										<h3><i class="fa fa-filter" id="filter"></i></h3>
-									</div>
-									<div class="shop-menu view-mode">
-											<h3><i class="fa fa-random" id="sort"></i></h3>
-										</div>
-									<!-- <div class="short-by hidden-xs">
-										<span>sort by</span>
-										<select class="shop-select">
-											<option value="1">Ascending</option>
-											<option value="1">Descending</option>
-											<option value="1">Price</option>
-											<option value="1">By Item#</option>
-											<option value="1">By Newest Items</option>
-											<option value="1">By Availability</option>
-											<option value="1">Best Seller</option>
-										</select>
-									</div> -->
+									
 									<div class="short-by showing hidden-xs">
-										<span>showing</span>
-										<select class="shop-select">
-											<option value="1">9</option>
-											<option value="1">15</option>
-											<option value="1">24</option>
-											<option value="1">30</option>
-											<option value="1">45</option>
-										</select>
-									</div>
+											<span>showing</span>
+											<select class="shop-select">
+												<option value="1">10</option>
+												<option value="1">20</option>
+												<option value="1">30</option>
+												<option value="1">40</option>
+												<option value="1">50</option>
+												<option value="1">60</option>
+												<option value="1">70</option>
+												<option value="1">80</option>
+												<option value="1">90</option>
+												<option value="1">100</option>
+											</select>
+										</div>
 									<!-- pagination -->
 									<div class="shop-pagination">
 										<ul>
@@ -903,7 +899,7 @@
 																	<h2><a href="#">18420</a></h2>
 																</div>
 																<div class="pro-head-right">
-																	<h2><span class="prod-offer">$6.25</span> <span class="prod-desc-off-3">$12.50</span></h2>
+																	<h2><span class="prod-desc-off-3">$12.50</span> <span class="prod-offer">$6.25</span> </h2>
 																</div>
 													</div>
 													
@@ -920,6 +916,8 @@
 															<a href="#" class="action-btn" id="remove-show"><i class="fa fa-heart"></i><span>Remove</span></a>
 															<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
 														</div>
+														<img src="img/new-2.png" class="img-responsive product-list-new">
+														<img src="img/best-seller.png" class="img-responsive product-list-bestseller">
 													</div>
 													<div class="product-brief product-breif-head">
 														<div class="product-head">
@@ -964,6 +962,7 @@
 															<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
 															<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
 														</div>
+														<img src="img/new-2.png" class="img-responsive product-list-new">
 													</div>
 													<div class="product-brief product-breif-head">
 															<div class="product-head">
@@ -1215,7 +1214,7 @@
 																		<h2><a href="#">18420</a></h2>
 																	</div>
 																	<div class="pro-head-right">
-																		<h2><span class="prod-offer">$6.25</span> <span class="prod-desc-off-3">$12.50</span></h2>
+																		<h2><span class="prod-desc-off-3">$12.50</span> <span class="prod-offer">$6.25</span> </h2>
 																	</div>
 														</div>
 														
@@ -1394,31 +1393,21 @@
 								<!-- product-toolbar start -->
 								<div class="product-toolbar btm-border">
 									<!-- Shop-menu -->
-									<div class="shop-menu view-mode">
-										<h3><i class="fa fa-filter"></i></h3>
-									</div>
-									<div class="short-by hidden-xs">
-										<span>sort by</span>
-										<select class="shop-select">
-											<option value="1">Ascending</option>
-											<option value="1">Descending</option>
-											<option value="1">Price</option>
-											<option value="1">By Item#</option>
-											<option value="1">By Newest Items</option>
-											<option value="1">By Availability</option>
-											<option value="1">Best Seller</option>
-										</select>
-									</div>
 									<div class="short-by showing hidden-xs">
-										<span>showing</span>
-										<select class="shop-select">
-											<option value="1">9</option>
-											<option value="1">15</option>
-											<option value="1">24</option>
-											<option value="1">30</option>
-											<option value="1">45</option>
-										</select>
-									</div>
+											<span>showing</span>
+											<select class="shop-select">
+												<option value="1">10</option>
+												<option value="1">20</option>
+												<option value="1">30</option>
+												<option value="1">40</option>
+												<option value="1">50</option>
+												<option value="1">60</option>
+												<option value="1">70</option>
+												<option value="1">80</option>
+												<option value="1">90</option>
+												<option value="1">100</option>
+											</select>
+										</div>
 									<!-- Pagination -->
 									<div class="shop-pagination">
 										<ul>
@@ -1773,17 +1762,7 @@
 			<div class="service-area margin-bottom-80">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-4 col-sm-4 col-xs-12">
-								<div class="single-service">
-									<div class="service-icon">
-											<img src="img/claim.png" class="img-responsive">
-									</div>
-									<div class="service-brief">
-										<h3>claims</h3>
-										<p>There are many variations of passages of Lorem Ipsum available, alteration</p>
-									</div>
-								</div>
-							</div>
+							
 							<div class="col-md-4 col-sm-4 col-xs-12">
 								<div class="single-service">
 									<div class="service-icon">
@@ -1791,10 +1770,21 @@
 									</div>
 									<div class="service-brief">
 										<h3>help line</h3>
-										<p>800-323-7799 and 734-529-9330 - call any time for any support. </p>
+										<p>800-323-7799 | Email: helpdesk@youngsinc.com </p>
 									</div>
 								</div>
 							</div>
+							<div class="col-md-4 col-sm-4 col-xs-12">
+									<div class="single-service">
+										<div class="service-icon">
+												<img src="img/feedback.png" class="img-responsive">
+										</div>
+										<div class="service-brief">
+											<h3>feedback</h3>
+											<p>There are many variations of passages of Lorem Ipsum available, alteration</p>
+										</div>
+									</div>
+								</div>
 							<div class="col-md-4 col-sm-4 col-xs-12">
 								<div class="single-service">
 									<div class="service-icon">

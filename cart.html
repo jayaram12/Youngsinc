@@ -566,13 +566,16 @@
 												</div>
 										</div>
 										<div class="col-md-2">
-												<div class="card-body">
+												<div class="card-body card-no-brg">
 													
 													<div class="card-right">
 														<h4 class="card-head">Christmas</h4>
 														<h3 class="card-number">$253</h3>
 													</div>
 												</div>
+											</div>
+											<div class="arrowicon">
+												<span><i class="fa fa-arrow-right"></i></span>
 											</div>
 							</div>
 						<!-- <div class="cart-heading">
@@ -609,7 +612,7 @@
 								</div>
 							</div>
 							<div class="col-md-8 text-right">
-								<div class="form-inline mrg-top-8">
+								<div class="form-inline mrg-top-8 form-space">
 										<div class="form-group">
 												<label for="text">PO# :</label>
 												<input type="text" class="form-control"  name="shipdate">
@@ -689,7 +692,7 @@
 								</div>
 							</div>
 							<div class="col-md-8 text-right">
-								<div class="form-inline mrg-top-8">
+								<div class="form-inline mrg-top-8 form-space">
 									<div class="form-group">
 									  <label for="text">*Requested Ship date :</label>
 									  <input type="text" class="form-control"  name="shipdate">
@@ -771,20 +774,20 @@
 										</div> -->
 										<div class="promotion-code">
 												<P class="promotion-head"><img src="img/shopping-bag.png" class="img-responsive"> Hurray!!! You have saved $45.00 today.</P>
-												<div class="row" id="coupon-txt">
+												<!-- <div class="row" id="coupon-txt">
 													<div class="col-lg-12">
 															<P class="promotion-head green" id="coupon-click"><img src="img/tag.png"> Have a coupon code?</P>
 													</div>
-												</div>
-												<div class="row" id="coupon-code">
+												</div> -->
+												<div class="row mrg-top-50" id="coupon-code">
 													<div class="col-md-6">
 														<div class="form-group">
-																<input type="text" class="form-control" id="usr">
+																<input type="text" class="form-control" id="usr" placeholder="Enter a coupon code">
 															  </div>
 													</div>
 													<div class="col-md-6">
 														<div class="promotion-btn">
-																<a href="#" id="coupon-apply">Apply</a>
+																<button href="#" id="coupon-apply">Apply</button>
 															</div>
 													</div>
 												</div>
@@ -950,7 +953,6 @@
 		<script>
 				$(document).ready(function(){
 					$("#coupon-txt").show();
-					$("#coupon-code").hide();
 					$("#coupon-alert").hide();
 					$("#coupon-click").click(function(){
 						$("#coupon-code").show();

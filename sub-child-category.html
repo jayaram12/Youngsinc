@@ -43,7 +43,8 @@
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+		<![endif]-->
+		
 		<div class="sidemenu side-title-filter" style="display: none;">
 				<h2 style="color:#fff;font-size: 18px;padding:5px;">Filters</h2>
 				<!-- shop-filter start -->
@@ -144,16 +145,17 @@
 							<ul>
 								<li>
 										<div class="sortby">
-												<div class="form-check pad-left-0">
-													<label>
-														<input type="checkbox" name="check"> <span class="label-text">Ascending</span>
-													</label>
-												</div>
-												<div class="form-check pad-left-0">
+												<div class="form-check pad-left-0 show-no-1">
 														<label>
-															<input type="checkbox" name="check"> <span class="label-text">Descending</span>
+															<input type="radio" name="radio"> <span class="label-text">Ascending</span>
 														</label>
-												</div>
+													</div>
+													<div class="form-check pad-left-0 show-no-1">
+															<label>
+																<input type="radio" name="radio"> <span class="label-text">Descending</span>
+															</label>
+														</div>
+											
 											</div>
 								</li>
 								<li>
@@ -683,12 +685,12 @@
 													</ol>
 									</div>
 									<div class="col-md-4">
-											<div class="shop-menu view-mode pull-right filter-sort" id="filter">
-													<h3><span><i class="fa fa-filter"></i></span> Filter</h3>
-												</div>
-												<div class="shop-menu view-mode pull-right filter-sort" id="sort">
-														<h3><span><i class="fa fa-random"></i></span> Sort</h3>
-													</div>
+										<div class="shop-menu view-mode pull-right filter-sort" id="filter">
+											<h3><img src="img/filter-2.png" class="img-responsive sort-filter"> Filter</h3>
+										</div>
+										<div class="shop-menu view-mode pull-right filter-sort" id="sort">
+											<h3><img src="img/sort-2.png" class="img-responsive sort-filter"> Sort</h3>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -859,6 +861,16 @@
 							<div class="shop-content">
 								<!-- product-toolbar start -->
 								<div class="product-toolbar">
+									
+									<!-- pagination -->
+									<div class="shop-pagination">
+										<ul>
+											<li class="active"><a href="#">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+										</ul>
+									</div>
 									<!-- Shop-menu -->
 									
 									<div class="short-by showing hidden-xs">
@@ -876,15 +888,6 @@
 												<option value="1">100</option>
 											</select>
 										</div>
-									<!-- pagination -->
-									<div class="shop-pagination">
-										<ul>
-											<li class="active"><a href="#">1</a></li>
-											<li><a href="#">2</a></li>
-											<li><a href="#">3</a></li>
-											<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-										</ul>
-									</div>
 								</div>
 								<!-- product-toolbar end -->
 								<!-- Shop-product start -->
@@ -962,7 +965,7 @@
 															<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
 															<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
 														</div>
-														<img src="img/new-2.png" class="img-responsive product-list-new">
+														<img src="img/new-3.png" class="img-responsive product-list-new">
 													</div>
 													<div class="product-brief product-breif-head">
 															<div class="product-head">
@@ -1007,6 +1010,7 @@
 															<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
 															<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
 														</div>
+														
 													</div>
 													<div class="product-brief product-breif-head">
 															<div class="product-head">
@@ -1051,6 +1055,7 @@
 															<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
 															<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
 														</div>
+														<img src="img/new-4.png" class="img-responsive product-list-new">
 													</div>
 													<div class="product-brief product-breif-head">
 															<div class="product-head">

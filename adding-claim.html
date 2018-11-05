@@ -532,64 +532,46 @@
 												</div>
 											</div>
 											<div class="col-lg-8 prod-form">
-												<div class="form-horizontal">
-														<div class="form-group">
-																<label class="control-label col-sm-3" for="email">Item#:</label>
-															   <div class="col-sm-9">
-																   <p class="form-control-static">18421</p>
-															   </div>
-														   </div>
-													<div class="form-group">
-														 <label class="control-label col-sm-3" for="email">Description:</label>
-														<div class="col-sm-9">
-															<p class="form-control-static">WOOD SPRING HANGING DECOR</p>
-														</div>
-													</div>
-													<div class="form-group">
-															<label class="control-label col-sm-3" for="email">Price:</label>
-														   <div class="col-sm-9">
-															   <p class="form-control-static">$4.75</p>
-														   </div>
-													 </div>
-													 <div class="form-group">
-															<label class="control-label col-sm-3" for="email">Ext Price:</label>
-														   <div class="col-sm-9">
-															   <p class="form-control-static">$0.00</p>
-														   </div>
-													 </div>
-													
-													 <div class="form-group">
-															<label class="control-label col-sm-3" for="email">Invoice No:</label>
-														   <div class="col-sm-9">
-															   <p class="form-control-static">711959-1</p>
-														   </div>
-													 </div>
-													<div class="form-group">
-															<label class="control-label col-sm-3" for="email">Invoice Dt:</label>
-														   <div class="col-sm-9">
-															   <p class="form-control-static">25/05/18</p>
-														   </div>
-													 </div>
-													 <div class="form-group">
-															<label class="control-label col-sm-3" for="email">Invoice Qty:</label>
-														   <div class="col-sm-9">
-															   <p class="form-control-static">128</p>
-														   </div>
-													 </div>
-													 <div class="form-group">
-															<label class="control-label col-sm-3" for="email">Remain Qty:</label>
-														   <div class="col-sm-9">
-															   <p class="form-control-static">2</p>
-														   </div>
-													 </div>
-													 <div class="form-group">
-															<label class="control-label col-sm-3" for="email">Ship Dt:</label>
-														   <div class="col-sm-9">
-															   <p class="form-control-static">10/01/18</p>
-														   </div>
-													 </div>
-													 
-												</div>
+												<table class="table tabl-stripped add-claim-tbl">
+													<tbody>
+														<tr>
+															<td><strong>Item#:</strong></td>
+															<td>18421</td>
+														</tr>
+														<tr>
+															<td><strong>Description:</strong></td>
+															<td>WOOD SPRING HANGING DECOR</td>
+														</tr>
+														<tr>
+															<td><strong>Price:</strong></td>
+															<td>$4.75</td>
+														</tr>
+														<tr>
+															<td><strong>Ext Price:</strong></td>
+															<td>$0.00</td>
+														</tr>
+														<tr>
+															<td><strong>Invoice No:</strong></td>
+															<td>711959-1</td>
+														</tr>
+														<tr>
+															<td><strong>Invoice Dt:</strong></td>
+															<td>25/05/18</td>
+														</tr>
+														<tr>
+															<td><strong>Invoice Qty:</strong></td>
+															<td>128</td>
+														</tr>
+														<tr>
+															<td><strong>Remain Qty:</strong></td>
+															<td>2</td>
+														</tr>
+														<tr>
+															<td><strong>Ship Dt:</strong></td>
+															<td>10/01/18</td>
+														</tr>
+													</tbody>
+												</table>
 											</div>
 								</div>
 							</div>
@@ -727,9 +709,12 @@
 							</div> -->
 
 						<div class="col-md-12 text-center mrg-top-15">
-								<div class="promotion-btn add-item-btn-filter-1">
+								<div class="promotion-btn add-item-btn-filter-1" id="claim-save-1">
 									<a href="#" class="mrg-rgt-10">Save</a>
 								</div>
+								<div class="promotion-btn add-item-btn-filter-1" id="claim-save-2">
+										<a href="#" class="mrg-rgt-10">Save</a>
+									</div>
 						</div>
 					</div>
 				</div>
@@ -821,7 +806,16 @@
 			</footer>
 			<!-- FOOTER-AREA END -->
 
-
+			<div class="alert alert-success cust-alert-success">
+					<div class="altert-cust-body">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+							×</button>
+					   <span class="glyphicon glyphicon-ok"></span> <strong>Success Message</strong>
+						<hr class="message-inner-separator">
+						<p>
+							Your Claim is successfully added.</p>
+						</div>
+					</div>
 		
 		<!-- all js here -->
 		<!-- jquery latest version -->
@@ -852,6 +846,21 @@
         <script src="js/plugins.js"></script>
 		<!-- main js -->
 		<script src="js/main.js"></script>
+		<script>
+				$(document).ready(function(){
+					$(".alert-success").hide();
+					$("#claim-save-1").show();
+					$("#claim-save-2").hide();
+					$("#claim-save-1").click(function(){
+						$("#claim-save-1").hide();
+					$("#claim-save-2").show();
+					});
+	
+					$("#claim-save-2").click(function(){
+						$(".alert-success").show();
+					});
+				});
+				</script>
 		<script>
 				$(document).ready(function(){
 					

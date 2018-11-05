@@ -43,49 +43,52 @@
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-		<div class="sidemenu" style="display: none;">
-			<h2 style="color:#fff;font-size: 18px;padding:5px;">Filters</h2>
+		<![endif]-->
+		<header class="header-area">
+		<div class="top-header">
+				<p>Over 80,000 retailers served since 1988 • Providing Quality Gift, Home Decor and Fashion accessories with 100% risk free guarantee</p>
 		</div>
+	</header>
 		<!-- HEADER-AREA START -->
         <header class="header-area">
 				<!-- Header-Top Start -->
-			<div class="header-top hidden-xs">
+			<div class="header-top">
 					<div class="container-fluid">
+						
 						<div class="row">
-							<div class="col-md-6 col-sm-6">
+							<div class="col-md-3 col-lg-6 col-sm-12 bdr-btm  hidden-xs">
 								<div class="header-top-left text-left">
-										<ul>
-												<li>
-													<i class="fa fa-phone"></i>
-													<span>800-323-7799</span>
-												</li>
-												<li>
-														<i class="fa fa-envelope"></i>
-													<span>helpdesk@youngsinc.com</span>
-												</li>
-												<li class="text-color">
-													<i class="fa fa-shopping-bag"></i>
-													<span><a href="index.html#todaysoffer">Today's Offers</a></span>
-												</li>
-												<li class="text-color">
-													<i class="fa fa-heart-o"></i>
-													<span><a href="#todaysoffer">Wishlist</a></span>
-												</li>
-											</ul>
+									<ul>
+										<!-- <li>
+											<i class="fa fa-phone"></i>
+											<span>800-323-7799</span>
+										</li>
+										<li>
+												<i class="fa fa-envelope"></i>
+											<span>helpdesk@youngsinc.com</span>
+										</li> -->
+										<li class="text-color">
+											<i class="fa fa-shopping-bag"></i>
+											<span><a href="#todaysoffer">Today's Offers</a></span>
+										</li>
+										<li class="text-color">
+											<i class="fa fa-heart-o"></i>
+											<span><a href="#todaysoffer">Wishlist</a></span>
+										</li>
+									</ul>
 								</div>
 							</div>
-							<div class="col-md-6 col-sm-6">
+							<div class="col-md-9 col-lg-6 col-sm-12">
 								<div class="header-top-right pull-right">
 									
 									<div class="header-search">
-										<form action="#">
+										<form action="#" class="search">
 											<input type="text" placeholder="Search..." />
 											<button type="submit"><i class="fa fa-search"></i></button>
 										</form>
 									</div>
 									<ul class="cust-sign">
-										<li><a href="">Signin</a></li>
+										<li><a href="">Login</a></li>
 										<!-- <li><a href="">wel come to <strong>Jayaram</strong></a></li> -->
 									</ul>
 									<ul>
@@ -108,16 +111,16 @@
 				<div class="main-header">
 					<div class="container-fluid">
 						<div class="row">
-							<div class="col-md-2 col-sm-6 col-xs-12">
+							<div class="col-lg-2 col-md-2 col-sm-6 col-xs-7">
 								<div class="logo">
 									<a href="index.html"><img src="img/logo.png" alt="" /></a>
 								</div>
 							</div>
-							<div class="col-md-8 hidden-sm hidden-xs">
-								<div class="main-menu pull-right">
+							<div class="col-lg-8 col-md-9 hidden-sm hidden-xs">
+								<div class="main-menu text-center">
 									<nav>
 										<ul>
-												<li><a href="shop.html">Gift</a>
+												<li><a href="category.html">Gift</a>
 													<div class="mega-menu">
 															
 														<span>
@@ -188,16 +191,15 @@
 																		<a class="mega-menu-title" href="#">All Items</a>
 																	</span>
 														<span class="mega-menu-photo">
-															<a href="" class="top-25">Top 25</a>
-															<a href="#"><img src="img/megamenu/1.jpg" alt="" /></a>
+															<a href="" class="top-25">Best sellers</a>
+															<a href="#" class="border-all-menu"><img src="img/megamenu/1.jpg" alt="" /></a>
 														</span>
 													</div> 
 												</li>
 												<li><a href="shop.html">vld fashion</a>
 													<div class="mega-menu">
 															
-														<span>
-															<a class="mega-menu-title" href="#">Best sellers</a>
+														<span class="vld">
 															<a class="mega-menu-title" href="#">Fashion</a>
 															<a href="#">Best sellers</a>
 															<a href="#">Tops</a>
@@ -207,7 +209,7 @@
 															<a href="#">Sale</a>
 															<a href="#">All Items</a>
 														</span>
-														<span>
+														<span class="vld">
 															<a class="mega-menu-title" href="#">Hand Bags</a>
 															<a href="#">Best sellers</a>
 															<a href="#">Purses</a>
@@ -217,7 +219,7 @@
 															<a href="#">All Items</a>
 															
 														</span>
-														<span>
+														<span class="vld">
 																<a class="mega-menu-title" href="#">Jewelry</a>
 																<a href="#">Best sellers</a>
 																<a href="#">Necklace</a>
@@ -231,7 +233,7 @@
 																
 																
 															</span>
-															<span>
+															<span class="vld">
 																	<a class="mega-menu-title" href="#">Accessories</a>
 																	<a href="#">Best sellers</a>
 																	<a href="#">Scarves</a>
@@ -243,7 +245,7 @@
 																	<a href="#">All Items</a>
 																	
 																</span>
-																<span>
+																<span class="vld">
 																		<a class="mega-menu-title" href="#">Shoes</a>
 																<a href="#">Best sellers</a>
 																<a href="#">Shoes</a>
@@ -251,7 +253,7 @@
 																<a href="#">Sale</a>
 																<a href="#">All Items</a>
 																</span>
-																<span>
+																<span class="vld">
 																<a class="mega-menu-title" href="#">Misc</a>
 																	<a href="#">Best sellers</a>
 																	<a href="#">Decorative Displays</a>
@@ -263,6 +265,10 @@
 																		<a class="mega-menu-title" href="#">Sale</a>
 																		<a class="mega-menu-title" href="#">All Items</a>
 																	</span>
+																	<span class="mega-menu-photo vld">
+																		<a href="" class="top-25">Best sellers</a>
+																		<a href="#" class="border-all-menu"><img src="img/megamenu/2.jpg" alt="" /></a>
+																	</span>
 														<!-- <span class="mega-menu-photo">
 															<a href="#"><img src="img/megamenu/1.jpg" alt="" /></a>
 														</span> -->
@@ -272,7 +278,6 @@
 													<div class="mega-menu seasonal-menu">
 															
 														<span>
-															<a class="mega-menu-title" href="#">Best sellers</a>
 															<a class="mega-menu-title" href="#">Christmas</a>
 															<a href="#">Best sellers</a>
 															<a href="#">Fun Holidays</a>
@@ -308,12 +313,45 @@
 																<a class="mega-menu-title" href="#">All Items</a>
 															</span>
 														<span class="mega-menu-photo">
-																<a href="" class="top-25">Top 25</a>
-															<a href="#"><img src="img/megamenu/2.jpg" alt="" /></a>
+																<a href="" class="top-25">Best Sellers</a>
+															<a href="#" class="border-all-menu"><img src="img/megamenu/3.jpg" alt="" /></a>
 														</span>
 													</div> 
 												</li>
-											<li><a href="index.html">made in america</a>
+												<li><a href="shop.html">made in america</a>
+													<div class="mega-menu made-in-america-menu">
+														<span class="america-menu">
+															
+															<a href="#">Lodge/Camp</a>
+															<a href="#">Inspirational</a>
+															<a href="#">Nautical/Beach</a>
+															<a href="#">Baby/Children</a>
+															<a href="#">Western</a>
+															<a href="#">Lake</a>
+															<a href="#">Christmas</a>
+															<a href="#">Fall/Thanks Giving</a>
+															<a href="#">Garden</a>
+															<a href="#">General Art</a>
+														</span>
+														<span class="america-menu">
+															
+															<a href="#">Patriotic</a>
+															<a href="#">Gift Items</a>
+															<a href="#">Personalizable Items</a>
+															<a href="#">State & City Signs</a>
+															<a href="#">Great Lakes Original</a>
+															<a class="mega-menu-title" href="#">Sale</a>
+															<a class="mega-menu-title" href="#">All Items</a>
+															
+														</span>
+														
+														<span class="mega-menu-photo made-in-america-photo">
+																<a href="" class="top-25">Best Sellers</a>
+															<a href="#" class="border-all-menu"><img src="img/megamenu/4.jpg" alt="" /></a>
+														</span>
+													</div> 
+												</li>
+											<!-- <li><a href="index.html">made in america</a>
 												<ul class="submenu">
 														<li><a href="#">Best sellers</a></li>
 														<li><a href="#">Gift Items</a></li>
@@ -323,9 +361,28 @@
 														<li><a href="#">Sale</a></li>
 														<li><a href="#">All Items</a></li>
 													</ul> 
-											</li>
+											</li> -->
 											<li><a href="index.html">personalization</a></li>
-											<li><a href="index.html">outdoor</a>
+											<li><a href="shop.html">outdoor</a>
+												<div class="mega-menu outdoor-menu">
+														
+													<span class="outdoor-sub-menu">
+														
+														<a href="#">Garden Room Decor</a>
+														<a href="#">Garden Decor</a>
+														<a href="#">Collection Sales</a>
+														<a class="mega-menu-title" href="#">Sale</a>
+														<a class="mega-menu-title" href="#">All Items</a>
+														
+													</span>
+													
+													<span class="mega-menu-photo outdoor-menu-photo">
+															<a href="" class="top-25">Best Sellers</a>
+														<a href="#" class="border-all-menu"><img src="img/megamenu/5.jpg" alt="" /></a>
+													</span>
+												</div> 
+											</li>
+											<!-- <li><a href="index.html">outdoor</a>
 												<ul class="submenu">
 												   <li><a href="#">Best sellers</a></li>
 												   <li><a href="#">Garden Room Decor</a></li>
@@ -334,11 +391,10 @@
 												   <li><a href="#">Sale</a></li>
 												   <li><a href="#">All Items</a></li>
 											   </ul> 
-										   </li>
+										   </li> -->
 										   <li><a href="shop.html">Brands</a>
 											<div class="mega-menu brands-menu">
 												<span>
-													<a class="mega-menu-title" href="#">Best sellers</a>
 													<a class="mega-menu-title" href="#">Paula Deen Home Decor</a>
 													<a href="#">Best sellers</a>
 													<a href="#">Paula's Christmas</a>
@@ -359,8 +415,8 @@
 												</span>
 												
 												<span class="mega-menu-photo">
-														<a href="" class="top-25">Top 25</a>
-													<a href="#"><img src="img/megamenu/3.jpg" alt="" /></a>
+														<a href="" class="top-25">Best Sellers</a>
+													<a href="#" class="border-all-menu"><img src="img/megamenu/6.jpg" alt="" /></a>
 												</span>
 											</div> 
 										</li>
@@ -394,7 +450,7 @@
 									</nav>
 								</div>
 							</div>
-							<div class="col-md-2 col-sm-6 col-xs-12">
+							<div class="col-lg-2 col-md-1 col-sm-6 col-xs-5">
 								<div class="total-cart">
 									<ul>
 										<li>
@@ -453,12 +509,19 @@
 									<nav id="dropdown">
 										<ul>
 											<li><a href="index.html">gift</a>
-												<!-- <ul class="submenu">
+											 <ul class="submenu">
 													<li class="submenu-title"><a href="#">Home pages</a></li>
 													<li><a href="index.html">Homepage Version 1</a></li>
 													<li><a href="index-2.html">Homepage Version 2</a></li>
-												</ul> -->
+												</ul>
 											</li>
+											<li><a href="index.html">gift</a>
+												<ul class="submenu">
+													   <li class="submenu-title"><a href="#">Home pages</a></li>
+													   <li><a href="index.html">Homepage Version 1</a></li>
+													   <li><a href="index-2.html">Homepage Version 2</a></li>
+												   </ul>
+											   </li>
 											<li><a href="shop.html">vld fashion</a></li>
 											<li><a href="shop-list.html">Seasonal</a></li>
 											<li><a href="shop.html">made in america</a></li>
@@ -539,7 +602,7 @@
 							<span class="shop-border"></span>
 						</div>
 						
-						<div class="col-lg-12 col-md-9 col-sm-12 col-xs-12">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<!-- Shop-Content start -->
 							<div class="shop-content">
 								
@@ -548,7 +611,7 @@
 									<div role="tabpanel" class="tab-pane active" id="grid-view">
 										<div class="row shop-grid  cat-slider">
 											<!-- Single-product start -->
-											<div class="col-lg-2 col-md-4 col-sm-3 col-xs-12">
+											<div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
 												<div class="single-product">
 													<div class="product-photo">
 														<a href="sub-category.html">
@@ -568,7 +631,7 @@
 											</div>		
 											<!-- Single-product end -->
 											<!-- Single-product start -->
-											<div class="col-lg-2 col-md-4 col-sm-3 col-xs-12">
+											<div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
 												<div class="single-product">
 													<div class="product-photo">
 														<a href="#">
@@ -588,7 +651,7 @@
 											</div>		
 											<!-- Single-product end -->
 											<!-- Single-product start -->
-											<div class="col-lg-2 col-md-4 col-sm-3 col-xs-12">
+											<div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
 												<div class="single-product">
 													<div class="product-photo">
 														<a href="#">
@@ -608,7 +671,7 @@
 											</div>		
 											<!-- Single-product end -->
 											<!-- Single-product start -->
-											<div class="col-lg-2 col-md-4 col-sm-3 col-xs-12">
+											<div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
 												<div class="single-product">
 													<div class="product-photo">
 														<a href="#">
@@ -628,7 +691,7 @@
 											</div>		
 											<!-- Single-product end -->
 											<!-- Single-product start -->
-											<div class="col-lg-2 col-md-4 col-sm-3 col-xs-12">
+											<div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
 												<div class="single-product">
 													<div class="product-photo">
 														<a href="#">
@@ -648,7 +711,7 @@
 											</div>		
 											<!-- Single-product end -->
 											<!-- Single-product start -->
-											<div class="col-lg-2 col-md-4 col-sm-3 col-xs-12">
+											<div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
 												<div class="single-product">
 													<div class="product-photo">
 														<a href="#">
@@ -668,7 +731,7 @@
 											</div>		
 											<!-- Single-product end -->
 											<!-- Single-product start -->
-											<div class="col-lg-2 col-md-4 col-sm-3 col-xs-12">
+											<div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
 												<div class="single-product">
 													<div class="product-photo">
 														<a href="#">
@@ -688,7 +751,7 @@
 											</div>		
 											<!-- Single-product end -->
 											<!-- Single-product start -->
-											<div class="col-lg-2 col-md-4 col-sm-3 col-xs-12">
+											<div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
 													<div class="single-product">
 														<div class="product-photo">
 															<a href="#">
@@ -708,7 +771,7 @@
 												</div>		
 												<!-- Single-product end -->
 												<!-- Single-product start -->
-												<div class="col-lg-2 col-md-4 col-sm-3 col-xs-12">
+												<div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
 													<div class="single-product">
 														<div class="product-photo">
 															<a href="#">

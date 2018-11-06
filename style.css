@@ -146,7 +146,7 @@ select {
 .best-sell-area {}
 .service-area {padding-top: 30px;}
 .slider-area.style-2 {margin-bottom: 0;}
-.banner-style-2-area {margin-bottom: 0;} 
+.banner-style-2-area {margin-bottom: 0;}
 .margin-bottom-80 { margin-bottom: 80px;}
 .margin-bottom-50 {margin-bottom: 50px;}
 .single-product-aea {margin-bottom: 72px;}
@@ -154,7 +154,7 @@ select {
 .blog-area.margin-bottom-80 {margin-bottom: 50px;}
 .my-account-area {margin-bottom: 60px;}
 /* ---------------- Transition --------------- */
-.main-menu ul li .submenu, 
+.main-menu ul li .submenu,
 .main-menu ul li .submenu li a::before,
 .main-menu ul li .mega-menu,
 .mega-menu span a::before,
@@ -662,7 +662,7 @@ select {
 	background: #006680;
 	border-color: transparent;
 	color: #fff;
-} 
+}
 .banner-photo a {
     display: block;
     position: relative;
@@ -1382,7 +1382,7 @@ margin-top: 40px;
 .testimonial {
   padding: 75px 0 140px;
 }
-.testimonial h2, .client-opinion h3, .client-opinion p { 
+.testimonial h2, .client-opinion h3, .client-opinion p {
   color: #fff;
 }
 .testimonial h2 {
@@ -1637,7 +1637,7 @@ margin-top: 40px;
   width: 100%;
   z-index: -1;
 }
-/* ====================================== 
+/* ======================================
 	16. Footer-Area
 ======================================== */
 .footer-top {
@@ -1782,7 +1782,7 @@ margin-top: 40px;
   background: #006680 none repeat scroll 0 0;
   color: #fff;
 }
-/* ====================================== 
+/* ======================================
 	17. Home-2
 ======================================== */
 .header-area.style-2 .header-top {
@@ -2076,13 +2076,13 @@ margin-top: 40px;
   background: rgba(0, 0, 0, 0) url("img/banner/page-banner/1.jpg") no-repeat scroll center center;
 }
 .page-banner-area.photo-2 {
-  background: rgba(0, 0, 0, 0) url("img/banner/page-banner/2.jpg") no-repeat scroll center center; 
+  background: rgba(0, 0, 0, 0) url("img/banner/page-banner/2.jpg") no-repeat scroll center center;
 }
 .page-banner-area.photo-3 {
-  background: rgba(0, 0, 0, 0) url("img/banner/page-banner/3.jpg") no-repeat scroll center center; 
+  background: rgba(0, 0, 0, 0) url("img/banner/page-banner/3.jpg") no-repeat scroll center center;
 }
 .page-banner-area.photo-4 {
-  background: rgba(0, 0, 0, 0) url("img/banner/page-banner/4.jpg") no-repeat scroll center center; 
+  background: rgba(0, 0, 0, 0) url("img/banner/page-banner/4.jpg") no-repeat scroll center center;
 }
 /* ---------------- Background Image --------------- */
 .page-banner-area, .page-banner-area.photo-2, .page-banner-area.photo-3, .page-banner-area.photo-4 {
@@ -2215,7 +2215,7 @@ margin-top: 40px;
   padding: 0;
 }
 /* .shop-grid .single-product:hover {
-  background: #7f7f7f none repeat scroll 0 0; 
+  background: #7f7f7f none repeat scroll 0 0;
 } */
 .shop-grid .single-product:hover .product-brief h2 a,
 .shop-grid .single-product:hover .product-brief h3 {
@@ -3211,7 +3211,7 @@ h3.widget-title-modal {
   padding: 0 10px;
   color: #666;
   font-size: 14px;
-  font-weight: 400;  
+  font-weight: 400;
 }
 .coupon input[type="text"] {
   margin: 0 10px;
@@ -4760,11 +4760,11 @@ input[type="radio"]:disabled + .label-text:before{
 
 
 .mini-submenu{
-  display:none;  
-  background-color: rgba(0, 0, 0, 0);  
+  display:none;
+  background-color: rgba(0, 0, 0, 0);
   border: 1px solid rgba(0, 0, 0, 0.9);
   border-radius: 4px;
-  padding: 9px;  
+  padding: 9px;
   /*position: relative;*/
   width: 42px;
 
@@ -4837,7 +4837,7 @@ input[type="radio"]:disabled + .label-text:before{
 .card {background: #FFF none repeat scroll 0% 0%; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); margin-bottom: 30px; }
 
 @media all and (max-width:724px){
-.nav-tabs > li > a > span {display:none;}	
+.nav-tabs > li > a > span {display:none;}
 .nav-tabs > li > a {padding: 5px 5px;}
 }
 .showaddress {
@@ -4866,7 +4866,7 @@ input[type="radio"]:disabled + .label-text:before{
   color: #fff;
   height:100%;
   transition: 1s;
-} 
+}
 .sidemenu-sort {
   background-color: #8e8e8e;
   padding: 10px;
@@ -4878,7 +4878,7 @@ input[type="radio"]:disabled + .label-text:before{
   color: #fff;
   height:100%;
   transition: 1s;
-} 
+}
 .showaddress-action{margin-top:22px;}
 .showaddress-action ul li {
   display: inline-block;
@@ -5281,7 +5281,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   text-align: center;
   margin-top: 15px;
 }
-.account-section-area:hover .account-sec-body{background-color: #e6d8d6;} 
+.account-section-area:hover .account-sec-body{background-color: #e6d8d6;}
 /* end of account page css */
 .fnt-size-15{font-size: 15px;}
 .add-item-manually{border:1px solid #dedede;}
@@ -5368,7 +5368,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  
+
   text-align: center;
 }
 .overlay ul {
@@ -5496,7 +5496,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   right: 30px;
 } */
 .cust-alert-success{
-  background-color: #8e8e8eab !important;
+  background-color: rgba(142, 142, 142, 0.5) !important;
   padding: 10px;
   width: 100%;
   position: fixed;
@@ -5607,7 +5607,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   .product-list-3 .product-list-price{font-size:14px;}
   .product-list-2 .product-list-price{width:65%;}
   .product-list .product-list-cart{width:35%;}
-  
+
   /* end category page css */
   }
   @media only screen and (max-width: 550px) and (min-width: 425px){

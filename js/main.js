@@ -4,13 +4,13 @@
 /*----------------------------
  jQuery MeanMenu
 ------------------------------ */
-	jQuery('nav#dropdown').meanmenu();	
-	
+	jQuery('nav#dropdown').meanmenu();
+
 /*----------------------------
  wow js active
 ------------------------------ */
-	
- 
+
+
 /* ----------------------------
  Tooltip
 ------------------------------ */
@@ -20,7 +20,7 @@
     });
 /*----------------------------
  Active-Product
------------------------------- */  
+------------------------------ */
 	$('#active-product').owlCarousel({
 		loop:true,
 		margin:3,
@@ -37,11 +37,11 @@
 
 /*----------------------------
  Active-Testimonial
------------------------------- */  
+------------------------------ */
 	$('.active-testimonial').owlCarousel({
 		loop:true,
 		margin:3,
-		//transitionStyle : "backSlide", /* [This code for animation ] */	
+		//transitionStyle : "backSlide", /* [This code for animation ] */
 		nav:true,
 		navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
 		responsive:{
@@ -52,10 +52,10 @@
 			1200:{items: 1 }
 		}
 	})
-	
+
 /*----------------------------
  Active-Best-Sell
------------------------------- */  
+------------------------------ */
 	$('.active-best-sell').owlCarousel({
 		loop:true,
 		margin:3,
@@ -68,10 +68,10 @@
 			992: {items: 3 },
 			1200:{items: 4 }
 		}
-	})	
+	})
 /*----------------------------
  Active-Best-Sell-2
------------------------------- */  
+------------------------------ */
 	$('.active-best-sell-2').owlCarousel({
 		loop:true,
 		//margin:3,
@@ -85,10 +85,10 @@
 			1200:{items: 4 }
 		}
 	})
-	
+
 /*----------------------------
  Active-Related-Product
------------------------------- */  
+------------------------------ */
 	$('.active-related-product').owlCarousel({
 		loop:true,
 		margin:10,
@@ -102,11 +102,11 @@
 			1200:{items: 5 }
 		}
 	})
-	
-	
+
+
 /*----------------------------
  Active-new-collection-2
------------------------------- */  
+------------------------------ */
 	$('.active-new-collection-2').owlCarousel({
 		loop:true,
 		margin:10,
@@ -120,7 +120,7 @@
 			1200: { items: 5 }
 		}
 	})
-	
+
 /*--------------------------
  Shop Grid view and List view
 ---------------------------- */
@@ -132,7 +132,7 @@ $('.view-mode a').click(function(){
 
 /*----------------------------
  price-slider active
------------------------------- */  
+------------------------------ */
 	 $( "#slider-range" ).slider({
 	 range: true,
 	 min: 1,
@@ -147,22 +147,22 @@ $('.view-mode a').click(function(){
 	$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
 	 " - "+"$" + $( "#slider-range" ).slider( "values", 1 ) );
 	$('input[name="first_price"]').val('$' + $( "#slider-range" ).slider( "values", 0 ));
-	$('input[name="last_price"]').val('$' + $( "#slider-range" ).slider( "values", 1 )); 
-	
+	$('input[name="last_price"]').val('$' + $( "#slider-range" ).slider( "values", 1 ));
+
 /*---------------------
  Lightbox
---------------------- */	   
+--------------------- */
 $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
     event.preventDefault();
     $(this).ekkoLightbox();
 });
 
-/*----- cart-plus-minus-button -----*/	
+/*----- cart-plus-minus-button -----*/
 	 $(".cart-plus-minus").append('<div class="inc qtybutton"><i class="fa fa-angle-up" aria-hidden="true"></i></div><div class="dec qtybutton"><i class="fa fa-angle-down" aria-hidden="true"></i></div>');
 	  $(".qtybutton").on("click", function() {
 		var $button = $(this);
 		var oldValue = $button.parent().find("input").val();
-		
+
 		// if ($button.text() == "+") {
 		//   var newVal = parseFloat(oldValue) + 1;
 		// } else {
@@ -187,17 +187,17 @@ $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
 
 
 		$button.parent().find("input").val(newVal);
-	  }); 	
-	  
-	  
-	
+	  });
+
+
+
 /*-------------------------
   showlogin toggle function
 --------------------------*/
 	 $( '#showlogin' ).on('click', function() {
         $( '#checkout-login' ).slideToggle(900);
-     }); 
-		
+     });
+
 /*-------------------------
   showcoupon toggle function
 --------------------------*/
@@ -223,7 +223,7 @@ $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
                     $(this).siblings('.active').removeClass('active');
                     $(this).addClass('active');
                     event.preventDefault();
-                }); 
+                });
 /*---------------------
  countdown
 --------------------- */
@@ -232,11 +232,11 @@ $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
 		$this.countdown(finalDate, function(event) {
 			$this.html(event.strftime('<span class="cdown days"><span class="time-count">%-D</span> <p>Days</p></span> <span class="cdown hour"><span class="time-count">%-H</span> <p>Hour</p></span> <span class="cdown minutes"><span class="time-count">%M</span> <p>Min</p></span> <span class="cdown second"> <span><span class="time-count">%S</span> <p>Sec</p></span>'));
 		});
-	});	
+	});
 
 /*----------------------------
  price-slider active
------------------------------- */  
+------------------------------ */
 	// $( "#slider-range" ).slider({
 		// range: true,
 		// min: 40,
@@ -247,11 +247,11 @@ $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
 		// }
 	// });
 	// $( "#amount" ).val( "�" + $( "#slider-range" ).slider( "values", 0 ) +
-	// " - �" + $( "#slider-range" ).slider( "values", 1 ) );  
-	   
+	// " - �" + $( "#slider-range" ).slider( "values", 1 ) );
+
 /*--------------------------
  scrollUp
----------------------------- */	
+---------------------------- */
 	$.scrollUp({
         scrollText: '<i class="pe-7s-angle-up"></i>',
         easingType: 'linear',
@@ -259,8 +259,17 @@ $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
         animation: 'fade'
     });
 
-	
+
 	$(".active-best-sell-2 .owl-controls").addClass("container");
-	
- 
-})(jQuery); 
+
+
+    $("#add-to-cart").show();
+    $("#update-quantity").hide();
+    $(".alert-success").hide();
+    $("#add-to-cart").click(function(){
+      $("#update-quantity").show();
+      $("#add-to-cart").hide();
+      $(".alert-success").show();
+    });
+
+})(jQuery);

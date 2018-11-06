@@ -4250,7 +4250,7 @@ h1.thank-you {
 .breadcrumb>.active {
   color: #777;
   font-weight: 600;
-  font-size:20px;
+  font-size:18px;
 }
 .breadcrumb li a{color: #006680;}
 /* end of breadcrumb */
@@ -4708,7 +4708,7 @@ input[type="radio"]:disabled + .label-text:before{
 .container {width: 1700px !important;}
 }
 @media only screen and (max-width: 1919px) and (min-width: 1200px){
-.container {width: 1450px;}
+.container {width: 1420px;}
 /* category page css */
 .catalog-body h2 {font-size: 20px;}
 .pro-head-left h2 a{font-size:16px;}
@@ -5593,3 +5593,70 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 }
 .add-claim-tbl tbody tr td{border-top:none;}
 .add-claim-tbl tbody tr td:first-child{width:50px;}
+.prd-qty-txt{font-size:22px;}
+
+
+/* media screens */
+@media only screen and (max-width: 1119px) and (min-width: 1020px){
+
+  /* category page css */
+  .catalog-body h2 {font-size: 20px;}
+  .pro-head-left h2 a{font-size:16px;}
+  .pro-head-right h2 {font-size:16px;}
+  .product-head h2 a {font-size: 16px;}
+  .product-list-3 .product-list-price{font-size:14px;}
+  .product-list-2 .product-list-price{width:65%;}
+  .product-list .product-list-cart{width:35%;}
+  
+  /* end category page css */
+  }
+  @media only screen and (max-width: 550px) and (min-width: 425px){
+    .container {width: 415px !important;}
+  }
+  @media only screen and (max-width: 350px) and (min-width: 320px){
+    .header-search input { width: 210px !important;}
+  }
+  @media only screen and (max-width: 425px) and (min-width: 320px){
+    .breadcrumb>.active{font-size:15px !important}
+    .filter-sort h3{font-size:15px !important;}
+    .product-list-2 .product-list-price{width:65%;}
+  .product-list .product-list-cart{width:35%;}
+  .continue-top{margin-top:5px !important;}
+  .section-title h2 { font-size: 20px !important;}
+  .succress-message p{font-size:25px !important;line-height: 30px !important;}
+  #tab-viw-2 .tab{padding: 0px !important;}
+  #tab-viw-2 .tab .tab-content{padding: 0px !important;}
+  .showaddress{padding:8px !important}
+  }
+  @media only screen and (max-width: 400px) and (min-width: 320px){
+    .account-sec-body{margin: 0 60px !important;}
+  }
+  @media only screen and (max-width: 500px) and (min-width: 375px){
+    .container {
+      width: 365px !important;
+  }
+  }
+  @media only screen and (max-width: 600px) and (min-width: 401px){
+    .account-sec-body{margin: 0 115px !important;}
+  }
+  @media only screen and (max-width: 1100px) and (min-width: 320px){
+    .title-3{font-size:20px !important;}
+    .single-product-description h4{font-size:18px !important;}
+    .prd-qty-txt{font-size:20px !important;}
+    .single-pro-add-cart a{font-size:17px !important}
+    .product-list-2 .product-list-price{width:65% !important;}
+  .product-list .product-list-cart{width:35% !important;}
+  }
+  @media only screen and (max-width: 991px) and (min-width: 600px){
+    .tb-mrg-top-50{margin-top:50px;}
+    .succress-message p{font-size:30px !important;line-height: 42px !important;}
+    .account-sec-body{margin: 0 40px !important;}
+    .nav-tabs > li{width: 31% !important;}
+  }
+  @media only screen and (max-width: 1100px) and (min-width: 992px){
+    .account-sec-body{margin: 0 42px !important;}
+  }
+  @media only screen and (max-width: 1600px) and (min-width: 1101px){
+    .account-sec-body{margin: 0 70px !important;}
+  }
+/* end of media screens */

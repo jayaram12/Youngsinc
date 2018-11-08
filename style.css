@@ -5732,5 +5732,6 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   .cart-plus-minus div {right:30px;}
   .Withoutqty .cart-plus-minus div.inc {top:0px;}
   .Withoutqty .cart-plus-minus div {right:1px;}
+  .product-list-cart {margin-top:7px}
 
 }

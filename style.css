@@ -4299,6 +4299,7 @@ h1.thank-you {
   width:247px; padding:10px;
   display: inline;
 }
+.upload-btn:hover, .upload-btn:focus, .upload-btn:active {color:#fff;}
 
 .Uplaod-area{background-color: #e2e2e2;padding:20px;margin-top:58px;margin-bottom: 40px;}
 .upload-inner{background-color: #fff;padding:20px;}

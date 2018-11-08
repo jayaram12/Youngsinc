@@ -4716,7 +4716,7 @@ input[type="radio"]:disabled + .label-text:before{
 .product-head h2 a {font-size: 16px;}
 .product-list-3 .product-list-price{font-size:14px;}
 .product-list-2 .product-list-price{width:65%;}
-.product-list .product-list-cart{width:35%;}
+.product-list .product-list-cart{width:35%;margin-top:7px !important;}
 /* end category page css */
 }
   @media only screen and (max-width: 1919px) and (min-width: 1200px)  {
@@ -5732,6 +5732,5 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   .cart-plus-minus div {right:30px;}
   .Withoutqty .cart-plus-minus div.inc {top:0px;}
   .Withoutqty .cart-plus-minus div {right:1px;}
-  .product-list-cart {margin-top:7px}
 
 }

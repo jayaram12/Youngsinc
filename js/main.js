@@ -16,7 +16,7 @@
 ------------------------------ */
     $('[data-toggle="tooltip"]').tooltip({
         animated: 'fade',
-        container: 'body'
+        trigger: 'hover'
     });
 /*----------------------------
  Active-Product
@@ -263,13 +263,23 @@ $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
 	$(".active-best-sell-2 .owl-controls").addClass("container");
 
 
-    $("#add-to-cart").show();
-    $("#update-quantity").hide();
-    $(".alert-success").hide();
-    $("#add-to-cart").click(function(){
-      $("#update-quantity").show();
-      $("#add-to-cart").hide();
-      $(".alert-success").show();
-    });
-
 })(jQuery);
+
+$(document).ready(function(){
+  $("#add-to-cart").show();
+  $("#update-quantity").hide();
+  // $(".alert-success").hide();
+  $("#add-to-cart").click(function(){
+    $("#update-quantity").show();
+    $("#add-to-cart").hide();
+    // $(".alert-success").show();
+  });
+
+  $(".fancybox-close-small").click(function(){
+    $("#fancybox-container-1").hide();
+    // $(".alert-success").show();
+  });
+
+
+
+});

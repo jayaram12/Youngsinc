@@ -4296,16 +4296,10 @@ h1.thank-you {
   font-weight: 500;
   text-transform: uppercase;
   color:#fff;
-  padding:10px 66px;
+  width:247px; padding:10px;
   display: inline;
 }
-.upload-btn:hover{background: #006680 none repeat scroll 0 0;
-  font-weight: 500;
-  text-transform: uppercase;
-  color:#fff;
-  padding:10px 66px;
-  display: inline;
-}
+
 .Uplaod-area{background-color: #e2e2e2;padding:20px;margin-top:58px;margin-bottom: 40px;}
 .upload-inner{background-color: #fff;padding:20px;}
 .upload-inner img{margin:0px auto;}

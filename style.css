@@ -5608,8 +5608,8 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   @media only screen and (max-width: 550px) and (min-width: 425px){
     .container {width: 415px !important;}
   }
-  @media only screen and (max-width: 350px) and (min-width: 320px){
-    .header-search input { width: 210px !important;}
+ @media only screen and (max-width: 350px) and (min-width: 320px){
+    .header-search input { width: 180px !important;}
   }
   @media only screen and (max-width: 425px) and (min-width: 320px){
     .breadcrumb>.active{font-size:15px !important}
@@ -5630,6 +5630,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
     .container {
       width: 365px !important;
   }
+  .header-search input { width: 270px !important;}
   }
   @media only screen and (max-width: 600px) and (min-width: 401px){
     .account-sec-body{margin: 0 115px !important;}
@@ -5678,6 +5679,30 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 .tooltip-inner {min-width:100px; z-index:99999;}
 .Withoutqty .product-list-cart {margin-top:7px}
 
+.custom-scroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.custom-scroll::-webkit-scrollbar
+{
+	height: 6px;
+	background-color: #006680;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.3);
+	background-color: #006680;
+}
+.form-space .form-group {  margin-right: 0px; }
+
+
+
+
 
 @media only screen and (min-width: 768px){
 .success-icon {margin-left:34%;}
@@ -5693,23 +5718,44 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 .nav-tabs > li > a::after {z-index:9;}
 .catalog-body h2 {font-size:16px;}
 .catalog .download a { top: -31px;font-size: 22px;}
+.claim-item-body {float:left; margin-right:10px;}
+.claim-item-body a img {width:100px;}
+.promotion-btn a {padding:0 25px; margin-bottom:10px;}
+.short-by.showing {margin-top:10px; margin-bottom:10px;}
+.promotion-code .promotion-head {line-height:32px;}
+.we-proceed-to-checkout a {font-size:12px; text-align:center; margin-bottom:15px; margin-right:0;}
+.single-pro-add-cart a {padding:0 10px; font-size:15px !important;}
+.Withoutqty .cart-plus-minus div.inc {top:0px;}
+.Withoutqty .cart-plus-minus div {right:1px;}
+
 }
 
 @media only screen and (max-width: 1439px) and (min-width: 768px){
-.responsive-table {width:1000px !important;}
+.responsive-table {width:1300px !important;}
 .claim-item-body img {  width: 200px;}
 .claim-item-body {float:left; margin-right:20px;}
-
+.MarginTop10Md { margin-top:10px;}
+.table-content table {
+    margin: 0 0 0px;
+}
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1439px){
   .cart-plus-minus div.inc {top:0px;}
   .cart-plus-minus div {right:1px;}
+  .single-pro-add-cart a {padding:0 10px; font-size:15px !important;}
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px){
   .cart-plus-minus div.inc {top:0px;}
   .cart-plus-minus div {right:1px;}
+  .pull-right-sm {float:right;}
+  .MarginLeftTop30 {margin-top:30px; margin-left:30px;}
+  .MarginTop30 {margin-top:30px;}
+  .promotion-btn a {padding:0 25px;}
+  .ShippingInfo.nav-tabs > li {width:40% !important;}
+  .CountSheetTabs.nav-tabs li a {font-size:15px !important;}
 }
 
 @media only screen and (min-width: 375px) and (max-width: 424px){
@@ -5727,5 +5773,9 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   .cart-plus-minus div {right:30px;}
   .Withoutqty .cart-plus-minus div.inc {top:0px;}
   .Withoutqty .cart-plus-minus div {right:1px;}
+
+}
+@media only screen and (min-width: 1440px){
+  .MarginTop30 {margin-top:30px;}
 
 }

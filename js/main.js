@@ -280,6 +280,12 @@ $(document).ready(function(){
     // $(".alert-success").show();
   });
 
+  $("#filter").click(function(){
+          $(".sidemenu").toggle();
+    });
+    $("#sort").click(function(){
+          $(".sidemenu-sort").toggle();
+    });
 
 
 });

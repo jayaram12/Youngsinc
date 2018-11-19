@@ -363,7 +363,21 @@
                         <li><a href="#">All Items</a></li>
                       </ul>
                   </li> -->
-                  <li><a href="personalization.html">personalization</a></li>
+                  <li><a href="personalization.html">Personalization</a>
+                    <div class="mega-menu personalization-menu">
+                      <span class="personalization-sub-menu">
+                        <a href="#">Gift</a>
+                        <a href="#">VLD Fashion</a>
+                        <a href="#">Seasonal</a>
+                        <a href="#">Made In America</a>
+                        <a href="#">Outdoor</a>
+                      </span>
+                      <span class="mega-menu-photo personalization-photo">
+                          <a href="" class="top-25">Best Sellers</a>
+                        <a href="#" class="border-all-menu"><img src="images/38133.jpg" alt="" /></a>
+                      </span>
+                    </div>
+                  </li>
                   <li><a href="#">outdoor</a>
                     <div class="mega-menu outdoor-menu">
 
@@ -726,7 +740,7 @@
                              <li><a href="#">All Items</a></li>
                            </ul>
                          </li>
-                  <li><a href="personalization.html">Personalization</a></li>
+
                   <li><a href="#">Made In America</a>
                    <ul class="submenu">
                         <li><a href="#">Garden Room Decor</a></li>
@@ -736,6 +750,15 @@
                         <li><a href="#">All Items</a></li>
                       </ul>
                     </li>
+                    <li><a href="personalization.html">Personalization</a>
+                     <ul class="submenu">
+                          <li><a href="#">Garden Room Decor</a></li>
+                          <li><a href="#">Garden Decor</a></li>
+                          <li><a href="#">Collecyion Sales</a></li>
+                          <li><a href="#">Sale</a></li>
+                          <li><a href="#">All Items</a></li>
+                        </ul>
+                      </li>
                     <li><a href="#">Brands</a>
                      <ul class="submenu">
                           <li class="submenu-title"><a href="#">Paula Deen Home Decor</a>
@@ -793,11 +816,9 @@
 			<div class="shopping-cart-area margin-bottom-80">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12">
-							<span class="shop-border"></span>
-						</div>
+						
             <div class="col-md-12">
-              <div class="table-content table-responsive cart-table mrg-top-10 custom-scroll">
+              <div class="table-content table-responsive cart-table custom-scroll cart-border">
                   <table class="responsive-table">
                       <tbody>
                           <tr>
@@ -829,6 +850,9 @@
                       </tbody>
                   </table>
                 </div>
+                <div class="arrowicon">
+                    <span><i class="fa fa-arrow-right"></i></span>
+                  </div>
             </div>
 						<!-- <div class="cart-cards">
 								<div class="col-md-2 col-lg-2 col-sm-4 col-xs-12">
@@ -939,7 +963,7 @@
 											<thead>
 												<tr>
 													<th class="product-thumbnail">Image</th>
-													<th class="product-id">Item Number</th>
+													<th class="product-id">Item#</th>
 													<th class="product-description">Product Description</th>
 													<th class="product-availability">Availability</th>
 													<th class="product-quantity">Quantity</th>
@@ -996,19 +1020,20 @@
 										</label>
 									</div>
 								</div>
-							</div>
-							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
-								<div class="form-inline mrg-top-8 form-space">
-									<div class="form-group">
-									  <label for="text">*Requested Ship date :</label>
-									  <input type="text" class="form-control"  name="shipdate">
-									</div>
-									<div class="form-group">
-									  <label for="text">Cancel date : </label>
-									  <input type="text" class="form-control" name="canceldate">
-									</div>
-								</div>
-							</div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+                  <div class="form-inline mrg-top-8 form-space">
+                      <div class="form-group col-sm-4 col-md-4 col-lg-6 col-xs-12">
+                          <label for="text">*Requested Ship date :</label>
+                          <input type="text" class="form-control"  name="shipdate">
+                          </div>
+                    <div class="form-group col-sm-4 col-md-4 col-lg-6 col-xs-12">
+                      <label for="text">Cancel date :</label>
+                      <input type="text" class="form-control"  name="shipdate">
+                    </div>
+                  </div>
+                </div>
+							
               <div class="clearfix"></div>
 							<div class="col-md-12">
 								<div class="table-content table-responsive cart-table mrg-top-10 custom-scroll">
@@ -1016,7 +1041,7 @@
 											<thead>
 												<tr>
 													<th class="product-thumbnail">Image</th>
-													<th class="product-id">Item Number</th>
+													<th class="product-id">Item#</th>
 													<th class="product-description">Product Name</th>
 													<th class="product-availability">Availability</th>
 													<th class="product-quantity">Quantity</th>
@@ -1085,7 +1110,10 @@
 													<div class="col-lg-12">
 															<P class="promotion-head green" id="coupon-click"><img src="img/tag.png"> Have a coupon code?</P>
 													</div>
-												</div> -->
+                        </div> -->
+                        <div class="col-lg-12">
+                          <p class="coupon-code">Have a coupon code?</p>
+                        </div>
 												<div class="row mrg-top-50" id="coupon-code">
 													<div class="col-md-6">
 														<div class="form-group">
@@ -1261,7 +1289,8 @@
 				$(document).ready(function(){
 					$("#coupon-txt").show();
 					$("#coupon-alert").hide();
-					$("#coupon-click").click(function(){
+          $("#coupon-code").hide();
+					$(".coupon-code").click(function(){
 						$("#coupon-code").show();
 						$("#coupon-txt").hide();
 					});

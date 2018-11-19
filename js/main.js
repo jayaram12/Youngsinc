@@ -285,7 +285,21 @@ $(document).ready(function(){
     });
     $("#sort").click(function(){
           $(".sidemenu-sort").toggle();
-    });
+	});
+	
+	$("#filter2").click(function(){
+		$(".sidemenu2").toggle();
+  });
+  $("#sort2").click(function(){
+		$(".sidemenu-sort2").toggle();
+  });
+
+    $(".addressfilters #filter").click(function(){
+            $("#AddressFilters .sidemenu").toggle();
+      });
+      $(".addressfilters #sort").click(function(){
+            $("#AddressFilters .sidemenu-sort").toggle();
+      });
 
 
 });

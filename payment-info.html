@@ -41,6 +41,112 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
+      <div class="sidemenu side-title-filter" style="display: none;">
+  				<h2 style="color:#006680;font-size: 18px;padding:5px;">Filters</h2>
+  				<!-- shop-filter start -->
+  				<aside class="widget shop-filter price-range">
+  						<div class="col-md-12">
+                <div class="form-group">
+                  <label for="text">Name </label>
+                  <input type="text" class="form-control" value="">
+                </div>
+                <div class="form-group">
+                  <label for="text">City </label>
+                  <input type="text" class="form-control" value="">
+                </div>
+                <div class="form-group">
+                  <label for="text">Zip </label>
+                  <input type="text" class="form-control" value="">
+                </div>
+                <div class="form-group">
+                  <label for="sel1">State</label>
+                  <select class="form-control" id="sel1">
+                      <option value="0">Select State</option>
+                      <option value="AK">Alaska</option>
+                      <option value="AL">Alabama</option>
+                      <option value="AR">Arkansas</option>
+                      <option value="AZ">Arizona</option>
+                      <option value="BC">British Columbia</option>
+                      <option value="CA">California</option>
+                      <option value="CO">Colorado</option>
+                      <option value="CT">Connecticut</option>
+                      <option value="DC">Washington DC</option>
+                      <option value="DE">Delaware</option>
+                      <option value="FL">Florida</option>
+                      <option value="GA">Georgia</option>
+                      <option value="HI">Hawaii</option>
+                      <option value="IA">Iowa</option>
+                      <option value="ID">Idaho</option>
+                      <option value="IL">Illinois</option>
+                      <option value="IN">Indiana</option>
+                      <option value="KS">Kansas</option>
+                      <option value="KY">Kentucky</option>
+                      <option value="LA">Louisiana</option>
+                      <option value="MA">Massachusetts</option>
+                      <option value="MD">Maryland</option>
+                      <option value="ME">Maine</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-12 text-center center-block">
+              <div class="promotion-btn mrg-top-15">
+  								<a href="#" class="mrg-rgt-10">Cancel</a><a href="#">Apply</a>
+  							</div>
+              </div>
+  					</aside>
+  					<!-- shop-filter end -->
+  			</div>
+  			<div class="sidemenu-sort side-title-filter" style="display: none;">
+  					<aside class="widget widget-brand sort-list-item-1">
+  							<h5 class="sidebar-title">Sort</h5>
+  							<ul>
+  								<li>
+  										<div class="sortby">
+  												<div class="form-check pad-left-0 show-no-1">
+  														<label>
+  															<input type="radio" name="radio"> <span class="label-text">Ascending</span>
+  														</label>
+  													</div>
+  													<div class="form-check pad-left-0 show-no-1">
+  															<label>
+  																<input type="radio" name="radio"> <span class="label-text">Descending</span>
+  															</label>
+  														</div>
+  											</div>
+  								</li>
+  								<li>
+  										<div class="sortbylist mrg-top-15 sort-list-item-1 brd-top mrg">
+  												<div class="form-check pad-left-0 show-no-1">
+  													<label>
+  														<input type="radio" name="radio"> <span class="label-text">Name</span>
+  													</label>
+  												</div>
+  												<div class="form-check pad-left-0 show-no-1">
+  														<label>
+  															<input type="radio" name="radio"> <span class="label-text">City</span>
+  														</label>
+  												</div>
+  												<div class="form-check pad-left-0 show-no-1">
+  														<label>
+  															<input type="radio" name="radio"> <span class="label-text">Zip</span>
+  														</label>
+  												</div>
+  												<div class="form-check pad-left-0 show-no-1">
+  														<label>
+  															<input type="radio" name="radio"> <span class="label-text">State</span>
+  														</label>
+  												</div>
+
+  											</div>
+  								</li>
+  							</ul>
+                <div class="col-md-12 text-center center-block">
+  							<div class="promotion-btn mrg-top-15">
+  									<a href="#" class="mrg-rgt-10">Cancel</a><a href="#">Apply</a>
+  								</div>
+                </div>
+  						</aside>
+  				</div>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
@@ -363,7 +469,21 @@
                         <li><a href="#">All Items</a></li>
                       </ul>
                   </li> -->
-                  <li><a href="personalization.html">personalization</a></li>
+                  <li><a href="personalization.html">Personalization</a>
+                    <div class="mega-menu personalization-menu">
+                      <span class="personalization-sub-menu">
+                        <a href="#">Gift</a>
+                        <a href="#">VLD Fashion</a>
+                        <a href="#">Seasonal</a>
+                        <a href="#">Made In America</a>
+                        <a href="#">Outdoor</a>
+                      </span>
+                      <span class="mega-menu-photo personalization-photo">
+                          <a href="" class="top-25">Best Sellers</a>
+                        <a href="#" class="border-all-menu"><img src="images/38133.jpg" alt="" /></a>
+                      </span>
+                    </div>
+                  </li>
                   <li><a href="#">outdoor</a>
                     <div class="mega-menu outdoor-menu">
 
@@ -726,7 +846,7 @@
                              <li><a href="#">All Items</a></li>
                            </ul>
                          </li>
-                  <li><a href="personalization.html">Personalization</a></li>
+
                   <li><a href="#">Made In America</a>
                    <ul class="submenu">
                         <li><a href="#">Garden Room Decor</a></li>
@@ -736,6 +856,15 @@
                         <li><a href="#">All Items</a></li>
                       </ul>
                     </li>
+                    <li><a href="personalization.html">Personalization</a>
+                     <ul class="submenu">
+                          <li><a href="#">Garden Room Decor</a></li>
+                          <li><a href="#">Garden Decor</a></li>
+                          <li><a href="#">Collecyion Sales</a></li>
+                          <li><a href="#">Sale</a></li>
+                          <li><a href="#">All Items</a></li>
+                        </ul>
+                      </li>
                     <li><a href="#">Brands</a>
                      <ul class="submenu">
                           <li class="submenu-title"><a href="#">Paula Deen Home Decor</a>

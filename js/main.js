@@ -280,12 +280,17 @@ $(document).ready(function(){
     // $(".alert-success").show();
   });
 
+//   filter js
   $("#filter").click(function(){
-          $(".sidemenu").toggle();
+		  $(".sidemenu").show();
+		  $(".sidemenu-sort").hide();
     });
     $("#sort").click(function(){
-          $(".sidemenu-sort").toggle();
+		  $(".sidemenu-sort").show();
+		  $(".sidemenu").hide();
 	});
+// end of filter js
+
 	
 	$("#filter2").click(function(){
 		$(".sidemenu2").toggle();

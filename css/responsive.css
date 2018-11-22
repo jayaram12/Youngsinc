@@ -970,9 +970,9 @@ p {
 }
 .best-sell-2-area .navigation-top-right .owl-controls {
   left: 0;
-  right: 0;
+  right: -57px;
   text-align: right;
-  top: -25px;
+  top: -28px;
   width: 96px;
 }
 .best-sell-2-area .navigation-top-right .owl-nav div {

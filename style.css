@@ -895,7 +895,7 @@ select {
 .product-photo > a::before {
   background: #000 none repeat scroll 0 0;
   content: "";
-  height: 38%;
+  height: 100%;
   left: 0;
   opacity: 0;
   position: absolute;
@@ -4783,9 +4783,15 @@ input[type="radio"]:disabled + .label-text:before{
     @media  (min-width: 2500px){
       .container {width: 2400px !important;}
       }
-      @media only screen and (max-width: 1440px) and (min-width: 320px){
-        .header-search input {width: 310px !important;}
+      @media only screen and (max-width: 800px) and (min-width: 320px){
+        .header-search input {width: 220px !important;}
         }
+        @media only screen and (max-width: 1050px) and (min-width: 801px){
+          .header-search input {width: 207px !important;}
+          }
+          @media only screen and (max-width: 1450px) and (min-width: 1051px){
+            .header-search input {width: 350px !important;}
+            }
   @media only screen and (max-width: 1919px) and (min-width: 1200px)  {
     .promo-banner-1 .promo-banner-brief {padding-left: 5%;}
     .promo-banner-2 .promo-banner-brief {padding-left: 5%;}
@@ -5670,8 +5676,71 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 .add-claim-tbl tbody tr td:first-child{width:50px;}
 .prd-qty-txt{font-size:22px;}
 .per-size{font-size: 25px;}
-
+.collection-card{border:1px solid #dedede;margin-bottom: 30px;height:90px;}
+.collection-head{background-color: #006680;padding: 9px;}
+ .collection-head h3{color:#fff;font-size: 17px;margin-bottom:0px;}
+ .coll-card-head{background-color: #006680;padding: 9px;}
+ .coll-card-head h3 {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.coll-desc p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 0px;
+  padding: 15px 5px;
+  text-align: center;
+}
+.coll-action{padding: 10px 32px;}
+.btn-primary:active:hover, .btn-primary.active:hover, .btn-primary, .btn-primary:hover{background-color: #006680;border-color: #006680;}
+/* order cards css */
+.order-item-body {
+  position: relative;
+  border: 1px solid #dedede;
+  padding: 5px;
+  margin-bottom: 30px;
+  border-radius: 0px;
+  min-height: 125px;
+}
+.order-item-body h2 {
+  position: absolute;
+  color: #fff;
+  font-size: 15px !important;
+  text-align: left;
+  top: 0;
+  padding: 8px;
+}
+.order-desc {
+  position: absolute;
+  bottom: 0;
+  padding:8px;
+}
+.order-desc h3 {
+  color: #fff;
+  font-size: 17px !important;
+  text-align: left;
+  line-height: 9px !important;
+}
+.order-desc p {
+  color: #fff;
+  font-size: 14px !important;
+  text-align: left;
+  line-height: 20px !important;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.order-grid-pad .col-olg-2,.order-grid-pad .col-lg-2,.order-grid-pad .col-md-2,.order-grid-pad .col-sm-3,.order-grid-pad .col-xs-12{
+  padding-left:5px !important;
+  padding-right:5px !important;
+}
+.order-red{background-color:#ff0606;padding:5px;}
+/* end of order cards css */
 /* media screens */
+@media (min-width: 992px){
+.modal-lg {width: 1100px;}
+}
 @media only screen and (max-width: 1119px) and (min-width: 1020px){
 
   /* category page css */
@@ -5726,7 +5795,8 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   .cart-plus-minus div.inc{font-size:16px !important;}
   .cart-plus-minus div{height: 18px !important;}
   .product-list-price .cart-plus-minus div.dec{font-size:16px !important;}
-  .cart-plus-minus input{width: 60px !important;    padding-left: 10px !important;}
+  .cart-plus-minus input{width: 80px !important;height: 36px !important;    padding-left: 10px !important;}
+  .single-pro-add-cart a {height: 38px !important;line-height: 34px !important;}
   .product-list .product-list-cart img {float: left !important;margin-right: 40px;width: 22px !important;}
   .product-brief h2, .product-brief h3{font-size:13px !important;}
   .total-cart{    width: 62px !important;padding: 8px !important;}
@@ -5734,6 +5804,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   .shop-content .shop-grid .col-lg-3 {margin-bottom: 0px !important;}
   .shop-grid .single-product {margin-bottom: 2px !important;}
   .widget-categories ul li{font-size: 13px !important;}
+  .title-3{line-height: 38px !important;}
   /* personalization css */
   .personalize-header h3{font-size: 20px !important}
   .personalize-header p {font-size: 14px !important;}
@@ -5756,6 +5827,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   .tabbable-panel .nav-tabs > li a i{font-size:18px !important;}
   .tabbable-panel .nav-tabs > li.active a i{font-size: 18px !important;}
   .tabtop .active a:before {top: 49px !important;left: 20px !important;}
+  .range-slider__value{width: 50px !important;}
   /* end of personalization css */
   .mb-no-pad-left{padding-left:0px !important;}
   .mb-no-pad-right{padding-right:0px !important}
@@ -5791,14 +5863,32 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
     .upload-inner .right-size{font-size:14px !important;}
     .upload-inner .right-size {right: 7px !important;}
     .per-cust-btn a {padding: 8px 0px !important;margin-right: 5px !important;}
+    .tabbable-panel .nav-tabs > li.active a i {font-size: 17px !important;}
+    .tabbable-panel .nav-tabs > li a {padding: 10px 25px !important;}
+  .tabbable-panel .nav-tabs > li a i {font-size: 17px !important;}
+  .tabtop .active a:before {top: 48px !important;left: 31px !important;}
   }
   @media only screen and (max-width: 1500px) and (min-width: 1200px){
     .upload-inner .transparent {left: 47px !important;}
     .upload-inner .right-size {right: 8px !important;}
+    .tabbable-panel .nav-tabs > li.active a i {font-size: 17px !important;}
+    .tabbable-panel .nav-tabs > li a {padding: 10px 25px !important;}
+  .tabbable-panel .nav-tabs > li a i {font-size: 17px !important;}
+  .tabtop .active a:before {top: 48px !important;left: 31px !important;}
+  }
+  @media only screen and (max-width: 2199px) and (min-width: 1501px){
+    .tabbable-panel .nav-tabs > li.active a i {font-size: 17px !important;}
+    .tabbable-panel .nav-tabs > li a {padding: 10px 25px !important;}
+  .tabbable-panel .nav-tabs > li a i {font-size: 17px !important;}
+  .tabtop .active a:before {top: 48px !important;left: 31px !important;}
   }
   @media only screen and (max-width: 2600px) and (min-width: 2200px){
     .upload-inner .transparent {left: 372px !important;}
     .upload-inner .right-size {right: 8px !important;}
+    .tabbable-panel .nav-tabs > li.active a i {font-size: 17px !important;}
+    .tabbable-panel .nav-tabs > li a {padding: 10px 25px !important;}
+  .tabbable-panel .nav-tabs > li a i {font-size: 17px !important;}
+  .tabtop .active a:before {top: 48px !important;left: 31px !important;}
   }
   /* end of personalization */
   @media only screen and (max-width: 600px) and (min-width: 401px){
@@ -5815,7 +5905,8 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
     .tb-mrg-top-50{margin-top:50px;}
     .succress-message p{font-size:30px !important;line-height: 42px !important;}
     .account-sec-body{margin: 0 40px !important;}
-    .nav-tabs > li{width: 31% !important;}
+    .nav-tabs > li{width: 21% !important;}
+    .tabtop .active a:before{left:66px !important;}
   }
   @media only screen and (max-width: 1100px) and (min-width: 992px){
     .account-sec-body{margin: 0 42px !important;}
@@ -6230,8 +6321,20 @@ i:focus, i:active, a:focus, button: {outline:0;}
 	}
 }
 
-.collection-items ul li{width:130px;display:inline-block;border:1px solid #dedede;}
-
+.collection-items ul li {
+  width: 123px;
+  height: 123px;
+  display: inline-flex;
+  border: 1px solid #dedede;
+  margin-bottom: 14px;
+  float: left;
+  margin-right: 6px;
+}
+.collection-items ul li a {
+  font-size: 16px;
+  text-align: center;
+  padding: 40px 0;
+}
 .information-table {min-height:300px; overflow:hidden;}
 .prod-form table tr td {padding:4px 8px;}
 .sidemenu .form-group label{color:#006680}
@@ -7401,5 +7504,10 @@ section p{}
 @media (min-width: 2100px){
 .col-xlg-3 {
     width: 20% !important;
+}
+}
+@media (min-width: 1200px){
+.col-olg-2 {
+    width: 14.255% !important;
 }
 }

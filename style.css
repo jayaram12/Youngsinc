@@ -4761,7 +4761,7 @@ input[type="radio"]:disabled + .label-text:before{
   color: #127900;
   font-size: 20px;
 }
-
+.header-top-right{float:right;}
 @media only screen and (max-width: 1919px) and (min-width: 1200px){
 .container {width: 1420px;}
 /* category page css */
@@ -4790,7 +4790,7 @@ input[type="radio"]:disabled + .label-text:before{
           .header-search input {width: 207px !important;}
           }
           @media only screen and (max-width: 1450px) and (min-width: 1051px){
-            .header-search input {width: 350px !important;}
+            .header-search input {width: 340px !important;}
             }
   @media only screen and (max-width: 1919px) and (min-width: 1200px)  {
     .promo-banner-1 .promo-banner-brief {padding-left: 5%;}
@@ -5785,6 +5785,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   .cart-plus-minus div.inc{font-size:16px !important;    top: 24px !important;}
   .cart-plus-minus div{height: 18px !important;right:0px !important;}
   .cart-plus-minus input{width: 67px !important;height: 36px !important;    padding-left: 10px !important;}
+  .personalization-final .cart-plus-minus div.inc{font-size:16px !important;    top: 0px !important;}
   }
   @media only screen and (max-width: 500px) and (min-width: 375px){
     .cart-plus-minus div.inc{font-size:16px !important;    top: 0px !important;}
@@ -5815,6 +5816,8 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   .title-3{line-height: 38px !important;}
   .product-counts .cart-plus-minus div.inc { top: 0px !important;}
   .product-counts .cart-plus-minus div.dec{font-size: 17px !important;}
+  .header-top-right{float:left !important;}
+  .mb-mrg-top-30{margin-top:30px;}
   /* personalization css */
   .personalize-header h3{font-size: 20px !important}
   .personalize-header p {font-size: 14px !important;}
@@ -5878,13 +5881,28 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   .tabbable-panel .nav-tabs > li a i {font-size: 17px !important;}
   .tabtop .active a:before {top: 48px !important;left: 31px !important;}
   }
-  @media only screen and (max-width: 1500px) and (min-width: 1200px){
+  @media only screen and (max-width: 1800px) and (min-width: 1200px){
     .upload-inner .transparent {left: 47px !important;}
     .upload-inner .right-size {right: 8px !important;}
     .tabbable-panel .nav-tabs > li.active a i {font-size: 17px !important;}
     .tabbable-panel .nav-tabs > li a {padding: 10px 25px !important;}
   .tabbable-panel .nav-tabs > li a i {font-size: 17px !important;}
   .tabtop .active a:before {top: 48px !important;left: 31px !important;}
+  }
+  @media only screen and (max-width: 1900px) and (min-width: 1801px){
+    .upload-inner .transparent {left: 47px !important;}
+  }
+  @media only screen and (max-width: 2220px) and (min-width: 2200px){
+    .upload-inner .transparent {left: 173px !important;}
+  }
+  @media only screen and (max-width: 2400px) and (min-width: 2300px){
+    .upload-inner .transparent {left: 274px !important;}
+  }
+  @media only screen and (max-width: 2500px) and (min-width: 2401px){
+    .upload-inner .transparent {left: 274px !important;}
+  }
+  @media only screen and (max-width: 2600px) and (min-width: 2501px){
+    .upload-inner .transparent {left: 370px !important;}
   }
   @media only screen and (max-width: 2199px) and (min-width: 1501px){
     .tabbable-panel .nav-tabs > li.active a i {font-size: 17px !important;}
@@ -5893,7 +5911,6 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   .tabtop .active a:before {top: 48px !important;left: 31px !important;}
   }
   @media only screen and (max-width: 2600px) and (min-width: 2200px){
-    .upload-inner .transparent {left: 372px !important;}
     .upload-inner .right-size {right: 8px !important;}
     .tabbable-panel .nav-tabs > li.active a i {font-size: 17px !important;}
     .tabbable-panel .nav-tabs > li a {padding: 10px 25px !important;}

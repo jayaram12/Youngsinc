@@ -5781,6 +5781,16 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   }
   .header-search input { width: 220px !important;}
   }
+  @media only screen and (max-width: 374px) and (min-width: 320px){
+  .cart-plus-minus div.inc{font-size:16px !important;    top: 24px !important;}
+  .cart-plus-minus div{height: 18px !important;right:0px !important;}
+  .cart-plus-minus input{width: 67px !important;height: 36px !important;    padding-left: 10px !important;}
+  }
+  @media only screen and (max-width: 500px) and (min-width: 375px){
+    .cart-plus-minus div.inc{font-size:16px !important;    top: 0px !important;}
+    .cart-plus-minus div{height: 18px !important;right:0px !important;}
+    .cart-plus-minus input{width: 67px !important;height: 36px !important;    padding-left: 10px !important;}
+    }
   @media only screen and (max-width: 425px) and (min-width: 320px){
   .product-brief h2 a {font-size: 11px !important;line-height: 20px !important;}
   .product-breif-head h2 {line-height: 12px !important;}
@@ -5792,10 +5802,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   .product-list-2 .product-list-price { width: 78% !important;}
   .product-list .product-list-cart {width: 16% !important;}
   .product-list-price .cart-plus-minus input {height: 33px !important;}
-  .cart-plus-minus div.inc{font-size:16px !important;}
-  .cart-plus-minus div{height: 18px !important;}
   .product-list-price .cart-plus-minus div.dec{font-size:16px !important;}
-  .cart-plus-minus input{width: 80px !important;height: 36px !important;    padding-left: 10px !important;}
   .single-pro-add-cart a {height: 38px !important;line-height: 34px !important;}
   .product-list .product-list-cart img {float: left !important;margin-right: 40px;width: 22px !important;}
   .product-brief h2, .product-brief h3{font-size:13px !important;}
@@ -5803,8 +5810,11 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   .product-list .product-list-cart{margin-top: 10px !important;}
   .shop-content .shop-grid .col-lg-3 {margin-bottom: 0px !important;}
   .shop-grid .single-product {margin-bottom: 2px !important;}
+  .shop-grid-min-height{min-height:366px !important;}
   .widget-categories ul li{font-size: 13px !important;}
   .title-3{line-height: 38px !important;}
+  .product-counts .cart-plus-minus div.inc { top: 0px !important;}
+  .product-counts .cart-plus-minus div.dec{font-size: 17px !important;}
   /* personalization css */
   .personalize-header h3{font-size: 20px !important}
   .personalize-header p {font-size: 14px !important;}
@@ -5914,6 +5924,15 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   @media only screen and (max-width: 1600px) and (min-width: 1101px){
     .account-sec-body{margin: 0 70px !important;}
   }
+  @media only screen and (max-width: 1439px) and (min-width: 320px){
+    .promotion-code, .cart-totals{margin-top:30px !important;}
+    
+  }
+  /* tabs view margin top css */
+  @media only screen and (max-width: 1024px) and (min-width: 600px){
+    .tb-mrg-top-10{margin-top:10px;}
+  }
+  /* end tabs view margin top css */
 /* end of media screens */
 
 

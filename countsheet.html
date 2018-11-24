@@ -41,6 +41,130 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
+				<div class="sidemenu side-title-filter" style="display: none;">
+						<h2 style="color:#006680;font-size: 18px;padding:5px;">Filters</h2>
+						<!-- shop-filter start -->
+						<aside class="widget shop-filter price-range">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label for="text">Customer Name </label>
+										<input type="text" class="form-control" value="">
+									</div>
+									<div class="form-group">
+										<label for="text">Order# </label>
+										<input type="text" class="form-control" value="">
+									</div>
+									<div class="form-group">
+										<label for="text">PO# </label>
+										<input type="text" class="form-control" value="">
+									</div>
+									<div class="form-group">
+										<label for="text">Ship zip </label>
+										<input type="text" class="form-control" value="">
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="widget widget-color availability">
+									<h5 class="sidebar-title">Time Filter</h5>
+									<ul>
+											<li>
+													<div class="form-check pad-left-0 show-no-1 mrg-rgt-10">
+															<label>
+																<input type="radio" name="radio"> <span class="label-text">Last 14 days</span>
+															</label>
+														</div>
+											</li>
+											<li>
+													<div class="form-check pad-left-0 show-no-1">
+															<label>
+																<input type="radio" name="radio"> <span class="label-text">Last 1 month</span>
+															</label>
+														</div>
+											</li>
+											<li>
+													<div class="form-check pad-left-0 show-no-1">
+															<label>
+																<input type="radio" name="radio"> <span class="label-text">Last 3 months</span>
+															</label>
+														</div>
+											</li>
+										</ul>
+								</div>
+								<div class="col-md-12 text-center center-block">
+								<div class="promotion-btn mrg-top-15">
+										<a href="#" class="mrg-rgt-10">Cancel</a><a href="#">Apply</a>
+									</div>
+								</div>
+							</aside>
+							</div>
+							<!-- shop-filter end -->
+					<div class="sidemenu-sort side-title-filter" style="display: none;">
+							<aside class="widget widget-brand sort-list-item-1">
+									<h5 class="sidebar-title">Sort</h5>
+									<ul>
+										<li>
+												<div class="sortby">
+														<div class="form-check pad-left-0 show-no-1">
+																<label>
+																	<input type="radio" name="radio"> <span class="label-text">Ascending</span>
+																</label>
+															</div>
+															<div class="form-check pad-left-0 show-no-1">
+																	<label>
+																		<input type="radio" name="radio"> <span class="label-text">Descending</span>
+																	</label>
+																</div>
+	
+													</div>
+										</li>
+										<li>
+												<div class="sortbylist mrg-top-15 sort-list-item-1 brd-top mrg">
+														<div class="form-check pad-left-0 show-no-1">
+															<label>
+																<input type="radio" name="radio"> <span class="label-text">Item#</span>
+															</label>
+														</div>
+														<div class="form-check pad-left-0 show-no-1">
+																<label>
+																	<input type="radio" name="radio"> <span class="label-text">Description</span>
+																</label>
+															</div>
+														<div class="form-check pad-left-0 show-no-1">
+																<label>
+																	<input type="radio" name="radio"> <span class="label-text">Order#</span>
+																</label>
+														</div>
+														<div class="form-check pad-left-0 show-no-1">
+																<label>
+																	<input type="radio" name="radio"> <span class="label-text">PO#</span>
+																</label>
+														</div>
+														<div class="form-check pad-left-0 show-no-1">
+																<label>
+																	<input type="radio" name="radio"> <span class="label-text">Order Dt</span>
+																</label>
+														</div>
+														<div class="form-check pad-left-0 show-no-1">
+																<label>
+																	<input type="radio" name="radio"> <span class="label-text">Scheduled Dt</span>
+																</label>
+														</div>
+														<div class="form-check pad-left-0 show-no-1">
+																<label>
+																	<input type="radio" name="radio"> <span class="label-text">Order$</span>
+																</label>
+														</div>
+	
+													</div>
+										</li>
+									</ul>
+									<div class="col-md-12 text-center center-block">
+									<div class="promotion-btn mrg-top-15">
+											<a href="#" class="mrg-rgt-10">Cancel</a><a href="#">Apply</a>
+										</div>
+									</div>
+								</aside>
+						</div>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
@@ -52,61 +176,51 @@
 		<!-- HEADER-AREA START -->
     <header class="header-area">
     <!-- Header-Top Start -->
-  <div class="header-top">
-      <div class="container-fluid">
-
-        <div class="row">
-          <div class="col-md-4 col-lg-4 col-sm-12 bdr-btm">
-            <div class="header-top-left text-left">
-              <ul>
-                <!-- <li>
-                  <i class="fa fa-phone"></i>
-                  <span>800-323-7799</span>
-                </li>
-                <li>
-                    <i class="fa fa-envelope"></i>
-                  <span>helpdesk@youngsinc.com</span>
-                </li> -->
-                <li class="text-color">
-                  <i class="fa fa-shopping-bag"></i>
+		<div class="header-top">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 col-md-4 col-sm-12 bdr-btm">
+              <div class="header-top-left text-left">
+                <ul>
+                  <li class="text-color">
+                    <i class="fa fa-shopping-bag"></i>
                   <span><a href="#todaysoffer">Today's Offers</a></span>
                 </li>
                 <li class="text-color">
-                  <i class="fa fa-heart-o"></i>
-                  <span><a href="#todaysoffer">Wishlist</a></span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 bdr-btm">
-              <div class="header-search center-block">
-                <form action="#" class="search">
-                  <input type="text" placeholder="Search..." />
-                  <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
+                    <i class="fa fa-heart-o"></i>
+                    <span><a href="#todaysoffer">Wishlist</a></span>
+                  </li>
+                </ul>
               </div>
-          </div>
-          <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-            <div class="header-top-right pull-right">
-              <ul class="cust-sign">
-                <!-- <li><a href="">Login</a></li> -->
-                <li><a href="">welcome <strong>Rekha</strong></a></li>
-              </ul>
-              <ul>
-                <li><a href="account.html">Account <span><i class="fa fa-cog"></i></span></a>
-                  <ul class="submenu">
-                    <li><a href="#">My Account</a></li>
-                    <li><a href="#">Wishlist</a></li>
-                    <li><a href="#">Checkout</a></li>
-                    <li><a href="#">Logout</a></li>
-                  </ul>
-                </li>
-              </ul>
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-12">
+              <div class="header-top-right pull-right">
+                
+                <div class="header-search search-width">
+                  <form action="#" class="search">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+                </div>
+                <ul class="cust-sign">
+                  <li><a href="">Login</a></li>
+                  <!-- <li><a href="">wel come to <strong>Jayaram</strong></a></li> -->
+                </ul>
+                <ul>
+                  <li><a href="account.html">Account <span><i class="fa fa-cog"></i></span></a>
+                    <ul class="submenu">
+                      <li><a href="#">My Account</a></li>
+                      <li><a href="#">Wishlist</a></li>
+                      <li><a href="#">Checkout</a></li>
+                      <li><a href="#">Logout</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     <!-- Header-Top End -->
     <!-- Main-Header Start -->
     <div class="main-header">
@@ -820,6 +934,7 @@
 					</div>
 				</div>
 			</div>
+			
 			<!-- PAGE-BANNER END -->
 			<!-- SHOPPING-CART-AREA START -->
 			<div class="shopping-cart-area margin-bottom-80">

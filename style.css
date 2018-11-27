@@ -2532,7 +2532,7 @@ margin-top: 40px;
   font-size: 32px;
   font-weight: 400;
   line-height: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 18px;
   position: relative;
   text-transform: uppercase;
 }
@@ -4731,8 +4731,8 @@ input[type="radio"]:disabled + .label-text:before{
 .card-right .card-number{font-size:30px;}
 .arrowicon {
   position: absolute;
-  right: 30px;
-  top: 42px;
+  right: 10px;
+  top: 60px;
   background-color: #9a9999;
   padding: 2px 9px;
   color: #fff;
@@ -4787,6 +4787,12 @@ input[type="radio"]:disabled + .label-text:before{
   font-size: 20px;
 }
 .header-top-right{float:right;}
+.cust-coll-tbl table{border-color: #fff !important;}
+.cust-coll-tbl table tbody tr td{border-bottom: none !important;}
+.cust-coll-tbl table tbody tr td:first-child{border-left:1px solid #dedede;}
+@media only screen and (max-width: 1425px) and (min-width: 1200px){
+  .container {width: 1120px !important;}
+}
 @media only screen and (max-width: 1919px) and (min-width: 1200px){
 .container {width: 1420px;}
 /* category page css */
@@ -4811,12 +4817,18 @@ input[type="radio"]:disabled + .label-text:before{
       @media only screen and (max-width: 800px) and (min-width: 320px){
         .header-search input {width: 220px !important;}
         }
-        @media only screen and (max-width: 1050px) and (min-width: 801px){
+        @media only screen and (max-width: 1200px) and (min-width: 801px){
           .header-search input {width: 207px !important;}
           }
-          @media only screen and (max-width: 1450px) and (min-width: 1051px){
-            .header-search input {width: 220px !important;}
+          @media only screen and (max-width: 1350px) and (min-width: 1201px){
+            .header-search input {width: 250px !important;}
             }
+            @media only screen and (max-width: 1550px) and (min-width: 1351px){
+              .header-search input {width: 300px !important;}
+              }
+              @media only screen and (max-width: 18280px) and (min-width: 1551px){
+                .header-search input {width: 400px !important;}
+                }
             @media only screen and (max-width: 2800px) and (min-width: 2100px){
             .product-list-3 .product-list-price {font-size: 15px !important;}
         }
@@ -4829,7 +4841,11 @@ input[type="radio"]:disabled + .label-text:before{
     .main-menu > nav > ul > li > a{font-size:13px;}
     .main-menu > nav > ul > li {padding: 0 4px;}
   }
-
+  @media only screen and (max-width: 1339px) and (min-width: 1200px)  {
+    .header-top-left li {padding: 18px 6px;}
+    .main-menu > nav > ul > li > a{font-size:13px;}
+    .main-menu > nav > ul > li {padding: 0 8px !important;}
+  }
   @media (max-width: 1169px) and (min-width: 992px){
 .single-promo-banner.promo-banner-1, .single-promo-banner.promo-banner-2 {
     min-height: 650px !important;
@@ -7528,9 +7544,11 @@ section p{}
 .Withoutqty .cart-plus-minus div {right:1px;}
 
 }
-
+@media only screen and (max-width: 2200px) and (min-width: 768px){
+  .collection-items .responsive-table {width:1300px !important;}
+}
 @media only screen and (max-width: 1439px) and (min-width: 768px){
-.responsive-table {width:1300px !important;}
+
 .claim-item-body img {  width: 200px;}
 .claim-item-body {float:left; margin-right:20px;}
 .MarginTop10Md { margin-top:10px;}

@@ -2424,7 +2424,7 @@ margin-top: 40px;
 .sidebar-product  {
   /* border: 1px solid #dedede; */
   border-top: 0;
-  padding: 0px;
+  padding: 0px 0 10px 0;
 }
 .sidebar-product .single-product {
   margin-bottom: 15px;

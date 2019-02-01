@@ -32,11 +32,14 @@
         <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
 		<!-- lightbox css -->
         <link rel="stylesheet" href="css/lightbox.min.css">
+
 		<!-- style css -->
 		<link rel="stylesheet" href="style.css">
 
 		<!-- responsive css -->
         <link rel="stylesheet" href="css/responsive.css">
+      <!-- date picker css -->
+				<link href="css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
 		<!-- modernizr css -->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -52,7 +55,7 @@
 		<!-- HEADER-AREA START -->
     <header class="header-area">
     <!-- Header-Top Start -->
-		<div class="header-top">
+    <div class="header-top">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12 bdr-btm">
@@ -739,621 +742,570 @@
 
 		<!-- PAGE-CONTENT START -->
 		<section class="page-content">
-			<!-- PAGE-BANNER START -->
-			<!-- <div class="page-banner-area margin-bottom-80">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="page-banner-menu">
-								<h2 class="page-banner-title">Gift</h2>
-								<ul>
-									<li><a href="index.html">Gift</a></li>
-									<li>General Gifts</li>
-								</ul>
+			<!-- SLIDER-AREA START -->
+			<div class="slider-area margin-bottom-80">
+				<div class="bend niceties preview-2">
+					<div id="ensign-nivoslider" class="slides">
+						<!-- <img src="img/slider/slider-1/4.jpg" alt="" title="#slider-direction-1"  /> -->
+						<img src="img/slider/slider-1/1.jpg" alt="" title="#slider-direction-2"  />
+						<img src="img/slider/slider-1/2.jpg" alt="" title="#slider-direction-3"  />
+						<img src="img/slider/slider-1/3.jpg" alt="" title="#slider-direction-4"  />
+					</div>
+					<!-- direction 1 -->
+					<!-- <div id="slider-direction-1" class="t-cn slider-direction">
+						<div class="slider-progress"></div>
+						<div class="slider-content t-lfl s-tb">
+							<div class="title-container s-tb-c title-compress">
+								<div class="slider-1">
+									<div class="wow fadeInUpBig" data-wow-duration="1.2s" data-wow-delay="0.5s">
+										<h1 class="title1">personalization</h1>
+									</div>
+									<div class="image wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.7s">
+										<span><img src="img/slider/slider-1/slider-border.png" alt="" /></span>
+									</div>
+									<div class="wow fadeInUpBig" data-wow-duration="1.8s" data-wow-delay="0.9s">
+										<p class="slider-brief">Simply dummy text of the printing and typesetting industry. simply dummy text of the printing and typesetting industry.</p>
+									</div>
+									<div class="wow fadeInUpBig" data-wow-duration="2s" data-wow-delay="1.1s">
+										<a href="#" class="shop-now">shop now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> -->
+					<!-- direction 2 -->
+					<div id="slider-direction-2" class="slider-direction">
+						<div class="slider-progress"></div>
+						<div class="slider-content t-lfl s-tb edit-delete-icon-view">
+                <div class="edit-delete-icon">
+                    <i class="fa fa-pencil-square edit"  data-toggle="modal" data-target="#sliderBanners"></i> | <i class="fa fa-trash edit"></i>
+                  </div>
+							<div class="title-container s-tb-c title-compress">
+								<div class="slider-1">
+									<div class="wow fadeInUpBig" data-wow-duration="1.2s" data-wow-delay="0.5s">
+										<h1 class="title1">Bee my honey</h1>
+									</div>
+									<div class="image wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.7s">
+										<span><img src="img/slider/slider-1/slider-border.png" alt="" /></span>
+									</div>
+									<div class="wow fadeInUpBig" data-wow-duration="1.8s" data-wow-delay="0.9s">
+										<p class="slider-brief">Simply dummy text of the printing and typesetting industry. simply dummy text of the printing and typesetting industry.</p>
+									</div>
+									<div class="wow fadeInUpBig" data-wow-duration="2s" data-wow-delay="1.1s">
+										<a href="#" class="shop-now">shop now</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div> -->
-			<!-- Breadcrumb -->
-				<div class="breadcrumb">
-						<div class="container">
-								<div class="row">
-									<div class="col-md-12">
-													<ol class="breadcrumb">
-														<li><a href="#"><img src="img/home.png" class="img-responsive"></a></li>
-														<li class="active"><span>Gift</span></li>
-													</ol>
+					<!-- direction 3 -->
+					<div id="slider-direction-3" class="slider-direction">
+						<div class="slider-progress"></div>
+						<div class="slider-content t-lfl s-tb edit-delete-icon-view">
+                <div class="edit-delete-icon">
+                    <i class="fa fa-pencil-square edit"  data-toggle="modal" data-target="#sliderBanners"></i> | <i class="fa fa-trash edit"></i>
+                  </div>
+							<div class="title-container s-tb-c title-compress">
+								<div class="slider-1">
+									<div class="wow fadeInUpBig" data-wow-duration="1.2s" data-wow-delay="0.5s">
+										<h1 class="title1">Home Decor collection</h1>
+									</div>
+									<div class="image wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.7s">
+										<span><img src="img/slider/slider-1/slider-border.png" alt="" /></span>
+									</div>
+									<div class="wow fadeInUpBig" data-wow-duration="1.8s" data-wow-delay="0.9s">
+										<p class="slider-brief">Simply dummy text of the printing and typesetting industry. simply dummy text of the printing and typesetting industry.</p>
+									</div>
+									<div class="wow fadeInUpBig" data-wow-duration="2s" data-wow-delay="1.1s">
+										<a href="#" class="shop-now">shop now</a>
 									</div>
 								</div>
 							</div>
-				</div>
-			<!-- end of breadcrumb -->
-			<!-- PAGE-BANNER END -->
-			<!-- SHOP-AREA START -->
-			<div class="shop-area margin-bottom-80">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<span class="shop-border"></span>
 						</div>
-
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<!-- Shop-Content start -->
-							<div class="shop-content">
-
-								<!-- Shop-product start -->
-								<div class="tab-content mrg-top-20">
-									<div role="tabpanel" class="tab-pane active" id="grid-view">
-										<div class="row shop-grid  cat-slider cat-slider-grid">
-											<!-- Single-product start -->
-											<div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
-												<div class="single-product mrg-btm-30">
-													<div class="product-photo product-photo-category">
-														<a href="sub-category.html">
-															<img class="primary-photo" src="img/shop/1.jpg" alt="" />
-															<img class="secondary-photo" src="img/shop/1.jpg" alt="" />
-														</a>
-														<div class="pro-action">
-															<a href="#" class="action-btn"><i class="sp-heart"></i><span>Wishlist</span></a>
-															<a href="#" class="action-btn"><i class="sp-shopping-cart"></i><span>Add to cart</span></a>
-															<a href="#" class="action-btn"><i class="sp-compare-alt"></i><span>Compare</span></a>
-														</div>
-													</div>
-													<div class="product-brief">
-														<h2 class="text-center"><a href="sub-category.html">General Gifts</a></h2>
-													</div>
-												</div>
-											</div>
-											<!-- Single-product end -->
-											<!-- Single-product start -->
-											<div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
-												<div class="single-product mrg-btm-30">
-													<div class="product-photo product-photo-category">
-														<a href="#">
-															<img class="primary-photo" src="img/shop/2.jpg" alt="" />
-															<img class="secondary-photo" src="img/shop/2.jpg" alt="" />
-														</a>
-														<div class="pro-action">
-															<a href="#" class="action-btn"><i class="sp-heart"></i><span>Wishlist</span></a>
-															<a href="#" class="action-btn"><i class="sp-shopping-cart"></i><span>Add to cart</span></a>
-															<a href="#" class="action-btn"><i class="sp-compare-alt"></i><span>Compare</span></a>
-														</div>
-													</div>
-													<div class="product-brief">
-														<h2 class="text-center"><a href="#">Country</a></h2>
-													</div>
-												</div>
-											</div>
-											<!-- Single-product end -->
-											<!-- Single-product start -->
-											<div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
-												<div class="single-product mrg-btm-30">
-													<div class="product-photo product-photo-category">
-														<a href="#">
-															<img class="primary-photo" src="img/shop/3.jpg" alt="" />
-															<img class="secondary-photo" src="img/shop/3.jpg" alt="" />
-														</a>
-														<div class="pro-action">
-															<a href="#" class="action-btn"><i class="sp-heart"></i><span>Wishlist</span></a>
-															<a href="#" class="action-btn"><i class="sp-shopping-cart"></i><span>Add to cart</span></a>
-															<a href="#" class="action-btn"><i class="sp-compare-alt"></i><span>Compare</span></a>
-														</div>
-													</div>
-													<div class="product-brief">
-														<h2 class="text-center"><a href="#">Lodge/Woodland</a></h2>
-													</div>
-												</div>
-											</div>
-											<!-- Single-product end -->
-											<!-- Single-product start -->
-											<div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
-												<div class="single-product mrg-btm-30">
-													<div class="product-photo product-photo-category">
-														<a href="#">
-															<img class="primary-photo" src="img/shop/4.jpg" alt="" />
-															<img class="secondary-photo" src="img/shop/4.jpg" alt="" />
-														</a>
-														<div class="pro-action">
-															<a href="#" class="action-btn"><i class="sp-heart"></i><span>Wishlist</span></a>
-															<a href="#" class="action-btn"><i class="sp-shopping-cart"></i><span>Add to cart</span></a>
-															<a href="#" class="action-btn"><i class="sp-compare-alt"></i><span>Compare</span></a>
-														</div>
-													</div>
-													<div class="product-brief">
-														<h2 class="text-center"><a href="#">Nautical</a></h2>
-													</div>
-												</div>
-											</div>
-											<!-- Single-product end -->
-											<!-- Single-product start -->
-											<div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
-												<div class="single-product mrg-btm-30">
-													<div class="product-photo product-photo-category">
-														<a href="#">
-															<img class="primary-photo" src="img/shop/5.jpg" alt="" />
-															<img class="secondary-photo" src="img/shop/5.jpg" alt="" />
-														</a>
-														<div class="pro-action">
-															<a href="#" class="action-btn"><i class="sp-heart"></i><span>Wishlist</span></a>
-															<a href="#" class="action-btn"><i class="sp-shopping-cart"></i><span>Add to cart</span></a>
-															<a href="#" class="action-btn"><i class="sp-compare-alt"></i><span>Compare</span></a>
-														</div>
-													</div>
-													<div class="product-brief">
-														<h2 class="text-center"><a href="#">Pet/Child</a></h2>
-													</div>
-												</div>
-											</div>
-											<!-- Single-product end -->
-											<!-- Single-product start -->
-											<div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
-												<div class="single-product mrg-btm-30">
-													<div class="product-photo product-photo-category">
-														<a href="#">
-															<img class="primary-photo" src="img/shop/6.jpg" alt="" />
-															<img class="secondary-photo" src="img/shop/6.jpg" alt="" />
-														</a>
-														<div class="pro-action">
-															<a href="#" class="action-btn"><i class="sp-heart"></i><span>Wishlist</span></a>
-															<a href="#" class="action-btn"><i class="sp-shopping-cart"></i><span>Add to cart</span></a>
-															<a href="#" class="action-btn"><i class="sp-compare-alt"></i><span>Compare</span></a>
-														</div>
-													</div>
-													<div class="product-brief">
-														<h2 class="text-center"><a href="#">Religious/ Inspirational</a></h2>
-													</div>
-												</div>
-											</div>
-											<!-- Single-product end -->
-											<!-- Single-product start -->
-											<div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
-												<div class="single-product mrg-btm-30">
-													<div class="product-photo product-photo-category">
-														<a href="#">
-															<img class="primary-photo" src="img/shop/7.jpg" alt="" />
-															<img class="secondary-photo" src="img/shop/7.jpg" alt="" />
-														</a>
-														<div class="pro-action">
-															<a href="#" class="action-btn"><i class="sp-heart"></i><span>Wishlist</span></a>
-															<a href="#" class="action-btn"><i class="sp-shopping-cart"></i><span>Add to cart</span></a>
-															<a href="#" class="action-btn"><i class="sp-compare-alt"></i><span>Compare</span></a>
-														</div>
-													</div>
-													<div class="product-brief">
-														<h2 class="text-center"><a href="#">Western</a></h2>
-													</div>
-												</div>
-											</div>
-											<!-- Single-product end -->
-											<!-- Single-product start -->
-											<div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
-													<div class="single-product mrg-btm-30">
-														<div class="product-photo product-photo-category">
-															<a href="#">
-																<img class="primary-photo" src="img/shop/8.jpg" alt="" />
-																<img class="secondary-photo" src="img/shop/8.jpg" alt="" />
-															</a>
-															<div class="pro-action">
-																<a href="#" class="action-btn"><i class="sp-heart"></i><span>Wishlist</span></a>
-																<a href="#" class="action-btn"><i class="sp-shopping-cart"></i><span>Add to cart</span></a>
-																<a href="#" class="action-btn"><i class="sp-compare-alt"></i><span>Compare</span></a>
-															</div>
-														</div>
-														<div class="product-brief">
-															<h2 class="text-center"><a href="#">Other/Custom</a></h2>
-														</div>
-													</div>
-												</div>
-												<!-- Single-product end -->
-												<!-- Single-product start -->
-												<div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
-													<div class="single-product mrg-btm-30">
-														<div class="product-photo product-photo-category">
-															<a href="#">
-																<img class="primary-photo" src="img/shop/9.jpg" alt="" />
-																<img class="secondary-photo" src="img/shop/9.jpg" alt="" />
-															</a>
-															<div class="pro-action">
-																<a href="#" class="action-btn"><i class="sp-heart"></i><span>Wishlist</span></a>
-																<a href="#" class="action-btn"><i class="sp-shopping-cart"></i><span>Add to cart</span></a>
-																<a href="#" class="action-btn"><i class="sp-compare-alt"></i><span>Compare</span></a>
-															</div>
-														</div>
-														<div class="product-brief">
-															<h2 class="text-center"><a href="#">Sale</a></h2>
-														</div>
-													</div>
-												</div>
-												<!-- Single-product end -->
-
-										</div>
+					</div>
+					<div id="slider-direction-4" class="slider-direction">
+						<div class="slider-progress"></div>
+						<div class="slider-content t-lfl s-tb edit-delete-icon-view">
+                <div class="edit-delete-icon">
+                    <i class="fa fa-pencil-square edit"  data-toggle="modal" data-target="#sliderBanners"></i> | <i class="fa fa-trash edit"></i>
+                  </div>
+							<div class="title-container s-tb-c title-compress">
+								<div class="slider-1">
+									<div class="wow fadeInUpBig" data-wow-duration="1.2s" data-wow-delay="0.5s">
+										<h1 class="title1">Home Interior collection</h1>
+									</div>
+									<div class="image wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.7s">
+										<span><img src="img/slider/slider-1/slider-border.png" alt="" /></span>
+									</div>
+									<div class="wow fadeInUpBig" data-wow-duration="1.8s" data-wow-delay="0.9s">
+										<p class="slider-brief">Simply dummy text of the printing and typesetting industry. simply dummy text of the printing and typesetting industry.</p>
+									</div>
+									<div class="wow fadeInUpBig" data-wow-duration="2s" data-wow-delay="1.1s">
+										<a href="#" class="shop-now">shop now</a>
 									</div>
 								</div>
-								<!-- Shop-product end -->
-
 							</div>
-							<!-- Shop-Content end -->
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- SHOP-AREA END -->
+			<!-- SLIDER-AREA END -->
+
+			<!-- NEW-COLLECTION START -->
+			<div class="new-collection-area fix margin-bottom-80">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title text-center">
+							<h2 class="border-left-right-btm">what's trending</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 padding-0">
+					<div class="single-collection edit-delete-icon-view">
+              <div class="edit-delete-icon">
+                  <i class="fa fa-pencil-square edit"  data-toggle="modal" data-target="#whatTrending"></i>
+                </div>
+						<div class="collection-photo">
+							<a href="#"><img src="img/new-collection/1.jpg" alt="" /></a>
+						</div>
+						<div class="collection-brief">
+               
+							<!-- <div class="text-right">
+								<span class="new">new</span>
+							</div> -->
+							<h2>best sellers <br /></h2>
+							<!-- <ul>
+								<li>100% cotton</li>
+								<li>fress product</li>
+								<li>black color</li>
+								<li>high qualiety</li>
+							</ul> -->
+							<div class="button-4">
+								<div class="eff-4"></div>
+								<a href="#"> Shop now </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 padding-0">
+            <div class="single-collection edit-delete-icon-view">
+                <div class="edit-delete-icon">
+                    <i class="fa fa-pencil-square edit"  data-toggle="modal" data-target="#whatTrending"></i>
+                  </div>
+						<div class="collection-photo">
+							<a href="#"><img src="img/new-collection/2.jpg" alt="" /></a>
+						</div>
+						<div class="collection-brief">
+							<!-- <div class="text-right">
+								<span class="new">new</span>
+							</div> -->
+							<h2>new arrivals <br /></h2>
+							<!-- <ul>
+								<li>100% cotton</li>
+								<li>fress product</li>
+								<li>black color</li>
+								<li>high qualiety</li>
+							</ul> -->
+							<div class="button-4">
+								<div class="eff-4"></div>
+								<a href="#"> Shop now </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 padding-0 ">
+            <div class="single-collection edit-delete-icon-view">
+                <div class="edit-delete-icon">
+                    <i class="fa fa-pencil-square edit"  data-toggle="modal" data-target="#whatTrending"></i>
+                  </div>
+						<div class="collection-photo">
+							<a href="#"><img src="img/new-collection/3.jpg" alt="" /></a>
+						</div>
+						<div class="collection-brief">
+							<!-- <div class="text-right">
+								<span class="new">new</span>
+							</div> -->
+							<h2>final few <br /> </h2>
+							<!-- <ul>
+								<li>100% cotton</li>
+								<li>fress product</li>
+								<li>black color</li>
+								<li>high qualiety</li>
+							</ul> -->
+							<div class="button-4">
+								<div class="eff-4"></div>
+								<a href="#"> Shop now </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- NEW-COLLECTION END -->
+			<div class="poster">
+				<div class="container">
+						<div class="row">
+								<div class="col-md-12">
+									<div class="section-title text-center">
+										<h2 class="border-left-right-btm">Gift Guide</h2>
+									</div>
+								</div>
+							</div>
+					<div class="row">
+						<div class="col-lg-12">
+								<img src="img/view-1.png" class="img-responsive" alt="">
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- BEST-SELL-AREA-2 START -->
+			<div class="best-sell-2-area  margin-bottom-80" id="todaysoffer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="section-title text-center  edit-delete-icon-view">
+                <h2 class="border-left-right-btm">Todays Offers</h2>
+                <div class="edit-delete-icon-2">
+                    <i class="fa fa-pencil-square edit"  data-toggle="modal" data-target="#todayOffers"></i>
+                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+          <div class="col-md-10 col-md-offset-1">
+              <!-- section grid-4 -->
+                  <div class="col-lg-12 col-md-9 col-sm-12 col-xs-12 mb-no-pad-lr">
+                      <!-- Shop-Content start -->
+                      <div class="shop-content">
+                        
+        
+                        <!-- Shop-product start -->
+                        <div class="tab-content mrg-top-20">
+                          <div role="tabpanel" class="tab-pane active" id="grid-view">
+                            <div class="row shop-grid">
+                              <!-- Single-product start -->
+                              <div class="col-xlg-4 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
+                                  
+                                <div class="today-grid">
+                                  <div class="today-img">
+                                    <img src="img/shop/18561-1.jpg" class="img-responsive" alt="">
+                                    <div class="hidden-xs gift newToday"></div>
+                                  </div>
+                                  <div class="today-description">
+                                    <h3>Ceramic 4pc Canister Set</h3>
+                                    <h4>Upto 70% Off <span>| featuring true religion</span> </h4>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                              <!-- Single-product end -->
+                              <!-- Single-product start -->
+                              <div class="col-xlg-4 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
+                                <div class="today-grid">
+                                  <div class="today-img">
+                                    <img src="img/shop/bs-1.jpg" class="img-responsive" alt="">
+                                    <div class="hidden-xs gift newToday"></div>
+                                  </div>
+                                  <div class="today-description">
+                                    <h3>Ceramic 4pc Canister Set</h3>
+                                    <h4>Upto 70% Off <span>| featuring true religion</span> </h4>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                              <!-- Single-product end -->
+                              <!-- Single-product start -->
+                              <div class="col-xlg-4 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
+                                <div class="today-grid">
+                                  <div class="today-img">
+                                    <img src="img/shop/bs-2.jpg" class="img-responsive" alt="">
+                                    <div class="hidden-xs gift newToday"></div>
+                                  </div>
+                                  <div class="today-description">
+                                    <h3>Ceramic 4pc Canister Set</h3>
+                                    <h4>Upto 70% Off <span>| featuring true religion</span> </h4>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                              <!-- Single-product end -->
+                              <!-- Single-product start -->
+                              <div class="col-xlg-4 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
+                                <div class="today-grid">
+                                  <div class="today-img">
+                                    <img src="img/shop/bs-3.jpg" class="img-responsive" alt="">
+                                    <div class="hidden-xs gift newToday"></div>
+                                  </div>
+                                  <div class="today-description">
+                                    <h3>Ceramic 4pc Canister Set</h3>
+                                    <h4>Upto 70% Off <span>| featuring true religion</span> </h4>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                              <!-- Single-product end -->
+                              <!-- Single-product start -->
+                              <div class="col-xlg-4 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
+                                <div class="today-grid">
+                                  <div class="today-img">
+                                    <img src="img/shop/bs-5.jpg" class="img-responsive" alt="">
+                                    <div class="hidden-xs gift newToday"></div>
+                                  </div>
+                                  <div class="today-description">
+                                    <h3>Ceramic 4pc Canister Set</h3>
+                                    <h4>Upto 70% Off <span>| featuring true religion</span> </h4>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                              <!-- Single-product end -->
+                              <!-- Single-product start -->
+                              <div class="col-xlg-4 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
+                                <div class="today-grid">
+                                  <div class="today-img">
+                                    <img src="img/shop/bs-4.jpg" class="img-responsive" alt="">
+                                    <div class="hidden-xs gift newToday"></div>
+                                  </div>
+                                  <div class="today-description">
+                                    <h3>Ceramic 4pc Canister Set</h3>
+                                    <h4>Upto 70% Off <span>| featuring true religion</span> </h4>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                              <!-- Single-product end -->
+                              <!-- Single-product start -->
+                              <div class="col-xlg-4 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
+                                <div class="today-grid">
+                                  <div class="today-img">
+                                    <img src="img/shop/bs-6.jpg" class="img-responsive" alt="">
+                                    <div class="hidden-xs gift newToday"></div>
+                                  </div>
+                                  <div class="today-description">
+                                    <h3>Ceramic 4pc Canister Set</h3>
+                                    <h4>Upto 70% Off <span>| featuring true religion</span> </h4>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                              <!-- Single-product end -->
+                              <!-- Single-product start -->
+                              <div class="col-xlg-4 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
+                                <div class="today-grid">
+                                  <div class="today-img">
+                                    <img src="img/shop/bs-7.jpg" class="img-responsive" alt="">
+                                    <div class="hidden-xs gift newToday"></div>
+                                  </div>
+                                  <div class="today-description">
+                                    <h3>Ceramic 4pc Canister Set</h3>
+                                    <h4>Upto 70% Off <span>| featuring true religion</span> </h4>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                              <!-- Single-product end -->
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Shop-product end -->
+                      
+                      </div>
+                      <!-- Shop-Content end -->
+                    </div>
+                  <!-- end of section grid-4 -->
+                  
+          </div>
+        </div>
+			</div>
+			<!-- BEST-SELL-AREA-2 END -->
+			<!-- PROMOTIONAL-BANNER START -->
+
+			<!-- PROMOTIONAL-BANNER END -->
 			<!-- BANNER-AREA START -->
 			<!-- <div class="banner-area fix margin-bottom-80">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12">
-							<div class="best-product-banner">
-								<a href="#"><img src="img/banner/best-product-banner.jpg" alt="" /></a>
+						<div class="col-sm-12">
+							<div class="single-banner fix">
+								<div class="banner-photo padding-0 pull-left col-md-6 col-sm-6 col-xs-12">
+									<a href="#"><img src="img/banner/2.jpg" alt="" /></a>
+								</div>
+								<div class="banner-brief banner-brief-right col-md-6 col-sm-6">
+									<h2 class="line-bottom"><span> Stylish </span> Womens</h2>
+									<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+									<div class="button-4">
+										<div class="eff-4"></div>
+										<a href="#"> Shop now </a>
+									</div>
+								</div>
+							</div>
+							<div class="single-banner fix">
+								<div class="banner-brief banner-brief-left col-md-6 col-sm-6">
+									<h2 class="line-bottom">We Are<span> Blessed </span></h2>
+									<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+									<div class="button-4">
+										<div class="eff-4"></div>
+										<a href="#"> Shop now </a>
+									</div>
+								</div>
+								<div class="banner-photo padding-0 pull-right col-md-6 col-sm-6 col-xs-12">
+									<a href="#"><img src="img/banner/1.jpg" alt="" /></a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div> -->
 			<!-- BANNER-AREA END -->
-			<!-- PRODUCT-AREA START -->
-			<div class="product-area">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="section-title text-center">
-								<h2 class="border-left-right-btm">Recently Viewed</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="active-product" class="product-slider cat-slider">
-					<!-- Single-product start -->
-					<div class="single-product">
-						<div class="pro-head">
-							<div class="pro-head-left">
-								<h2><a href="#">18420</a></h2>
-							</div>
-							<div class="pro-head-right">
-								<h2> <span class="prod-desc-off-3">$12.50</span> <span class="prod-offer">$6.50</span></h2>
-							</div>
-						</div>
-						<div class="product-photo product-photo-carousal">
-							<a href="#">
-								<img class="primary-photo" src="img/shop/19.jpg" alt="" />
-								<img class="secondary-photo" src="img/shop/19.jpg" alt="" />
-							</a>
-							<div class="pro-action" id="add-wish">
-								<a href="" class="action-btn" id="add-show"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
-								<a href="#"  data-toggle="modal" data-target="#productModal" class="action-btn"><i class="fa fa-eye"></i><span>Quick View</span></a>
 
-								<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
-							</div>
-							<div class="pro-action" id="remove-wish">
-								<a href="" class="action-btn" id="remove-show"><i class="fa fa-heart"></i><span>Remove</span></a>
-								<a href="#" class="action-btn"><i class="fa fa-eye"></i><span>Quick View</span></a>
-								<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
-							</div>
-							<img src="img/new-2.png" class="img-responsive product-list-new">
-						</div>
-						<div class="product-brief product-breif-head">
-								<div class="product-head">
-										<h2> <a href="">Wood Coffee Wall/Tab ...</a></h2>
-								</div>
-
-								<div class="product-list-3">
-									<div class="product-list-price">Instock | Case: <span>8</span> | Inner: <span>1</span></div>
-									<!-- <div class="product-list-off"></div> -->
-								</div>
-								<div class="product-list-2 product-list no-btm-border mrg-btm-20">
-									<div class="product-list-price">
-										<div class="">
-											<form action="#">
-												<div class="cart-plus-minus"><input type="text" value="2"/></div>
-											</form>
-										</div>
-									</div>
-									<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" class="img-responsive"></a></div>
-								</div>
-						</div>
-					</div>
-					<!-- Single-product end -->
-					<!-- Single-product start -->
-					<div class="single-product">
-						<div class="pro-head">
-							<div class="pro-head-left">
-								<h2><a href="#">18421</a></h2>
-							</div>
-							<div class="pro-head-right">
-								<h2><span class="prod-offer">$12.50</span></h2>
-							</div>
-						</div>
-						<div class="product-photo product-photo-carousal">
-							<a href="#">
-								<img class="primary-photo" src="img/shop/20.jpg" alt="" />
-								<img class="secondary-photo" src="img/shop/20.jpg" alt="" />
-							</a>
-							<div class="pro-action">
-								<a href="#" class="action-btn"><i class="sp-heart"></i><span>Wishlist</span></a>
-								<a href="#" class="action-btn"><i class="sp-shopping-cart"></i><span>Add to cart</span></a>
-								<a href="#" class="action-btn"><i class="sp-compare-alt"></i><span>Compare</span></a>
-							</div>
-						</div>
-						<div class="product-brief product-breif-head">
-							<div class="product-head">
-								<h2><a href="#">Wood Coffee Tray/Wall Sign</a></h2>
-							</div>
-							<div class="product-list-3">
-								<div class="product-list-price">Instock | Case: <span>12</span> | Inner: <span>2</span></div>
-									<!-- <div class="product-list-off"></div> -->
-							</div>
-							<div class="product-list-2 product-list no-btm-border mrg-btm-20">
-								<div class="product-list-price">
-									<div class="">
-										<form action="#">
-											<div class="cart-plus-minus"><input type="text" value="2"/></div>
-										</form>
-									</div>
-								</div>
-								<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" class="img-responsive"></a></div>
-							</div>
-						</div>
-					</div>
-					<!-- Single-product end -->
-					<!-- Single-product start -->
-					<div class="single-product">
-						<div class="pro-head">
-							<div class="pro-head-left">
-								<h2><a href="#">18977</a></h2>
-							</div>
-							<div class="pro-head-right">
-								<h2><span class="prod-desc-off-3">$11.00</span> <span class="prod-offer">$5.50</span></h2>
-							</div>
-						</div>
-						<div class="product-photo product-photo-carousal">
-							<a href="#">
-								<img class="primary-photo" src="img/shop/21.jpg" alt="" />
-								<img class="secondary-photo" src="img/shop/21.jpg" alt="" />
-							</a>
-							<div class="pro-action">
-								<a href="#" class="action-btn"><i class="sp-heart"></i><span>Wishlist</span></a>
-								<a href="#" class="action-btn"><i class="sp-shopping-cart"></i><span>Add to cart</span></a>
-								<a href="#" class="action-btn"><i class="sp-compare-alt"></i><span>Compare</span></a>
-							</div>
-						</div>
-						<div class="product-brief product-breif-head">
-								<div class="product-head">
-										<h2><a href="#"> Wood Coffee Table Sing</a></h2>
-								</div>
-								<div class="product-list-3">
-									<div class="product-list-price">Instock | Case: <span>18</span> | Inner: <span>2</span></div>
-									<!-- <div class="product-list-off"></div> -->
-								</div>
-								<div class="product-list-2 product-list no-btm-border mrg-btm-20">
-										<div class="product-list-price">
-												<div class="">
-														<form action="#">
-															<div class="cart-plus-minus"><input type="text" value="2"/></div>
-														</form>
-													</div>
-										</div>
-										<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" class="img-responsive"></a></div>
-									</div>
-						</div>
-					</div>
-					<!-- Single-product end -->
-					<!-- Single-product start -->
-					<div class="single-product">
-						<div class="pro-head">
-							<div class="pro-head-left">
-								<h2><a href="#">16093</a></h2>
-							</div>
-							<div class="pro-head-right">
-								<h2><span class="prod-offer">$3.50</span></h2>
-							</div>
-						</div>
-						<div class="product-photo product-photo-carousal">
-							<a href="#">
-								<img class="primary-photo" src="img/shop/22.jpg" alt="" />
-								<img class="secondary-photo" src="img/shop/22.jpg" alt="" />
-							</a>
-							<div class="pro-action">
-								<a href="#" class="action-btn"><i class="sp-heart"></i><span>Wishlist</span></a>
-								<a href="#" class="action-btn"><i class="sp-shopping-cart"></i><span>Add to cart</span></a>
-								<a href="#" class="action-btn"><i class="sp-compare-alt"></i><span>Compare</span></a>
-							</div>
-						</div>
-						<div class="product-brief product-breif-head">
-								<div class="product-head">
-										<h2><a href="#">Wood Block Signs, 6 ast ...</a></h2>
-								</div>
-								<div class="product-list-3">
-									<div class="product-list-price">Instock | Case: <span>36</span> | Inner: <span>12</span></div>
-									<!-- <div class="product-list-off"></div> -->
-								</div>
-								<div class="product-list-2 product-list no-btm-border mrg-btm-20">
-										<div class="product-list-price">
-												<div class="">
-														<form action="#">
-															<div class="cart-plus-minus"><input type="text" value="12"/></div>
-														</form>
-													</div>
-										</div>
-										<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" class="img-responsive"></a></div>
-								</div>
-						</div>
-					</div>
-					<!-- Single-product end -->
-					<!-- Single-product start -->
-					<div class="single-product">
-						<div class="pro-head">
-							<div class="pro-head-left">
-								<h2><a href="#">19053</a></h2>
-							</div>
-							<div class="pro-head-right">
-								<h2><span class="prod-offer">$11.00</span> </h2>
-							</div>
-						</div>
-						<div class="product-photo product-photo-carousal">
-							<a href="#">
-								<img class="primary-photo" src="img/shop/23.jpg" alt="" />
-								<img class="secondary-photo" src="img/shop/23.jpg" alt="" />
-							</a>
-							<div class="pro-action">
-								<a href="#" class="action-btn"><i class="sp-heart"></i><span>Wishlist</span></a>
-								<a href="#" class="action-btn"><i class="sp-shopping-cart"></i><span>Add to cart</span></a>
-								<a href="#" class="action-btn"><i class="sp-compare-alt"></i><span>Compare</span></a>
-							</div>
-						</div>
-						<div class="product-brief product-breif-head">
-								<div class="product-head">
-										<h2><a href="#">Ceramic Coffee Jar</a></h2>
-								</div>
-								<div class="product-list-3">
-									<div class="product-list-price">Instock | Case: <span>12</span> | Inner: <span>1</span></div>
-									<!-- <div class="product-list-off"></div> -->
-								</div>
-								<div class="product-list-2 product-list no-btm-border mrg-btm-20">
-										<div class="product-list-price">
-												<div class="">
-														<form action="#">
-															<div class="cart-plus-minus"><input type="text" value="2"/></div>
-														</form>
-													</div>
-										</div>
-										<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" class="img-responsive"></a></div>
-								</div>
-						</div>
-					</div>
-					<!-- Single-product end -->
-					<!-- Single-product start -->
-					<div class="single-product">
-							<div class="pro-head">
-									<div class="pro-head-left">
-										<h2><a href="#">18427</a></h2>
-									</div>
-									<div class="pro-head-right">
-										<h2><span class="prod-offer">$12.50</span></h2>
-									</div>
-								</div>
-
-						<div class="product-photo product-photo-carousal">
-							<a href="#">
-								<img class="primary-photo" src="img/shop/24.jpg" alt="" />
-								<img class="secondary-photo" src="img/shop/24.jpg" alt="" />
-							</a>
-							<div class="pro-action">
-								<a href="#" class="action-btn"><i class="sp-heart"></i><span>Wishlist</span></a>
-								<a href="#" class="action-btn"><i class="sp-shopping-cart"></i><span>Add to cart</span></a>
-								<a href="#" class="action-btn"><i class="sp-compare-alt"></i><span>Compare</span></a>
-							</div>
-						</div>
-						<div class="product-brief product-breif-head">
-
-							<div class="product-head">
-									<h2><a href="#">Wood Chalkboard Stand 2 Ast.</a></h2>
-							</div>
-									<div class="product-list-3">
-										<div class="product-list-price">Instock | Case: <span>12</span> | Inner: <span>2</span></div>
-										<!-- <div class="product-list-off"></div> -->
-									</div>
-									<div class="product-list-2 product-list no-btm-border mrg-btm-20">
-											<div class="product-list-price">
-													<div class="">
-															<form action="#">
-																<div class="cart-plus-minus"><input type="text" value="2"/></div>
-															</form>
-														</div>
-											</div>
-											<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" class="img-responsive"></a></div>
-									</div>
-						</div>
-					</div>
-					<!-- Single-product end -->
-					<!-- Single-product start -->
-					<div class="single-product">
-						<div class="pro-head">
-							<div class="pro-head-left">
-								<h2><a href="#">18426</a></h2>
-							</div>
-							<div class="pro-head-right">
-								<h2><span class="prod-offer">$3.50</span></h2>
-							</div>
-						</div>
-						<div class="product-photo product-photo-carousal">
-							<a href="#">
-								<img class="primary-photo" src="img/shop/25.jpg" alt="" />
-								<img class="secondary-photo" src="img/shop/25.jpgg" alt="" />
-							</a>
-							<div class="pro-action">
-								<a href="#" class="action-btn"><i class="sp-heart"></i><span>Wishlist</span></a>
-								<a href="#" class="action-btn"><i class="sp-shopping-cart"></i><span>Add to cart</span></a>
-								<a href="#" class="action-btn"><i class="sp-compare-alt"></i><span>Compare</span></a>
-							</div>
-						</div>
-						<div class="product-brief product-breif-head">
-								<div class="product-head">
-										<h2><a href="#">Wood Block Coffee ...</a></h2>
-								</div>
-									<div class="product-list-3">
-										<div class="product-list-price">Avlb By: 01/11 | Case: <span>36</span> | Inner: <span>3</span></div>
-										<!-- <div class="product-list-off"></div> -->
-									</div>
-									<div class="product-list-2 product-list no-btm-border mrg-btm-20">
-										<div class="product-list-price">
-											<div class="">
-												<form action="#">
-													<div class="cart-plus-minus">Qty: <input type="text" value="9"/></div>
-												</form>
-											</div>
-									</div>
-									<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" class="img-responsive"></a></div>
-								</div>
-						</div>
-					</div>
-					<!-- Single-product end -->
-				</div>
-			</div>
-			<!-- PRODUCT-AREA END -->
 
 			<!-- SERVICE-AREA START -->
 			<div class="service-area margin-bottom-80">
-					<div class="container">
-						<div class="row">
+				<div class="container">
+					<div class="row">
 
-							<div class="col-md-4 col-sm-4 col-xs-12">
-								<div class="single-service">
-									<div class="service-icon">
-											<img src="img/help.png" class="img-responsive">
-									</div>
-									<div class="service-brief">
-										<h3>help line</h3>
-										<p>800-323-7799 | Email: helpdesk@youngsinc.com </p>
-									</div>
+						<div class="col-md-4 col-sm-4 col-xs-12">
+							<div class="single-service">
+								<div class="service-icon">
+										<img src="img/help.png" class="img-responsive">
+								</div>
+								<div class="service-brief">
+									<h3>help line</h3>
+									<p>800-323-7799 | Email: helpdesk@youngsinc.com </p>
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-4 col-xs-12">
-									<div class="single-service">
-										<div class="service-icon">
-												<img src="img/feedback.png" class="img-responsive">
-										</div>
-										<div class="service-brief">
-											<h3>feedback</h3>
-											<p>There are many variations of passages of Lorem Ipsum available, alteration</p>
-										</div>
-									</div>
-								</div>
-							<div class="col-md-4 col-sm-4 col-xs-12">
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-12">
 								<div class="single-service">
 									<div class="service-icon">
-										<img src="img/app.png" class="img-responsive">
+											<img src="img/feedback.png" class="img-responsive">
 									</div>
 									<div class="service-brief">
-										<h3>Download App</h3>
+										<h3>feedback</h3>
 										<p>There are many variations of passages of Lorem Ipsum available, alteration</p>
 									</div>
 								</div>
 							</div>
+						<div class="col-md-4 col-sm-4 col-xs-12">
+							<div class="single-service">
+								<div class="service-icon">
+									<img src="img/app.png" class="img-responsive">
+								</div>
+								<div class="service-brief">
+									<h3>Download App</h3>
+									<p>There are many variations of passages of Lorem Ipsum available, alteration</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			<!-- SERVICE-AREA END -->
+			</div>
+		<!-- SERVICE-AREA END -->
+			<!-- BLOG-AREA START -->
+			<!-- <div class="blog-area margin-bottom-80">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="section-title text-center">
+								<h2>blog</h2>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-4 col-xs-12">
+							<div class="single-blog">
+								<div class="blog-photo">
+									<a href="#"><img src="img/blog/1.jpg" alt="" /></a>
+									<div class="blog-post-date">
+										<span>15th</span>
+										<span>Jan</span>
+									</div>
+								</div>
+								<div class="blog-brief">
+									<p>Lorem ipsum dolr sit amet, It is not simply random text. It has roots...</p>
+									<div class="like-comment">
+										<a href="#"><i class="sp-like"></i>120 like</a>
+										<a href="#"><i class="sp-comment"></i>60 comment</a>
+									</div>
+
+									<div class="button-4">
+										<div class="eff-4"></div>
+										<a href="#"> Read more </a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-12">
+							<div class="single-blog">
+								<div class="blog-photo">
+									<a href="#"><img src="img/blog/2.jpg" alt="" /></a>
+									<div class="blog-post-date">
+										<span>13th</span>
+										<span>Feb</span>
+									</div>
+								</div>
+								<div class="blog-brief">
+									<p>Lorem ipsum dolr sit amet, It is not simply random text. It has roots...</p>
+									<div class="like-comment">
+										<a href="#"><i class="sp-like"></i>120 like</a>
+										<a href="#"><i class="sp-comment"></i>60 comment</a>
+									</div>
+									<div class="button-4">
+										<div class="eff-4"></div>
+										<a href="#"> Read more </a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-12">
+							<div class="single-blog">
+								<div class="blog-photo">
+									<a href="#"><img src="img/blog/3.jpg" alt="" /></a>
+									<div class="blog-post-date">
+										<span>25th</span>
+										<span>Feb</span>
+									</div>
+								</div>
+								<div class="blog-brief">
+									<p>Lorem ipsum dolr sit amet, It is not simply random text. It has roots...</p>
+									<div class="like-comment">
+										<a href="#"><i class="sp-like"></i>120 like</a>
+										<a href="#"><i class="sp-comment"></i>60 comment</a>
+									</div>
+									<div class="button-4">
+										<div class="eff-4"></div>
+										<a href="#"> Read more </a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<!-- BLOG-AREA END -->
+			<!-- SUBSCRIBE-AREA START -->
+			<div class="suscribe-area margin-bottom-80">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="subscribe">
+								<div class="subscribe-brief">
+									<h3>enter your email address</h3>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+								</div>
+								<div class="subscribe-form">
+									<form action="#">
+										<input type="text" placeholder="Enter your email to subscribe" />
+										<button type="submit">Submit</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- SUBSCRIBE-AREA START END -->
 		</section>
 		<!-- PAGE-CONTENT END -->
 
@@ -1379,7 +1331,7 @@
 										</li>
 										<li>
 											<i class="sp-email"></i>
-											<span>youngs@youngsinc.com</span>
+											<span>helpdesk@youngsinc.com</span>
 										</li>
 										<li>
 											<i class="sp-map-marker"></i>
@@ -1438,68 +1390,288 @@
 			</div>
 		</footer>
 		<!-- FOOTER-AREA END -->
-
-		<!-- QUICKVIEW PRODUCT -->
-		<div id="quickview-wrapper">
-		   <!-- Modal -->
-		   <div class="modal fade" id="productModal" tabindex="-1" role="dialog">
-			    <div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<!-- Todays offers area -->
+		<div class="lastest-offer" style="display: none;z-index: 999999;background-color: rgba(51, 50, 50, 0.69);padding:20px 0;">
+			<!-- NEW-COLLECTION START -->
+			<div class="new-collection-area fix margin-bottom-80">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="section-title text-center">
+								<h2 class="border-left-right-btm">Todays Offers</h2>
+							</div>
 						</div>
-						<div class="modal-body">
-							<div class="modal-product">
-								<div class="product-images">
-									<div class="main-image images">
-										<img alt="#" src="img/quickview-photo.jpg"/>
-									</div>
-								</div><!-- .product-images -->
-
-								<div class="product-info">
-									<h1>Nautical</h1>
-									<div class="price-box-3">
-										<hr />
-										<div class="s-price-box">
-											<span class="new-price">$160.00</span>
-											<span class="old-price">$190.00</span>
-										</div>
-										<hr />
-									</div>
-									<a href="shop.html" class="see-all">See all features</a>
-									<div class="quick-add-to-cart">
-										<form method="post" class="cart">
-											<div class="numbers-row">
-												<input type="number" id="french-hens" value="3">
-											</div>
-											<button class="single_add_to_cart_button" type="submit">Add to cart</button>
-										</form>
-									</div>
-									<div class="quick-desc">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero.
-									</div>
-									<div class="social-sharing">
-										<div class="widget widget_socialsharing_widget">
-											<h3 class="widget-title-modal">Share this product</h3>
-											<ul class="social-icons">
-												<li><a target="_blank" title="Facebook" href="#" class="facebook social-icon"><i class="sp-facebook"></i></a></li>
-												<li><a target="_blank" title="Twitter" href="#" class="twitter social-icon"><i class="sp-twitter"></i></a></li>
-												<li><a target="_blank" title="Google +" href="#" class="gplus social-icon"><i class="sp-google"></i></a></li>
-												<li><a target="_blank" title="LinkedIn" href="#" class="linkedin social-icon"><i class="sp-linkedin"></i></a></li>
-											</ul>
-										</div>
-									</div>
-								</div><!-- .product-info -->
-							</div><!-- .modal-product -->
-						</div><!-- .modal-body -->
-					</div><!-- .modal-content -->
-			    </div><!-- .modal-dialog -->
-		   </div>
-		   <!-- END Modal -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 padding-0">
+						<div class="single-collection">
+							<div class="collection-photo">
+								<a href="#"><img src="img/new-collection/1.jpg" alt="" /></a>
+							</div>
+							<div class="collection-brief">
+								<!-- <div class="text-right">
+									<span class="new">new</span>
+								</div> -->
+								<h2>best sellers <br /></h2>
+								<!-- <ul>
+									<li>100% cotton</li>
+									<li>fress product</li>
+									<li>black color</li>
+									<li>high qualiety</li>
+								</ul> -->
+								<div class="button-4">
+									<div class="eff-4"></div>
+									<a href="#"> Shop now </a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 padding-0">
+						<div class="single-collection">
+							<div class="collection-photo">
+								<a href="#"><img src="img/new-collection/2.jpg" alt="" /></a>
+							</div>
+							<div class="collection-brief">
+								<!-- <div class="text-right">
+									<span class="new">new</span>
+								</div> -->
+								<h2>new arrivals <br /></h2>
+								<!-- <ul>
+									<li>100% cotton</li>
+									<li>fress product</li>
+									<li>black color</li>
+									<li>high qualiety</li>
+								</ul> -->
+								<div class="button-4">
+									<div class="eff-4"></div>
+									<a href="#"> Shop now </a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 hidden-md hidden-sm padding-0 ">
+						<div class="single-collection">
+							<div class="collection-photo">
+								<a href="#"><img src="img/new-collection/3.jpg" alt="" /></a>
+							</div>
+							<div class="collection-brief">
+								<!-- <div class="text-right">
+									<span class="new">new</span>
+								</div> -->
+								<h2>final few <br /> </h2>
+								<!-- <ul>
+									<li>100% cotton</li>
+									<li>fress product</li>
+									<li>black color</li>
+									<li>high qualiety</li>
+								</ul> -->
+								<div class="button-4">
+									<div class="eff-4"></div>
+									<a href="#"> Shop now </a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- NEW-COLLECTION END -->
 		</div>
-		<!-- END QUICKVIEW PRODUCT -->
-
-
+		<!-- end of todays offer -->
+<!--Slider Banner Modal -->
+<div class="modal fade" id="sliderBanners" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Sliders</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="text">Title-1 </label>
+                    <input type="text" class="form-control" name="canceldate" required
+                  </div>
+                  </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="text">Title-2 </label>
+                    <input type="text" class="form-control" name="canceldate" required
+                  </div>
+                  </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <div class="input-group">
+                      <input type="text" class="form-control" readonly>
+                    <div class="input-group-btn">
+                      <span class="fileUpload1 btn btn-primary">
+                          <span class="upl" id="upload">Upload single file</span>
+                          <input type="file" class="upload up" id="up" onchange="readURL(this);" />
+                        </span><!-- btn-orange -->
+                     </div><!-- btn -->
+                     </div><!-- group -->
+                     </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                  <label for="text">Start Date </label>
+                  <div class="input-group mrg-top-5">
+                      <input type="text" class="form-control datepicker-autoclose" placeholder="mm/dd/yyyy"> <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                    </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="text">End Date </label>
+                    <div class="input-group mrg-top-5">
+                        <input type="text" class="form-control datepicker-autoclose" placeholder="mm/dd/yyyy"> <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                      </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                  <div class="form-group">
+                      <label for="text">Target Link </label>
+                      <input type="text" class="form-control" name="canceldate" required
+                    </div>
+                    </div>
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer text-center">
+            <button type="button" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-primary">Activate</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- whatTrending modal area -->
+  <div class="modal fade" id="whatTrending" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">What's Trending</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              
+              <div class="col-md-12">
+                  <div class="form-group">
+                      <label for="text">Title-1 </label>
+                      <input type="text" class="form-control" name="canceldate" required
+                    </div>
+                    </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                    <div class="input-group">
+                      <input type="text" class="form-control" readonly>
+                    <div class="input-group-btn">
+                      <span class="fileUpload1 btn btn-primary">
+                          <span class="upl" id="upload">Upload single file</span>
+                          <input type="file" class="upload up" id="up" onchange="readURL(this);" />
+                        </span><!-- btn-orange -->
+                     </div><!-- btn -->
+                     </div><!-- group -->
+                     </div>
+            </div>
+            </div>
+          </div>
+          <div class="modal-footer text-center">
+              <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- Today Offers modal -->
+    <div class="modal fade" id="todayOffers" role="dialog">
+        <div class="modal-dialog modal-lg">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Today Offers</h4>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-12 MarginTop20">
+                        <!-- Our File Inputs -->
+                          <div class="col-md-2">
+                          <div class="wrap-custom-file">
+                          <input type="file" name="image1" id="image1" accept=".gif, .jpg, .png" />
+                          <label  for="image1">
+                            <span>Select Image One</span>
+                          </label>
+                          <i class="fa fa-times"></i>
+                          </div>
+                          <div>
+                             <input type="text" class="form-control mrg-left-10" placeholder="Title"/>
+                             <input type="text" class="form-control mrg-left-10 mrg-top-10" placeholder="Message"/>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="wrap-custom-file">
+                          <input type="file" name="image2" id="image2" accept=".gif, .jpg, .png" />
+                          <label  for="image2">
+                            <span>Select Image Two</span>
+                          </label>
+                          <i class="fa fa-times"></i>
+                          </div>
+                          <div>
+                            <input type="text" class="form-control mrg-left-10" placeholder="Title"/>
+                            <input type="text" class="form-control mrg-left-10 mrg-top-10" placeholder="Message"/>
+                         </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="wrap-custom-file">
+                          <input type="file" name="image3" id="image3" accept=".gif, .jpg, .png" />
+                          <label  for="image3">
+                            <span>Select Image Three</span>
+                          </label>
+                          <i class="fa fa-times"></i>
+                          </div>
+                          <div>
+                            <input type="text" class="form-control mrg-left-10" placeholder="Title"/>
+                            <input type="text" class="form-control mrg-left-10 mrg-top-10" placeholder="Message"/>
+                         </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="wrap-custom-file">
+                          <input type="file" name="image4" id="image4" accept=".gif, .jpg, .png" />
+                          <label  for="image4">
+                            <span>Select Image Four</span>
+                          </label>
+                          <i class="fa fa-times"></i>
+                          </div>
+                          <div>
+                            <input type="text" class="form-control mrg-left-10" placeholder="Title"/>
+                            <input type="text" class="form-control mrg-left-10 mrg-top-10" placeholder="Message"/>
+                         </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="wrap-custom-file">
+                            <p class="add-new-img">Add New Image</p>
+                          </div>
+                        </div>
+                        </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer text-center">
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
 		<!-- all js here -->
 		<!-- jquery latest version -->
         <script src="js/vendor/jquery-1.12.0.min.js"></script>
@@ -1509,7 +1681,7 @@
         <script src="lib/js/jquery.nivo.slider.js"></script>
         <script src="lib/home.js"></script>
 		<!-- owl.carousel js -->
-        <script src="js/owl.carousel.min.js"></script>
+       <script src="js/owl.carousel.min.js"></script> 
 		<!-- meanmenu js -->
         <script src="js/jquery.meanmenu.js"></script>
 		<!-- jquery-ui js -->
@@ -1518,14 +1690,70 @@
         <script src="js/lightbox.min.js"></script>
 		<!-- countdon.min js -->
         <script src="js/countdon.min.js"></script>
+        <!-- datepicker js -->
+				<script src="js/bootstrap-datepicker.min.js"></script>
+
 		<!-- wow js -->
-        <script src="js/wow.min.js"></script>
-		<script type="text/javascript">
+        <!-- <script src="js/wow.min.js"></script> -->
+		<!-- <script type="text/javascript">
 			new WOW().init();
-		</script>
+		</script> -->
 		<!-- plugins js -->
         <script src="js/plugins.js"></script>
 		<!-- main js -->
-        <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('.datepicker-autoclose').datepicker({
+                autoclose: true,
+                todayHighlight: true
+            });
+          
+        });
+        </script>
+		<script>
+      $(document).on('change','.up', function(){
+		   	var names = [];
+		   	var length = $(this).get(0).files.length;
+			    for (var i = 0; i < $(this).get(0).files.length; ++i) {
+			        names.push($(this).get(0).files[i].name);
+			    }
+			    // $("input[name=file]").val(names);
+				if(length>2){
+				  var fileName = names.join(', ');
+				  $(this).closest('.form-group').find('.form-control').attr("value",length+" files selected");
+				}
+				else{
+					$(this).closest('.form-group').find('.form-control').attr("value",names);
+				}
+	   });
+    </script>
+    <script>
+        $('input[type="file"]').each(function(){
+          // Refs
+          var $file = $(this),
+              $label = $file.next('label'),
+              $labelText = $label.find('span'),
+              labelDefault = $labelText.text();
+        
+          // When a new file is selected
+          $file.on('change', function(event){
+            var fileName = $file.val().split( '\\' ).pop(),
+                tmppath = URL.createObjectURL(event.target.files[0]);
+            //Check successfully selection
+            if( fileName ){
+              $label
+                .addClass('file-ok')
+                .css('background-image', 'url(' + tmppath + ')');
+              $labelText.text(fileName);
+            }else{
+              $label.removeClass('file-ok');
+              $labelText.text(labelDefault);
+            }
+          });
+        
+        // End loop of file input elements
+        });
+        </script>
     </body>
 </html>

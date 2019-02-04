@@ -34,179 +34,256 @@
         <link rel="stylesheet" href="css/lightbox.min.css">
 		<!-- style css -->
 		<link rel="stylesheet" href="style.css">
-
+		
 		<!-- responsive css -->
-        <link rel="stylesheet" href="css/responsive.css">
+				<link rel="stylesheet" href="css/responsive.css">
+				<!-- date picker css -->
+				<link href="css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
 		<!-- modernizr css -->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
+				<!-- <div class="loading">Loading&#8230;</div> -->
+      <div class="sidemenu side-title-filter" style="display: none;">
+  				<h2 style="color:#006680;font-size: 18px;padding:5px;">Filters</h2>
+  				<!-- shop-filter start -->
+  				<aside class="widget shop-filter price-range">
+							<h5 class="sidebar-title sidebar-title-height">price Range</h5>
+							
+							
+  						<div class="info_widget">
+								
+									<div class="min-max">
+											<!-- <p>
+													<input type = "text" id = "price" 
+														 style = "border:0; color:#b9cd6d; font-weight:bold;">
+											 </p>
+											 <div id = "slider-3" class="mrg-btm-20"></div> -->
+											 <ul>
+												 <li>Min</li>
+												 <li><input type="text" class="form-control"></li>
+												 <li>Max</li>
+												 <li><input type="text" class="form-control"></li>
+											 </ul>
+									</div>
+									<div class="clearfix"></div>
+									<ul>
+											<li>
+													<div class="form-check pad-left-0 show-no-1 mrg-rgt-10 filter-float">
+															<label>
+																<input type="radio" name="radio"> <span class="label-text">Up to $5</span>
+															</label>
+														</div>
+											</li>
+											<li>
+													<div class="form-check pad-left-120 show-no-1">
+															<label>
+																<input type="radio" name="radio"> <span class="label-text">$100 Above</span>
+															</label>
+														</div>
+											</li>
+									</ul>
+  						
+  							<!-- <button class="shop-now">Filter</button> -->
+  						</div>
+  					</aside>
+  					<!-- shop-filter end -->
+  					<!-- widget-color start -->
+  					<aside class="widget widget-color availability">
+  						<h5 class="sidebar-title sidebar-title-height">Availability</h5>
+  						<ul>
+  								<li>
+  										<div class="form-check pad-left-0 show-no-1 mrg-rgt-10 filter-float">
+  												<label>
+  													<input type="radio" name="radio"> <span class="label-text">All</span>
+  												</label>
+  											</div>
+  								</li>
+  								<li>
+  										<div class="form-check pad-left-0 show-no-1">
+  												<label>
+  													<input type="radio" name="radio"> <span class="label-text">In Stock By</span>
+  												</label>
+  											</div>
+									</li>
+									<li>
+										<div class="">
+											<div class="input-group mrg-top-5">
+													<input type="text" class="form-control datepicker-autoclose" placeholder="mm/dd/yyyy"> <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+												</div>
+									</div>
+									<div class="clearfix"></div>
+									</li>
+  								<li>
+  										<div class="form-check pad-left-0 avb-qty">
+  											<label>
+  												<input type="checkbox" name="check"> <span class="label-text">Qty</span>
+  											</label>
+                        
+  										</div>
+  										<div class="case-price">
+												<div class="row">
+													<div class="col-md-4 no-pad-left">
+															<div class="form-group mrg-btm-1">
+																	<input type="text" class="form-control" id="usr">
+															</div>
+													</div>
+													<div class="col-md-8 no-pad-left">
+															<div class="form-check pad-left-0 show-no-1 mrg-rgt-10 filter-float mrg-top-8">
+																	<label>
+																		<input type="radio" name="radio"> <span class="label-text">Case</span>
+																	</label>
+																</div>
+															<div class="form-check pad-left-0 show-no-1 mrg-rgt-10 mrg-top-8">
+																	<label>
+																		<input type="radio" name="radio"> <span class="label-text">Pieces</span>
+																	</label>
+																</div>
+													</div>
+												</div>
+  													
+  										</div>
+  									</li>
+  							</ul>
+  					</aside>
+  					<!-- widget-color end -->
+  					<!-- widget-brand start -->
+  					<aside class="widget widget-brand sort-list-item-1">
+  						<h5 class="sidebar-title sidebar-title-height">More</h5>
+  						<ul>
+  							<li>
+  								<div class="form-check pad-left-0 filter-float mrg-right-15">
+  									<label>
+  										<input type="checkbox" name="check"> <span class="label-text">New</span>
+  									</label>
+									</div>
+									<div class="form-check pad-left-0 mrg-left">
+											<label>
+												<input type="checkbox" name="check"> <span class="label-text">Sale</span>
+											</label>
+										</div>
+  							</li>
+  						</ul>
+						</aside>
+						<aside class="widget widget-brand sort-list-item-1">
+								<h5 class="sidebar-title sidebar-title-height">Sort</h5>
+								<ul>
+									<li>
+											<div class="sortbylist sort-list-item-1 mrg ascend-decend">
+													<div class="ascend-decend-icon">
+														<i class="fa fa-arrow-up"></i>
+														<i class="fa fa-arrow-down"></i>
+													</div>
+  												<div class="form-check pad-left-0 show-no-1">
+  													<label>
+  														<input type="radio" name="radio"> <span class="label-text">Price</span>
+  													</label>
+  												</div>
+  												<div class="form-check pad-left-0 show-no-1">
+  														<label>
+  															<input type="radio" name="radio"> <span class="label-text">By Catalog Page</span>
+  														</label>
+  												</div>
+  												<div class="form-check pad-left-0 show-no-1">
+  														<label>
+  															<input type="radio" name="radio"> <span class="label-text">By Item#</span>
+  														</label>
+  												</div>
+  												<div class="form-check pad-left-0 show-no-1">
+  														<label>
+  															<input type="radio" name="radio"> <span class="label-text">By Newest Items</span>
+  														</label>
+  												</div>
+  												<div class="form-check pad-left-0 show-no-1">
+  														<label>
+  															<input type="radio" name="radio"> <span class="label-text">By Availability</span>
+  														</label>
+  												</div>
+  												<div class="form-check pad-left-0 show-no-1">
+  														<label>
+  															<input type="radio" name="radio"> <span class="label-text">Best Seller</span>
+  														</label>
+  												</div>
+
+  											</div>
+									</li>
+								</ul>
+								<div class="col-md-12 text-center center-block">
+								<div class="promotion-btn mrg-top-15">
+										<a href="#" class="mrg-rgt-10">Cancel</a><a href="#">Apply</a>
+									</div>
+								</div>
+							</aside>
+  			</div>
+  			<div class="sidemenu-sort side-title-filter" style="display: none;">
+  					<aside class="widget widget-brand sort-list-item-1">
+  							<h5 class="sidebar-title">Sort</h5>
+  							<ul>
+  								<!-- <li>
+  										<div class="sortby">
+  												<div class="form-check pad-left-0 show-no-1">
+  														<label>
+  															<input type="radio" name="radio"> <span class="label-text">Ascending</span>
+  														</label>
+  													</div>
+  													<div class="form-check pad-left-0 show-no-1">
+  															<label>
+  																<input type="radio" name="radio"> <span class="label-text">Descending</span>
+  															</label>
+  														</div>
+
+  											</div>
+  								</li> -->
+  								<li>
+  										<div class="sortbylist sort-list-item-1 mrg ascend-decend">
+													<div class="ascend-decend-icon">
+														<i class="fa fa-arrow-up"></i>
+														<i class="fa fa-arrow-down"></i>
+													</div>
+  												<div class="form-check pad-left-0 show-no-1">
+  													<label>
+  														<input type="radio" name="radio"> <span class="label-text">Price</span>
+  													</label>
+  												</div>
+  												<div class="form-check pad-left-0 show-no-1">
+  														<label>
+  															<input type="radio" name="radio"> <span class="label-text">By Catalog Page</span>
+  														</label>
+  												</div>
+  												<div class="form-check pad-left-0 show-no-1">
+  														<label>
+  															<input type="radio" name="radio"> <span class="label-text">By Item#</span>
+  														</label>
+  												</div>
+  												<div class="form-check pad-left-0 show-no-1">
+  														<label>
+  															<input type="radio" name="radio"> <span class="label-text">By Newest Items</span>
+  														</label>
+  												</div>
+  												<div class="form-check pad-left-0 show-no-1">
+  														<label>
+  															<input type="radio" name="radio"> <span class="label-text">By Availability</span>
+  														</label>
+  												</div>
+  												<div class="form-check pad-left-0 show-no-1">
+  														<label>
+  															<input type="radio" name="radio"> <span class="label-text">Best Seller</span>
+  														</label>
+  												</div>
+
+  											</div>
+  								</li>
+  							</ul>
+                <div class="col-md-12 text-center center-block">
+  							<div class="promotion-btn mrg-top-15">
+  									<a href="#" class="mrg-rgt-10">Cancel</a><a href="#">Apply</a>
+  								</div>
+                </div>
+  						</aside>
+  				</div>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
-
-		<div class="sidemenu side-title-filter" style="display: none;">
-				<h2 style="color:#006680;font-size: 18px;padding:5px;">Filters</h2>
-				<!-- shop-filter start -->
-				<aside class="widget shop-filter price-range">
-						<h5 class="sidebar-title ">price Range</h5>
-						<div class="info_widget">
-                <div class="range-slider">
-                  <span id="rs-bullet" class="rs-label">0</span>
-                  <input id="rs-range-line" class="rs-range" type="range" value="0" min="0" max="200">
-                </div>
-
-                <div class="box-minmax">
-                  <span>$0</span><span>$200</span>
-                </div>
-							<div class="form-check pad-left-0">
-									<label>
-										<input type="checkbox" name="check"> <span class="label-text">Up to $5</span>
-									</label>
-								</div>
-								<div class="form-check pad-left-0">
-										<label>
-											<input type="checkbox" name="check"> <span class="label-text">Above $100</span>
-										</label>
-									</div>
-							<!-- <button class="shop-now">Filter</button> -->
-						</div>
-					</aside>
-					<!-- shop-filter end -->
-					<!-- widget-color start -->
-					<aside class="widget widget-color availability">
-						<h5 class="sidebar-title">Availability</h5>
-						<ul>
-								<li>
-										<div class="form-check pad-left-0 show-no-1 mrg-rgt-10">
-												<label>
-													<input type="radio" name="radio"> <span class="label-text">All</span>
-												</label>
-											</div>
-								</li>
-								<li>
-										<div class="form-check pad-left-0 show-no-1">
-												<label>
-													<input type="radio" name="radio"> <span class="label-text">In Stock By</span>
-												</label>
-											</div>
-								</li>
-								<li>
-										<div class="form-check pad-left-0 avb-qty">
-											<label>
-												<input type="checkbox" name="check"> <span class="label-text">Qty</span>
-											</label>
-                      <div class="form-group">
-                          <input type="text" class="form-control" id="usr">
-                         </div>
-										</div>
-										<div class="case-price">
-
-												<div class="form-check pad-left-0 show-no-1 mrg-rgt-10">
-														<label>
-															<input type="radio" name="radio"> <span class="label-text">Case</span>
-														</label>
-													</div>
-													<div class="form-check pad-left-0 show-no-1 mrg-rgt-10">
-															<label>
-																<input type="radio" name="radio"> <span class="label-text">Pieces</span>
-															</label>
-														</div>
-										</div>
-									</li>
-							</ul>
-
-
-					</aside>
-					<!-- widget-color end -->
-					<!-- widget-brand start -->
-					<aside class="widget widget-brand sort-list-item-1">
-						<h5 class="sidebar-title">More</h5>
-						<ul>
-							<li>
-								<div class="form-check pad-left-0">
-									<label>
-										<input type="checkbox" name="check"> <span class="label-text">New</span>
-									</label>
-								</div>
-							</li>
-							<li>
-								<div class="form-check pad-left-0">
-									<label>
-										<input type="checkbox" name="check"> <span class="label-text">Sale</span>
-									</label>
-								</div>
-							</li>
-						</ul>
-            <div class="col-md-12 text-center center-block">
-						<div class="promotion-btn mrg-top-15">
-								<a href="#" class="mrg-rgt-10">Cancel</a><a href="#">Apply</a>
-							</div>
-            </div>
-					</aside>
-			</div>
-			<div class="sidemenu-sort side-title-filter" style="display: none;">
-					<aside class="widget widget-brand sort-list-item-1">
-							<h5 class="sidebar-title">Sort</h5>
-							<ul>
-								<li>
-										<div class="sortby">
-												<div class="form-check pad-left-0 show-no-1">
-														<label>
-															<input type="radio" name="radio"> <span class="label-text">Ascending</span>
-														</label>
-													</div>
-													<div class="form-check pad-left-0 show-no-1">
-															<label>
-																<input type="radio" name="radio"> <span class="label-text">Descending</span>
-															</label>
-														</div>
-
-											</div>
-								</li>
-								<li>
-										<div class="sortbylist mrg-top-15 sort-list-item-1 brd-top mrg">
-												<div class="form-check pad-left-0 show-no-1">
-													<label>
-														<input type="radio" name="radio"> <span class="label-text">Price</span>
-													</label>
-												</div>
-												<div class="form-check pad-left-0 show-no-1">
-														<label>
-															<input type="radio" name="radio"> <span class="label-text">By Catalog Page</span>
-														</label>
-												</div>
-												<div class="form-check pad-left-0 show-no-1">
-														<label>
-															<input type="radio" name="radio"> <span class="label-text">By Item#</span>
-														</label>
-												</div>
-												<div class="form-check pad-left-0 show-no-1">
-														<label>
-															<input type="radio" name="radio"> <span class="label-text">By Newest Items</span>
-														</label>
-												</div>
-												<div class="form-check pad-left-0 show-no-1">
-														<label>
-															<input type="radio" name="radio"> <span class="label-text">By Availability</span>
-														</label>
-												</div>
-												<div class="form-check pad-left-0 show-no-1">
-														<label>
-															<input type="radio" name="radio"> <span class="label-text">Best Seller</span>
-														</label>
-												</div>
-
-											</div>
-								</li>
-							</ul>
-              <div class="col-md-12 text-center center-block">
-							<div class="promotion-btn mrg-top-15">
-									<a href="#" class="mrg-rgt-10">Cancel</a><a href="#">Apply</a>
-								</div>
-              </div>
-						</aside>
-				</div>
 		<header class="header-area">
 		<div class="top-header">
 				<p>Over 80,000 retailers served since 1988 • Providing Quality Gift, Home Decor and Fashion accessories with 100% risk free guarantee</p>
@@ -242,8 +319,8 @@
                   </form>
                 </div>
                 <ul class="cust-sign">
-                  <li><a href="">Login</a></li>
-                  <!-- <li><a href="">wel come to <strong>Jayaram</strong></a></li> -->
+                  <!-- <li><a href="">Login</a></li> -->
+                  <li><a href="">welcome <strong>Rekha</strong></a></li>
                 </ul>
                 <ul>
                   <li><a href="account.html">Account <span><i class="fa fa-cog"></i></span></a>
@@ -505,17 +582,6 @@
                         </span>
                       </div>
                     </li>
-                  <!-- <li><a href="index.html">made in america</a>
-                    <ul class="submenu">
-                        <li><a href="#">Best sellers</a></li>
-                        <li><a href="#">Gift Items</a></li>
-                        <li><a href="#">Personalizable Items</a></li>
-                        <li><a href="#">State & City Signs</a></li>
-                        <li><a href="#">Great Lakes Original</a></li>
-                        <li><a href="#">Sale</a></li>
-                        <li><a href="#">All Items</a></li>
-                      </ul>
-                  </li> -->
                   <li><a href="personalization.html">Personalization</a>
                     <div class="mega-menu personalization-menu">
                       <span class="personalization-sub-menu">
@@ -533,9 +599,7 @@
                   </li>
                   <li><a href="#">outdoor</a>
                     <div class="mega-menu outdoor-menu">
-
                       <span class="outdoor-sub-menu">
-
                         <a href="#">Garden Room Decor</a>
                         <a href="#">Garden Decor</a>
                         <a href="#">Collection Sales</a>
@@ -543,24 +607,13 @@
                         <a class="mega-menu-title" href="#">All Items</a>
 
                       </span>
-
-                      <span class="mega-menu-photo outdoor-menu-photo">
+                       <span class="mega-menu-photo outdoor-menu-photo">
                           <a href="" class="top-25">Best Sellers</a>
                         <a href="#" class="border-all-menu"><img src="img/megamenu/5.jpg" alt="" /></a>
                       </span>
                     </div>
                   </li>
-                  <!-- <li><a href="index.html">outdoor</a>
-                    <ul class="submenu">
-                       <li><a href="#">Best sellers</a></li>
-                       <li><a href="#">Garden Room Decor</a></li>
-                       <li><a href="#">Garden Decor</a></li>
-                       <li><a href="#">Collection Sales</a></li>
-                       <li><a href="#">Sale</a></li>
-                       <li><a href="#">All Items</a></li>
-                     </ul>
-                   </li> -->
-                   <li><a href="#">Brands</a>
+                  <li><a href="#">Brands</a>
                   <div class="mega-menu brands-menu">
                     <span>
                       <a class="mega-menu-title" href="#">Paula Deen Home Decor</a>
@@ -589,31 +642,6 @@
                   </div>
                 </li>
                 <li><a href="index.html">sale</a></li>
-
-
-
-
-
-
-                  <!--
-                  <li><a href="#">brands</a>
-                    <ul class="submenu">
-                      <li class="submenu-title"><a href="#">All pages</a></li>
-                      <li><a href="shop.html">Shop</a></li>
-                      <li><a href="shop-list.html">Shop-List</a></li>
-                      <li><a href="single-product.html">Single Product</a></li>
-                      <li><a href="cart.html">Shopping Cart</a></li>
-                      <li><a href="wishlist.html">Wishlist</a></li>
-                      <li><a href="checkout.html">Checkout</a></li>
-                      <li><a href="login.html">Login</a></li>
-                      <li><a href="my-account.html">My Account</a></li>
-                      <li><a href="blog.html">Blog</a></li>
-                      <li><a href="single-blog.html">Single-Blog</a></li>
-                      <li><a href="about.html">About</a></li>
-                      <li><a href="404.html">404</a></li>
-                      <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                  </li> -->
                 </ul>
               </nav>
             </div>
@@ -971,21 +999,20 @@
 				<div class="breadcrumb">
 						<div class="container">
 								<div class="row">
-									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 mb-no-pad-lr">
+									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
 													<ol class="breadcrumb">
 															<li><a href="#"><img src="img/home.png" class="img-responsive"></a></li>
 														<li><a href="#">Gift</a></li>
-														<li><a href="#">General Gifts</a></li>
-														<li class="active"><span>Cafe & Chocolate</span></li>
+														<li class="active"><span>General Gifts</span></li>
 													</ol>
 									</div>
-									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mb-no-pad-lr">
-										<div class="shop-menu view-mode pull-right filter-sort" id="filter">
-											<h3><img src="img/filter-2.png" class="img-responsive sort-filter"> Filter</h3>
-										</div>
-										<div class="shop-menu view-mode pull-right filter-sort" id="sort">
-											<h3><img src="img/sort-2.png" class="img-responsive sort-filter"> Sort</h3>
-										</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+											<div class="shop-menu view-mode pull-right filter-sort" id="filter">
+												<h3><img src="img/filter-and-sort-arrows.png" class="img-responsive sort-filter">Filter</h3>
+											</div>
+											<!-- <div class="shop-menu view-mode pull-right filter-sort" id="sort">
+												<h3><img src="img/sort-2.png" class="img-responsive sort-filter"> Sort</h3>
+											</div> -->
 									</div>
 								</div>
 							</div>
@@ -996,360 +1023,239 @@
 			<div class="shop-area margin-bottom-80">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12 mb-no-pad-lr">
+						<div class="col-md-12">
 							<span class="shop-border"></span>
 						</div>
-						<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 mb-no-pad-lr">
+						<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 mb-no-pad-lr brd-rgt">
 							<!-- widget-categories start -->
-							<aside class="widget widget-categories">
-								<h5>categories</h5>
+							<aside class="widget widget-categories brd-btm">
+								<h5 class="title-8">categories</h5>
 								<ul>
-									<li><a href="#">Best Sellers</a></li>
-									<li><a href="#">Bar Room</a></li>
-									<li class="active"><a href="#">Cafe & Chocolate</a></li>
-									<li><a href="#">Laundry & Bath</a></li>
-									<li><a href="#">Gifts for Him</a></li>
-									<li><a href="#">Home</a></li>
-									<li><a href="#">Farmer's Market</a></li>
-									<li><a href="#">Vintage Market</a></li>
-									<li><a href="#">American Pride</a></li>
-									<li><a href="#">Good Gifts</a></li>
-									<li><a href="#">Love</a></li>
-									<li><a href="#">Gifts For Her</a></li>
-									<li><a href="#">Porch & Nature</a></li>
-									<li><a href="#">Bee</a></li>
-                  <li><a href="#">Natural Home</a></li>
-									<li><a href="#">Happy Camper</a></li>
-									<li><a href="#">Collection Sales</a></li>
-									<li><a href="#">Classified New Items</a></li>
-									<li><a href="#">Misc</a></li>
-									<li><a href="#">Sale</a></li>
-									<li><a href="#">All Items</a></li>
+									<li class="active"><a href="#"><i class="fa fa-chevron-right"></i> Best Sellers</a></li>
+									<li><a href="#"><i class="fa fa-chevron-right"></i> All</a></li>
+									<li><a href="#"><i class="fa fa-chevron-right"></i> Bar Room</a></li>
+									<li><a href="sub-child-category.html"><i class="fa fa-chevron-right"></i> Cafe & Chocolate</a></li>
+									<li><a href="#"><i class="fa fa-chevron-right"></i> Laundry & Bath</a></li>
+									<li><a href="#"><i class="fa fa-chevron-right"></i> Gifts for Him</a></li>
+									<li><a href="#"><i class="fa fa-chevron-right"></i> Home</a></li>
+									<li><a href="#"><i class="fa fa-chevron-right"></i> Farmer's Market</a></li>
+									<li><a href="#"><i class="fa fa-chevron-right"></i> Vintage Market</a></li>
+									<li><a href="#"><i class="fa fa-chevron-right"></i> American Pride</a></li>
+									<li><a href="#"><i class="fa fa-chevron-right"></i> Good Gifts</a></li>
+									<li><a href="#"><i class="fa fa-chevron-right"></i> Love</a></li>
+									<li><a href="#"><i class="fa fa-chevron-right"></i> Gifts For Her</a></li>
+									<li><a href="#"><i class="fa fa-chevron-right"></i> Porch & Nature</a></li>
+									<li><a href="#"><i class="fa fa-chevron-right"></i> Bee</a></li>
+									<li><a href="#"><i class="fa fa-chevron-right"></i> Natural Home</a></li>
+									<li><a href="#"><i class="fa fa-chevron-right"></i> Happy Camper</a></li>
+									<li><a href="#"><i class="fa fa-chevron-right"></i> Collection Sales</a></li>
+									<li><a href="#"><i class="fa fa-chevron-right"></i> Classified New Items</a></li>
+									<li><a href="#"><i class="fa fa-chevron-right"></i> Misc</a></li>
+									<li><a href="#"><i class="fa fa-chevron-right"></i> Sale</a></li>
+									
 
 								</ul>
+							
 							</aside>
+							<div class="clearfix"></div>
 							<!-- widget-categories end -->
-							<!-- shop-filter start -->
-							<!-- <aside class="widget shop-filter">
-								<h5 class="sidebar-title">price</h5>
-								<div class="info_widget">
-									<div id="slider-range"></div>
-									<div id ="amount">
-										<input type ="text" name ="first_price" class="first_price" />
-										<input type ="text" name ="last_price" class="last_price"/>
-									</div>
-									<button class="shop-now">Filter</button>
-								</div>
-							</aside> -->
-							<!-- shop-filter end -->
-							<!-- widget-color start -->
-							<!-- <aside class="widget widget-color">
-								<h5 class="sidebar-title">colore</h5>
-								<ul>
-									<li><a class="color-1" href="#"></a></li>
-									<li><a class="color-2" href="#"></a></li>
-									<li><a class="color-3" href="#"></a></li>
-									<li><a class="color-4" href="#"></a></li>
-									<li><a class="color-5" href="#"></a></li>
-								</ul>
-							</aside> -->
-							<!-- widget-color end -->
-							<!-- widget-brand start -->
-							<!-- <aside class="widget widget-brand">
-								<h5 class="sidebar-title">Brand</h5>
-								<ul>
-									<li><input type="checkbox" /><a href="#">Country Road</a></li>
-									<li><input type="checkbox" /><a href="#">H&M Home</a></li>
-									<li><input type="checkbox" /><a href="#">Urban outfitters</a></li>
-									<li><input type="checkbox" /><a href="#">Zara home</a></li>
-								</ul>
-							</aside> -->
-							<!-- widget-brand end -->
+						
+							<div class="clearfix"></div>
 							<!-- widget-top-brand start -->
 							<aside class="widget top-rated hidden-sm brd-btm">
-									<h5 class="sidebar-title title-8">Recently Viewed</h5>
-									<div class="sidebar-product">
-										<!-- Single-product start -->
-										<div class="single-product">
-											<div class="product-photo-side">
-												<a href="#">
-													<img class="primary-photo" src="img/sidebar/6.png" alt=""/>
-												</a>
-											</div>
-											<div class="product-brief">
-												<h2><a href="#">16564</a></h2>
-												<h3>$200.00 </h3>
-											</div>
+								<h5 class="sidebar-title title-8">Recently Viewed</h5>
+								<div class="sidebar-product">
+									<!-- Single-product start -->
+									<div class="single-product">
+										<div class="product-photo product-photo-side">
+											<a href="#">
+												<img class="primary-photo" src="img/sidebar/6.png" alt=""/>
+											</a>
 										</div>
-										<!-- Single-product end -->
-										<!-- Single-product start -->
-										<div class="single-product">
-											<div class="product-photo-side">
-												<a href="#">
-													<img class="primary-photo" src="img/sidebar/8.png" alt=""/>
-												</a>
-											</div>
-											<div class="product-brief">
-												<h2><a href="#">17660</a></h2>
-												<h3>$300.00</h3>
-											</div>
-										</div>
-										<!-- Single-product end -->
-										<!-- Single-product start -->
-										<div class="single-product">
-											<div class="product-photo-side">
-												<a href="#">
-													<img class="primary-photo" src="img/sidebar/7.png" alt=""/>
-												</a>
-											</div>
-											<div class="product-brief">
-												<h2><a href="#">18877 </a></h2>
-												<h3>$200.00</h3>
-											</div>
-										</div>
-										<!-- Single-product end -->
-										<div class="text-center mrg-btm-20">
-											<a href="#" class="view-btn"><strong>View All <i class="fa fa-long-arrow-right"></i></strong></a>
+										<div class="product-brief">
+											<h2><a href="#">16564</a></h2>
+											<h3>$200.00 </h3>
 										</div>
 									</div>
-								</aside>
-								<aside class="widget top-rated hidden-sm brd-btm">
-									<h5 class="sidebar-title title-8">Best Sellers</h5>
-									<div class="sidebar-product">
-										<!-- Single-product start -->
-										<div class="single-product">
-											<div class="product-photo-side">
-												<a href="#">
-													<img class="primary-photo" src="img/sidebar/6.png" alt=""/>
-												</a>
-											</div>
-											<div class="product-brief">
-												<h2><a href="#">16564</a></h2>
-												<h3>$200.00</h3>
-											</div>
+									<!-- Single-product end -->
+									<!-- Single-product start -->
+									<div class="single-product">
+										<div class="product-photo product-photo-side">
+											<a href="#">
+												<img class="primary-photo" src="img/sidebar/8.png" alt=""/>
+											</a>
 										</div>
-										<!-- Single-product end -->
-										<!-- Single-product start -->
-										<div class="single-product">
-											<div class="product-photo-side">
-												<a href="#">
-													<img class="primary-photo" src="img/sidebar/8.png" alt=""/>
-												</a>
-											</div>
-											<div class="product-brief">
-												<h2><a href="#">17660</a></h2>
-												<h3>$300.00</h3>
-											</div>
-										</div>
-										<!-- Single-product end -->
-										<!-- Single-product start -->
-										<div class="single-product">
-											<div class="product-photo product-photo-side">
-												<a href="#">
-													<img class="primary-photo" src="img/sidebar/7.png" alt=""/>
-												</a>
-											</div>
-											<div class="product-brief">
-												<h2><a href="#">18877 </a></h2>
-												<h3>$200.00</h3>
-											</div>
-										</div>
-										<!-- Single-product end -->
-										<div class="text-center mrg-btm-20">
-											<a href="#" class="view-btn"><strong>View All <i class="fa fa-long-arrow-right"></i></strong></a>
+										<div class="product-brief">
+											<h2><a href="#">17660</a></h2>
+											<h3>$300.00</h3>
 										</div>
 									</div>
-								</aside>
-								<aside class="widget top-rated hidden-sm  brd-btm">
-										<h5 class="sidebar-title title-8">LATEST ARRIVALS</h5>
-									<div class="sidebar-product">
-										<!-- Single-product start -->
-										<div class="single-product">
-											<div class="product-photo-side">
-												<a href="#">
-													<img class="primary-photo" src="img/sidebar/6.png" alt=""/>
-												</a>
-											</div>
-											<div class="product-brief">
-												<h2><a href="#">16564</a></h2>
-												<h3>$200.00</h3>
-											</div>
+									<!-- Single-product end -->
+									<!-- Single-product start -->
+									<div class="single-product">
+										<div class="product-photo product-photo-side">
+											<a href="#">
+												<img class="primary-photo" src="img/sidebar/7.png" alt=""/>
+											</a>
 										</div>
-										<!-- Single-product end -->
-										<!-- Single-product start -->
-										<div class="single-product">
-											<div class="product-photo-side">
-												<a href="#">
-													<img class="primary-photo" src="img/sidebar/8.png" alt=""/>
-												</a>
-											</div>
-											<div class="product-brief">
-												<h2><a href="#">17660</a></h2>
-												<h3>$300.00</h3>
-											</div>
-										</div>
-										<!-- Single-product end -->
-										<!-- Single-product start -->
-										<div class="single-product">
-											<div class="product-photo product-photo-side">
-												<a href="#">
-													<img class="primary-photo" src="img/sidebar/7.png" alt=""/>
-												</a>
-											</div>
-											<div class="product-brief">
-												<h2><a href="#">18877 </a></h2>
-												<h3>$200.00</h3>
-											</div>
-										</div>
-										<!-- Single-product end -->
-										<div class="text-center mrg-btm-20">
-											<a href="#" class="view-btn"><strong>View All <i class="fa fa-long-arrow-right"></i></strong></a>
+										<div class="product-brief">
+											<h2><a href="#">18877 </a></h2>
+											<h3>$200.00</h3>
 										</div>
 									</div>
-								</aside>
+									<!-- Single-product end -->
+									<div class="text-center mrg-btm-20">
+										<a href="#" class="view-btn"><strong>View All <i class="fa fa-long-arrow-right"></i></strong></a>
+									</div>
+								</div>
+							</aside>
+							<aside class="widget top-rated hidden-sm brd-btm">
+								<h5 class="sidebar-title title-8">Best Sellers</h5>
+								<div class="sidebar-product">
+									<!-- Single-product start -->
+									<div class="single-product">
+										<div class="product-photo product-photo-side">
+											<a href="#">
+												<img class="primary-photo" src="img/sidebar/6.png" alt=""/>
+											</a>
+										</div>
+										<div class="product-brief">
+											<h2><a href="#">16564</a></h2>
+											<h3>$200.00</h3>
+										</div>
+									</div>
+									<!-- Single-product end -->
+									<!-- Single-product start -->
+									<div class="single-product">
+										<div class="product-photo product-photo-side">
+											<a href="#">
+												<img class="primary-photo" src="img/sidebar/8.png" alt=""/>
+											</a>
+										</div>
+										<div class="product-brief">
+											<h2><a href="#">17660</a></h2>
+											<h3>$300.00</h3>
+										</div>
+									</div>
+									<!-- Single-product end -->
+									<!-- Single-product start -->
+									<div class="single-product">
+										<div class="product-photo product-photo-side">
+											<a href="#">
+												<img class="primary-photo" src="img/sidebar/7.png" alt=""/>
+											</a>
+										</div>
+										<div class="product-brief">
+											<h2><a href="#">18877 </a></h2>
+											<h3>$200.00</h3>
+										</div>
+									</div>
+									<!-- Single-product end -->
+									<div class="text-center mrg-btm-20">
+										<a href="#" class="view-btn"><strong>View All <i class="fa fa-long-arrow-right"></i></strong></a>
+									</div>
+								</div>
+							</aside>
+							<aside class="widget top-rated hidden-sm  brd-btm">
+									<h5 class="sidebar-title title-8">LATEST ARRIVALS</h5>
+								<div class="sidebar-product">
+									<!-- Single-product start -->
+									<div class="single-product">
+										<div class="product-photo product-photo-side">
+											<a href="#">
+												<img class="primary-photo" src="img/sidebar/6.png" alt=""/>
+											</a>
+										</div>
+										<div class="product-brief">
+											<h2><a href="#">16564</a></h2>
+											<h3>$200.00</h3>
+										</div>
+									</div>
+									<!-- Single-product end -->
+									<!-- Single-product start -->
+									<div class="single-product">
+										<div class="product-photo product-photo-side">
+											<a href="#">
+												<img class="primary-photo" src="img/sidebar/8.png" alt=""/>
+											</a>
+										</div>
+										<div class="product-brief">
+											<h2><a href="#">17660</a></h2>
+											<h3>$300.00</h3>
+										</div>
+									</div>
+									<!-- Single-product end -->
+									<!-- Single-product start -->
+									<div class="single-product">
+										<div class="product-photo product-photo-side">
+											<a href="#">
+												<img class="primary-photo" src="img/sidebar/7.png" alt=""/>
+											</a>
+										</div>
+										<div class="product-brief">
+											<h2><a href="#">18877 </a></h2>
+											<h3>$200.00</h3>
+										</div>
+									</div>
+									<!-- Single-product end -->
+									<div class="text-center mrg-btm-20">
+										<a href="#" class="view-btn"><strong>View All <i class="fa fa-long-arrow-right"></i></strong></a>
+									</div>
+								</div>
+							</aside>
+							<!-- widget-top-brand end -->
 						</div>
 						<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12 mb-no-pad-lr">
 							<!-- Shop-Content start -->
 							<div class="shop-content">
 								
+
 								<!-- Shop-product start -->
 								<div class="tab-content mrg-top-20">
 									<div role="tabpanel" class="tab-pane active" id="grid-view">
 										<div class="row shop-grid">
 											<!-- Single-product start -->
 											<div class="col-xlg-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
-												<div class="single-product shop-grid-min-height">
+												<div class="single-product clearfix shop-grid-min-height">
 													<div class="pro-head">
-																<div class="pro-head-left">
-																	<h2><a href="#">79412</a></h2>
+														<div class="pro-head-left">
+																	<h2><a href="#">17718</a></h2>
 																</div>
 																<div class="pro-head-right">
-																	<h2><span class="prod-desc-off-3">$9.50</span> <span class="prod-offer">$4.75</span> </h2>
+																	<h2><span class="prod-offer">$45.00</span></h2>
 																</div>
 													</div>
-
 													<div class="product-photo">
-														<a href="product-description.html" style="height:400px;">
-															<img class="primary-photo" src="img/single-product/mediam/3.jpg" alt="" />
-															<img class="secondary-photo" src="img/single-product/mediam/3.jpg" alt="" />
+														<a href="sub-child-category.html" class="product-phot-grid">
+															<img class="primary-photo" src="img/shop/18561-1.jpg" alt="" />
+															<img class="secondary-photo" src="img/shop/18561-1.jpg" alt="" />
 														</a>
 														<div class="pro-action" id="add-wish">
+																
 																<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
 															<a href="#" class="action-btn" id="add-show"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
+
 															<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
 														</div>
 														<div class="pro-action" id="remove-wish">
-																<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+																<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart/span></a>
 															<a href="#" class="action-btn" id="remove-show"><i class="fa fa-heart"></i><span>Remove</span></a>
 															<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
 														</div>
-														<img src="img/new-3.png" class="img-responsive product-list-new">
 													</div>
 													<div class="product-brief product-breif-head">
 														<div class="product-head">
-															<h2><a href="product-description.html"> WOOD SPRING...</a></h2>
-														</div>
-														<div class="product-list-3">
-															<div class="product-list-price">Instock: <span>1</span> | Case: <span>8</span> | Inner: <span>1</span></div>
-															<!-- <div class="product-list-off"></div> -->
-														</div>
-														<div class="product-list-2 product-list no-btm-border">
-																<div class="product-list-price">
-																		<div class="">
-																				<form action="#">
-																					<div class="cart-plus-minus fnt-size-16">Qty: <input type="text" value="2"/></div>
-																				</form>
-																			</div>
-																</div>
-																<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
-															</div>
-													</div>
-												</div>
-											</div>
-											<!-- Single-product end -->
-											<!-- Single-product start -->
-											<div class="col-xlg-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
-												<div class="single-product shop-grid-min-height">
-													<div class="pro-head">
-																<div class="pro-head-left">
-																	<h2><a href="#">18421</a></h2>
-																</div>
-																<div class="pro-head-right">
-																	<h2><span class="prod-offer">$12.50</span></h2>
-																</div>
-													</div>
-
-													<div class="product-photo">
-														<a href="#">
-															<img class="primary-photo" src="img/shop/20.jpg" alt="" />
-															<img class="secondary-photo" src="img/shop/20.jpg" alt="" />
-														</a>
-														<div class="pro-action">
-																<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
-															<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
-															<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
-														</div>
-														<img src="img/new-3.png" class="img-responsive product-list-new">
-													</div>
-													<div class="product-brief product-breif-head">
-															<div class="product-head">
-																	<h2><a href="#"><span class="">WOOD COFFEE TR...</a></h2>
+																	<h2><a href="product-description.html">Ceramic 4pc Canister Set</a></h2>
 															</div>
 															<div class="product-list-3">
-																<div class="product-list-price">Instock | Case: <span>12</span> | Inner: <span>1</span></div>
+																<div class="product-list-price">Instock | Case: <span>1</span> | Inner: <span>1</span></div>
 																<!-- <div class="product-list-off"></div> -->
 															</div>
 															<div class="product-list-2 product-list no-btm-border">
 																	<div class="product-list-price">
 																			<div class="">
 																					<form action="#">
-																						<div class="cart-plus-minus fnt-size-16">Qty: <input type="text" value="2"/></div>
-																					</form>
-																				</div>
-																	</div>
-																	<div class="product-list-cart"><a href="cart-2.html"><img src="img/cart.png" data-toggle="tooltip" data-placement="top" title="Added To Cart" class="img-responsive"></a></div>
-																</div>
-													</div>
-												</div>
-											</div>
-											<!-- Single-product end -->
-											<!-- Single-product start -->
-											<div class="col-xlg-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
-												<div class="single-product shop-grid-min-height">
-													<div class="pro-head">
-																<div class="pro-head-left">
-																	<h2><a href="#">18977</a></h2>
-																</div>
-																<div class="pro-head-right">
-																	<h2><span class="prod-offer">$11.00</span></h2>
-																</div>
-													</div>
-
-													<div class="product-photo">
-														<a href="#">
-															<img class="primary-photo" src="img/shop/21.jpg" alt="" />
-															<img class="secondary-photo" src="img/shop/21.jpg" alt="" />
-														</a>
-														<div class="pro-action">
-																<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
-															<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
-															<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
-														</div>
-
-													</div>
-													<div class="product-brief product-breif-head">
-															<div class="product-head">
-																	<h2><a href="#"> Wood Coffee Tab...</a></h2>
-															</div>
-															<div class="product-list-3">
-																<div class="product-list-price">Instock | Case: <span>18</span> | Inner: <span>2</span></div>
-																<!-- <div class="product-list-off"></div> -->
-															</div>
-															<div class="product-list-2 product-list no-btm-border">
-																	<div class="product-list-price">
-																			<div class="">
-																					<form action="#">
-																						<div class="cart-plus-minus fnt-size-16">Qty: <input type="text" value="2"/></div>
+																						<div class="cart-plus-minus fnt-size-16">Qty: <input type="text" value="1"/></div>
 																					</form>
 																				</div>
 																	</div>
@@ -1361,33 +1267,32 @@
 											<!-- Single-product end -->
 											<!-- Single-product start -->
 											<div class="col-xlg-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
-												<div class="single-product shop-grid-min-height">
+												<div class="single-product clearfix shop-grid-min-height">
 													<div class="pro-head">
 																<div class="pro-head-left">
-																	<h2><a href="#">16093</a></h2>
+																	<h2><a href="#">18544</a></h2>
 																</div>
 																<div class="pro-head-right">
-																	<h2><span class="prod-offer">$3.50</span></h2>
+																	<h2><span class="prod-desc-off-3">$2.50</span> <span class="prod-offer">$1.25</span> </h2>
 																</div>
 													</div>
-
 													<div class="product-photo">
-														<a href="#">
-															<img class="primary-photo" src="img/shop/22.jpg" alt="" />
-															<img class="secondary-photo" src="img/shop/22.jpg" alt="" />
+														<a href="#" class="product-phot-grid">
+															<img class="primary-photo" src="img/shop/18539.jpg" alt="" />
+															<img class="secondary-photo" src="img/shop/18539.jpg" alt="" />
 														</a>
 														<div class="pro-action">
 																<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
-															<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
+														<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
 															<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
 														</div>
 													</div>
 													<div class="product-brief product-breif-head">
 															<div class="product-head">
-																	<h2><a href="#">Wood Block Sig ...</a></h2>
+																	<h2><a href="product-description.html">Wood Mini Block Sign, 6 Ast</a></h2>
 															</div>
 															<div class="product-list-3">
-																<div class="product-list-price">Instock | Case: <span>36</span> | Inner: <span>12</span></div>
+																<div class="product-list-price">Instock | Case: <span>1</span> | Inner: <span>1</span></div>
 																<!-- <div class="product-list-off"></div> -->
 															</div>
 															<div class="product-list-2 product-list no-btm-border">
@@ -1398,7 +1303,7 @@
 																					</form>
 																				</div>
 																	</div>
-																	<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
+																	<div class="product-list-cart"><a href="cart-2.html"><img src="img/cart.png" data-toggle="tooltip" data-placement="top" title="Added To Cart" class="img-responsive"></a></div>
 																</div>
 													</div>
 												</div>
@@ -1406,20 +1311,20 @@
 											<!-- Single-product end -->
 											<!-- Single-product start -->
 											<div class="col-xlg-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
-												<div class="single-product shop-grid-min-height">
+												<div class="single-product clearfix shop-grid-min-height">
 													<div class="pro-head">
 																<div class="pro-head-left">
-																	<h2><a href="#">19053</a></h2>
+																	<h2><a href="#">18817</a></h2>
 																</div>
 																<div class="pro-head-right">
-																	<h2><span class="prod-offer">$3.50</span></h2>
+																	<h2><span class="prod-desc-off-3">$4.00</span> <span class="prod-offer">$2.00</span> </h2>
 																</div>
 													</div>
 
 													<div class="product-photo">
-														<a href="#">
-															<img class="primary-photo" src="img/shop/23.jpg" alt="" />
-															<img class="secondary-photo" src="img/shop/23.jpg" alt="" />
+														<a href="#" class="product-phot-grid">
+															<img class="primary-photo" src="img/shop/18558_1.jpg" alt="" />
+															<img class="secondary-photo" src="img/shop/18558_1.jpg" alt="" />
 														</a>
 														<div class="pro-action">
 																<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
@@ -1429,17 +1334,17 @@
 													</div>
 													<div class="product-brief product-breif-head">
 															<div class="product-head">
-																	<h2><a href="#">Ceramic Coffee ...</a></h2>
+																	<h2><a href="product-description.html">Artificial Potted Flower 3 Ast</a></h2>
 															</div>
 															<div class="product-list-3">
-																<div class="product-list-price">Instock | Case: <span>12</span> | Inner: <span>1</span></div>
+																<div class="product-list-price">Avlb By: 12/07 | Case: <span>24</span> | Inner: <span>6</span></div>
 																<!-- <div class="product-list-off"></div> -->
 															</div>
 															<div class="product-list-2 product-list no-btm-border">
 																	<div class="product-list-price">
 																			<div class="">
 																					<form action="#">
-																						<div class="cart-plus-minus fnt-size-16">Qty: <input type="text" value="2"/></div>
+																						<div class="cart-plus-minus fnt-size-16">Qty: <input type="text" value="6"/></div>
 																					</form>
 																				</div>
 																	</div>
@@ -1451,20 +1356,20 @@
 											<!-- Single-product end -->
 											<!-- Single-product start -->
 											<div class="col-xlg-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
-												<div class="single-product shop-grid-min-height">
+												<div class="single-product clearfix shop-grid-min-height">
 													<div class="pro-head">
 																<div class="pro-head-left">
-																	<h2><a href="#">18427</a></h2>
+																	<h2><a href="#">18563</a></h2>
 																</div>
 																<div class="pro-head-right">
-																	<h2><span class="prod-offer">$12.50</span></h2>
+																	<h2><span class="prod-offer">$5.50</span></h2>
 																</div>
 													</div>
 
 													<div class="product-photo">
-														<a href="#">
-															<img class="primary-photo" src="img/shop/24.jpg" alt="" />
-															<img class="secondary-photo" src="img/shop/24.jpg" alt="" />
+														<a href="#" class="product-phot-grid">
+															<img class="primary-photo" src="img/shop/18563.jpg" alt="" />
+															<img class="secondary-photo" src="img/shop/18563.jpg" alt="" />
 														</a>
 														<div class="pro-action">
 																<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
@@ -1474,64 +1379,19 @@
 													</div>
 													<div class="product-brief product-breif-head">
 															<div class="product-head">
-																	<h2><a href="#">Wood Chalkboard ...</a></h2>
+																	<h2><a href="product-description.html">Ceramic Bee Mug, 4Ast ...</a></h2>
 															</div>
 															<div class="product-list-3">
-																<div class="product-list-price">Instock | Case: <span>12</span> | Inner: <span>2</span></div>
+																<div class="product-list-price">Avlb By: 12/08 | Case: <span>24</span> | Inner: <span>4</span></div>
 																<!-- <div class="product-list-off"></div> -->
 															</div>
 															<div class="product-list-2 product-list no-btm-border">
 																	<div class="product-list-price">
 																			<div class="">
 																					<form action="#">
-																						<div class="cart-plus-minus fnt-size-16">Qty: <input type="text" value="4"/></div>
+																						<div class="cart-plus-minus fnt-size-16">Qty: <input type="text" value="8"/></div>
 																					</form>
 																				</div>
-																	</div>
-																	<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
-																</div>
-													</div>
-												</div>
-											</div>
-											<!-- Single-product end -->
-											<!-- Single-product start -->
-											<div class="col-xlg-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
-												<div class="single-product shop-grid-min-height">
-													<div class="pro-head">
-																<div class="pro-head-left">
-																	<h2><a href="#">18426</a></h2>
-																</div>
-																<div class="pro-head-right">
-																	<h2><span class="prod-offer">$3.50</span></h2>
-																</div>
-													</div>
-
-													<div class="product-photo">
-														<a href="#">
-															<img class="primary-photo" src="img/shop/25.jpg" alt="" />
-															<img class="secondary-photo" src="img/shop/25.jpg" alt="" />
-														</a>
-														<div class="pro-action">
-																<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
-															<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
-															<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
-														</div>
-													</div>
-													<div class="product-brief product-breif-head">
-															<div class="product-head">
-																	<h2><a href="#">Wood Block Coffee ...</a></h2>
-															</div>
-															<div class="product-list-3">
-																<div class="product-list-price">Instock | Case: <span>36</span> | Inner: <span>3</span></div>
-																<!-- <div class="product-list-off"></div> -->
-															</div>
-															<div class="product-list-2 product-list no-btm-border">
-																	<div class="product-list-price">
-                                    <div class="">
-                                        <form action="#">
-                                          <div class="cart-plus-minus fnt-size-16">Qty: <input type="text" value="9"/></div>
-                                        </form>
-                                      </div>
 																	</div>
 																	<div class="product-list-cart"><a href="cart-2.html"><img src="img/cart.png" data-toggle="tooltip" data-placement="top" title="Added To Cart" class="img-responsive"></a></div>
 																</div>
@@ -1541,35 +1401,30 @@
 											<!-- Single-product end -->
 											<!-- Single-product start -->
 											<div class="col-xlg-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
-													<div class="single-product shop-grid-min-height">
-														<div class="pro-head">
-																	<div class="pro-head-left">
-																		<h2><a href="#">18420</a></h2>
-																	</div>
-																	<div class="pro-head-right">
-																		<h2><span class="prod-desc-off-3">$12.50</span> <span class="prod-offer">$6.25</span> </h2>
-																	</div>
-														</div>
+												<div class="single-product clearfix shop-grid-min-height">
+													<div class="pro-head">
+																<div class="pro-head-left">
+																	<h2><a href="#">22466</a></h2>
+																</div>
+																<div class="pro-head-right">
+																	<h2><span class="prod-offer">$10.00</span></h2>
+																</div>
+													</div>
 
-														<div class="product-photo">
-															<a href="#">
-																<img class="primary-photo" src="img/shop/19.jpg" alt="" />
-																<img class="secondary-photo" src="img/shop/19.jpg" alt="" />
-															</a>
-															<div class="pro-action" id="add-wish">
-																	<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
-																<a href="#" class="action-btn" id="add-show"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
-																<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
-															</div>
-															<div class="pro-action" id="remove-wish">
-																	<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
-																<a href="#" class="action-btn" id="remove-show"><i class="fa fa-heart"></i><span>Remove</span></a>
-																<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
-															</div>
+													<div class="product-photo">
+														<a href="#" class="product-phot-grid">
+															<img class="primary-photo" src="img/shop/18538.jpg" alt="" />
+															<img class="secondary-photo" src="img/shop/18538.jpg" alt="" />
+														</a>
+														<div class="pro-action">
+																<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+															<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
+															<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
 														</div>
-														<div class="product-brief product-breif-head">
+													</div>
+													<div class="product-brief product-breif-head">
 															<div class="product-head">
-																<h2><a href="product-description.html"> Wood Coffee Wall ...</a></h2>
+																	<h2><a href="product-description.html">Blessing Jar with 36 Blessing</a></h2>
 															</div>
 															<div class="product-list-3">
 																<div class="product-list-price">Instock: <span>1</span> | Case: <span>8</span> | Inner: <span>1</span></div>
@@ -1585,26 +1440,73 @@
 																	</div>
 																	<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
 																</div>
+													</div>
+												</div>
+											</div>
+											<!-- Single-product end -->
+											<!-- Single-product start -->
+											<div class="col-xlg-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
+													<div class="single-product clearfix shop-grid-min-height">
+														<div class="pro-head">
+															<div class="pro-head-left">
+																		<h2><a href="#">17718</a></h2>
+																	</div>
+																	<div class="pro-head-right">
+																		<h2><span class="prod-offer">$45.00</span></h2>
+																	</div>
+														</div>
+														<div class="product-photo">
+															<a href="#" class="product-phot-grid">
+																<img class="primary-photo" src="img/shop/18561.jpg" alt="" />
+																<img class="secondary-photo" src="img/shop/18561.jpg" alt="" />
+															</a>
+															<div class="pro-action" id="add-wish">
+																	<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+
+																<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+															</div>
+															<div class="pro-action" id="remove-wish">
+																<a href="#" class="action-btn" id="remove-show"><i class="fa fa-heart"></i><span>Remove</span></a>
+																<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+															</div>
+														</div>
+														<div class="product-brief product-breif-head">
+															<div class="product-head">
+																		<h2><a href="product-description.html">Ceramic 4pc Canister Set</a></h2>
+																</div>
+																<div class="product-list-3">
+																	<div class="product-list-price">Instock | Case: <span>1</span> | Inner: <span>1</span></div>
+																	<!-- <div class="product-list-off"></div> -->
+																</div>
+																<div class="product-list-2 product-list no-btm-border">
+																		<div class="product-list-price">
+																				<div class="">
+																						<form action="#">
+																							<div class="cart-plus-minus fnt-size-16">Qty: <input type="text" value="1"/></div>
+																						</form>
+																					</div>
+																		</div>
+																		<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
+																	</div>
 														</div>
 													</div>
 												</div>
 												<!-- Single-product end -->
 												<!-- Single-product start -->
 												<div class="col-xlg-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
-													<div class="single-product shop-grid-min-height">
+													<div class="single-product clearfix shop-grid-min-height">
 														<div class="pro-head">
 																	<div class="pro-head-left">
-																		<h2><a href="#">18421</a></h2>
+																		<h2><a href="#">18544</a></h2>
 																	</div>
 																	<div class="pro-head-right">
-																		<h2><span class="prod-offer">$12.50</span></h2>
+																		<h2><span class="prod-desc-off-3">$2.50</span> <span class="prod-offer">$1.25</span> </h2>
 																	</div>
 														</div>
-
 														<div class="product-photo">
-															<a href="#">
-																<img class="primary-photo" src="img/shop/20.jpg" alt="" />
-																<img class="secondary-photo" src="img/shop/20.jpg" alt="" />
+															<a href="#" class="product-phot-grid">
+																<img class="primary-photo" src="img/shop/31.jpg" alt="" />
+																<img class="secondary-photo" src="img/shop/31.jpg" alt="" />
 															</a>
 															<div class="pro-action">
 																	<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
@@ -1614,17 +1516,17 @@
 														</div>
 														<div class="product-brief product-breif-head">
 																<div class="product-head">
-																		<h2><a href="#"><span class="">WOOD COFFEE TR...</a></h2>
+																		<h2><a href="product-description.html">Wood Mini Block Sign, 6 Ast</a></h2>
 																</div>
 																<div class="product-list-3">
-																	<div class="product-list-price">Instock | Case: <span>12</span> | Inner: <span>1</span></div>
+																	<div class="product-list-price">Instock | Case: <span>1</span> | Inner: <span>1</span></div>
 																	<!-- <div class="product-list-off"></div> -->
 																</div>
 																<div class="product-list-2 product-list no-btm-border">
 																		<div class="product-list-price">
 																				<div class="">
 																						<form action="#">
-																							<div class="cart-plus-minus fnt-size-16">Qty: <input type="text" value="2"/></div>
+																							<div class="cart-plus-minus fnt-size-16">Qty: <input type="text" value="12"/></div>
 																						</form>
 																					</div>
 																		</div>
@@ -1636,20 +1538,20 @@
 												<!-- Single-product end -->
 												<!-- Single-product start -->
 												<div class="col-xlg-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
-													<div class="single-product shop-grid-min-height">
+													<div class="single-product clearfix shop-grid-min-height">
 														<div class="pro-head">
 																	<div class="pro-head-left">
-																		<h2><a href="#">18977</a></h2>
+																		<h2><a href="#">18817</a></h2>
 																	</div>
 																	<div class="pro-head-right">
-																		<h2><span class="prod-offer">$11.00</span></h2>
+																		<h2><span class="prod-desc-off-3">$4.00</span> <span class="prod-offer">$2.00</span> </h2>
 																	</div>
 														</div>
 
 														<div class="product-photo">
-															<a href="#">
-																<img class="primary-photo" src="img/shop/21.jpg" alt="" />
-																<img class="secondary-photo" src="img/shop/21.jpg" alt="" />
+															<a href="#" class="product-phot-grid">
+																<img class="primary-photo" src="img/shop/32.jpg" alt="" />
+																<img class="secondary-photo" src="img/shop/32.jpg" alt="" />
 															</a>
 															<div class="pro-action">
 																	<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
@@ -1659,10 +1561,100 @@
 														</div>
 														<div class="product-brief product-breif-head">
 																<div class="product-head">
-																		<h2><a href="#"> Wood Coffee Tab...</a></h2>
+																		<h2><a href="product-description.html">Artificial Potted Flower 3 Ast</a></h2>
 																</div>
 																<div class="product-list-3">
-																	<div class="product-list-price">Instock | Case: <span>18</span> | Inner: <span>2</span></div>
+																	<div class="product-list-price">Avlb By: 12/07 | Case: <span>24</span> | Inner: <span>6</span></div>
+																	<!-- <div class="product-list-off"></div> -->
+																</div>
+																<div class="product-list-2 product-list no-btm-border">
+																		<div class="product-list-price">
+																				<div class="">
+																						<form action="#">
+																							<div class="cart-plus-minus fnt-size-16">Qty: <input type="text" value="6"/></div>
+																						</form>
+																					</div>
+																		</div>
+																		<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
+																	</div>
+														</div>
+													</div>
+												</div>
+												<!-- Single-product end -->
+												<!-- Single-product start -->
+												<div class="col-xlg-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
+													<div class="single-product clearfix shop-grid-min-height">
+														<div class="pro-head">
+																	<div class="pro-head-left">
+																		<h2><a href="#">18563</a></h2>
+																	</div>
+																	<div class="pro-head-right">
+																		<h2><span class="prod-offer">$5.50</span></h2>
+																	</div>
+														</div>
+
+														<div class="product-photo">
+															<a href="#" class="product-phot-grid">
+																<img class="primary-photo" src="img/shop/33.jpg" alt="" />
+																<img class="secondary-photo" src="img/shop/33.jpg" alt="" />
+															</a>
+															<div class="pro-action">
+																	<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+																<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
+																<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+															</div>
+														</div>
+														<div class="product-brief product-breif-head">
+																<div class="product-head">
+																		<h2><a href="product-description.html">Ceramic Bee Mug, 4Ast ...</a></h2>
+																</div>
+																<div class="product-list-3">
+																	<div class="product-list-price">Avlb By: 12/08 | Case: <span>24</span> | Inner: <span>4</span></div>
+																	<!-- <div class="product-list-off"></div> -->
+																</div>
+																<div class="product-list-2 product-list no-btm-border">
+																		<div class="product-list-price">
+																				<div class="">
+																						<form action="#">
+																							<div class="cart-plus-minus fnt-size-16">Qty: <input type="text" value="8"/></div>
+																						</form>
+																					</div>
+																		</div>
+																		<div class="product-list-cart"><a href="cart-2.html"><img src="img/cart.png" data-toggle="tooltip" data-placement="top" title="Added To Cart" class="img-responsive"></a></div>
+																	</div>
+														</div>
+													</div>
+												</div>
+												<!-- Single-product end -->
+												<!-- Single-product start -->
+												<div class="col-xlg-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
+													<div class="single-product clearfix shop-grid-min-height">
+														<div class="pro-head">
+																	<div class="pro-head-left">
+																		<h2><a href="#">22466</a></h2>
+																	</div>
+																	<div class="pro-head-right">
+																		<h2><span class="prod-offer">$10.00</span></h2>
+																	</div>
+														</div>
+
+														<div class="product-photo">
+															<a href="#" class="product-phot-grid">
+																<img class="primary-photo" src="img/shop/34.jpg" alt="" />
+																<img class="secondary-photo" src="img/shop/34.jpg" alt="" />
+															</a>
+															<div class="pro-action">
+																	<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+																<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
+																<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+															</div>
+														</div>
+														<div class="product-brief product-breif-head">
+																<div class="product-head">
+																		<h2><a href="product-description.html">Blessing Jar with 36 Blessing</a></h2>
+																</div>
+																<div class="product-list-3">
+																	<div class="product-list-price">Instock: <span>1</span> | Case: <span>8</span> | Inner: <span>1</span></div>
 																	<!-- <div class="product-list-off"></div> -->
 																</div>
 																<div class="product-list-2 product-list no-btm-border">
@@ -1680,21 +1672,68 @@
 												</div>
 												<!-- Single-product end -->
 												<!-- Single-product start -->
-												<div class="col-xlg-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
-													<div class="single-product shop-grid-min-height">
+											<div class="col-xlg-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
+													<div class="single-product clearfix shop-grid-min-height">
 														<div class="pro-head">
-																	<div class="pro-head-left">
-																		<h2><a href="#">16093</a></h2>
+															<div class="pro-head-left">
+																		<h2><a href="#">17718</a></h2>
 																	</div>
 																	<div class="pro-head-right">
-																		<h2><span class="prod-offer">$3.50</span></h2>
+																		<h2><span class="prod-offer">$45.00</span></h2>
 																	</div>
 														</div>
-
 														<div class="product-photo">
-															<a href="#">
-																<img class="primary-photo" src="img/shop/22.jpg" alt="" />
-																<img class="secondary-photo" src="img/shop/22.jpg" alt="" />
+															<a href="#" class="product-phot-grid">
+																<img class="primary-photo" src="img/shop/18561.jpg" alt="" />
+																<img class="secondary-photo" src="img/shop/18561.jpg" alt="" />
+															</a>
+															<div class="pro-action" id="add-wish">
+																	<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+
+																<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+															</div>
+															<div class="pro-action" id="remove-wish">
+																<a href="#" class="action-btn" id="remove-show"><i class="fa fa-heart"></i><span>Remove</span></a>
+																<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+															</div>
+														</div>
+														<div class="product-brief product-breif-head">
+															<div class="product-head">
+																		<h2><a href="product-description.html">Ceramic 4pc Canister Set</a></h2>
+																</div>
+																<div class="product-list-3">
+																	<div class="product-list-price">Instock | Case: <span>1</span> | Inner: <span>1</span></div>
+																	<!-- <div class="product-list-off"></div> -->
+																</div>
+																<div class="product-list-2 product-list no-btm-border">
+																		<div class="product-list-price">
+																				<div class="">
+																						<form action="#">
+																							<div class="cart-plus-minus fnt-size-16">Qty: <input type="text" value="1"/></div>
+																						</form>
+																					</div>
+																		</div>
+																		<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
+																	</div>
+														</div>
+													</div>
+												</div>
+												<!-- Single-product end -->
+												<!-- Single-product start -->
+												<div class="col-xlg-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
+													<div class="single-product clearfix shop-grid-min-height">
+														<div class="pro-head">
+																	<div class="pro-head-left">
+																		<h2><a href="#">18544</a></h2>
+																	</div>
+																	<div class="pro-head-right">
+																		<h2><span class="prod-desc-off-3">$2.50</span> <span class="prod-offer">$1.25</span> </h2>
+																	</div>
+														</div>
+														<div class="product-photo">
+															<a href="#" class="product-phot-grid">
+																<img class="primary-photo" src="img/shop/31.jpg" alt="" />
+																<img class="secondary-photo" src="img/shop/31.jpg" alt="" />
 															</a>
 															<div class="pro-action">
 																	<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
@@ -1704,10 +1743,10 @@
 														</div>
 														<div class="product-brief product-breif-head">
 																<div class="product-head">
-																		<h2><a href="#">Wood Block Sig ...</a></h2>
+																		<h2><a href="product-description.html">Wood Mini Block Sign, 6 Ast</a></h2>
 																</div>
 																<div class="product-list-3">
-																	<div class="product-list-price">Instock | Case: <span>36</span> | Inner: <span>12</span></div>
+																	<div class="product-list-price">Instock | Case: <span>1</span> | Inner: <span>1</span></div>
 																	<!-- <div class="product-list-off"></div> -->
 																</div>
 																<div class="product-list-2 product-list no-btm-border">
@@ -1715,6 +1754,141 @@
 																				<div class="">
 																						<form action="#">
 																							<div class="cart-plus-minus fnt-size-16">Qty: <input type="text" value="12"/></div>
+																						</form>
+																					</div>
+																		</div>
+																		<div class="product-list-cart"><a href="cart-2.html"><img src="img/cart.png" data-toggle="tooltip" data-placement="top" title="Added To Cart" class="img-responsive"></a></div>
+																	</div>
+														</div>
+													</div>
+												</div>
+												<!-- Single-product end -->
+												<!-- Single-product start -->
+												<div class="col-xlg-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
+													<div class="single-product clearfix shop-grid-min-height">
+														<div class="pro-head">
+																	<div class="pro-head-left">
+																		<h2><a href="#">18817</a></h2>
+																	</div>
+																	<div class="pro-head-right">
+																		<h2><span class="prod-desc-off-3">$4.00</span> <span class="prod-offer">$2.00</span> </h2>
+																	</div>
+														</div>
+
+														<div class="product-photo">
+															<a href="#" class="product-phot-grid">
+																<img class="primary-photo" src="img/shop/32.jpg" alt="" />
+																<img class="secondary-photo" src="img/shop/32.jpg" alt="" />
+															</a>
+															<div class="pro-action">
+																	<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+																<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
+																<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+															</div>
+														</div>
+														<div class="product-brief product-breif-head">
+																<div class="product-head">
+																		<h2><a href="product-description.html">Artificial Potted Flower 3 Ast</a></h2>
+																</div>
+																<div class="product-list-3">
+																	<div class="product-list-price">Avlb By: 12/07 | Case: <span>24</span> | Inner: <span>6</span></div>
+																	<!-- <div class="product-list-off"></div> -->
+																</div>
+																<div class="product-list-2 product-list no-btm-border">
+																		<div class="product-list-price">
+																				<div class="">
+																						<form action="#">
+																							<div class="cart-plus-minus fnt-size-16">Qty: <input type="text" value="6"/></div>
+																						</form>
+																					</div>
+																		</div>
+																		<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
+																	</div>
+														</div>
+													</div>
+												</div>
+												<!-- Single-product end -->
+												<!-- Single-product start -->
+												<div class="col-xlg-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
+													<div class="single-product clearfix shop-grid-min-height">
+														<div class="pro-head">
+																	<div class="pro-head-left">
+																		<h2><a href="#">18563</a></h2>
+																	</div>
+																	<div class="pro-head-right">
+																		<h2><span class="prod-offer">$5.50</span></h2>
+																	</div>
+														</div>
+
+														<div class="product-photo">
+															<a href="#" class="product-phot-grid">
+																<img class="primary-photo" src="img/shop/33.jpg" alt="" />
+																<img class="secondary-photo" src="img/shop/33.jpg" alt="" />
+															</a>
+															<div class="pro-action">
+																	<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+																<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
+																<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+															</div>
+														</div>
+														<div class="product-brief product-breif-head">
+																<div class="product-head">
+																		<h2><a href="product-description.html">Ceramic Bee Mug, 4Ast ...</a></h2>
+																</div>
+																<div class="product-list-3">
+																	<div class="product-list-price">Avlb By: 12/08 | Case: <span>24</span> | Inner: <span>4</span></div>
+																	<!-- <div class="product-list-off"></div> -->
+																</div>
+																<div class="product-list-2 product-list no-btm-border">
+																		<div class="product-list-price">
+																				<div class="">
+																						<form action="#">
+																							<div class="cart-plus-minus fnt-size-16">Qty: <input type="text" value="8"/></div>
+																						</form>
+																					</div>
+																		</div>
+																		<div class="product-list-cart"><a href="cart-2.html"><img src="img/cart.png" data-toggle="tooltip" data-placement="top" title="Added To Cart" class="img-responsive"></a></div>
+																	</div>
+														</div>
+													</div>
+												</div>
+												<!-- Single-product end -->
+												<!-- Single-product start -->
+												<div class="col-xlg-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-no-pad-lr">
+													<div class="single-product clearfix shop-grid-min-height">
+														<div class="pro-head">
+																	<div class="pro-head-left">
+																		<h2><a href="#">22466</a></h2>
+																	</div>
+																	<div class="pro-head-right">
+																		<h2><span class="prod-offer">$10.00</span></h2>
+																	</div>
+														</div>
+
+														<div class="product-photo">
+															<a href="#" class="product-phot-grid">
+																<img class="primary-photo" src="img/shop/34.jpg" alt="" />
+																<img class="secondary-photo" src="img/shop/34.jpg" alt="" />
+															</a>
+															<div class="pro-action">
+																	<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+																<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
+																<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+															</div>
+														</div>
+														<div class="product-brief product-breif-head">
+																<div class="product-head">
+																		<h2><a href="product-description.html">Blessing Jar with 36 Blessing</a></h2>
+																</div>
+																<div class="product-list-3">
+																	<div class="product-list-price">Instock: <span>1</span> | Case: <span>8</span> | Inner: <span>1</span></div>
+																	<!-- <div class="product-list-off"></div> -->
+																</div>
+																<div class="product-list-2 product-list no-btm-border">
+																		<div class="product-list-price">
+																				<div class="">
+																						<form action="#">
+																							<div class="cart-plus-minus fnt-size-16">Qty: <input type="text" value="2"/></div>
 																						</form>
 																					</div>
 																		</div>
@@ -1728,30 +1902,7 @@
 									</div>
 								</div>
 								<!-- Shop-product end -->
-								<!-- product-toolbar start -->
-								<div class="product-toolbar btm-border">
-									<!-- Pagination -->
-									<div class="shop-pagination">
-											<ul>
-												<li class="active"><a href="#">1</a></li>
-												<li><a href="#">2</a></li>
-												<li><a href="#">3</a></li>
-												<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-											</ul>
-										</div>
-									<!-- Shop-menu -->
-									<div class="short-by showing hidden-xs">
-											<span>showing</span>
-											<select class="shop-select">
-												<option value="1">100</option>
-												<option value="1">20</option>0
-												<option value="1">50</option>0
-												<option value="1">100</option>
-											</select>
-										</div>
-
-								</div>
-								<!-- product-toolbar end -->
+								<hr>
 							</div>
 							<!-- Shop-Content end -->
 						</div>
@@ -1772,325 +1923,7 @@
 				</div>
 			</div> -->
 			<!-- BANNER-AREA END -->
-			<!-- PRODUCT-AREA START -->
-			<div class="product-area">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="section-title text-center">
-									<h2 class="border-left-right-btm">Recently Viewed</h2>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div id="active-product" class="product-slider cat-slider personalization-final">
-						<!-- Single-product start -->
-						<div class="single-product">
-							<div class="pro-head">
-								<div class="pro-head-left">
-									<h2><a href="#">18420</a></h2>
-								</div>
-								<div class="pro-head-right">
-									<h2><span class="prod-offer">$6.50</span> <span class="prod-desc-off-3">$12.50</span></h2>
-								</div>
-							</div>
-							<div class="product-photo">
-								<a href="#">
-									<img class="primary-photo" src="img/shop/19.jpg" alt="" />
-									<img class="secondary-photo" src="img/shop/19.jpg" alt="" />
-								</a>
-								<div class="pro-action" id="add-wish">
-									<a href="" class="action-btn" id="add-show"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
-									<a href="#"  data-toggle="modal" data-target="#productModal" class="action-btn"><i class="fa fa-eye"></i><span>Quick View</span></a>
-
-									<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
-								</div>
-								<div class="pro-action" id="remove-wish">
-									<a href="" class="action-btn" id="remove-show"><i class="fa fa-heart"></i><span>Remove</span></a>
-									<a href="#" class="action-btn"><i class="fa fa-eye"></i><span>Quick View</span></a>
-									<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
-								</div>
-								<img src="img/new-3.png" class="img-responsive product-list-new">
-							</div>
-							<div class="product-brief product-breif-head">
-									<div class="product-head">
-											<h2> Wood Coffee Wall/Tab ...</a></h2>
-									</div>
-
-									<div class="product-list-3">
-										<div class="product-list-price">Instock | Case: <span>8</span> | Inner: <span>1</span></div>
-										<!-- <div class="product-list-off"></div> -->
-									</div>
-									<div class="product-list-2 product-list no-btm-border mrg-btm-20 Withoutqty">
-										<div class="product-list-price">
-											<div class="">
-												<form action="#">
-													<div class="cart-plus-minus"><input type="text" value="2"/></div>
-												</form>
-											</div>
-										</div>
-										<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
-									</div>
-							</div>
-						</div>
-						<!-- Single-product end -->
-						<!-- Single-product start -->
-						<div class="single-product">
-							<div class="pro-head">
-								<div class="pro-head-left">
-									<h2><a href="#">18421</a></h2>
-								</div>
-								<div class="pro-head-right">
-									<h2><span class="prod-offer">$12.50</span></h2>
-								</div>
-							</div>
-							<div class="product-photo">
-								<a href="#">
-									<img class="primary-photo" src="img/shop/20.jpg" alt="" />
-									<img class="secondary-photo" src="img/shop/20.jpg" alt="" />
-								</a>
-								<div class="pro-action">
-									<a href="#" class="action-btn"><i class="sp-heart"></i><span>Wishlist</span></a>
-									<a href="#" class="action-btn"><i class="sp-shopping-cart"></i><span>Add to cart</span></a>
-									<a href="#" class="action-btn"><i class="sp-compare-alt"></i><span>Compare</span></a>
-								</div>
-							</div>
-							<div class="product-brief product-breif-head">
-								<div class="product-head">
-									<h2><a href="#">Wood Coffee Tray/Wall Sign</a></h2>
-								</div>
-								<div class="product-list-3">
-									<div class="product-list-price">Instock | Case: <span>12</span> | Inner: <span>2</span></div>
-										<!-- <div class="product-list-off"></div> -->
-								</div>
-								<div class="product-list-2 product-list no-btm-border mrg-btm-20 Withoutqty">
-									<div class="product-list-price">
-										<div class="">
-											<form action="#">
-												<div class="cart-plus-minus"><input type="text" value="2"/></div>
-											</form>
-										</div>
-									</div>
-									<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
-								</div>
-							</div>
-						</div>
-						<!-- Single-product end -->
-						<!-- Single-product start -->
-						<div class="single-product">
-							<div class="pro-head">
-								<div class="pro-head-left">
-									<h2><a href="#">18977</a></h2>
-								</div>
-								<div class="pro-head-right">
-									<h2><span class="prod-offer">$5.50</span> <span class="prod-desc-off-3">$11.00</span></h2>
-								</div>
-							</div>
-							<div class="product-photo">
-								<a href="#">
-									<img class="primary-photo" src="img/shop/21.jpg" alt="" />
-									<img class="secondary-photo" src="img/shop/21.jpg" alt="" />
-								</a>
-								<div class="pro-action">
-									<a href="#" class="action-btn"><i class="sp-heart"></i><span>Wishlist</span></a>
-									<a href="#" class="action-btn"><i class="sp-shopping-cart"></i><span>Add to cart</span></a>
-									<a href="#" class="action-btn"><i class="sp-compare-alt"></i><span>Compare</span></a>
-								</div>
-							</div>
-							<div class="product-brief product-breif-head">
-									<div class="product-head">
-											<h2><a href="#"> Wood Coffee Table Sing</a></h2>
-									</div>
-									<div class="product-list-3">
-										<div class="product-list-price">Instock | Case: <span>18</span> | Inner: <span>2</span></div>
-										<!-- <div class="product-list-off"></div> -->
-									</div>
-									<div class="product-list-2 product-list no-btm-border mrg-btm-20 Withoutqty">
-											<div class="product-list-price">
-													<div class="">
-															<form action="#">
-																<div class="cart-plus-minus"><input type="text" value="2"/></div>
-															</form>
-														</div>
-											</div>
-											<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
-										</div>
-							</div>
-						</div>
-						<!-- Single-product end -->
-						<!-- Single-product start -->
-						<div class="single-product">
-							<div class="pro-head">
-								<div class="pro-head-left">
-									<h2><a href="#">16093</a></h2>
-								</div>
-								<div class="pro-head-right">
-									<h2><span class="prod-offer">$3.50</span></h2>
-								</div>
-							</div>
-							<div class="product-photo">
-								<a href="#">
-									<img class="primary-photo" src="img/shop/22.jpg" alt="" />
-									<img class="secondary-photo" src="img/shop/22.jpg" alt="" />
-								</a>
-								<div class="pro-action">
-									<a href="#" class="action-btn"><i class="sp-heart"></i><span>Wishlist</span></a>
-									<a href="#" class="action-btn"><i class="sp-shopping-cart"></i><span>Add to cart</span></a>
-									<a href="#" class="action-btn"><i class="sp-compare-alt"></i><span>Compare</span></a>
-								</div>
-							</div>
-							<div class="product-brief product-breif-head">
-									<div class="product-head">
-											<h2><a href="#">Wood Block Signs, 6 ast ...</a></h2>
-									</div>
-									<div class="product-list-3">
-										<div class="product-list-price">Instock | Case: <span>36</span> | Inner: <span>12</span></div>
-										<!-- <div class="product-list-off"></div> -->
-									</div>
-									<div class="product-list-2 product-list no-btm-border mrg-btm-20 Withoutqty">
-											<div class="product-list-price">
-													<div class="">
-															<form action="#">
-																<div class="cart-plus-minus"><input type="text" value="12"/></div>
-															</form>
-														</div>
-											</div>
-											<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
-									</div>
-							</div>
-						</div>
-						<!-- Single-product end -->
-						<!-- Single-product start -->
-						<div class="single-product">
-							<div class="pro-head">
-								<div class="pro-head-left">
-									<h2><a href="#">19053</a></h2>
-								</div>
-								<div class="pro-head-right">
-									<h2><span class="prod-offer">$11.00</span> </h2>
-								</div>
-							</div>
-							<div class="product-photo">
-								<a href="#">
-									<img class="primary-photo" src="img/shop/23.jpg" alt="" />
-									<img class="secondary-photo" src="img/shop/23.jpg" alt="" />
-								</a>
-								<div class="pro-action">
-									<a href="#" class="action-btn"><i class="sp-heart"></i><span>Wishlist</span></a>
-									<a href="#" class="action-btn"><i class="sp-shopping-cart"></i><span>Add to cart</span></a>
-									<a href="#" class="action-btn"><i class="sp-compare-alt"></i><span>Compare</span></a>
-								</div>
-							</div>
-							<div class="product-brief product-breif-head">
-									<div class="product-head">
-											<h2><a href="#">Ceramic Coffee Jar</a></h2>
-									</div>
-									<div class="product-list-3">
-										<div class="product-list-price">Instock | Case: <span>12</span> | Inner: <span>1</span></div>
-										<!-- <div class="product-list-off"></div> -->
-									</div>
-									<div class="product-list-2 product-list no-btm-border mrg-btm-20 Withoutqty">
-											<div class="product-list-price">
-													<div class="">
-															<form action="#">
-																<div class="cart-plus-minus"><input type="text" value="2"/></div>
-															</form>
-														</div>
-											</div>
-											<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
-									</div>
-							</div>
-						</div>
-						<!-- Single-product end -->
-						<!-- Single-product start -->
-						<div class="single-product">
-								<div class="pro-head">
-										<div class="pro-head-left">
-											<h2><a href="#">18427</a></h2>
-										</div>
-										<div class="pro-head-right">
-											<h2><span class="prod-offer">$12.50</span></h2>
-										</div>
-									</div>
-
-							<div class="product-photo">
-								<a href="#">
-									<img class="primary-photo" src="img/shop/24.jpg" alt="" />
-									<img class="secondary-photo" src="img/shop/24.jpg" alt="" />
-								</a>
-								<div class="pro-action">
-									<a href="#" class="action-btn"><i class="sp-heart"></i><span>Wishlist</span></a>
-									<a href="#" class="action-btn"><i class="sp-shopping-cart"></i><span>Add to cart</span></a>
-									<a href="#" class="action-btn"><i class="sp-compare-alt"></i><span>Compare</span></a>
-								</div>
-							</div>
-							<div class="product-brief product-breif-head">
-
-								<div class="product-head">
-										<h2><a href="#">Wood Chalkboard Stand 2 Ast.</a></h2>
-								</div>
-										<div class="product-list-3">
-											<div class="product-list-price">Instock | Case: <span>12</span> | Inner: <span>2</span></div>
-											<!-- <div class="product-list-off"></div> -->
-										</div>
-										<div class="product-list-2 product-list no-btm-border mrg-btm-20 Withoutqty">
-												<div class="product-list-price">
-														<div class="">
-																<form action="#">
-																	<div class="cart-plus-minus"><input type="text" value="2"/></div>
-																</form>
-															</div>
-												</div>
-												<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
-										</div>
-							</div>
-						</div>
-						<!-- Single-product end -->
-						<!-- Single-product start -->
-						<div class="single-product">
-							<div class="pro-head">
-								<div class="pro-head-left">
-									<h2><a href="#">18426</a></h2>
-								</div>
-								<div class="pro-head-right">
-									<h2><span class="prod-offer">$3.50</span></h2>
-								</div>
-							</div>
-							<div class="product-photo">
-								<a href="#">
-									<img class="primary-photo" src="img/shop/25.jpg" alt="" />
-									<img class="secondary-photo" src="img/shop/25.jpgg" alt="" />
-								</a>
-								<div class="pro-action">
-									<a href="#" class="action-btn"><i class="sp-heart"></i><span>Wishlist</span></a>
-									<a href="#" class="action-btn"><i class="sp-shopping-cart"></i><span>Add to cart</span></a>
-									<a href="#" class="action-btn"><i class="sp-compare-alt"></i><span>Compare</span></a>
-								</div>
-							</div>
-							<div class="product-brief product-breif-head">
-									<div class="product-head">
-											<h2><a href="#">Wood Block Coffee ...</a></h2>
-									</div>
-										<div class="product-list-3">
-											<div class="product-list-price">Avl By: 01/11/18 | Case: <span>36</span> | Inner: <span>3</span></div>
-											<!-- <div class="product-list-off"></div> -->
-										</div>
-										<div class="product-list-2 product-list no-btm-border mrg-btm-20 Withoutqty">
-											<div class="product-list-price">
-												<div class="">
-													<form action="#">
-														<div class="cart-plus-minus">Qty: <input type="text" value="9"/></div>
-													</form>
-												</div>
-										</div>
-										<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
-									</div>
-							</div>
-						</div>
-						<!-- Single-product end -->
-					</div>
-				</div>
-				<!-- PRODUCT-AREA END -->
+			
 			<!-- SERVICE-AREA START -->
 			<div class="service-area margin-bottom-80">
 					<div class="container">
@@ -2232,13 +2065,12 @@
 							<div class="modal-product">
 								<div class="product-images">
 									<div class="main-image images">
-										<img alt="#" src="img/shop/19.jpg"/>
+										<img alt="#" src="img/shop/30.jpg"/>
 									</div>
 								</div><!-- .product-images -->
 
 								<div class="product-info">
-									<h1>Wood Coffee Wall/Tab...</h1>
-									<h4>#Item - 18420</h4>
+									<h1>Nautical</h1>
 									<div class="price-box-3">
 										<hr />
 										<div class="s-price-box">
@@ -2298,7 +2130,9 @@
 		<!-- lightbox.min js -->
         <script src="js/lightbox.min.js"></script>
 		<!-- countdon.min js -->
-        <script src="js/countdon.min.js"></script>
+				<script src="js/countdon.min.js"></script>
+				<!-- datepicker js -->
+				<script src="js/bootstrap-datepicker.min.js"></script>
 		<!-- wow js -->
         <script src="js/wow.min.js"></script>
 		<script type="text/javascript">
@@ -2310,6 +2144,10 @@
 		<script src="js/main.js"></script>
 		<script>
 			$(document).ready(function(){
+				$('.datepicker-autoclose').datepicker({
+              autoclose: true,
+              todayHighlight: true
+          });
 				$("#add-wish").show();
 				$("#remove-wish").hide();
 				$("#add-show").click(function(){
@@ -2321,24 +2159,26 @@
 					$("#remove-wish").hide();
 				});
 
-				  $(".case-price").hide();
-					$(".avb-qty").click(function(){
-						$(".case-price").show();
-					});
-
+        $(".case-price").hide();
+        $(".avb-qty").click(function(){
+          $(".case-price").show();
+        });
 			});
 			</script>
-      <script>
-      var rangeSlider = document.getElementById("rs-range-line");
-        var rangeBullet = document.getElementById("rs-bullet");
-
-        rangeSlider.addEventListener("input", showSliderValue, false);
-
-        function showSliderValue() {
-        rangeBullet.innerHTML = rangeSlider.value;
-        var bulletPosition = (rangeSlider.value /rangeSlider.max);
-        rangeBullet.style.left = (bulletPosition * 210) + "px";
-        }
-      </script>
+			<script>
+					$(function() {
+						 $( "#slider-3" ).slider({
+								range:true,
+								min: 0,
+								max: 500,
+								values: [ 35, 200 ],
+								slide: function( event, ui ) {
+									 $( "#price" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+								}
+						 });
+						 $( "#price" ).val( "$" + $( "#slider-3" ).slider( "values", 0 ) +
+								" - $" + $( "#slider-3" ).slider( "values", 1 ) );
+					});
+			 </script>
     </body>
 </html>

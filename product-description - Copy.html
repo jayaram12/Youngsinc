@@ -32,6 +32,8 @@
         <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
 		<!-- lightbox css -->
         <link rel="stylesheet" href="css/lightbox.min.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.css" />
+        <link rel="stylesheet" href="css/notifIt.css" />
 		<!-- style css -->
 		<link rel="stylesheet" href="style.css">
 
@@ -41,114 +43,6 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-
-      <div class="sidemenu side-title-filter" style="display: none;">
-  				<h2 style="color:#006680;font-size: 18px;padding:5px;">Filters</h2>
-  				<!-- shop-filter start -->
-  				<aside class="widget shop-filter price-range">
-  						<div class="col-md-12">
-                <div class="form-group">
-                  <label for="text">Name </label>
-                  <input type="text" class="form-control" value="">
-                </div>
-                <div class="form-group">
-                  <label for="text">City </label>
-                  <input type="text" class="form-control" value="">
-                </div>
-                <div class="form-group">
-                  <label for="text">Zip </label>
-                  <input type="text" class="form-control" value="">
-                </div>
-                <div class="form-group">
-                  <label for="sel1">State</label>
-                  <select class="form-control" id="sel1">
-                      <option value="0">Select State</option>
-                      <option value="AK">Alaska</option>
-                      <option value="AL">Alabama</option>
-                      <option value="AR">Arkansas</option>
-                      <option value="AZ">Arizona</option>
-                      <option value="BC">British Columbia</option>
-                      <option value="CA">California</option>
-                      <option value="CO">Colorado</option>
-                      <option value="CT">Connecticut</option>
-                      <option value="DC">Washington DC</option>
-                      <option value="DE">Delaware</option>
-                      <option value="FL">Florida</option>
-                      <option value="GA">Georgia</option>
-                      <option value="HI">Hawaii</option>
-                      <option value="IA">Iowa</option>
-                      <option value="ID">Idaho</option>
-                      <option value="IL">Illinois</option>
-                      <option value="IN">Indiana</option>
-                      <option value="KS">Kansas</option>
-                      <option value="KY">Kentucky</option>
-                      <option value="LA">Louisiana</option>
-                      <option value="MA">Massachusetts</option>
-                      <option value="MD">Maryland</option>
-                      <option value="ME">Maine</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-12 text-center center-block">
-              <div class="promotion-btn mrg-top-15">
-  								<a href="#" class="mrg-rgt-10">Cancel</a><a href="#">Apply</a>
-  							</div>
-              </div>
-  					</aside>
-  					<!-- shop-filter end -->
-  			</div>
-  			<div class="sidemenu-sort side-title-filter" style="display: none;">
-  					<aside class="widget widget-brand sort-list-item-1">
-  							<h5 class="sidebar-title">Sort</h5>
-  							<ul>
-  								<li>
-  										<div class="sortby">
-  												<div class="form-check pad-left-0 show-no-1">
-  														<label>
-  															<input type="radio" name="radio"> <span class="label-text">Ascending</span>
-  														</label>
-  													</div>
-  													<div class="form-check pad-left-0 show-no-1">
-  															<label>
-  																<input type="radio" name="radio"> <span class="label-text">Descending</span>
-  															</label>
-  														</div>
-
-  											</div>
-  								</li>
-  								<li>
-  										<div class="sortbylist mrg-top-15 sort-list-item-1 brd-top mrg">
-  												<div class="form-check pad-left-0 show-no-1">
-  													<label>
-  														<input type="radio" name="radio"> <span class="label-text">Name</span>
-  													</label>
-  												</div>
-  												<div class="form-check pad-left-0 show-no-1">
-  														<label>
-  															<input type="radio" name="radio"> <span class="label-text">City</span>
-  														</label>
-  												</div>
-  												<div class="form-check pad-left-0 show-no-1">
-  														<label>
-  															<input type="radio" name="radio"> <span class="label-text">Zip</span>
-  														</label>
-  												</div>
-  												<div class="form-check pad-left-0 show-no-1">
-  														<label>
-  															<input type="radio" name="radio"> <span class="label-text">State</span>
-  														</label>
-  												</div>
-
-  											</div>
-  								</li>
-  							</ul>
-                <div class="col-md-12 text-center center-block">
-  							<div class="promotion-btn mrg-top-15">
-  									<a href="#" class="mrg-rgt-10">Cancel</a><a href="#">Apply</a>
-  								</div>
-                </div>
-  						</aside>
-  				</div>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
@@ -160,7 +54,7 @@
 		<!-- HEADER-AREA START -->
     <header class="header-area">
     <!-- Header-Top Start -->
-    <div class="header-top">
+		<div class="header-top">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12 bdr-btm">
@@ -179,7 +73,7 @@
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12">
               <div class="header-top-right pull-right">
-                
+
                 <div class="header-search search-width">
                   <form action="#" class="search">
                     <input type="text" placeholder="Search...">
@@ -187,8 +81,8 @@
                   </form>
                 </div>
                 <ul class="cust-sign">
-                  <li><a href="">Login</a></li>
-                  <!-- <li><a href="">wel come to <strong>Jayaram</strong></a></li> -->
+                  <!-- <li><a href="">Login</a></li> -->
+                  <li><a href="">welcome <strong>Rehka</strong></a></li>
                 </ul>
                 <ul>
                   <li><a href="account.html">Account <span><i class="fa fa-cog"></i></span></a>
@@ -897,282 +791,891 @@
 		<!-- PAGE-CONTENT START -->
 		<section class="page-content">
 			<!-- PAGE-BANNER START -->
-			<div class="breadcrumb">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-							<ol class="breadcrumb">
-								<li><a href="#"><img src="img/home.png" class="img-responsive"></a></li>
-								<li class="active"><span>Showrooms</span></li>
-							</ol>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-								<div class="shop-menu view-mode pull-right filter-sort" id="filter">
-									<h3><img src="img/filter-2.png" class="img-responsive sort-filter"> Filter</h3>
-								</div>
-								<div class="shop-menu view-mode pull-right filter-sort" id="sort">
-									<h3><img src="img/sort-2.png" class="img-responsive sort-filter"> Sort</h3>
-								</div>
-							</div>
-					</div>
-				</div>
-			</div>
-			<!-- PAGE-BANNER END -->
-			<!-- SHOPPING-CART-AREA START -->
-			<div class="shopping-cart-area margin-bottom-80">
+			<!-- <div class="page-banner-area margin-bottom-80">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<span class="shop-border"></span>
-						</div>
-						<!-- card start -->
-						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-							<a href="#">
-								<div class="showrooms dashed-border-2">
-									<div class="add-plus">
-										<i class="fa fa-plus"></i>
-										<p class="text-center">Add Showroom</p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<!-- card end -->
-						<!-- card start -->
-						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-								<div class="showrooms">
-									<h2>Young's Inc Headquarters</h2>
-                  
-                  <div class="clearfix"></div>
-									<div class="show-add-det">
-										<div class="show-add-icon">
-											<i class="fa fa-map-marker"></i>
-										</div>
-										<div class="show-add-text">
-											<p> Customer Service,  </br>5073 Ann Arbor Rd, </br>Dundee, MI 48131</p>
-										</div>
-                  </div>
-                  <div class="show-add-det">
-											<div class="show-add-icon">
-												<i class="fa fa-globe"></i>
-											</div>
-											<div class="show-add-text">
-												<p>www.youngsinc.com </p>
-											</div>
-                  </div>
-                  <div class="show-add-det">
-											<div class="show-add-icon">
-												<i class="fa fa-envelope"></i>
-											</div>
-											<div class="show-add-text">
-												<p>youngs@youngsinc.com </p>
-											</div>
-									</div>
-									<div class="show-add-det">
-										<div class="show-add-icon">
-											<i class="fa fa-phone"></i>
-										</div>
-										<div class="show-add-text">
-											<p>800-323-7799</p>
-										</div>
-									</div>
-									
-									<div class="showaddress-action">
-												<!-- <span class="pull-right"><i class="fa fa-edit mrg-rgt-10"></i><i class="fa fa-trash mrg-rgt-10"></i></span> -->
-										<ul>
-											<li><a href="">Edit</a></li>
-											<li>|</li>
-											<li><a href="">Delete</a></li>
-											<li>|</li>
-											<li><a href="">Select as Default</a></li>
-										</ul>
-									</div>
-								</div>
+							<div class="page-banner-menu">
+								<h2 class="page-banner-title">Product Description</h2>
+								<ul>
+									<li><a href="index.html">Outdoor</a></li>
+									<li>Garden Decor</li>
+								</ul>
 							</div>
-						<!-- card end -->
-						<!-- card start -->
-						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-								<div class="showrooms">
-									<h2>Rp Enterprises - Test Act</h2>
-                  <div class="clearfix"></div>
-									<div class="show-add-det">
-										<div class="show-add-icon">
-											<i class="fa fa-map-marker"></i>
-										</div>
-										<div class="show-add-text">
-											<p> 5073 Ann Arbor Road, </br>Dundee, </br>MI, 48121</p>
-										</div>
-									</div>
-									<div class="show-add-det">
-										<div class="show-add-icon">
-											<i class="fa fa-phone"></i>
-										</div>
-										<div class="show-add-text">
-											<p>(785) 456-1234</p>
-										</div>
-									</div>
-									<div class="show-add-det">
-											<div class="show-add-icon">
-												<i class="fa fa-envelope"></i>
-											</div>
-											<div class="show-add-text">
-												<p>helpdesk@youngsinc.com</p>
-											</div>
-									</div>
-									<div class="showaddress-action">
-												<!-- <span class="pull-right"><i class="fa fa-edit mrg-rgt-10"></i><i class="fa fa-trash mrg-rgt-10"></i></span> -->
-										<ul>
-											<li><a href="">Edit</a></li>
-											<li>|</li>
-											<li><a href="">Delete</a></li>
-											<li>|</li>
-											<li><a href="">Select as Default</a></li>
-										</ul>
-									</div>
-								</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<div class="breadcrumb ">
+				<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+											<ol class="breadcrumb prd-brd-btm">
+												<li><a href="#"><img src="img/home.png" class="img-responsive"></a></li>
+												<li><a href="#">Gift</a></li>
+												<li class="active"><span>General Gifts</span></li>
+											</ol>
 							</div>
-						<!-- card end -->
-						<!-- card start -->
-						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-							<div class="showrooms">
-								<h2>Rp Enterprises - Test Act</h2>
-                <div class="clearfix"></div>
-								<div class="show-add-det">
-									<div class="show-add-icon">
-										<i class="fa fa-map-marker"></i>
-									</div>
-									<div class="show-add-text">
-										<p> 5073 Ann Arbor Road, </br>Dundee, </br>MI, 48121</p>
-									</div>
-								</div>
-								<div class="show-add-det">
-									<div class="show-add-icon">
-										<i class="fa fa-phone"></i>
-									</div>
-									<div class="show-add-text">
-										<p>(785) 456-1234</p>
-									</div>
-								</div>
-								<div class="show-add-det">
-										<div class="show-add-icon">
-											<i class="fa fa-envelope"></i>
-										</div>
-										<div class="show-add-text">
-											<p>helpdesk@youngsinc.com</p>
-										</div>
-								</div>
-								<div class="showaddress-action">
-											<!-- <span class="pull-right"><i class="fa fa-edit mrg-rgt-10"></i><i class="fa fa-trash mrg-rgt-10"></i></span> -->
-									<ul>
-										<li><a href="">Edit</a></li>
-										<li>|</li>
-										<li><a href="">Delete</a></li>
-										<li>|</li>
-										<li><a href="">Select as Default</a></li>
+						</div>
+					</div>
+		</div>
+			<!-- PAGE-BANNER END -->
+			<!-- <div class="alert alert-success cust-alert-success">
+				<div class="altert-cust-body">
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+						×</button>
+				   <span class="glyphicon glyphicon-ok"></span> <strong>Success Message</strong>
+					<hr class="message-inner-separator">
+					<p>
+						Your item is successfully added to cart.</p>
+					</div>
+				</div> -->
+			<!-- SINGLE-PRODUCT-AREA START -->
+			<div class="single-product-aea margin-bottom-80">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+								<ul class="single-product-grid" >
+										<li class="active"><a href="#img-one"  data-toggle="tab"><img src="img/single-product/mediam/18568.jpg" alt="" /></a></li>
+										<li><a href="#img-two"  data-toggle="tab"><img src="img/single-product/mediam/2.jpg" alt="" /></a></li>
+										<li><a href="#img-three"  data-toggle="tab"><img src="img/single-product/mediam/3.jpg" alt="" /></a></li>
+										<li><a href="#img-four"  data-toggle="tab"><img src="img/single-product/mediam/4.jpg" alt="" /></a></li>
 									</ul>
+						</div>
+						<div class="col-lg-5 col-md-4 col-sm-10 col-xs-9">
+							<div class="single-product-tab-content">
+								<!-- Tab panes -->
+								<div class="tab-content">
+									<div role="tabpanel" class="tab-pane active" id="img-one">
+										<img src="img/single-product/mediam/18568.jpg" alt="" />
+										<a href="img/single-product/large/3.jpg"  data-lightbox="roadtrip" data-title="My caption">
+											<!-- <span class="view-full-screen" ><i class="sp-full-view"></i> view full screen</span> -->
+										</a>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="img-two">
+										<img src="img/single-product/mediam/2.jpg" alt="" />
+										<a href="img/single-product/large/2.jpg"  data-lightbox="roadtrip" data-title="My caption">
+											<!-- <span class="view-full-screen" ><i class="sp-full-view"></i> view full screen</span> -->
+										</a>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="img-three">
+										<img src="img/single-product/mediam/3.jpg" alt="" />
+										<a href="img/single-product/large/3.jpg"  data-lightbox="roadtrip" data-title="My caption">
+											<!-- <span class="view-full-screen" ><i class="sp-full-view"></i> view full screen</span> -->
+										</a>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="img-four">
+										<img src="img/single-product/mediam/4.jpg" alt="" />
+										<a href="img/single-product/large/4.jpg"  data-lightbox="roadtrip" data-title="My caption">
+											<!-- <span class="view-full-screen" ><i class="sp-full-view"></i> view full screen</span> -->
+										</a>
+									</div>
 								</div>
+
 							</div>
 						</div>
-						<!-- card end -->
-						<!-- card start -->
-						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-							<div class="showrooms">
-								<h2>Rp Enterprises - Test Act</h2>
-                <div class="clearfix"></div>
-								<div class="show-add-det">
-									<div class="show-add-icon">
-										<i class="fa fa-map-marker"></i>
-									</div>
-									<div class="show-add-text">
-										<p> 5073 Ann Arbor Road, </br>Dundee, </br>MI, 48121</p>
+						<div class="col-lg-6 col-md-7 col-sm-12 col-xs-12">
+							<div class="single-product-description tb-mrg-top-50">
+								<h3 class="title-3">79412 - Wood Spring Hanging Decor</h3>
+								<!-- <h3 class="title-5">#Item -   / Availability: Instock </h3> -->
+								<div class="col-lg-6 no-pad-left">
+									<h4><span class="prod-desc-off">$9.50</span> <span class="green">$4.75</span></h4>
+								</div>
+								<div class="col-lg-6 no-pad-right">
+									<span class="pull-right font-size-23"><i class="fa fa-heart-o" aria-hidden="true"></i></span><span class="pull-right mrg-rgt-15"><img src="img/share.png" class="img-responsive img-wid-80"></span>
+								</div>
+								<div class="clearfix"></div>
+								<div class="product-counts fix margin-top-80">
+									<form action="#" class="Withoutqty">
+										<div class="cart-plus-minus"><span class="prd-qty-txt">Qty: </span> <input type="text" class="custom-form" name="qty" value="2"></div>
+									</form>
+									<div class="single-pro-add-cart">
+										<a class="shop-now mrg-rgt-15" id="update-quantity" href="#">Update Quantity</a>
+										<!-- <a class="shop-now mrg-rgt-15" href="#">Add to cart</a> -->
+                    <a id="add-to-cart" onclick="not()" href="javascript:;" class="shop-now mrg-rgt-15">Add to cart</a>
+										<a class="shop-now continue-top" href="#">Continue Shopping</a>
 									</div>
 								</div>
-								<div class="show-add-det">
-									<div class="show-add-icon">
-										<i class="fa fa-phone"></i>
+								<div class="qty-desc mrg-top-20">
+										<p>	Order a minimum of: 2 </p>
+									 <p>Then in increments of: 2</p>
+								</div>
+								<div class="categories-tags mrg-top-15">
+									<div class="categories-tags-head"><h4>Item Details</h4></div>
+									<div class="categories">
+										<span>Catalog Page:</span>
+										<a href="#">G006g</a>
 									</div>
-									<div class="show-add-text">
-										<p>(785) 456-1234</p>
+									<div class="categories tags">
+										<span>UPC:</span>
+										<a href="#">0965877941428</a>
+									</div>
+									<div class="categories tags">
+										<span>Pack(Case/Inner):</span>
+										<a href="#">24/2</a>
 									</div>
 								</div>
-								<div class="show-add-det">
-										<div class="show-add-icon">
-											<i class="fa fa-envelope"></i>
+								<div class="categories-tags">
+										<div class="categories-tags-head"><h4>Item Available</h4></div>
+										<div class="categories">
+											<a href="#">25/10/18: 210 Pieces</a>
 										</div>
-										<div class="show-add-text">
-											<p>helpdesk@youngsinc.com</p>
+									</div>
+									<div class="categories-tags">
+											<div class="categories-tags-head"><h4>Item Measures</h4></div>
+											<div class="categories">
+												<a href="#">Item Measures (L x W x H): 15.75" x 0.4" x 11"</a>
+											</div>
+											<div class="categories">
+													<a href="#">Case Measures (L x W x H): 16.54" x 10.24" x 14.17"</a>
+												</div>
 										</div>
-								</div>
-								<div class="showaddress-action">
-											<!-- <span class="pull-right"><i class="fa fa-edit mrg-rgt-10"></i><i class="fa fa-trash mrg-rgt-10"></i></span> -->
-									<ul>
-										<li><a href="">Edit</a></li>
-										<li>|</li>
-										<li><a href="">Delete</a></li>
-										<li>|</li>
-										<li><a href="">Select as Default</a></li>
-									</ul>
-								</div>
-							</div>
+										<!-- <div class="categories-description">
+												<div class="categories-tags-head"><h4>Description</h4></div>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+										</div> -->
 						</div>
-						<!-- card end -->
-						<!-- card start -->
-						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-								<div class="showrooms">
-									<h2>Rp Enterprises - Test Act</h2>
-                  <div class="clearfix"></div>
-									<div class="show-add-det">
-										<div class="show-add-icon">
-											<i class="fa fa-map-marker"></i>
-										</div>
-										<div class="show-add-text">
-											<p> 5073 Ann Arbor Road, </br>Dundee, </br>MI, 48121</p>
-										</div>
-									</div>
-									<div class="show-add-det">
-										<div class="show-add-icon">
-											<i class="fa fa-phone"></i>
-										</div>
-										<div class="show-add-text">
-											<p>(785) 456-1234</p>
-										</div>
-									</div>
-									<div class="show-add-det">
-											<div class="show-add-icon">
-												<i class="fa fa-envelope"></i>
-											</div>
-											<div class="show-add-text">
-												<p>helpdesk@youngsinc.com</p>
-											</div>
-									</div>
-									<div class="showaddress-action">
-												<!-- <span class="pull-right"><i class="fa fa-edit mrg-rgt-10"></i><i class="fa fa-trash mrg-rgt-10"></i></span> -->
-										<ul>
-											<li><a href="">Edit</a></li>
-											<li>|</li>
-											<li><a href="">Delete</a></li>
-											<li>|</li>
-											<li><a href="">Select as Default</a></li>
-										</ul>
-									</div>
-								</div>
-              </div>
-              <div class="clearfix"></div>
-							<div class="col-md-12 text-center mrg-top-15">
-									<div class="promotion-btn">
-										<a href="cart.html" class="mrg-rgt-10">Back</a><a href="select-shipping-address.html" class="mrg-rgt-10">Continue</a>
-									</div>
-							</div>
-						<!-- card end -->
-						<!-- <div class="col-md-12 text-center mrg-top-15">
-								<div class="promotion-btn">
-									<a href="#" class="mrg-rgt-10">Submit</a><a href="#">Continue Shopping</a>
-								</div>
-						</div> -->
 					</div>
 				</div>
 			</div>
-			<!-- SHOPPING-CART-AREA END -->
+			<!-- SINGLE-PRODUCT-AREA END -->
+			<div class="collection-item-area">
+				<div class="container">
+					<div class="row">
+							<div class="row">
+									<div class="col-md-12">
+											<h3 class="title-5 mrg-top-30">Collection Items</h3>
+									</div>
+								</div>
+						<div class="col-lg-12">
 
+							<div class="collection-items">
+									<div class="table-content table-responsive cart-table custom-scroll cart-border">
+											<table class="responsive-table">
+													<tbody>
+															<tr>
+																	<td>
+																			<img src="img/single-product/mediam/4.jpg" alt="" class="img-responsive">
+																	</td>
+																	<td>
+																			<img src="img/single-product/mediam/4.jpg" alt="" class="img-responsive">
+																	</td>
+																	<td>
+																			<img src="img/single-product/mediam/4.jpg" alt="" class="img-responsive">
+																	</td>
+																	<td>
+																			<img src="img/single-product/mediam/4.jpg" alt="" class="img-responsive">
+																	</td>
+																	<td>
+																			<img src="img/single-product/mediam/4.jpg" alt="" class="img-responsive">
+																	</td>
+																	<td>
+																			<img src="img/single-product/mediam/4.jpg" alt="" class="img-responsive">
+																	</td>
+																	<td>
+																			<img src="img/single-product/mediam/4.jpg" alt="" class="img-responsive">
+																	</td>
+																	<td>
+																			<img src="img/single-product/mediam/4.jpg" alt="" class="img-responsive">
+																	</td>
+																	<td>
+																			<img src="img/single-product/mediam/4.jpg" alt="" class="img-responsive">
+																	</td>
+																	<td>
+																			<img src="img/single-product/mediam/4.jpg" alt="" class="img-responsive">
+																	</td>
+															</tr>
+													</tbody>
+											</table>
+										</div>
+
+								<a href="#" class="arrow arrow-left"><i class="fa fa-angle-left"></i></a>
+								<a href="#" class="arrow arrow-right"><i class="fa fa-angle-right"></i></a>
+							</div>
+							<div class="col-md-12 text-center single-pro-add-cart">
+									<a class="shop-now continue-top" href="#" data-toggle="modal" data-target="#exampleModalCenter">View all Collection Items</a>
+
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- PRODUCT-AREA START -->
+			<div class="product-area mrg-top-40">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="section-title text-center">
+									<h2 class="border-left-right-btm">SIMILAR ITEMS</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="active-product" class="product-slider cat-slider personalization-final">
+						<!-- Single-product start -->
+						<div class="single-product">
+							<div class="pro-head">
+								<div class="pro-head-left">
+									<h2><a href="#">18420</a></h2>
+								</div>
+								<div class="pro-head-right">
+									<h2><span class="prod-offer">$6.50</span> <span class="prod-desc-off-3">$12.50</span></h2>
+								</div>
+							</div>
+							<div class="product-photo product-photo-carousal">
+								<a href="#">
+									<img class="primary-photo" src="img/shop/19.jpg" alt="" />
+									<img class="secondary-photo" src="img/shop/19.jpg" alt="" />
+								</a>
+								<div class="pro-action">
+										<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+										<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
+										<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+									</div>
+								<img src="img/new-3.png" class="img-responsive product-list-new">
+							</div>
+							<div class="product-brief product-breif-head">
+									<div class="product-head">
+											<h2> Wood Coffee Wall/Tab ...</a></h2>
+									</div>
+
+									<div class="product-list-3">
+										<div class="product-list-price">Instock | Case: <span>8</span> | Inner: <span>1</span></div>
+										<!-- <div class="product-list-off"></div> -->
+									</div>
+									<div class="product-list-2 product-list no-btm-border mrg-btm-20 Withoutqty">
+										<div class="product-list-price">
+											<div class="">
+												<form action="#">
+													<div class="cart-plus-minus"><input type="text" value="2"/></div>
+												</form>
+											</div>
+										</div>
+										<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
+									</div>
+							</div>
+						</div>
+						<!-- Single-product end -->
+						<!-- Single-product start -->
+						<div class="single-product">
+							<div class="pro-head">
+								<div class="pro-head-left">
+									<h2><a href="#">18421</a></h2>
+								</div>
+								<div class="pro-head-right">
+									<h2><span class="prod-offer">$12.50</span></h2>
+								</div>
+							</div>
+							<div class="product-photo product-photo-carousal">
+								<a href="#">
+									<img class="primary-photo" src="img/shop/20.jpg" alt="" />
+									<img class="secondary-photo" src="img/shop/20.jpg" alt="" />
+								</a>
+								<div class="pro-action">
+										<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+										<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
+										<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+									</div>
+							</div>
+							<div class="product-brief product-breif-head">
+								<div class="product-head">
+									<h2><a href="#">Wood Coffee Tray/Wall Sign</a></h2>
+								</div>
+								<div class="product-list-3">
+									<div class="product-list-price">Instock | Case: <span>12</span> | Inner: <span>2</span></div>
+										<!-- <div class="product-list-off"></div> -->
+								</div>
+								<div class="product-list-2 product-list no-btm-border mrg-btm-20 Withoutqty">
+									<div class="product-list-price">
+										<div class="">
+											<form action="#">
+												<div class="cart-plus-minus"><input type="text" value="2"/></div>
+											</form>
+										</div>
+									</div>
+									<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
+								</div>
+							</div>
+						</div>
+						<!-- Single-product end -->
+						<!-- Single-product start -->
+						<div class="single-product">
+							<div class="pro-head">
+								<div class="pro-head-left">
+									<h2><a href="#">18977</a></h2>
+								</div>
+								<div class="pro-head-right">
+									<h2><span class="prod-offer">$5.50</span> <span class="prod-desc-off-3">$11.00</span></h2>
+								</div>
+							</div>
+							<div class="product-photo product-photo-carousal">
+								<a href="#">
+									<img class="primary-photo" src="img/shop/21.jpg" alt="" />
+									<img class="secondary-photo" src="img/shop/21.jpg" alt="" />
+								</a>
+								<div class="pro-action">
+										<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+										<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
+										<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+									</div>
+							</div>
+							<div class="product-brief product-breif-head">
+									<div class="product-head">
+											<h2><a href="#"> Wood Coffee Table Sing</a></h2>
+									</div>
+									<div class="product-list-3">
+										<div class="product-list-price">Instock | Case: <span>18</span> | Inner: <span>2</span></div>
+										<!-- <div class="product-list-off"></div> -->
+									</div>
+									<div class="product-list-2 product-list no-btm-border mrg-btm-20 Withoutqty">
+											<div class="product-list-price">
+													<div class="">
+															<form action="#">
+																<div class="cart-plus-minus"><input type="text" value="2"/></div>
+															</form>
+														</div>
+											</div>
+											<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
+										</div>
+							</div>
+						</div>
+						<!-- Single-product end -->
+						<!-- Single-product start -->
+						<div class="single-product">
+							<div class="pro-head">
+								<div class="pro-head-left">
+									<h2><a href="#">16093</a></h2>
+								</div>
+								<div class="pro-head-right">
+									<h2><span class="prod-offer">$3.50</span></h2>
+								</div>
+							</div>
+							<div class="product-photo product-photo-carousal">
+								<a href="#">
+									<img class="primary-photo" src="img/shop/22.jpg" alt="" />
+									<img class="secondary-photo" src="img/shop/22.jpg" alt="" />
+								</a>
+								<div class="pro-action">
+										<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+										<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
+										<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+									</div>
+							</div>
+							<div class="product-brief product-breif-head">
+									<div class="product-head">
+											<h2><a href="#">Wood Block Signs, 6 ast ...</a></h2>
+									</div>
+									<div class="product-list-3">
+										<div class="product-list-price">Instock | Case: <span>36</span> | Inner: <span>12</span></div>
+										<!-- <div class="product-list-off"></div> -->
+									</div>
+									<div class="product-list-2 product-list no-btm-border mrg-btm-20 Withoutqty">
+											<div class="product-list-price">
+													<div class="">
+															<form action="#">
+																<div class="cart-plus-minus"><input type="text" value="12"/></div>
+															</form>
+														</div>
+											</div>
+											<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
+									</div>
+							</div>
+						</div>
+						<!-- Single-product end -->
+						<!-- Single-product start -->
+						<div class="single-product">
+							<div class="pro-head">
+								<div class="pro-head-left">
+									<h2><a href="#">19053</a></h2>
+								</div>
+								<div class="pro-head-right">
+									<h2><span class="prod-offer">$11.00</span> </h2>
+								</div>
+							</div>
+							<div class="product-photo product-photo-carousal">
+								<a href="#">
+									<img class="primary-photo" src="img/shop/23.jpg" alt="" />
+									<img class="secondary-photo" src="img/shop/23.jpg" alt="" />
+								</a>
+								<div class="pro-action">
+										<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+										<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
+										<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+									</div>
+							</div>
+							<div class="product-brief product-breif-head">
+									<div class="product-head">
+											<h2><a href="#">Ceramic Coffee Jar</a></h2>
+									</div>
+									<div class="product-list-3">
+										<div class="product-list-price">Instock | Case: <span>12</span> | Inner: <span>1</span></div>
+										<!-- <div class="product-list-off"></div> -->
+									</div>
+									<div class="product-list-2 product-list no-btm-border mrg-btm-20 Withoutqty">
+											<div class="product-list-price">
+													<div class="">
+															<form action="#">
+																<div class="cart-plus-minus"><input type="text" value="2"/></div>
+															</form>
+														</div>
+											</div>
+											<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
+									</div>
+							</div>
+						</div>
+						<!-- Single-product end -->
+						<!-- Single-product start -->
+						<div class="single-product">
+								<div class="pro-head">
+										<div class="pro-head-left">
+											<h2><a href="#">18427</a></h2>
+										</div>
+										<div class="pro-head-right">
+											<h2><span class="prod-offer">$12.50</span></h2>
+										</div>
+									</div>
+
+							<div class="product-photo product-photo-carousal">
+								<a href="#">
+									<img class="primary-photo" src="img/shop/24.jpg" alt="" />
+									<img class="secondary-photo" src="img/shop/24.jpg" alt="" />
+								</a>
+								<div class="pro-action">
+										<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+										<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
+										<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+									</div>
+							</div>
+							<div class="product-brief product-breif-head">
+
+								<div class="product-head">
+										<h2><a href="#">Wood Chalkboard Stand 2 Ast.</a></h2>
+								</div>
+										<div class="product-list-3">
+											<div class="product-list-price">Instock | Case: <span>12</span> | Inner: <span>2</span></div>
+											<!-- <div class="product-list-off"></div> -->
+										</div>
+										<div class="product-list-2 product-list no-btm-border mrg-btm-20 Withoutqty">
+												<div class="product-list-price">
+														<div class="">
+																<form action="#">
+																	<div class="cart-plus-minus"><input type="text" value="2"/></div>
+																</form>
+															</div>
+												</div>
+												<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
+										</div>
+							</div>
+						</div>
+						<!-- Single-product end -->
+						<!-- Single-product start -->
+						<div class="single-product">
+							<div class="pro-head">
+								<div class="pro-head-left">
+									<h2><a href="#">18426</a></h2>
+								</div>
+								<div class="pro-head-right">
+									<h2><span class="prod-offer">$3.50</span></h2>
+								</div>
+							</div>
+							<div class="product-photo product-photo-carousal">
+								<a href="#">
+									<img class="primary-photo" src="img/shop/25.jpg" alt="" />
+									<img class="secondary-photo" src="img/shop/25.jpgg" alt="" />
+								</a>
+								<div class="pro-action">
+										<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+										<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
+										<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+									</div>
+							</div>
+							<div class="product-brief product-breif-head">
+									<div class="product-head">
+											<h2><a href="#">Wood Block Coffee ...</a></h2>
+									</div>
+										<div class="product-list-3">
+											<div class="product-list-price">Avlb By: 01/11 | Case: <span>36</span> | Inner: <span>3</span></div>
+											<!-- <div class="product-list-off"></div> -->
+										</div>
+										<div class="product-list-2 product-list no-btm-border mrg-btm-20 Withoutqty">
+											<div class="product-list-price">
+												<div class="">
+													<form action="#">
+														<div class="cart-plus-minus">Qty: <input type="text" value="9"/></div>
+													</form>
+												</div>
+										</div>
+										<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
+									</div>
+							</div>
+						</div>
+						<!-- Single-product end -->
+					</div>
+				</div>
+				<!-- PRODUCT-AREA END -->
+
+
+			<!-- SINGLE-PRODUCT-RELATED-AREA START -->
+			<div class="single-product-related-area margin-bottom-80" id="RecentlyViewedItems">
+				<div class="container">
+					<div class="row">
+							<div class="col-md-12">
+									<div class="section-title text-center">
+										<h2 class="border-left-right-btm">Recently Viewed Items</h2>
+									</div>
+									<div class="arrows">
+										<i class="fa fa-angle-left left-arrow"></i>
+										<i class="fa fa-angle-right right-arrow"></i>
+									</div>
+								</div>
+					</div>
+				</div>
+				<div class="active-related-product shop-grid single-prd-similar product-slider">
+						<!-- Single-product start -->
+						<div class="single-product">
+								<div class="pro-head">
+									<div class="pro-head-left">
+										<h2><a href="#">18420</a></h2>
+									</div>
+									<div class="pro-head-right">
+										<h2><span class="prod-offer">$6.50</span> <span class="prod-desc-off-3">$12.50</span></h2>
+									</div>
+								</div>
+								<div class="product-photo product-photo-carousal">
+									<a href="#">
+										<img class="primary-photo" src="img/shop/19.jpg" alt="" />
+										<img class="secondary-photo" src="img/shop/19.jpg" alt="" />
+									</a>
+									<div class="pro-action">
+											<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+											<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
+											<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+										</div>
+									
+									<img src="img/new-3.png" class="img-responsive product-list-new">
+								</div>
+								<div class="product-brief product-breif-head">
+										<div class="product-head">
+												<h2> Wood Coffee Wall/Tab ...</a></h2>
+										</div>
+	
+										<div class="product-list-3">
+											<div class="product-list-price">Instock | Case: <span>8</span> | Inner: <span>1</span></div>
+											<!-- <div class="product-list-off"></div> -->
+										</div>
+										<div class="product-list-2 product-list no-btm-border mrg-btm-20 Withoutqty">
+											<div class="product-list-price">
+												<div class="">
+													<form action="#">
+														<div class="cart-plus-minus"><input type="text" value="2"/></div>
+													</form>
+												</div>
+											</div>
+											<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
+										</div>
+								</div>
+							</div>
+							<!-- Single-product end -->
+							<!-- Single-product start -->
+							<div class="single-product">
+								<div class="pro-head">
+									<div class="pro-head-left">
+										<h2><a href="#">18421</a></h2>
+									</div>
+									<div class="pro-head-right">
+										<h2><span class="prod-offer">$12.50</span></h2>
+									</div>
+								</div>
+								<div class="product-photo product-photo-carousal">
+									<a href="#">
+										<img class="primary-photo" src="img/shop/20.jpg" alt="" />
+										<img class="secondary-photo" src="img/shop/20.jpg" alt="" />
+									</a>
+									<div class="pro-action">
+											<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+											<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
+											<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+										</div>
+								</div>
+								<div class="product-brief product-breif-head">
+									<div class="product-head">
+										<h2><a href="#">Wood Coffee Tray/Wall Sign</a></h2>
+									</div>
+									<div class="product-list-3">
+										<div class="product-list-price">Instock | Case: <span>12</span> | Inner: <span>2</span></div>
+											<!-- <div class="product-list-off"></div> -->
+									</div>
+									<div class="product-list-2 product-list no-btm-border mrg-btm-20 Withoutqty">
+										<div class="product-list-price">
+											<div class="">
+												<form action="#">
+													<div class="cart-plus-minus"><input type="text" value="2"/></div>
+												</form>
+											</div>
+										</div>
+										<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
+									</div>
+								</div>
+							</div>
+							<!-- Single-product end -->
+							<!-- Single-product start -->
+							<div class="single-product">
+								<div class="pro-head">
+									<div class="pro-head-left">
+										<h2><a href="#">18977</a></h2>
+									</div>
+									<div class="pro-head-right">
+										<h2><span class="prod-offer">$5.50</span> <span class="prod-desc-off-3">$11.00</span></h2>
+									</div>
+								</div>
+								<div class="product-photo product-photo-carousal">
+									<a href="#">
+										<img class="primary-photo" src="img/shop/21.jpg" alt="" />
+										<img class="secondary-photo" src="img/shop/21.jpg" alt="" />
+									</a>
+									<div class="pro-action">
+											<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+											<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
+											<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+										</div>
+								</div>
+								<div class="product-brief product-breif-head">
+										<div class="product-head">
+												<h2><a href="#"> Wood Coffee Table Sing</a></h2>
+										</div>
+										<div class="product-list-3">
+											<div class="product-list-price">Instock | Case: <span>18</span> | Inner: <span>2</span></div>
+											<!-- <div class="product-list-off"></div> -->
+										</div>
+										<div class="product-list-2 product-list no-btm-border mrg-btm-20 Withoutqty">
+												<div class="product-list-price">
+														<div class="">
+																<form action="#">
+																	<div class="cart-plus-minus"><input type="text" value="2"/></div>
+																</form>
+															</div>
+												</div>
+												<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
+											</div>
+								</div>
+							</div>
+							<!-- Single-product end -->
+							<!-- Single-product start -->
+							<div class="single-product">
+								<div class="pro-head">
+									<div class="pro-head-left">
+										<h2><a href="#">16093</a></h2>
+									</div>
+									<div class="pro-head-right">
+										<h2><span class="prod-offer">$3.50</span></h2>
+									</div>
+								</div>
+								<div class="product-photo product-photo-carousal">
+									<a href="#">
+										<img class="primary-photo" src="img/shop/22.jpg" alt="" />
+										<img class="secondary-photo" src="img/shop/22.jpg" alt="" />
+									</a>
+									<div class="pro-action">
+											<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+											<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
+											<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+										</div>
+								</div>
+								<div class="product-brief product-breif-head">
+										<div class="product-head">
+												<h2><a href="#">Wood Block Signs, 6 ast ...</a></h2>
+										</div>
+										<div class="product-list-3">
+											<div class="product-list-price">Instock | Case: <span>36</span> | Inner: <span>12</span></div>
+											<!-- <div class="product-list-off"></div> -->
+										</div>
+										<div class="product-list-2 product-list no-btm-border mrg-btm-20 Withoutqty">
+												<div class="product-list-price">
+														<div class="">
+																<form action="#">
+																	<div class="cart-plus-minus"><input type="text" value="12"/></div>
+																</form>
+															</div>
+												</div>
+												<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
+										</div>
+								</div>
+							</div>
+							<!-- Single-product end -->
+							<!-- Single-product start -->
+							<div class="single-product">
+								<div class="pro-head">
+									<div class="pro-head-left">
+										<h2><a href="#">19053</a></h2>
+									</div>
+									<div class="pro-head-right">
+										<h2><span class="prod-offer">$11.00</span> </h2>
+									</div>
+								</div>
+								<div class="product-photo product-photo-carousal">
+									<a href="#">
+										<img class="primary-photo" src="img/shop/23.jpg" alt="" />
+										<img class="secondary-photo" src="img/shop/23.jpg" alt="" />
+									</a>
+									<div class="pro-action">
+											<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+											<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
+											<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+										</div>
+								</div>
+								<div class="product-brief product-breif-head">
+										<div class="product-head">
+												<h2><a href="#">Ceramic Coffee Jar</a></h2>
+										</div>
+										<div class="product-list-3">
+											<div class="product-list-price">Instock | Case: <span>12</span> | Inner: <span>1</span></div>
+											<!-- <div class="product-list-off"></div> -->
+										</div>
+										<div class="product-list-2 product-list no-btm-border mrg-btm-20 Withoutqty">
+												<div class="product-list-price">
+														<div class="">
+																<form action="#">
+																	<div class="cart-plus-minus"><input type="text" value="2"/></div>
+																</form>
+															</div>
+												</div>
+												<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
+										</div>
+								</div>
+							</div>
+							<!-- Single-product end -->
+							<!-- Single-product start -->
+							<div class="single-product">
+									<div class="pro-head">
+											<div class="pro-head-left">
+												<h2><a href="#">18427</a></h2>
+											</div>
+											<div class="pro-head-right">
+												<h2><span class="prod-offer">$12.50</span></h2>
+											</div>
+										</div>
+	
+								<div class="product-photo product-photo-carousal">
+									<a href="#">
+										<img class="primary-photo" src="img/shop/24.jpg" alt="" />
+										<img class="secondary-photo" src="img/shop/24.jpg" alt="" />
+									</a>
+									<div class="pro-action">
+											<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+											<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
+											<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+										</div>
+								</div>
+								<div class="product-brief product-breif-head">
+	
+									<div class="product-head">
+											<h2><a href="#">Wood Chalkboard Stand 2 Ast.</a></h2>
+									</div>
+											<div class="product-list-3">
+												<div class="product-list-price">Instock | Case: <span>12</span> | Inner: <span>2</span></div>
+												<!-- <div class="product-list-off"></div> -->
+											</div>
+											<div class="product-list-2 product-list no-btm-border mrg-btm-20 Withoutqty">
+													<div class="product-list-price">
+															<div class="">
+																	<form action="#">
+																		<div class="cart-plus-minus"><input type="text" value="2"/></div>
+																	</form>
+																</div>
+													</div>
+													<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
+											</div>
+								</div>
+							</div>
+							<!-- Single-product end -->
+							<!-- Single-product start -->
+							<div class="single-product">
+								<div class="pro-head">
+									<div class="pro-head-left">
+										<h2><a href="#">18426</a></h2>
+									</div>
+									<div class="pro-head-right">
+										<h2><span class="prod-offer">$3.50</span></h2>
+									</div>
+								</div>
+								<div class="product-photo product-photo-carousal">
+									<a href="#">
+										<img class="primary-photo" src="img/shop/25.jpg" alt="" />
+										<img class="secondary-photo" src="img/shop/25.jpgg" alt="" />
+									</a>
+									<div class="pro-action">
+											<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+											<a href="#" class="action-btn"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
+											<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+										</div>
+								</div>
+								<div class="product-brief product-breif-head">
+										<div class="product-head">
+												<h2><a href="#">Wood Block Coffee ...</a></h2>
+										</div>
+											<div class="product-list-3">
+												<div class="product-list-price">Avlb By: 01/11 | Case: <span>36</span> | Inner: <span>3</span></div>
+												<!-- <div class="product-list-off"></div> -->
+											</div>
+											<div class="product-list-2 product-list no-btm-border mrg-btm-20 Withoutqty">
+												<div class="product-list-price">
+													<div class="">
+														<form action="#">
+															<div class="cart-plus-minus">Qty: <input type="text" value="9"/></div>
+														</form>
+													</div>
+											</div>
+											<div class="product-list-cart"><a href="cart-2.html"><img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="Add To Cart" class="img-responsive"></a></div>
+										</div>
+								</div>
+							</div>
+							<!-- Single-product end -->
+				</div>
+			</div>
+			<!-- SINGLE-PRODUCT-similar-AREA END -->
+			<!-- SERVICE-AREA START -->
+			<div class="service-area margin-bottom-80">
+					<div class="container">
+						<div class="row">
+
+							<div class="col-md-4 col-sm-4 col-xs-12">
+								<div class="single-service">
+									<div class="service-icon">
+											<img src="img/help.png" class="img-responsive">
+									</div>
+									<div class="service-brief">
+										<h3>help line</h3>
+										<p>800-323-7799 | Email: helpdesk@youngsinc.com </p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-12">
+									<div class="single-service">
+										<div class="service-icon">
+												<img src="img/feedback.png" class="img-responsive">
+										</div>
+										<div class="service-brief">
+											<h3>feedback</h3>
+											<p>There are many variations of passages of Lorem Ipsum available, alteration</p>
+										</div>
+									</div>
+								</div>
+							<div class="col-md-4 col-sm-4 col-xs-12">
+								<div class="single-service">
+									<div class="service-icon">
+										<img src="img/app.png" class="img-responsive">
+									</div>
+									<div class="service-brief">
+										<h3>Download App</h3>
+										<p>There are many variations of passages of Lorem Ipsum available, alteration</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- SERVICE-AREA END -->
 		</section>
 		<!-- PAGE-CONTENT END -->
 
@@ -1212,11 +1715,12 @@
 									<div class="single-footer footer-menu">
 										<h2>company</h2>
 										<ul>
-											<li><a href="#">Account</a></li>
-											<li><a href="#">Log in</a></li>
-											<li><a href="#">Register</a></li>
-											<li><a href="#">Shop</a></li>
-											<li><a <li><a href="#">Checkout</a></li>
+											<li><a href="#">About Us</a></li>
+											<li><a href="#">Terms & Conditions</a></li>
+											<li><a href="#">Sales Reps</a></li>
+											<li><a href="#">Vendors</a></li>
+											<li><a <li><a href="#">Show Schedules</a></li>
+											<li><a <li><a href="#">Showrooms</a></li>
 										</ul>
 									</div>
 								</div>
@@ -1257,8 +1761,111 @@
 				</div>
 			</footer>
 			<!-- FOOTER-AREA END -->
+			<!-- Collection items modal -->
 
+			<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+					<div class="modal-content">
+						<!-- <div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div> -->
+						<div class="modal-body">
+							<div class="col-lg-12">
+									<h3 class="title-3 mrg-top-20">Bee Collection Items</h3>
+							</div>
 
+							<div class="clearfix"></div>
+							<div class="col-md-12">
+								<div class="table-content table-responsive custom-scroll cust-coll-tbl mrg-top-30">
+										<table class="responsive-table">
+												<tbody>
+														<tr>
+																<td>
+																		<h4 class="card-head">Collection Items</h4>
+																		<h3 class="card-number">17539</h3>
+																</td>
+																<td>
+																		<h4 class="card-head">Items Count</h4>
+																		<h3 class="card-number">15009</h3>
+																</td>
+																<td>
+																	<h4 class="card-head">Unit Count</h4>
+																	<h3 class="card-number">2500</h3>
+																</td>
+																<td>
+																	<h4 class="card-head">List$</h4>
+																	<h3 class="card-number">$185</h3>
+																</td>
+																<td>
+																	<h4 class="card-head">Net$</h4>
+																	<h3 class="card-number">$158</h3>
+																</td>
+																<td>
+																	<h4 class="card-head">Discount</h4>
+																	<h3 class="card-number">10%</h3>
+																</td>
+														</tr>
+												</tbody>
+										</table>
+									</div>
+									<div class="arrowicon-2">
+											<span><i class="fa fa-arrow-right"></i></span>
+										</div>
+							</div>
+							<div class="clearfix"></div>
+							<div class="col-lg-12">
+
+							<div class="table-content table-responsive cart-table mrg-top-10 order-tbl">
+									<table>
+										<thead>
+											<tr>
+												<th class="product-thumbnail">Image</th>
+												<th class="product-id">Item#</th>
+												<th class="product-description">Description</th>
+												<th>Quantity</th>
+												<th>List $</th>
+												<th class="product-price">Discount %</th>
+												<th class="product-total">Min Sell</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="product-thumbnail"><a href="#"><img src="img/shop/23.jpg" alt=""></a></td>
+												<td class="product-id"><a href="#">19053</a></td>
+												<td class="product-description">
+														Ceramic Coffee Jar
+												</td>
+												<td>38</td>
+												<td>$26</td>
+												<td><span class="amount">10%</span></td>
+												<td>2</td>
+											</tr>
+											<tr>
+												<td class="product-thumbnail"><a href="#"><img src="img/shop/32.jpg" alt=""></a></td>
+												<td class="product-id"><a href="#">18817</a></td>
+												<td class="product-description">Artificial Potted Flower 3 Ast</td>
+												<td>6</td>
+												<td>$4.00</td>
+												<td><span class="amount">10%</span></td>
+												<td>4</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Add Collection to Cart</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of collecion items modal -->
 
 		<!-- all js here -->
 		<!-- jquery latest version -->
@@ -1278,6 +1885,7 @@
         <script src="js/lightbox.min.js"></script>
 		<!-- countdon.min js -->
         <script src="js/countdon.min.js"></script>
+        <script src="js/jquery.fancybox.js"></script>
 		<!-- wow js -->
         <script src="js/wow.min.js"></script>
 		<script type="text/javascript">
@@ -1285,7 +1893,23 @@
 		</script>
 		<!-- plugins js -->
         <script src="js/plugins.js"></script>
+        <script src="js/notifIt.js"></script>
 		<!-- main js -->
-        <script src="js/main.js"></script>
+		<script src="js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('#add-to-cart').click(function(){
+          notif({
+              msg: "Item Successfully Added",
+              position: "right",
+              bgcolor: "#006680",
+              offset: 2,
+              color: "#fff"
+          });
+          });
+        });
+    </script>
     </body>
+</html>
+ </body>
 </html>

@@ -45,13 +45,72 @@
     <body>
 				<!-- <div class="loading">Loading&#8230;</div> -->
       <div class="sidemenu side-title-filter" style="display: none;">
-  				<h2 style="color:#006680;font-size: 18px;padding:5px;">Filters</h2>
+				<span class="filter-close"><i class="fa fa-times"></i></span>
+					<h2 class="sidemenu-main-title">Sort</h2>
+					<aside class="widget widget-brand sort-list-item-1">
+							<div class="sidebar-title sidebar-title-height">
+								<div class="ascending">
+										<div class="form-check">
+												<label>
+													<input type="radio" name="radio"> <span class="label-text">Ascending</span>
+												</label>
+											</div>
+								</div>
+								<div class="descending">
+										<div class="form-check">
+												<label>
+													<input type="radio" name="radio"> <span class="label-text">Descending</span>
+												</label>
+											</div>
+								</div>
+							</div>
+							<ul>
+								<li>
+										<div class="sortbylist sort-list-item-1 mrg">
+											
+												<div class="form-check pad-left-0 show-no-1">
+													<label>
+														<input type="radio" name="radio"> <span class="label-text">Price</span>
+													</label>
+												</div>
+												<div class="form-check pad-left-0 show-no-1">
+														<label>
+															<input type="radio" name="radio"> <span class="label-text">By Catalog Page</span>
+														</label>
+												</div>
+												<div class="form-check pad-left-0 show-no-1">
+														<label>
+															<input type="radio" name="radio"> <span class="label-text">By Item#</span>
+														</label>
+												</div>
+												<div class="form-check pad-left-0 show-no-1">
+														<label>
+															<input type="radio" name="radio"> <span class="label-text">By Newest Items</span>
+														</label>
+												</div>
+												<div class="form-check pad-left-0 show-no-1">
+														<label>
+															<input type="radio" name="radio"> <span class="label-text">By Availability</span>
+														</label>
+												</div>
+												<div class="form-check pad-left-0 show-no-1">
+														<label>
+															<input type="radio" name="radio"> <span class="label-text">Best Seller</span>
+														</label>
+												</div>
+
+											</div>
+								</li>
+							</ul>
+							
+						</aside>
+					<h2 class="sidemenu-main-title">Filters</h2>
   				<!-- shop-filter start -->
   				<aside class="widget shop-filter price-range">
 							<h5 class="sidebar-title sidebar-title-height">price Range</h5>
 							
 							
-  						<div class="info_widget">
+  						<div class="info_widget no-border-top">
 								
 									<div class="min-max">
 											<!-- <p>
@@ -76,7 +135,7 @@
 														</div>
 											</li>
 											<li>
-													<div class="form-check pad-left-0 show-no-1">
+													<div class="form-check pad-left-120 show-no-1">
 															<label>
 																<input type="radio" name="radio"> <span class="label-text">$100 Above</span>
 															</label>
@@ -100,7 +159,7 @@
   											</div>
   								</li>
   								<li>
-  										<div class="form-check pad-left-0 show-no-1">
+  										<div class="form-check show-no-1 pad-left-120">
   												<label>
   													<input type="radio" name="radio"> <span class="label-text">In Stock By</span>
   												</label>
@@ -123,29 +182,22 @@
   										</div>
   										<div class="case-price">
 												<div class="row">
-													<div class="col-md-6 no-pad-left">
-															<div class="form-check pad-left-0 show-no-1 mrg-rgt-10">
+													<div class="col-md-4 no-pad-left">
+															<div class="form-group mrg-btm-1">
+																	<input type="text" class="form-control" id="usr">
+															</div>
+													</div>
+													<div class="col-md-8 no-pad-left">
+															<div class="form-check pad-left-0 show-no-1 mrg-rgt-10 filter-float mrg-top-8">
 																	<label>
 																		<input type="radio" name="radio"> <span class="label-text">Case</span>
 																	</label>
 																</div>
-													</div>
-  												<div class="col-md-6">
-															<div class="form-group mrg-btm-1">
-																	<input type="text" class="form-control" id="usr">
-															</div>
-													</div>
-													<div class="col-md-6 no-pad-left">
-															<div class="form-check pad-left-0 show-no-1 mrg-rgt-10">
+															<div class="form-check pad-left-0 show-no-1 mrg-rgt-10 mrg-top-8">
 																	<label>
 																		<input type="radio" name="radio"> <span class="label-text">Pieces</span>
 																	</label>
 																</div>
-													</div>
-													<div class="col-md-6">
-															<div class="form-group mrg-btm-1">
-																	<input type="text" class="form-control" id="usr">
-															</div>
 													</div>
 												</div>
   													
@@ -164,63 +216,20 @@
   										<input type="checkbox" name="check"> <span class="label-text">New</span>
   									</label>
 									</div>
-									<div class="form-check pad-left-0 mrg-left">
+									<div class="form-check mrg-left pad-left-120">
 											<label>
 												<input type="checkbox" name="check"> <span class="label-text">Sale</span>
 											</label>
 										</div>
   							</li>
-  						</ul>
-						</aside>
-						<aside class="widget widget-brand sort-list-item-1">
-								<h5 class="sidebar-title sidebar-title-height">Sort</h5>
-								<ul>
-									<li>
-											<div class="sortbylist sort-list-item-1 mrg ascend-decend">
-													<div class="ascend-decend-icon">
-														<i class="fa fa-arrow-up"></i>
-														<i class="fa fa-arrow-down"></i>
-													</div>
-  												<div class="form-check pad-left-0 show-no-1">
-  													<label>
-  														<input type="radio" name="radio"> <span class="label-text">Price</span>
-  													</label>
-  												</div>
-  												<div class="form-check pad-left-0 show-no-1">
-  														<label>
-  															<input type="radio" name="radio"> <span class="label-text">By Catalog Page</span>
-  														</label>
-  												</div>
-  												<div class="form-check pad-left-0 show-no-1">
-  														<label>
-  															<input type="radio" name="radio"> <span class="label-text">By Item#</span>
-  														</label>
-  												</div>
-  												<div class="form-check pad-left-0 show-no-1">
-  														<label>
-  															<input type="radio" name="radio"> <span class="label-text">By Newest Items</span>
-  														</label>
-  												</div>
-  												<div class="form-check pad-left-0 show-no-1">
-  														<label>
-  															<input type="radio" name="radio"> <span class="label-text">By Availability</span>
-  														</label>
-  												</div>
-  												<div class="form-check pad-left-0 show-no-1">
-  														<label>
-  															<input type="radio" name="radio"> <span class="label-text">Best Seller</span>
-  														</label>
-  												</div>
-
-  											</div>
-									</li>
-								</ul>
-								<div class="col-md-12 text-center center-block">
-								<div class="promotion-btn mrg-top-15">
-										<a href="#" class="mrg-rgt-10">Cancel</a><a href="#">Apply</a>
+							</ul>
+							<div class="col-md-12 text-center center-block">
+									<div class="promotion-btn mrg-top-15">
+											<a href="#" class="mrg-rgt-10">Cancel</a><a href="#">Apply</a>
+										</div>
 									</div>
-								</div>
-							</aside>
+						</aside>
+						
   			</div>
   			<div class="sidemenu-sort side-title-filter" style="display: none;">
   					<aside class="widget widget-brand sort-list-item-1">
@@ -1015,7 +1024,7 @@
 									</div>
 									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 											<div class="shop-menu view-mode pull-right filter-sort" id="filter">
-												<h3><img src="img/filter-and-sort-arrows.png" class="img-responsive sort-filter">Filter</h3>
+												<h3><img src="img/filter-and-sort-arrows.png" class="img-responsive sort-filter">Sort & Filter</h3>
 											</div>
 											<!-- <div class="shop-menu view-mode pull-right filter-sort" id="sort">
 												<h3><img src="img/sort-2.png" class="img-responsive sort-filter"> Sort</h3>
@@ -1074,7 +1083,7 @@
 								<div class="sidebar-product">
 									<!-- Single-product start -->
 									<div class="single-product">
-										<div class="product-photo product-photo-side">
+										<div class="product-photo-side">
 											<a href="#">
 												<img class="primary-photo" src="img/sidebar/6.png" alt=""/>
 											</a>
@@ -1087,7 +1096,7 @@
 									<!-- Single-product end -->
 									<!-- Single-product start -->
 									<div class="single-product">
-										<div class="product-photo product-photo-side">
+										<div class="product-photo-side">
 											<a href="#">
 												<img class="primary-photo" src="img/sidebar/8.png" alt=""/>
 											</a>
@@ -1100,7 +1109,7 @@
 									<!-- Single-product end -->
 									<!-- Single-product start -->
 									<div class="single-product">
-										<div class="product-photo product-photo-side">
+										<div class="product-photo-side">
 											<a href="#">
 												<img class="primary-photo" src="img/sidebar/7.png" alt=""/>
 											</a>
@@ -1121,7 +1130,7 @@
 								<div class="sidebar-product">
 									<!-- Single-product start -->
 									<div class="single-product">
-										<div class="product-photo product-photo-side">
+										<div class="product-photo-side">
 											<a href="#">
 												<img class="primary-photo" src="img/sidebar/6.png" alt=""/>
 											</a>
@@ -1134,7 +1143,7 @@
 									<!-- Single-product end -->
 									<!-- Single-product start -->
 									<div class="single-product">
-										<div class="product-photo product-photo-side">
+										<div class="product-photo-side">
 											<a href="#">
 												<img class="primary-photo" src="img/sidebar/8.png" alt=""/>
 											</a>
@@ -1168,7 +1177,7 @@
 								<div class="sidebar-product">
 									<!-- Single-product start -->
 									<div class="single-product">
-										<div class="product-photo product-photo-side">
+										<div class="product-photo-side">
 											<a href="#">
 												<img class="primary-photo" src="img/sidebar/6.png" alt=""/>
 											</a>
@@ -1181,7 +1190,7 @@
 									<!-- Single-product end -->
 									<!-- Single-product start -->
 									<div class="single-product">
-										<div class="product-photo product-photo-side">
+										<div class="product-photo-side">
 											<a href="#">
 												<img class="primary-photo" src="img/sidebar/8.png" alt=""/>
 											</a>
@@ -2012,11 +2021,12 @@
 									<div class="single-footer footer-menu">
 										<h2>company</h2>
 										<ul>
-											<li><a href="#">Account</a></li>
-											<li><a href="#">Log in</a></li>
-											<li><a href="#">Register</a></li>
-											<li><a href="#">Shop</a></li>
-											<li><a <li><a href="#">Checkout</a></li>
+											<li><a href="#">About Us</a></li>
+											<li><a href="#">Terms & Conditions</a></li>
+											<li><a href="#">Sales Reps</a></li>
+											<li><a href="#">Vendors</a></li>
+											<li><a <li><a href="#">Show Schedules</a></li>
+											<li><a <li><a href="#">Showrooms</a></li>
 										</ul>
 									</div>
 								</div>
@@ -2168,6 +2178,9 @@
         $(".case-price").hide();
         $(".avb-qty").click(function(){
           $(".case-price").show();
+        });
+				$(".filter-close").click(function(){
+          $(".sidemenu").hide();
         });
 			});
 			</script>

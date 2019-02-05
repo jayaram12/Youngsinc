@@ -233,7 +233,7 @@ select {
   margin-right: 4px;
 }
 /* .header-top-right {
- border-left: 1px solid #c5c5c5; 
+ border-left: 1px solid #c5c5c5;
 } */
 .header-top-right ul {
   float: left;
@@ -2089,7 +2089,7 @@ margin-top: 40px;
   background: rgba(0, 0, 0, 0) url("img/banner/page-banner/1.jpg") no-repeat scroll center center;
 }
 .page-banner-area.photo-2 {
-  background: rgba(0, 0, 0, 0) url("img/banner/page-banner/2.jpg") no-repeat scroll center center;
+  background: rgba(0, 0, 0, 0) url("img/banner/page-banner/2_2.jpg") no-repeat scroll center center;
 }
 .page-banner-area.photo-3 {
   background: rgba(0, 0, 0, 0) url("img/banner/page-banner/3.jpg") no-repeat scroll center center;
@@ -2100,8 +2100,8 @@ margin-top: 40px;
 /* ---------------- Background Image --------------- */
 .page-banner-area, .page-banner-area.photo-2, .page-banner-area.photo-3, .page-banner-area.photo-4 {
   background-position: left center;
-  background-size: cover;
-   -webkit-background-size: cover ;
+  background-size: contain;
+   -webkit-background-size: contain ;
 }
 /* ---------------- Background Image --------------- */
 .shop-border {
@@ -2110,7 +2110,7 @@ margin-top: 40px;
   height: 1px;
 }
 .page-banner-menu {
-  padding: 145px 0 125px;
+  padding: 50px 0 50px;
 }
 .page-banner-title {
   color: #fff;
@@ -4435,7 +4435,7 @@ h1.thank-you {
 .brands-menu{width:700px !important;}
 .brands-menu span{width:36% !important;}
 .brands-menu span.mega-menu-photo{width:28% !important;}
- .cust-sign {border-right: 1px solid #c5c5c5;} 
+ .cust-sign {border-right: 1px solid #c5c5c5;}
 .new-customers{border: 1px solid #ccc;padding:40px;overflow: hidden;min-height:445px;}
 .registered-customers {margin-top:35px;}
 .register-click{float: right;margin-top: 15px;}
@@ -4455,7 +4455,7 @@ h1.thank-you {
 .upload-btn{background: #006680 none repeat scroll 0 0;
   font-weight: normal;
   text-transform: inherit;
-  color:#fff; 
+  color:#fff;
   padding:10px;
   display: inline;
   line-height: 30px;
@@ -6042,7 +6042,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   .mb-no-pad-left{padding-left:0px !important;}
   .mb-no-pad-right{padding-right:0px !important}
   .mb-no-pad-lr{padding-left:1px !important;padding-right:1px !important;}
-  
+
   }
   @media only screen and (max-width: 440px) and (min-width: 420px){
     .search-width{width: 295px;}
@@ -6127,7 +6127,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
     .single-product-description h4{font-size:18px !important;}
     .prd-qty-txt{font-size:20px !important;}
     .single-pro-add-cart a{font-size:17px !important}
-    
+
   }
   @media only screen and (max-width: 991px) and (min-width: 600px){
     .tb-mrg-top-50{margin-top:50px;}
@@ -6144,7 +6144,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   }
   @media only screen and (max-width: 1439px) and (min-width: 320px){
     .promotion-code, .cart-totals{margin-top:30px !important;}
-    
+
   }
   /* tabs view margin top css */
   @media only screen and (max-width: 1024px) and (min-width: 600px){
@@ -6690,7 +6690,7 @@ i:focus, i:active, a:focus, button {outline:0;}
 }
 .upload .upload-files .body {
   text-align: center;
-  /* padding: 20px 0 0px 0; 
+  /* padding: 20px 0 0px 0;
   margin-top:30px; */
 }
 .upload-btn-img{
@@ -7543,7 +7543,7 @@ i:focus, i:active, a:focus, button {outline:0;}
   height: 34px;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -7803,7 +7803,7 @@ section p{}
 }
 
 @media only screen and (min-width: 375px) and (max-width: 424px){
-  
+
   .cart-plus-minus div {right:1px;}
 }
 
@@ -8301,3 +8301,23 @@ box-shadow: rgba(255,255,255, 0.75) 1.5em 0 0 0, rgba(255,255,255, 0.75) 1.1em 1
   }
 }
 /* Absolute Center Spinner */
+
+
+
+
+/* Custom CSS 05-02-2019  */
+.terms-conditions {overflow:hidden;}
+.terms-conditions .title-3 {font-size:18px !important; font-weight:500;}
+.terms-conditions .title-3:before {background: #006680 none repeat scroll 0 0;
+    bottom: -7px;
+    content: "";
+    height: 2px;
+    left: 3px;
+    position: absolute;
+    width: 40px;}
+
+.terms-conditions p {margin-bottom:10px; padding-left:10px;}
+.terms-conditions>p:first-child {margin-top:15px;}
+
+.terms {overflow:hidden; margin-bottom:10px;}
+.MarginBottom35 {margin-bottom:35px;

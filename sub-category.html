@@ -1015,17 +1015,34 @@
 				<div class="breadcrumb">
 						<div class="container">
 								<div class="row">
-									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+									<div class="col-lg-7 col-md-8 col-sm-8 col-xs-12">
 													<ol class="breadcrumb">
 															<li><a href="#"><img src="img/home.png" class="img-responsive"></a></li>
 														<li><a href="#">Gift</a></li>
 														<li class="active"><span>General Gifts</span></li>
 													</ol>
 									</div>
-									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-											<div class="shop-menu view-mode pull-right filter-sort" id="filter">
-												<h3><img src="img/filter-and-sort-arrows.png" class="img-responsive sort-filter">Sort & Filter</h3>
+									<div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
+										
+											<div class="shop-menu view-mode pull-right filter-sort" id="filter-area-btn-hide">
+												<h3><img src="img/filter-and-sort-arrows.png" class="img-responsive sort-filter"> Hide Filter</h3>
 											</div>
+											<div class="shop-menu view-mode pull-right filter-sort" id="filter-area-btn-show">
+													<h3><img src="img/filter-and-sort-arrows.png" class="img-responsive sort-filter"> Show Filter</h3>
+												</div>
+											<div class="form-group sort-control">
+														<select class="custom-select custom-form">
+																<option>Price Ascending</option>
+																<option>Price Descending</option>
+																<option>By Catalog Page</option>
+																<option>By Review</option>
+																<option>By Item# Ascending</option>
+																<option>By Item# Descendin</option>
+																<option>By Newest Items</option>
+																<option>By Availability</option>
+																<option>Best Sellers</option>
+															</select>
+													  </div>
 											<!-- <div class="shop-menu view-mode pull-right filter-sort" id="sort">
 												<h3><img src="img/sort-2.png" class="img-responsive sort-filter"> Sort</h3>
 											</div> -->
@@ -1052,6 +1069,7 @@
 									<li><a href="#"><i class="fa fa-chevron-right"></i> Bar Room</a></li>
 									<li><a href="sub-child-category.html"><i class="fa fa-chevron-right"></i> Cafe & Chocolate</a></li>
 									<li><a href="#"><i class="fa fa-chevron-right"></i> Laundry & Bath</a></li>
+									<div class="side-cat-showhide">
 									<li><a href="#"><i class="fa fa-chevron-right"></i> Gifts for Him</a></li>
 									<li><a href="#"><i class="fa fa-chevron-right"></i> Home</a></li>
 									<li><a href="#"><i class="fa fa-chevron-right"></i> Farmer's Market</a></li>
@@ -1068,11 +1086,134 @@
 									<li><a href="#"><i class="fa fa-chevron-right"></i> Classified New Items</a></li>
 									<li><a href="#"><i class="fa fa-chevron-right"></i> Misc</a></li>
 									<li><a href="#"><i class="fa fa-chevron-right"></i> Sale</a></li>
-									
+								</div>
+									<li class=""><a href="#" class="side-cat-showhide-btn view-all-active"><i class="fa fa-chevron-right"></i> View All</a></li>
 
 								</ul>
 							
 							</aside>
+							<div class="clearfix"></div>
+							<!-- Filters area -->
+							<div class="filter-area">
+								<h5 class="title-8">Filters</h5>
+								<aside class="widget shop-filter price-range">
+									<h5 class="sidebar-title sidebar-title-height border-all">price Range</h5>
+									<div class="info_widget no-border-top">
+										
+											<div class="min-max">
+													<!-- <p>
+															<input type = "text" id = "price" 
+																 style = "border:0; color:#b9cd6d; font-weight:bold;">
+													 </p>
+													 <div id = "slider-3" class="mrg-btm-20"></div> -->
+													 <ul>
+														 <li>Min</li>
+														 <li><input type="text" class="form-control"></li>
+														 <li>Max</li>
+														 <li><input type="text" class="form-control"></li>
+													 </ul>
+											</div>
+											<div class="clearfix"></div>
+											<ul>
+													<li>
+															<div class="form-check pad-left-0 show-no-1 mrg-rgt-10 filter-float">
+																	<label>
+																		<input type="radio" name="radio"> <span class="label-text">Up to $5</span>
+																	</label>
+																</div>
+													</li>
+													<li>
+															<div class="form-check pad-left-120 show-no-1">
+																	<label>
+																		<input type="radio" name="radio"> <span class="label-text">$100 Above</span>
+																	</label>
+																</div>
+													</li>
+											</ul>
+									
+										<!-- <button class="shop-now">Filter</button> -->
+									</div>
+								</aside>
+								<aside class="widget widget-color availability">
+										<h5 class="sidebar-title sidebar-title-height border-all">Availability</h5>
+										<ul>
+												<li>
+														<div class="form-check pad-left-0 show-no-1 mrg-rgt-10 filter-float">
+																<label>
+																	<input type="radio" name="radio"> <span class="label-text">All</span>
+																</label>
+															</div>
+												</li>
+												<li>
+														<div class="form-check show-no-1 pad-left-120">
+																<label>
+																	<input type="radio" name="radio"> <span class="label-text">In Stock By</span>
+																</label>
+															</div>
+												</li>
+												<li>
+													<div class="">
+														<div class="input-group mrg-top-5">
+																<input type="text" class="form-control datepicker-autoclose" placeholder="mm/dd/yyyy"> <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+															</div>
+												</div>
+												<div class="clearfix"></div>
+												</li>
+												<li>
+														<div class="form-check pad-left-0 avb-qty">
+															<label>
+																<input type="checkbox" name="check"> <span class="label-text">Qty</span>
+															</label>
+															
+														</div>
+														<div class="case-price">
+															<div class="row">
+																<div class="col-md-4 no-pad-left">
+																		<div class="form-group mrg-btm-1">
+																				<input type="text" class="form-control" id="usr">
+																		</div>
+																</div>
+																<div class="col-md-8 no-pad-left">
+																		<div class="form-check pad-left-0 show-no-1 mrg-rgt-10 filter-float mrg-top-8">
+																				<label>
+																					<input type="radio" name="radio"> <span class="label-text">Case</span>
+																				</label>
+																			</div>
+																		<div class="form-check pad-left-0 show-no-1 mrg-rgt-10 mrg-top-8">
+																				<label>
+																					<input type="radio" name="radio"> <span class="label-text">Pieces</span>
+																				</label>
+																			</div>
+																</div>
+															</div>
+																	
+														</div>
+													</li>
+											</ul>
+									</aside>
+									<aside class="widget widget-brand sort-list-item-1">
+											<h5 class="sidebar-title sidebar-title-height border-all">More</h5>
+											<ul>
+												<li>
+													<div class="form-check pad-left-0 filter-float mrg-right-15">
+														<label>
+															<input type="checkbox" name="check"> <span class="label-text">New</span>
+														</label>
+													</div>
+													<div class="form-check mrg-left pad-left-120">
+															<label>
+																<input type="checkbox" name="check"> <span class="label-text">Sale</span>
+															</label>
+														</div>
+												</li>
+											</ul>
+											<div class="col-md-12 text-center center-block">
+													<div class="promotion-btn mrg-top-15">
+															<a href="#" class="mrg-rgt-10">Cancel</a><a href="#">Apply</a>
+														</div>
+													</div>
+										</aside>
+							</div>
 							<div class="clearfix"></div>
 							<!-- widget-categories end -->
 						
@@ -2179,9 +2320,33 @@
         $(".avb-qty").click(function(){
           $(".case-price").show();
         });
+				// filter close
 				$(".filter-close").click(function(){
           $(".sidemenu").hide();
         });
+				// end of filter close
+				// category view hide and show
+				$(".side-cat-showhide").hide();
+				$(".side-cat-showhide-btn").click(function(){
+          $(".side-cat-showhide").show();
+        });
+				// end of category view hide and show
+				// filter
+				$(".filter-area").show();
+				$("#filter-area-btn-hide").show();
+				$("#filter-area-btn-show").hide();
+				
+				$("#filter-area-btn-show").click(function(){
+          $(".filter-area").show();
+					$("#filter-area-btn-hide").show();
+				$("#filter-area-btn-show").hide();
+        });
+				$("#filter-area-btn-hide").click(function(){
+          $(".filter-area").hide();
+					$("#filter-area-btn-hide").hide();
+				$("#filter-area-btn-show").show();
+        });
+				// end of filter
 			});
 			</script>
 			<script>

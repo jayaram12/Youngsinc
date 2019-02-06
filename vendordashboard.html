@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Home || Young's Inc</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <!-- Place favicon.ico in the root directory -->
+
+		<!-- Google Font -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,500.00,700,300' rel='stylesheet' type='text/css'>
+
+		<!-- all css here -->
+		<!-- bootstrap v3.3.6 css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- animate css -->
+        <link rel="stylesheet" href="css/animate.css">
+		<!-- jquery-ui.min css -->
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+		<!-- meanmenu css -->
+        <link rel="stylesheet" href="css/meanmenu.min.css">
+		<!-- nivo-slider css -->
+        <link rel="stylesheet" href="lib/css/nivo-slider.css">
+		<!-- owl.carousel css -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+		<!-- flaticon css -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- pe-icon-7-stroke css -->
+        <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+		<!-- lightbox css -->
+        <link rel="stylesheet" href="css/lightbox.min.css">
+        <link rel="stylesheet" href="css/tabs.css">
+		<!-- style css -->
+		<link rel="stylesheet" href="style.css">
+		<!-- jquery.toast -->
+		<link rel="stylesheet" href="css/jquery.toast.css">
+		<!-- responsive css -->
+        <link rel="stylesheet" href="css/responsive.css">
+		<!-- modernizr css -->
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+		<!-- HEADER-AREA START -->
+        <header class="header-area">
+			<!-- Header-Top End -->
+			<!-- Main-Header Start -->
+			<div class="main-header">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="col-md-6">
+  							<div class="logo">
+  								<a href="index.html"><img src="img/logo.png" alt="" /></a>
+  							</div>
+              </div>
+              <div class="col-md-6">
+                <h3 class="pull-right MarginTop20 text-uppercase">Vendor Portal</h3>
+              </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Main-Header End -->
+
+		</header>
+		<!-- HEADER-AREA END -->
+
+		<!-- PAGE-CONTENT START -->
+		<section class="page-content">
+				<div class="container">
+					<div class="row">
+						<!-- Registered-Customers Start -->
+						<div class="col-md-12">
+              <div class="cd-tabs js-cd-tabs">
+                  <nav>
+                    <ul class="cd-tabs__navigation js-cd-navigation">
+                      <li><a data-content="vendor" class="cd-selected" href="#0"><i class="fa fa-user"></i>&nbsp;Vendor</a></li>
+                      <li><a data-content="pendingpos" href="#0"><i class="fa fa-clock-o"></i>&nbsp;Pending PO's</a></li>
+                      <li><a data-content="approvedpos" href="#0"><i class="fa fa-check"></i>&nbsp;Approved PO's</a></li>
+                      <li><a data-content="completedpos" href="#0"><i class="fa fa-tasks"></i>&nbsp;Completed PO's</a></li>
+                      <li><a data-content="vendorsguide" href="#0"><i class="fa fa-question-circle"></i>&nbsp;Vendor's Guide & Help</a></li>
+                    </ul> <!-- cd-tabs__navigation -->
+                  </nav>
+
+                  <ul class="cd-tabs__content js-cd-content">
+                    <li data-content="vendor" class="cd-selected vendor">
+                        <p>Dear Valued Vendors,</p>
+                        <p>In an effort to create a true partnership with vendors, I am pleased to share our website and its benefits with you. We have created our website to provide you with a wealth of information that most companies keep as guarded trade secrets. Our website has developed to create a relationship that will give you an improved understanding of our business.</p>
+                        <p>I have faith in the integrity of our vendors to safeguard our confidential matters as they would their own. The contents of our website should not be shared with anyone outside of ypur company or with any company person not directly involved with the matters of Young's, Inc. Anyone found sharing information from this website will be unable to access our site and our business relationship will be reevaluated. i am confident that a great partnership can be formed based on mutual trust, respect and teamwork. I look forward to a long and prosperous relationship with each and every one of our valued vendors.</p>
+                        <div class="msg-footer">
+                          <p>Sincerely,</p>
+                          <p>Chi Yang</p>
+                          <p>CEO</p>
+                        </div>
+                    </li>
+
+                    <li data-content="pendingpos" class="pendingpos">
+                        <div class="col-md-12">
+                          <h5>The following are <b>all PENDING</b> purchase orders (orders with atleast one item not confirmed) for SMART WEALTH INTERNATIONS LIMITED</h5>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>PO#</th>
+                                            <th>PO&nbsp;Date</th>
+                                            <th>Request&nbsp;Date</th>
+                                            <th>Days&nbsp;from&nbsp;Ship&nbsp;Date (Negative&nbsp;Number = late!)</th>
+                                            <th>Cancel&nbsp;Date</th>
+                                            <th>Days&nbsp;from&nbsp;Cancel&nbsp;Date (Negative&nbsp;Number = late!)</th>
+                                            <th>Status</th>
+                                            <th>Print</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="#" data-toggle="modal" data-target="#PO_Items">141389</a></td>
+                                            <td>1/24/2019</td>
+                                            <td>3/10/2019</td>
+                                            <td>33</td>
+                                            <td>3/25/2019</td>
+                                            <td>48</td>
+                                            <td>CUR</td>
+                                            <td><a href="#">Print</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#" data-toggle="modal" data-target="#PO_Items2">145167</a></td>
+                                            <td>1/29/2019</td>
+                                            <td>5/12/2019</td>
+                                            <td>96</td>
+                                            <td>3/25/2019</td>
+                                            <td>103</td>
+                                            <td>CUR</td>
+                                            <td><a href="#">Print</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="PO_Items" role="dialog">
+                            <div class="modal-dialog">
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">P.O. Number 141389</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="table-responsive">
+                                      <table class="table table-bordered">
+                                          <thead>
+                                              <tr>
+                                                  <th>Item#</th>
+                                                  <th>Description</th>
+                                                  <th>Outstanding&nbsp;Quantity (Order-Rec-Can)</th>
+                                                  <th>Case&nbsp;Pack</th>
+                                                  <th>Price</th>
+                                                  <th>Extend</th>
+                                                  <th>Ship Date</th>
+                                                  <th>Cancel Date</th>
+
+                                                  <th>Cube&nbsp;(in cubic feet X.X)</th>
+                                                  <th>Weight&nbsp;(in pounds X.X)</th>
+                                                  <th><button type="button" class="vendor-btn" disabled>Confirm&nbsp;All</button></th>
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr>
+                                                  <td>15604</td>
+                                                  <td>Wood Tabletop/Wall Sign 4 Ast.</td>
+                                                  <td>720-0-0=720</td>
+                                                  <td>12</td>
+                                                  <td>$1.88</td>
+                                                  <td>$1,353.60</td>
+                                                  <td>3/10/2019&nbsp;8:36:17 AM</td>
+                                                  <td><input type="text" value="3/25/2019 8:36:17 AM"/></td>
+
+                                                  <td><input type="text" value="1.1" class="Width100"/></td>
+                                                  <td><input type="text" value="11" class="Width100"/></td>
+                                                  <td><button type="button" class="vendor-btn">Confirm</button></td>
+                                              </tr>
+                                              <tr>
+                                                  <td>17011</td>
+                                                  <td>Tin Waffle Iron Fire Pit Sign</td>
+                                                  <td>240-0-0=240</td>
+                                                  <td>6</td>
+                                                  <td>$2.76</td>
+                                                  <td>$662.40</td>
+                                                  <td>3/10/2019&nbsp;8:36:17 AM</td>
+                                                  <td><input type="text" value="3/25/2019 8:36:17 AM"/></td>
+
+                                                  <td><input type="text" value="1.41" class="Width100"/></td>
+                                                  <td><input type="text" value="15" class="Width100"/></td>
+                                                  <td><button type="button" class="vendor-btn">Confirm</button></td>
+                                              </tr>
+                                              <tr>
+                                                  <td>17021</td>
+                                                  <td>Wood Dog Box Sign, 4Ast.</td>
+                                                  <td>480-0-0=480</td>
+                                                  <td>24</td>
+                                                  <td>$1.27</td>
+                                                  <td>$609.60</td>
+                                                  <td>3/10/2019&nbsp;8:36:17 AM</td>
+                                                  <td><input type="text" value="3/25/2019 8:36:17 AM"/></td>
+
+                                                  <td><input type="text" value="1.52" class="Width100"/></td>
+                                                  <td><input type="text" value="16" class="Width100"/></td>
+                                                  <td><button type="button" class="vendor-btn">Confirm</button></td>
+                                              </tr>
+                                              <tr>
+                                                  <td>17210</td>
+                                                  <td>Wood Flamingo 3 Ast.</td>
+                                                  <td>384-0-0=384</td>
+                                                  <td>48</td>
+                                                  <td>$1.15</td>
+                                                  <td>$441.60</td>
+                                                  <td>3/10/2019&nbsp;8:36:17 AM</td>
+                                                  <td><input type="text" value="3/25/2019 8:36:17 AM"/></td>
+
+                                                  <td><input type="text" value="0.93" class="Width100"/></td>
+                                                  <td><input type="text" value="7" class="Width100"/></td>
+                                                  <td><button type="button" class="vendor-btn">Confirm</button></td>
+                                              </tr>
+                                              <tr>
+                                                  <td>17645</td>
+                                                  <td>Metal Laser Cut Truck Wall Sign</td>
+                                                  <td>120-0-0=120</td>
+                                                  <td>3</td>
+                                                  <td>$9.90</td>
+                                                  <td>$1,188.00</td>
+                                                  <td>3/10/2019&nbsp;8:36:17 AM</td>
+                                                  <td><input type="text" value="3/25/2019 8:36:17 AM"/></td>
+
+                                                  <td><input type="text" value="2.22" class="Width100"/></td>
+                                                  <td><input type="text" value="20" class="Width100"/></td>
+                                                  <td><button type="button" class="vendor-btn">Confirm</button></td>
+                                              </tr>
+                                          </tbody>
+                                          <tfoot>
+                                              <tr>
+                                                  <td colspan="11"><b>Total dollar amount for outstanding items in this order: $20,726.56</b></td>
+                                              </tr>
+                                          </tfoot>
+                                      </table>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="PO_Items2" role="dialog">
+                            <div class="modal-dialog">
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">P.O. Number 145167</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="table-responsive">
+                                      <table class="table table-bordered">
+                                          <thead>
+                                              <tr>
+                                                  <th>Item#</th>
+                                                  <th>Description</th>
+                                                  <th>Outstanding&nbsp;Quantity (Order-Rec-Can)</th>
+                                                  <th>Case&nbsp;Pack</th>
+                                                  <th>Price</th>
+                                                  <th>Extend</th>
+                                                  <th>Ship Date</th>
+                                                  <th>Cancel Date</th>
+
+                                                  <th>Cube&nbsp;(in cubic feet X.X)</th>
+                                                  <th>Weight&nbsp;(in pounds X.X)</th>
+                                                  <th><button type="button" class="vendor-btn" disabled>Confirm&nbsp;All</button></th>
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr>
+                                                  <td>15604</td>
+                                                  <td>Wood Tabletop/Wall Sign 4 Ast.</td>
+                                                  <td>720-0-0=720</td>
+                                                  <td>12</td>
+                                                  <td>$1.88</td>
+                                                  <td>$1,353.60</td>
+                                                  <td>3/10/2019&nbsp;8:36:17 AM</td>
+                                                  <td><input type="text" value="3/25/2019 8:36:17 AM"/></td>
+
+                                                  <td><input type="text" value="1.1" class="Width100"/></td>
+                                                  <td><input type="text" value="11" class="Width100"/></td>
+                                                  <td><button type="button" class="vendor-btn">Confirm</button></td>
+                                              </tr>
+                                              <tr>
+                                                  <td>17011</td>
+                                                  <td>Tin Waffle Iron Fire Pit Sign</td>
+                                                  <td>240-0-0=240</td>
+                                                  <td>6</td>
+                                                  <td>$2.76</td>
+                                                  <td>$662.40</td>
+                                                  <td>3/10/2019&nbsp;8:36:17 AM</td>
+                                                  <td><input type="text" value="3/25/2019 8:36:17 AM"/></td>
+
+                                                  <td><input type="text" value="1.41" class="Width100"/></td>
+                                                  <td><input type="text" value="15" class="Width100"/></td>
+                                                  <td><button type="button" class="vendor-btn">Confirm</button></td>
+                                              </tr>
+                                              <tr>
+                                                  <td>17021</td>
+                                                  <td>Wood Dog Box Sign, 4Ast.</td>
+                                                  <td>480-0-0=480</td>
+                                                  <td>24</td>
+                                                  <td>$1.27</td>
+                                                  <td>$609.60</td>
+                                                  <td>3/10/2019&nbsp;8:36:17 AM</td>
+                                                  <td><input type="text" value="3/25/2019 8:36:17 AM"/></td>
+
+                                                  <td><input type="text" value="1.52" class="Width100"/></td>
+                                                  <td><input type="text" value="16" class="Width100"/></td>
+                                                  <td><button type="button" class="vendor-btn">Confirm</button></td>
+                                              </tr>
+                                              <tr>
+                                                  <td>17210</td>
+                                                  <td>Wood Flamingo 3 Ast.</td>
+                                                  <td>384-0-0=384</td>
+                                                  <td>48</td>
+                                                  <td>$1.15</td>
+                                                  <td>$441.60</td>
+                                                  <td>3/10/2019&nbsp;8:36:17 AM</td>
+                                                  <td><input type="text" value="3/25/2019 8:36:17 AM"/></td>
+
+                                                  <td><input type="text" value="0.93" class="Width100"/></td>
+                                                  <td><input type="text" value="7" class="Width100"/></td>
+                                                  <td><button type="button" class="vendor-btn">Confirm</button></td>
+                                              </tr>
+                                              <tr>
+                                                  <td>17645</td>
+                                                  <td>Metal Laser Cut Truck Wall Sign</td>
+                                                  <td>120-0-0=120</td>
+                                                  <td>3</td>
+                                                  <td>$9.90</td>
+                                                  <td>$1,188.00</td>
+                                                  <td>3/10/2019&nbsp;8:36:17 AM</td>
+                                                  <td><input type="text" value="3/25/2019 8:36:17 AM"/></td>
+
+                                                  <td><input type="text" value="2.22" class="Width100"/></td>
+                                                  <td><input type="text" value="20" class="Width100"/></td>
+                                                  <td><button type="button" class="vendor-btn">Confirm</button></td>
+                                              </tr>
+                                          </tbody>
+                                          <tfoot>
+                                              <tr>
+                                                  <td colspan="11"><b>Total dollar amount for outstanding items in this order: $20,726.56</b></td>
+                                              </tr>
+                                          </tfoot>
+                                      </table>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li data-content="approvedpos" class="approvedpos">
+                      <div class="col-md-12">
+                        <h5>The following are <b>all APPROVED</b> purchase orders (orders with all items confirmed) for SMART WEALTH INTERNATIONS LIMITED</h5>
+                          <div class="table-responsive">
+                              <table class="table table-bordered">
+                                  <thead>
+                                      <tr>
+                                          <th>PO#</th>
+                                          <th>PO&nbsp;Date</th>
+                                          <th>Request&nbsp;Date</th>
+                                          <th>Days&nbsp;from&nbsp;Ship&nbsp;Date (Negative&nbsp;Number = late!)</th>
+                                          <th>Cancel&nbsp;Date</th>
+                                          <th>Days&nbsp;from&nbsp;Cancel&nbsp;Date (Negative&nbsp;Number = late!)</th>
+                                          <th>Status</th>
+                                          <th>Print</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <td><a href="#" data-toggle="modal" data-target="#PO_Items3">141185</a></td>
+                                          <td>12/17/2018</td>
+                                          <td>1/31/2019</td>
+                                          <td class="redcolor">-5</td>
+                                          <td>2/15/2019</td>
+                                          <td>10</td>
+                                          <td>CUR</td>
+                                          <td><a href="#">Print</a></td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#" data-toggle="modal" data-target="#PO_Items4">141185</a></td>
+                                        <td>12/23/2018</td>
+                                        <td>2/6/2019</td>
+                                        <td>1</td>
+                                        <td>2/21/2019</td>
+                                        <td>16</td>
+                                        <td>CUR</td>
+                                        <td><a href="#">Print</a></td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#" data-toggle="modal" data-target="#PO_Items5">141209</a></td>
+                                        <td>12/30/2018</td>
+                                        <td>2/13/2019</td>
+                                        <td>8</td>
+                                        <td>2/28/2019</td>
+                                        <td>23</td>
+                                        <td>CUR</td>
+                                        <td><a href="#">Print</a></td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                      <div class="modal fade" id="PO_Items3" role="dialog">
+                          <div class="modal-dialog">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">P.O. Number 141185</h4>
+                              </div>
+                              <div class="modal-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Item#</th>
+                                                <th>Description</th>
+                                                <th>Outstanding&nbsp;Quantity (Order-Rec-Can)</th>
+                                                <th>Case&nbsp;Pack</th>
+                                                <th>Price</th>
+                                                <th>Extend</th>
+                                                <th>Ship Date</th>
+                                                <th>Cancel Date</th>
+                                                <th>Confirmed</th>
+                                                <th>Cube&nbsp;(in cubic feet X.X)</th>
+                                                <th>Weight&nbsp;(in pounds X.X)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>15197</td>
+                                                <td>Wood "Garage Rules" Wall Sign</td>
+                                                <td>120-0-0=120</td>
+                                                <td>8</td>
+                                                <td>$3.60</td>
+                                                <td>$432.00</td>
+                                                <td>1/31/2019&nbsp;12:40:36 PM</td>
+                                                <td>2/15/2019&nbsp;12:40:36 PM</td>
+                                                <td>3/31/2019</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>15322</td>
+                                                <td>Wood Spooning Since Plaque</td>
+                                                <td>240-0-0=240</td>
+                                                <td>24</td>
+                                                <td>$2.01</td>
+                                                <td>$482.40</td>
+                                                <td>1/31/2019&nbsp;12:40:36 PM</td>
+                                                <td>2/15/2019&nbsp;12:40:36 PM</td>
+                                                <td>3/31/2019</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>15548</td>
+                                                <td>Wood 4X6 Picture Clip 3 Ast.</td>
+                                                <td>360-0-0=360</td>
+                                                <td>12</td>
+                                                <td>$2.46</td>
+                                                <td>$885.60</td>
+                                                <td>1/31/2019&nbsp;12:40:36 PM</td>
+                                                <td>2/15/2019&nbsp;12:40:36 PM</td>
+                                                <td>3/31/2019</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>17357</td>
+                                                <td>Wood "Read me A Story" Sign</td>
+                                                <td>160-0-0=160</td>
+                                                <td>4</td>
+                                                <td>$5.64</td>
+                                                <td>$902.40</td>
+                                                <td>1/31/2019&nbsp;12:40:36 PM</td>
+                                                <td>2/15/2019&nbsp;12:40:36 PM</td>
+                                                <td>3/31/2019</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="11"><b>Total dollar amount for outstanding items in this order: $6,397.50</b></td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </li>
+
+                    <li data-content="completedpos" class="completedpos">
+                      <div class="col-md-12">
+                        <h5>The following are the <b>last 100 COMPLETED</b> purchase orders (orders which have been shipped) for SMART WEALTH INTERNATIONS LIMITED</h5>
+                          <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>PO#</th>
+                                        <th>PO&nbsp;Date</th>
+                                        <th>Request&nbsp;Date</th>
+                                        <th>Days&nbsp;from&nbsp;Ship&nbsp;Date (Negative&nbsp;Number = late!)</th>
+                                        <th>Cancel&nbsp;Date</th>
+                                        <th>Days&nbsp;from&nbsp;Cancel&nbsp;Date (Negative&nbsp;Number = late!)</th>
+                                        <th>Status</th>
+                                        <th>Print</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#" data-toggle="modal" data-target="#PO_Items4">145075</a></td>
+                                        <td>11/13/2018</td>
+                                        <td>1/7/2019</td>
+                                        <td class="redcolor">-29</td>
+                                        <td>1/20/2019</td>
+                                        <td class="redcolor">-16</td>
+                                        <td>COM</td>
+                                        <td><a href="#">Print</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#" data-toggle="modal" data-target="#PO_Items4">145073</a></td>
+                                        <td>11/13/2018</td>
+                                        <td>1/7/2019</td>
+                                        <td class="redcolor">-29</td>
+                                        <td>1/20/2019</td>
+                                        <td class="redcolor">-16</td>
+                                        <td>COM</td>
+                                        <td><a href="#">Print</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#" data-toggle="modal" data-target="#PO_Items4">145054</a></td>
+                                        <td>10/31/2018</td>
+                                        <td>12/23/2018</td>
+                                        <td class="redcolor">-44</td>
+                                        <td>12/30/2018</td>
+                                        <td class="redcolor">-37</td>
+                                        <td>COM</td>
+                                        <td><a href="#">Print</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#" data-toggle="modal" data-target="#PO_Items4">145046</a></td>
+                                        <td>10/24/2018</td>
+                                        <td>1/14/2018</td>
+                                        <td class="redcolor">-22</td>
+                                        <td>1/21/2019</td>
+                                        <td class="redcolor">-15</td>
+                                        <td>COM</td>
+                                        <td><a href="#">Print</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                          </div>
+                      </div>
+                      <div class="modal fade" id="PO_Items4" role="dialog">
+                          <div class="modal-dialog">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">P.O. Number 145075</h4>
+                              </div>
+                              <div class="modal-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Item#</th>
+                                                <th>Description</th>
+                                                <th>Outstanding&nbsp;Quantity (Order-Rec-Can)</th>
+                                                <th>Case&nbsp;Pack</th>
+                                                <th>Price</th>
+                                                <th>Extend</th>
+                                                <th>Ship Date</th>
+                                                <th>Cancel Date</th>
+                                                <th>Confirmed</th>
+                                                <th>Cube&nbsp;(in cubic feet X.X)</th>
+                                                <th>Weight&nbsp;(in pounds X.X)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>15197</td>
+                                                <td>Wood "Garage Rules" Wall Sign</td>
+                                                <td>120-0-0=120</td>
+                                                <td>8</td>
+                                                <td>$3.60</td>
+                                                <td>$432.00</td>
+                                                <td>1/31/2019&nbsp;12:40:36 PM</td>
+                                                <td>2/15/2019&nbsp;12:40:36 PM</td>
+                                                <td>3/31/2019</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>15322</td>
+                                                <td>Wood Spooning Since Plaque</td>
+                                                <td>240-0-0=240</td>
+                                                <td>24</td>
+                                                <td>$2.01</td>
+                                                <td>$482.40</td>
+                                                <td>1/31/2019&nbsp;12:40:36 PM</td>
+                                                <td>2/15/2019&nbsp;12:40:36 PM</td>
+                                                <td>3/31/2019</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>15548</td>
+                                                <td>Wood 4X6 Picture Clip 3 Ast.</td>
+                                                <td>360-0-0=360</td>
+                                                <td>12</td>
+                                                <td>$2.46</td>
+                                                <td>$885.60</td>
+                                                <td>1/31/2019&nbsp;12:40:36 PM</td>
+                                                <td>2/15/2019&nbsp;12:40:36 PM</td>
+                                                <td>3/31/2019</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>17357</td>
+                                                <td>Wood "Read me A Story" Sign</td>
+                                                <td>160-0-0=160</td>
+                                                <td>4</td>
+                                                <td>$5.64</td>
+                                                <td>$902.40</td>
+                                                <td>1/31/2019&nbsp;12:40:36 PM</td>
+                                                <td>2/15/2019&nbsp;12:40:36 PM</td>
+                                                <td>3/31/2019</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="11"><b>Total dollar amount for outstanding items in this order: $20,726.56</b></td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </li>
+
+                    <li data-content="vendorsguide" class="vendorsguide">
+                        <h4 class="text-center text-uppercase">Young's Inc. Vendor Help</h4>
+                        <div class="vendor-help">
+                            <h5 class="title-3">Vendor Guides</h5>
+                            <ol>
+                                <li><a href="">Young's Inc. Vendor Guide in English</a> (<a href="#">Adobe Acrobat Reader</a> 5.0 or above is needed to view this document)</li>
+                                <li><a href="">Young's Inc. Vendor Guide in Chinese</a> (<a href="#">Adobe Acrobat Reader</a> 5.0 or above is needed to view this document)</li>
+                            </ol>
+                            <h5 class="title-3">Quote Sheet Template</h5>
+                            <ol>
+                                <li><a href="">Young's Quote Sheet in Excel</a> (Microsoft Excel or <a href="#">Excel Viewer</a> is required to view this document)</li>
+                            </ol>
+                            <h5 class="title-3">Working with Purchase Orders</h5>
+                            <ol>
+                                <li><a href="#">How to Print a Purchase Order</a></li>
+                                <li><a href="#">How to Confirm a Purchase Order</a></li>
+                            </ol>
+                        </div>
+                        <div class="acrobat-lnk">
+                            <img src="img/acrobat.jpg" class="img-responsive"/>
+                        </div>
+                    </li>
+                  </ul> <!-- cd-tabs__content -->
+                </div> <!-- cd-tabs -->
+            </div>
+						<!-- Registered-Customers End -->
+					</div>
+				</div>
+			<!-- LOGIN-AREA END -->
+		</section>
+		<!-- PAGE-CONTENT END -->
+
+    <!-- FOOTER-AREA START -->
+		<footer class="footer-area">
+			<div class="footer-top">
+				<div class="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 col-sm-3 col-xs-12">
+								<div class="single-footer footer-logo">
+									<img src="img/logo-f.png" alt="" />
+                  <p>Since 1988, Young's Inc. has been providing customers with quality giftware, home decor and fashion accessories at affordable prices. This year, we celebrate 31 years in business. </p>
+                  <p>A huge thank you goes out to everyone who supported us throughout the years and continue to support us as we grow steadily each year. We are committed to making sure our passion has remained the same since the beginning - to design and provide exceptional home decor, giftware and fashion products to our customers at great value. <a href="#"> <strong>See More</strong></a> </p>
+								</div>
+              </div>
+              <div class="col-md-3 hidden-sm col-xs-12">
+                  <div class="single-footer footer-menu">
+                  <h2>NEWS & EVENTS</h2>
+                  <ul>
+                      <li><a href="#">Young's 2019 Spring Everyday catalog is now available online.</a></li>
+                      <li><a href="#">Young's 2019 Seasonal catalog is now available online.</a></li>
+                      <li><a href="#">Young's 2019 Fall VLD catalog is now available online.</a></li>
+                      <li><a href="#">Young's 2018 Garden catalog is now available online.</a></li>
+                      <li><a <li><a href="#">View More Events</a></li>
+                    </ul>
+                    </div>
+                </div>
+							<div class="col-md-3 col-sm-4 col-xs-12">
+								<div class="single-footer footer-contact">
+									<h2>contact us</h2>
+									<ul>
+										<li>
+											<i class="fa fa-phone"></i>
+											<span>800-323-7799 and 734-529-9330</span>
+										</li>
+										<li>
+											<i class="fa fa-envelope-o"></i>
+											<span>helpdesk@youngsinc.com</span>
+										</li>
+										<li>
+											<i class="fa fa-map-marker"></i>
+											<span>PO Box 145</span>
+											<span>5073 Ann Arbor Rd Dundee, MI 48131</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-4 col-xs-12">
+								<div class="single-footer footer-message">
+									<form action="#">
+										<h2>Quick contact</h2>
+										<div class="footer-message-box">
+											<input type="text" placeholder="your email address" />
+											<textarea placeholder="your messege" ></textarea>
+											<input type="submit" value="submit"/>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+      </div>
+      <div class="footermenu">
+        <div class="container">
+          <div class="row">
+              <div class="footermenulist">
+									<ul>
+										<li><a href="about.html">About Us</a></li>
+										<li><a href="terms-conditions.html">Terms & Conditions</a></li>
+										<li><a href="vendorlogin.html">Vendors</a></li>
+                    <li><a <li><a href="#">Show Schedules</a></li>
+                    <li><a <li><a href="#">Showrooms</a></li>
+									</ul>
+								</div>
+          </div>
+        </div>
+      </div>
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="copyright-brief">
+								<p>Copyright &copy; <a href="">YOUNG'S</a> All right reserved</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="footer-social text-right">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-google"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- FOOTER-AREA END -->
+
+
+		<!-- all js here -->
+		<!-- jquery latest version -->
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+		<!-- bootstrap js -->
+        <script src="js/bootstrap.min.js"></script>
+		<!-- jquery.nivo.slider js -->
+        <script src="lib/js/jquery.nivo.slider.js"></script>
+        <script src="lib/home.js"></script>
+		<!-- owl.carousel js -->
+        <script src="js/owl.carousel.min.js"></script>
+		<!-- meanmenu js -->
+        <script src="js/jquery.meanmenu.js"></script>
+		<!-- jquery-ui js -->
+        <script src="js/jquery-ui.min.js"></script>
+		<!-- lightbox.min js -->
+        <script src="js/lightbox.min.js"></script>
+		<!-- countdon.min js -->
+        <script src="js/countdon.min.js"></script>
+		<!-- wow js -->
+        <script src="js/wow.min.js"></script>
+        <script src="js/tabs.js"></script>
+		<script type="text/javascript">
+			new WOW().init();
+		</script>
+		<!-- plugins js -->
+		<script src="js/plugins.js"></script>
+		<!-- jquery.toast -->
+        <script src="js/jquery.toast.js"></script>
+		<!-- main js -->
+		<script src="js/main.js"></script>
+
+    </body>
+</html>

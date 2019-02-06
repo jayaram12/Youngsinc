@@ -778,7 +778,7 @@
 						<div class="slider-progress"></div>
 						<div class="slider-content t-lfl s-tb edit-delete-icon-view">
                 <div class="edit-delete-icon">
-                    <i class="fa fa-pencil-square edit"  data-toggle="modal" data-target="#sliderBanners"></i> | <i class="fa fa-trash edit"></i>
+                    <i class="fa fa-edit edit"  data-toggle="modal" data-target="#sliderBanners"></i> | <i class="fa fa-trash edit"></i>
                   </div>
 							<div class="title-container s-tb-c title-compress">
 								<div class="slider-1">
@@ -803,7 +803,7 @@
 						<div class="slider-progress"></div>
 						<div class="slider-content t-lfl s-tb edit-delete-icon-view">
                 <div class="edit-delete-icon">
-                    <i class="fa fa-pencil-square edit"  data-toggle="modal" data-target="#sliderBanners"></i> | <i class="fa fa-trash edit"></i>
+                    <i class="fa fa-edit edit"  data-toggle="modal" data-target="#sliderBanners"></i> | <i class="fa fa-trash edit"></i>
                   </div>
 							<div class="title-container s-tb-c title-compress">
 								<div class="slider-1">
@@ -827,7 +827,7 @@
 						<div class="slider-progress"></div>
 						<div class="slider-content t-lfl s-tb edit-delete-icon-view">
                 <div class="edit-delete-icon">
-                    <i class="fa fa-pencil-square edit"  data-toggle="modal" data-target="#sliderBanners"></i> | <i class="fa fa-trash edit"></i>
+                    <i class="fa fa-edit edit"  data-toggle="modal" data-target="#sliderBanners"></i> | <i class="fa fa-trash edit"></i>
                   </div>
 							<div class="title-container s-tb-c title-compress">
 								<div class="slider-1">
@@ -863,7 +863,7 @@
 				<div class="col-lg-4 col-md-4 col-sm-4 padding-0">
 					<div class="single-collection edit-delete-icon-view">
               <div class="edit-delete-icon">
-                  <i class="fa fa-pencil-square edit"  data-toggle="modal" data-target="#whatTrending"></i>
+                  <i class="fa fa-edit edit"  data-toggle="modal" data-target="#whatTrending"></i>
                 </div>
 						<div class="collection-photo">
 							<a href="#"><img src="img/new-collection/1.jpg" alt="" /></a>
@@ -890,7 +890,7 @@
 				<div class="col-lg-4 col-md-4 col-sm-4 padding-0">
             <div class="single-collection edit-delete-icon-view">
                 <div class="edit-delete-icon">
-                    <i class="fa fa-pencil-square edit"  data-toggle="modal" data-target="#whatTrending"></i>
+                    <i class="fa fa-edit edit"  data-toggle="modal" data-target="#whatTrending"></i>
                   </div>
 						<div class="collection-photo">
 							<a href="#"><img src="img/new-collection/2.jpg" alt="" /></a>
@@ -916,7 +916,7 @@
 				<div class="col-lg-4 col-md-4 col-sm-4 padding-0 ">
             <div class="single-collection edit-delete-icon-view">
                 <div class="edit-delete-icon">
-                    <i class="fa fa-pencil-square edit"  data-toggle="modal" data-target="#whatTrending"></i>
+                    <i class="fa fa-edit edit"  data-toggle="modal" data-target="#whatTrending"></i>
                   </div>
 						<div class="collection-photo">
 							<a href="#"><img src="img/new-collection/3.jpg" alt="" /></a>
@@ -966,7 +966,7 @@
 							<div class="section-title text-center  edit-delete-icon-view">
                 <h2 class="border-left-right-btm">Todays Offers</h2>
                 <div class="edit-delete-icon-2">
-                    <i class="fa fa-pencil-square edit"  data-toggle="modal" data-target="#todayOffers"></i>
+                    <i class="fa fa-edit edit"  data-toggle="modal" data-target="#todayOffers"></i>
                 </div>
 							</div>
 						</div>
@@ -1490,15 +1490,13 @@
             <div class="col-md-12">
                 <div class="form-group">
                     <label for="text">Title-1 </label>
-                    <input type="text" class="form-control" name="canceldate" required
-                  </div>
+                    <input type="text" class="form-control" name="canceldate" required />
                   </div>
             </div>
             <div class="col-md-12">
                 <div class="form-group">
                     <label for="text">Title-2 </label>
-                    <input type="text" class="form-control" name="canceldate" required
-                  </div>
+                    <input type="text" class="form-control" name="canceldate" required />
                   </div>
             </div>
             <div class="col-md-12">
@@ -1533,8 +1531,13 @@
               <div class="col-md-12">
                   <div class="form-group">
                       <label for="text">Target Link </label>
-                      <input type="text" class="form-control" name="canceldate" required
+                      <input type="text" class="form-control" name="canceldate" required />
                     </div>
+              </div>
+              <div class="col-md-12">
+                  <div class="form-group">
+                      <label for="text">Order No </label>
+                      <input type="text" class="form-control" name="canceldate" required />
                     </div>
               </div>
           </div>
@@ -1544,7 +1547,6 @@
             <button type="button" class="btn btn-primary">Activate</button>
         </div>
       </div>
-      
     </div>
   </div>
   <!-- whatTrending modal area -->
@@ -1563,8 +1565,7 @@
               <div class="col-md-12">
                   <div class="form-group">
                       <label for="text">Title-1 </label>
-                      <input type="text" class="form-control" name="canceldate" required
-                    </div>
+                      <input type="text" class="form-control" name="canceldate" required />
                     </div>
               </div>
               <div class="col-md-12">
@@ -1580,6 +1581,34 @@
                      </div><!-- group -->
                      </div>
             </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="text">Start Date </label>
+                    <div class="input-group mrg-top-5">
+                        <input type="text" class="form-control datepicker-autoclose" placeholder="mm/dd/yyyy"> <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                      </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="text">End Date </label>
+                      <div class="input-group mrg-top-5">
+                          <input type="text" class="form-control datepicker-autoclose" placeholder="mm/dd/yyyy"> <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                        </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="text">Target Link </label>
+                        <input type="text" class="form-control" name="canceldate" required />
+                      </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="text">Order No </label>
+                        <input type="text" class="form-control" name="canceldate" required />
+                      </div>
+                </div>
             </div>
           </div>
           <div class="modal-footer text-center">
@@ -1615,6 +1644,20 @@
                           <div>
                              <input type="text" class="form-control mrg-left-10" placeholder="Title"/>
                              <input type="text" class="form-control mrg-left-10 mrg-top-10" placeholder="Message"/>
+                                <div class="form-group start-end-mrg">
+                                    <!-- <label for="text">Start Date </label> -->
+                                    <div class="input-group mrg-top-5">
+                                        <input type="text" class="form-control datepicker-autoclose" placeholder="Start Date"> <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                      </div>
+                                </div>
+                                <div class="form-group start-end-mrg">
+                                    <!-- <label for="text">Start Date </label> -->
+                                    <div class="input-group mrg-top-5">
+                                        <input type="text" class="form-control datepicker-autoclose" placeholder="End Date"> <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                      </div>
+                                </div>
+                                <input type="text" class="form-control mrg-left-10 mrg-top-10" placeholder="Target Link"/>
+                                <input type="text" class="form-control mrg-left-10 mrg-top-10" placeholder="Order No"/>
                           </div>
                         </div>
                         <div class="col-md-2">
@@ -1628,6 +1671,20 @@
                           <div>
                             <input type="text" class="form-control mrg-left-10" placeholder="Title"/>
                             <input type="text" class="form-control mrg-left-10 mrg-top-10" placeholder="Message"/>
+                            <div class="form-group start-end-mrg">
+                                <!-- <label for="text">Start Date </label> -->
+                                <div class="input-group mrg-top-5">
+                                    <input type="text" class="form-control datepicker-autoclose" placeholder="Start Date"> <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                  </div>
+                            </div>
+                            <div class="form-group start-end-mrg">
+                                <!-- <label for="text">Start Date </label> -->
+                                <div class="input-group mrg-top-5">
+                                    <input type="text" class="form-control datepicker-autoclose" placeholder="End Date"> <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                  </div>
+                            </div>
+                            <input type="text" class="form-control mrg-left-10 mrg-top-10" placeholder="Target Link"/>
+                            <input type="text" class="form-control mrg-left-10 mrg-top-10" placeholder="Order No"/>
                          </div>
                         </div>
                         <div class="col-md-2">
@@ -1641,6 +1698,20 @@
                           <div>
                             <input type="text" class="form-control mrg-left-10" placeholder="Title"/>
                             <input type="text" class="form-control mrg-left-10 mrg-top-10" placeholder="Message"/>
+                            <div class="form-group start-end-mrg">
+                                <!-- <label for="text">Start Date </label> -->
+                                <div class="input-group mrg-top-5">
+                                    <input type="text" class="form-control datepicker-autoclose" placeholder="Start Date"> <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                  </div>
+                            </div>
+                            <div class="form-group start-end-mrg">
+                                <!-- <label for="text">Start Date </label> -->
+                                <div class="input-group mrg-top-5">
+                                    <input type="text" class="form-control datepicker-autoclose" placeholder="End Date"> <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                  </div>
+                            </div>
+                            <input type="text" class="form-control mrg-left-10 mrg-top-10" placeholder="Target Link"/>
+                            <input type="text" class="form-control mrg-left-10 mrg-top-10" placeholder="Order No"/>
                          </div>
                         </div>
                         <div class="col-md-2">
@@ -1654,14 +1725,55 @@
                           <div>
                             <input type="text" class="form-control mrg-left-10" placeholder="Title"/>
                             <input type="text" class="form-control mrg-left-10 mrg-top-10" placeholder="Message"/>
+                            <div class="form-group start-end-mrg">
+                                <!-- <label for="text">Start Date </label> -->
+                                <div class="input-group mrg-top-5">
+                                    <input type="text" class="form-control datepicker-autoclose" placeholder="Start Date"> <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                  </div>
+                            </div>
+                            <div class="form-group start-end-mrg">
+                                <!-- <label for="text">Start Date </label> -->
+                                <div class="input-group mrg-top-5">
+                                    <input type="text" class="form-control datepicker-autoclose" placeholder="End Date"> <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                  </div>
+                            </div>
+                            <input type="text" class="form-control mrg-left-10 mrg-top-10" placeholder="Target Link"/>
+                            <input type="text" class="form-control mrg-left-10 mrg-top-10" placeholder="Order No"/>
                          </div>
                         </div>
+                        <div class="col-md-2">
+                            <div class="wrap-custom-file">
+                            <input type="file" name="image4" id="image4" accept=".gif, .jpg, .png" />
+                            <label  for="image4">
+                              <span>Select Image Four</span>
+                            </label>
+                            <i class="fa fa-times"></i>
+                            </div>
+                            <div>
+                              <input type="text" class="form-control mrg-left-10" placeholder="Title"/>
+                              <input type="text" class="form-control mrg-left-10 mrg-top-10" placeholder="Message"/>
+                              <div class="form-group start-end-mrg">
+                                  <!-- <label for="text">Start Date </label> -->
+                                  <div class="input-group mrg-top-5">
+                                      <input type="text" class="form-control datepicker-autoclose" placeholder="Start Date"> <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                    </div>
+                              </div>
+                              <div class="form-group start-end-mrg">
+                                  <!-- <label for="text">Start Date </label> -->
+                                  <div class="input-group mrg-top-5">
+                                      <input type="text" class="form-control datepicker-autoclose" placeholder="End Date"> <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                    </div>
+                              </div>
+                              <input type="text" class="form-control mrg-left-10 mrg-top-10" placeholder="Target Link"/>
+                              <input type="text" class="form-control mrg-left-10 mrg-top-10" placeholder="Order No"/>
+                           </div>
+                          </div>
                         <div class="col-md-2">
                           <div class="wrap-custom-file">
                             <p class="add-new-img">Add New Image</p>
                           </div>
                         </div>
-                        </div>
+                  </div>
                 </div>
               </div>
             </div>

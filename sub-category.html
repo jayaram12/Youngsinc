@@ -1024,24 +1024,28 @@
 									</div>
 									<div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
 										
-											<div class="shop-menu view-mode pull-right filter-sort" id="filter-area-btn-hide">
+											<!-- <div class="shop-menu view-mode pull-right filter-sort" id="filter-area-btn-hide">
 												<h3><img src="img/filter-and-sort-arrows.png" class="img-responsive sort-filter"> Hide Filter</h3>
 											</div>
 											<div class="shop-menu view-mode pull-right filter-sort" id="filter-area-btn-show">
 													<h3><img src="img/filter-and-sort-arrows.png" class="img-responsive sort-filter"> Show Filter</h3>
-												</div>
+												</div> -->
 											<div class="form-group sort-control">
+												<label for="" class="col-md-2 mrg-top-5">Sort</label>
+												<div class="col-md-10 no-pad-right">
 														<select class="custom-select custom-form">
+																<option>Best Sellers</option>
 																<option>Price Ascending</option>
 																<option>Price Descending</option>
 																<option>By Catalog Page</option>
 																<option>By Review</option>
 																<option>By Item# Ascending</option>
-																<option>By Item# Descendin</option>
+																<option>By Item# Descending</option>
 																<option>By Newest Items</option>
 																<option>By Availability</option>
-																<option>Best Sellers</option>
+																
 															</select>
+														</div>
 													  </div>
 											<!-- <div class="shop-menu view-mode pull-right filter-sort" id="sort">
 												<h3><img src="img/sort-2.png" class="img-responsive sort-filter"> Sort</h3>
@@ -1070,25 +1074,25 @@
 									<li><a href="sub-child-category.html"><i class="fa fa-chevron-right"></i> Cafe & Chocolate</a></li>
 									<li><a href="#"><i class="fa fa-chevron-right"></i> Laundry & Bath</a></li>
 									<div class="side-cat-showhide">
-									<li><a href="#"><i class="fa fa-chevron-right"></i> Gifts for Him</a></li>
-									<li><a href="#"><i class="fa fa-chevron-right"></i> Home</a></li>
-									<li><a href="#"><i class="fa fa-chevron-right"></i> Farmer's Market</a></li>
-									<li><a href="#"><i class="fa fa-chevron-right"></i> Vintage Market</a></li>
-									<li><a href="#"><i class="fa fa-chevron-right"></i> American Pride</a></li>
-									<li><a href="#"><i class="fa fa-chevron-right"></i> Good Gifts</a></li>
-									<li><a href="#"><i class="fa fa-chevron-right"></i> Love</a></li>
-									<li><a href="#"><i class="fa fa-chevron-right"></i> Gifts For Her</a></li>
-									<li><a href="#"><i class="fa fa-chevron-right"></i> Porch & Nature</a></li>
-									<li><a href="#"><i class="fa fa-chevron-right"></i> Bee</a></li>
-									<li><a href="#"><i class="fa fa-chevron-right"></i> Natural Home</a></li>
-									<li><a href="#"><i class="fa fa-chevron-right"></i> Happy Camper</a></li>
-									<li><a href="#"><i class="fa fa-chevron-right"></i> Collection Sales</a></li>
-									<li><a href="#"><i class="fa fa-chevron-right"></i> Classified New Items</a></li>
-									<li><a href="#"><i class="fa fa-chevron-right"></i> Misc</a></li>
-									<li><a href="#"><i class="fa fa-chevron-right"></i> Sale</a></li>
-								</div>
-									<li class=""><a href="#" class="side-cat-showhide-btn view-all-active"><i class="fa fa-chevron-right"></i> View All</a></li>
-
+										<li><a href="#"><i class="fa fa-chevron-right"></i> Gifts for Him</a></li>
+										<li><a href="#"><i class="fa fa-chevron-right"></i> Home</a></li>
+										<li><a href="#"><i class="fa fa-chevron-right"></i> Farmer's Market</a></li>
+										<li><a href="#"><i class="fa fa-chevron-right"></i> Vintage Market</a></li>
+										<li><a href="#"><i class="fa fa-chevron-right"></i> American Pride</a></li>
+										<li><a href="#"><i class="fa fa-chevron-right"></i> Good Gifts</a></li>
+										<li><a href="#"><i class="fa fa-chevron-right"></i> Love</a></li>
+										<li><a href="#"><i class="fa fa-chevron-right"></i> Gifts For Her</a></li>
+										<li><a href="#"><i class="fa fa-chevron-right"></i> Porch & Nature</a></li>
+										<li><a href="#"><i class="fa fa-chevron-right"></i> Bee</a></li>
+										<li><a href="#"><i class="fa fa-chevron-right"></i> Natural Home</a></li>
+										<li><a href="#"><i class="fa fa-chevron-right"></i> Happy Camper</a></li>
+										<li><a href="#"><i class="fa fa-chevron-right"></i> Collection Sales</a></li>
+										<li><a href="#"><i class="fa fa-chevron-right"></i> Classified New Items</a></li>
+										<li><a href="#"><i class="fa fa-chevron-right"></i> Misc</a></li>
+										<li><a href="#"><i class="fa fa-chevron-right"></i> Sale</a></li>
+									</div>
+									<li class=""><a href="#" class="side-cat-showhide-btn view-all-active">View All <i class="fa fa-long-arrow-right"></i></a></li>
+									
 								</ul>
 							
 							</aside>
@@ -1398,6 +1402,13 @@
 																<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart/span></a>
 															<a href="#" class="action-btn" id="remove-show"><i class="fa fa-heart"></i><span>Remove</span></a>
 															<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
+														</div>
+														<div class="rating">
+																<input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+																<input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+																<input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+																<input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+																<input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
 														</div>
 													</div>
 													<div class="product-brief product-breif-head">
@@ -2328,7 +2339,7 @@
 				// category view hide and show
 				$(".side-cat-showhide").hide();
 				$(".side-cat-showhide-btn").click(function(){
-          $(".side-cat-showhide").show();
+          $(".side-cat-showhide").toggle();
         });
 				// end of category view hide and show
 				// filter

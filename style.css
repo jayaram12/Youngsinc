@@ -2628,6 +2628,23 @@ margin-top: 40px;
   position: absolute;
   width: 35px;
 }
+.title-9 {
+  color: #666;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  position: relative;
+  text-transform: uppercase;
+}
+.title-9::before {
+  background: #006680 none repeat scroll 0 0;
+  bottom: -7px;
+  content: "";
+  height: 2px;
+  left: 3px;
+  position: absolute;
+  width: 35px;
+}
 .single-product-description h4 {
   font-weight: 500;
   margin-bottom: 20px;
@@ -4168,7 +4185,7 @@ h1.thank-you {
   padding-top: 0px;
 }
 .product-list-2 .product-list-price{width: 80%;float: left;font-size:18px;}
-.product-list-3{border-bottom: 1px solid #dedede;padding:6px 0;}
+.product-list-3{border-bottom: 1px solid #dedede;padding:1px 0;}
 .product-list-3 .product-list-price{width: 100%;font-size:15px;height:50px;}
 .product-list-case {
   font-size: 18px;
@@ -4205,8 +4222,18 @@ h1.thank-you {
 }
 
 .product-photo-carousal{height:460px !important}
+.product-photo-carousal > a{height: 460px !important;}
 .product-phot-grid{height:400px;overflow: hidden;}
-.single-product-tab-content{height:750px;border:1px solid #dedede;}
+.single-product-tab-content {
+  height: 750px;
+  width: 750PX;
+  display: table-cell;
+  position: relative;
+  z-index: 1;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
 .no-btm-border{border-bottom: none !important;}
 .product-list-2 .product-list-off{
   width: 50%;
@@ -4665,6 +4692,7 @@ input[type="radio"]:disabled + .label-text:before{
 .mrg-top-124{margin-top:124px;}
 .mrg-top-196{margin-top:196px;}
 .mrg-top-17{margin-top:17px;}
+.mrg-btm-15{margin-bottom:15px;}
 .mrg-btm-20{margin-bottom:20px;}
 .mrg-btm-30{margin-bottom:30px !important;}
 .mrg-btm-1{margin-bottom:1px !important}
@@ -5102,17 +5130,18 @@ input[type="radio"]:disabled + .label-text:before{
 /* showrooms */
 .showrooms {
   border: 1px solid #dedede;
-  padding: 25px;
+  padding: 25px 25px 0px 25px;
   box-shadow: 3px 2px 10px #dadada;
   margin-top: 25px;
   border-radius: 10px;
-   min-height: 360px;
+  min-height: 320px;
 }
 .showrooms h2 {
   font-size: 15px;
   color: #868686;
   padding-left: 2px;
 }
+.showrooms p{margin: 0 0 4px !important;}
 .showrooms p i{color:#006680;font-size: 16px;}
 .showroom-plus{
   text-align: center;
@@ -8056,7 +8085,7 @@ section p{}
   display: inline-block;
   width: 150px;
   height: 150px;
-  margin: 0 0.5rem 1rem;
+  margin: 0 7.5rem 1rem;
   text-align: center; border:1px solid #4F5467; border-radius:4px; float:left;
 }
 .wrap-custom-file input[type="file"] {
@@ -8189,7 +8218,7 @@ section p{}
   width: 138px;
 }
 .sort-control{
-  width: 200px;
+  
   float: right;
   margin-top: 5px;
   margin-bottom: 0px !important;
@@ -8197,12 +8226,14 @@ section p{}
 }
 .sort-control select{margin-bottom:0px !important;}
 .view-all-active{
-  background-color: #006680;
-  color:#fff !important;
+  background-color: #ffffff !important;
+    color: #006680 !important;
+    font-weight: 600;
 }
 .view-all-active:hover{
-  background-color: #006680 !important;
-  color:#fff !important;
+  background-color: #ffffff !important;
+    color: #006680 !important;
+    font-weight: 600;
 }
 .view-all-active a{
   color: #fff !important;
@@ -8251,6 +8282,7 @@ section p{}
 .ascending{width:50%;float: left;}
 .ascending .form-check{padding-left:0px !important}
 .descending .form-check{padding-left:0px !important}
+.side-view-lh{height: 47px !important;}
 /* End of Common Css */
 /* Absolute Center Spinner */
 .loading {
@@ -8441,3 +8473,68 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 }
 
 }
+@media (min-width: 1800px){
+#todayOffers .modal-lg {
+    width: 1450px;
+}
+}
+/* rating css */
+.rating {
+  float:left;
+  position: absolute;
+  top: 0px;
+  z-index: 99;
+}
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+ follow these rules. Every browser that supports :checked also supports :not(), so
+ it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+  clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+  float:right;
+  width:1em;
+  padding:0 .1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:150%;
+  line-height:1.2;
+  color:#ddd;
+  text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+  content: '★ ';
+}
+
+.rating > input:checked ~ label {
+  color: #f70;
+  text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: gold;
+  text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #ea0;
+  text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+  position:relative;
+  top:2px;
+  left:2px;
+}
+/* end of rating css */

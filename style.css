@@ -8220,6 +8220,18 @@ section p{}
 .MarginBottom35 {margin-bottom:35px;}
 /* end of Terms & Conditions css */
 /* Common Css */
+#header-alert .alert {
+  padding: 15px;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
+  border-radius: 0px;
+}
+#header-alert .alert-dismissable .close, #header-alert .alert-dismissible .close {
+  position: relative;
+  top: 1px;
+  right: 1px;
+  color: inherit;
+}
 .start-end-mrg{
   margin-left: 10px;
   width: 138px;

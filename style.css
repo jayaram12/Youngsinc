@@ -378,7 +378,7 @@ select {
   padding-left: 0;
 }
 .main-menu ul li .submenu .submenu-title a, .mega-menu span .mega-menu-title  {
-  border-bottom: 1px solid #006680;
+  /* border-bottom: 1px solid #006680; */
   color: #006680;
   display: block;
   font-size: 13px;
@@ -404,7 +404,7 @@ select {
 .mega-menu span {
     float: left;
     padding-right: 30px;
-    width: 16%;
+    width: 20%;
 }
 .mega-menu span.vld {
   width: 14% !important;
@@ -8220,6 +8220,60 @@ section p{}
 .MarginBottom35 {margin-bottom:35px;}
 /* end of Terms & Conditions css */
 /* Common Css */
+.total-cart-number {
+  position: relative;
+}
+.total-cart-number {
+  padding-bottom: 4px;
+}
+.wishlist .badge-custom {
+  right: -6px !important;
+  top: -14px !important;
+  font-size: 10px !important;
+  padding: 4px !important;
+}
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #777;
+  border-radius: 10px;
+}
+.total-cart-number .badge-custom {
+  position: absolute;
+  right: -10px;
+  top: -5px;
+  padding: 3px 6px;
+  background-color: #c00;
+  color: #fff;
+  border: 1px solid #fff;
+  z-index: 999;
+}.product-list .product-list-cart span {
+  position: absolute;
+  top: -6px;
+  right: 12px;
+  font-size: 19px;
+  z-index: 99;
+}
+.total-cart-number {
+  padding-bottom: 4px;
+}
+.product-list-cart .badge-custom {
+  right: -3px!important;
+  top: 1px!important;
+  font-size: 15px!important;
+  padding: 2px 5px!important;
+  background: 0 0;
+  color: #006680;
+  border: none;
+}
 #header-alert .alert {
   padding: 15px;
   margin-bottom: 0px;
@@ -8556,11 +8610,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
   left:2px;
 }
 /* end of rating css */
+
 /* Review and rating css */
-.btn-grey{
-  background-color:#D8D8D8;
-color:#FFF;
-}
+#review-rate-body{padding-top:10px;}
+
 .rating-block{
 background-color:#FAFAFA;
 border:1px solid #EFEFEF;
@@ -8573,7 +8626,10 @@ font-weight:700;
 .padding-bottom-7{
 padding-bottom:7px;
 }
-
+.avg-rate{margin-left:0px;}
+.avg-rate button{font-size: 17px !important;}
+.rate{margin-left:15px;}
+.rate button{font-size: 20px !important;}
 .review-block{
 background-color:#FAFAFA;
 border:1px solid #EFEFEF;
@@ -8581,6 +8637,14 @@ padding:15px;
 border-radius:3px;
 margin-bottom:15px;
 }
+.rate-review-over{padding:0px !important;float: left;!important}
+.rate-review-over ul li .total-cart-brief{
+  top:30px !important;
+  padding: 0px !important;
+}
+.total-cart-brief .pull-left:last-child{margin-bottom:20px;}
+.rated{font-size:14px;padding: 0 1px;}
+.rate-active{color:#e46f08 !important}
 .review-block-name{
 font-size:12px;
 margin:10px 0;
@@ -8591,6 +8655,12 @@ font-size:12px;
 .review-block-rate{
 font-size:13px;
 margin-bottom:15px;
+margin-top:18px;
+}
+.review-rate-pos{
+  position: absolute;
+  top: 5px;
+  left: 85px;
 }
 .review-block-title{
 font-size:15px;
@@ -8600,6 +8670,15 @@ margin-bottom:10px;
 .review-block-description{
 font-size:13px;
 }
+
+/* review-rate-block 2 */
+.review-rate-header{overflow: hidden;}
+.review-rate-left{width:60px;height:60px;float: left;}
+.review-rate-title h3 {
+  font-size: 15px;
+  padding-top: 15px;
+}
+/* end review-rate-block 2 */
 /* end Review and rating css */
 #cust-carousel .carousel {
   margin-bottom: 0;
@@ -8714,3 +8793,21 @@ background: #333333;
 .show-no-1 .label-text:before {font-size:18px;}
 .show-no-1 .label-text {font-size:15px;}
 /* end of filter final view css */
+/* product-grid area css */
+.single-item-grid{
+  overflow: hidden;
+  border: 1px solid #e2e2e2;
+  margin-top:20px;
+}
+.single-item-img{
+  width: 100%;
+  height: 400px;
+  line-height: 200px;
+  text-align: center;
+  position: relative;
+  padding: 0px;
+  border: none;
+  overflow: hidden;
+  display: block;
+}
+/* end product-grid area css */

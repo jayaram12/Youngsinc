@@ -336,7 +336,7 @@
                 </div>
                 <ul class="cust-sign">
                   <!-- <li><a href="">Login</a></li> -->
-                  <li><a href="">welcome <strong>Rekha</strong></a></li>
+                  <li><a href="">Welcome <strong>Rekha</strong></a></li>
                 </ul>
                 <ul>
                   <li><a href="account.html">Account <span><i class="fa fa-cog"></i></span></a>
@@ -1368,10 +1368,95 @@
 						<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12 mb-no-pad-lr">
 							<!-- Shop-Content start -->
 							<div class="shop-content">
-
-
+									<div class="clearfix"></div>
+									<div class="col-md-12">
+											<div class="grid-list float-left mrg-top-20">
+												<a href="#" class="view-btn grid-view-cat-btn grid-list-active"><strong><i class="fa fa-th"></i> Grid View</strong></a>
+												<a href="#" class="view-btn list-view-cat-btn"><strong><i class="fa fa-list"></i> List View</strong></a>
+											</div>
+										</div>
+								<div class="list-view">
+										<div class="col-md-12">
+												<div class="table-content table-responsive cart-table mrg-top-20 custom-scroll">
+														<table class="responsive-table">
+															<thead>
+																<tr>
+																	<th class="product-thumbnail">Image</th>
+																	<th class="product-id">Item#</th>
+																	<th class="product-description">Product Description</th>
+																	<th class="product-availability">Availability</th>
+																	<th class="product-quantity">Quantity</th>
+																	<th class="product-price">Sell$</th>
+																	<th class="product-total">Extended$</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td class="product-thumbnail"><a href="product-description.html"><img src="img/cart/1.jpg" alt=""></a></td>
+																	<td class="product-id"><a href="#">18420</a></td>
+																	<td class="product-description">
+																		<p>Wood Coffee Wall/Table Clock</p>
+																		<ul class="cart-min">
+																			<li>Minimum Quantity: <span>2</span></li>
+																			<li>|</li>
+																			<li>Min. Sell Multiple: <span>1</span></li>
+																			<li>|</li>
+																			<li>Case pack: <span>8</span></li>
+																		</ul>
+																	</td>
+																	<td class="product-availability">Instock</td>
+																	<td class="product-quantity">
+																			<div class="product-list-price">
+																					<div class="">
+																							<form action="#">
+																								<div class="cart-plus-minus fnt-size-16"><input type="text" value="1"><div class="inc qtybutton"><i class="fa fa-angle-up" aria-hidden="true"></i></div><div class="dec qtybutton"><i class="fa fa-angle-down" aria-hidden="true"></i></div><div class="inc qtybutton"><i class="fa fa-angle-up" aria-hidden="true"></i></div><div class="dec qtybutton"><i class="fa fa-angle-down" aria-hidden="true"></i></div></div>
+																							</form>
+																						</div>
+																				</div>
+																				<div class="list-view-cart">
+																						<a href="">
+																							<img src="img/add-cart.png" data-toggle="tooltip" data-placement="top" title="" class="img-responsive" data-original-title="Add To Cart">
+																							<span>1</span>
+																						</a>
+																					</div>
+																	</td>
+																	<td class="product-price"><span class="amount">$12.50</span></td>
+																	<td class="product-subtotal">$25.00</td>
+																</tr>
+																<tr>
+																		<td class="product-thumbnail"><a href="#"><img src="img/cart/2.jpg" alt=""></a></td>
+																		<td class="product-id"><a href="#">48563</a></td>
+																		<td class="product-description">
+																			<p>Auvergne Tunic, 1S,1M,1L,1XL</p>
+																			<ul class="cart-min">
+																					<li>Minimum Quantity: <span>2</span></li>
+																					<li>|</li>
+																					<li>Min. Sell Multiple: <span>1</span></li>
+																					<li>|</li>
+																					<li>Case pack: <span>8</span></li>
+																				</ul>
+																		</td>
+																		<td class="product-availability">Instock</td>
+																		<td class="product-quantity">
+																			<div class="product-list-price">
+																				<div class="">
+																						<form action="#">
+																							<div class="cart-plus-minus fnt-size-16"><input type="text" value="1"><div class="inc qtybutton"><i class="fa fa-angle-up" aria-hidden="true"></i></div><div class="dec qtybutton"><i class="fa fa-angle-down" aria-hidden="true"></i></div><div class="inc qtybutton"><i class="fa fa-angle-up" aria-hidden="true"></i></div><div class="dec qtybutton"><i class="fa fa-angle-down" aria-hidden="true"></i></div></div>
+																						</form>
+																					</div>
+																			</div>
+																		</td>
+																		<td class="product-price"><span class="amount">$14.00</span></td>
+																		<td class="product-subtotal">$14.00</td>
+																	</tr>
+															</tbody>
+														</table>
+													</div>
+											</div>
+								</div>
+								<div class="clearfix"></div>
 								<!-- Shop-product start -->
-								<div class="tab-content mrg-top-20">
+								<div class="tab-content mrg-top-20 grid-view">
 									<div role="tabpanel" class="tab-pane active" id="grid-view">
 										<div class="row shop-grid">
 											<!-- Single-product start -->
@@ -1400,7 +1485,7 @@
 														</a>
 														<div class="pro-action" id="add-wish">
 
-																<a href="#" class="action-btn"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
+																<a href="#" class="action-btn" id="add-cart"><i class="fa fa-cart-plus"></i><span>Add to Cart</span></a>
 															<a href="#" class="action-btn" id="add-show"><i class="fa fa-heart-o"></i><span>Wishlist</span></a>
 
 															<a href="#" class="action-btn"><i class="fa fa-share-alt"></i><span>Share</span></a>
@@ -2142,7 +2227,18 @@
 			<!-- SERVICE-AREA END -->
 		</section>
 		<!-- PAGE-CONTENT END -->
-
+		<!-- Item added to cart -->
+		<div class="item-added-cart">
+			<div class="cart-img">
+				<img src="img/sidebar/6.png" class="img-responsive" alt="">
+			</div>
+			<div class="cart-text">
+				<h3>Ceramic 4pc Set</h3>
+				<p>Added to your Cart!</p>
+				<a href="">View Cart</a>
+			</div>
+		</div>
+		<!-- end of Item aaded to cart -->
 		<!-- FOOTER-AREA START -->
 		<footer class="footer-area">
 				<div class="footer-top">
@@ -2407,19 +2503,7 @@
        </script>
     </body>
 </html>
-></li>
-											</ul>
-										</div>
-									</div>
-								</div><!-- .product-info -->
-							</div><!-- .modal-product -->
-						</div><!-- .modal-body -->
-					</div><!-- .modal-content -->
-			    </div><!-- .modal-dialog -->
-		   </div>
-		   <!-- END Modal -->
-		</div>
-		<!-- END QUICKVIEW PRODUCT -->
+
 
 
 		<!-- all js here -->
@@ -2507,6 +2591,25 @@
 				$("#filter-area-btn-show").show();
         });
 				// end of filter
+				 // grid and list function
+				 $(".list-view").hide();
+          $(".grid-view-cat-btn").click(function(){
+						$(".grid-view").show();
+            $(".list-view").hide();
+					});
+          $(".list-view-cat-btn").click(function(){
+						$(".grid-view").hide();
+            $(".list-view").show();
+					});
+					// cart time out script
+					$(".item-added-cart").hide();
+					$("#add-cart").click(function(){
+						$(".item-added-cart").show();
+								setTimeout(function() {
+									$('.item-added-cart').fadeOut('slow');
+							}, 4000);
+					});
+					// cart time out script
 			});
 			</script>
 			<script>

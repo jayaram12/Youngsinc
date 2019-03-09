@@ -809,7 +809,7 @@
 					<div class="row">
 						
             <div class="col-md-12">
-              <div class="table-content table-responsive cart-table custom-scroll cart-border">
+              <div class="table-content table-responsive cart-table custom-scroll cart-border border-top">
                   <table class="responsive-table">
                       <tbody>
                           <tr>
@@ -837,6 +837,8 @@
                                 <h4 class="card-head">Christmas</h4>
                                 <h3 class="card-number">$253</h3>
                               </td>
+                              <td class="card-border-width">
+                              </td>
                           </tr>
                       </tbody>
                   </table>
@@ -846,37 +848,40 @@
                   </div>
             </div>
             
-            <div class="col-md-12">
-                <div class="grid-list float-left">
+            <div class="col-md-2">
+                <div class="grid-list float-left mrg-top-5">
                   <a href="#" class="view-btn grid-view-area-btn"><strong><i class="fa fa-th"></i> Grid View</strong></a>
                   <a href="#" class="view-btn list-view-area-btn grid-list-active"><strong><i class="fa fa-list"></i> List View</strong></a>
                 </div>
               </div>
-              <div class="clearfix"></div>
-              <div class="cat-search mrg-top-15">
-                <div class="col-md-3">
-                    <div class="cat-category">
-                        <div class="form-group">
-                          <select class="custom-select custom-form">
-                                <option>All Categories</option>
-                                <option>Everyday</option>
-                                <option>Fall</option>
-                                <option>VLD</option>
-                                <option>Outdoor</option>
-                                <option>Christmas</option>
-                              </select>
+              <div class="col-md-10 no-pad-right">
+                <div class="cat-search">
+                  <div class="col-md-3 no-pad-left no-pad-right">
+                      <div class="cat-category">
+                          <div class="form-group">
+                            <select class="custom-select custom-form">
+                                  <option>All Categories</option>
+                                  <option>Everyday</option>
+                                  <option>Fall</option>
+                                  <option>VLD</option>
+                                  <option>Outdoor</option>
+                                  <option>Christmas</option>
+                                </select>
+                            </div>
                           </div>
-                        </div>
-                </div>
-                <div class="col-md-9">
-                  <div class="form-group col-sm-3 col-md-6 col-lg-6 col-xs-12 mrg-btm-0">
-                      <input type="text" class="form-control"  name="shipdate" placeholder="Search here">
                   </div>
-                  <div class="promotion-btn pull-right">
-                      <a href="#" class="mrg-rgt-10">Export to Excel</a>
+                  <div class="col-md-9 no-pad-left no-pad-right">
+                    <div class="form-group col-sm-3 col-md-6 col-lg-6 col-xs-12 mrg-btm-0">
+                        <input type="text" class="form-control"  name="shipdate" placeholder="Search here">
                     </div>
-                </div>
-               </div>
+                    <div class="promotion-btn pull-right">
+                        <a href="#" class="mrg-rgt-10">Export to Excel</a>
+                      </div>
+                  </div>
+                 </div>
+              </div>
+              <div class="clearfix"></div>
+              
 					
             <div class="clearfix"></div>
             <div class="grid-view-area">
@@ -890,8 +895,9 @@
                       <div class="col-olg-2 col-lg-2 col-md-2 col-sm-3 col-xs-12">
                           <div class="order-item-body">
                             <a href="#">
-                              <img src="img/shop/30.jpg" class="img-responsive">
+                              <img src="http://www.youngsinc.com/images/19053.jpg" class="img-responsive">
                             </a>
+                            <div class="overlay-cust"></div>
                             <h2>Ceramic 4pc Canister Set</h2>
                             <div class="order-desc">
                                 <h3>Item#: 17718</h3>
@@ -918,6 +924,7 @@
                               <a href="#">
                                 <img src="img/shop/31.jpg" class="img-responsive">
                               </a>
+                              <div class="overlay-cust"></div>
                               <h2>Wood Mini Block Sign, 6 Ast</h2>
                               <div class="order-desc">
                                   <h3>Item#: 18544</h3>
@@ -1146,6 +1153,7 @@
                   </div>
               </div>
             </div>
+            
             <div class="list-view-area">
 						<div class="cart-area">
 							<div class="col-md-12">
@@ -1186,7 +1194,7 @@
                       <div class="col-md-4">
                           <div class="form-group">
                               <label class="control-label col-sm-4" for="email">Cancel Date:</label>
-                              <div class="col-sm-8">
+                              <div class="col-sm-8 no-pad-right">
                                   <div class="input-group">
                                       <input type="text" class="form-control datepicker-autoclose" placeholder="mm/dd/yyyy"> <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                                     </div>
@@ -1218,7 +1226,7 @@
 													<td class="product-description">
                             <P>Wood Coffee Wall/Table Clock</P>
                             <ul class="cart-min">
-                              <li>Minimum Quantity: <span>2</span></li>
+                              <li>Min. Qty: <span>2</span></li>
                               <li>|</li>
                               <li>Min. Sell Multiple: <span>1</span></li>
                               <li>|</li>
@@ -1232,12 +1240,15 @@
                                       <form action="#">
                                         <div class="cart-plus-minus fnt-size-16"><input type="text" value="1"><div class="inc qtybutton"><i class="fa fa-angle-up" aria-hidden="true"></i></div><div class="dec qtybutton"><i class="fa fa-angle-down" aria-hidden="true"></i></div></div>
                                       </form>
+                                      <a href="#" class="icon-stle"><i class="fa fa-repeat"></i></a>
                                     </div>
                                 </div>
                           </td>
 													<td class="product-price"><span class="amount">$12.50</span></td>
 													<td class="product-subtotal">$25.00</td>
-													<td class="product-remove"><a href="#"><i class="pe-7s-close"></i></a></td>
+													<td>
+                            <a href="#" class="icon-stle"><i class="fa fa-trash"></i></a>
+                          </td>
 												</tr>
 												<tr>
 													<td colspan="6">
@@ -1292,7 +1303,7 @@
                       <div class="col-md-6">
                           <div class="form-group">
                               <label class="control-label col-sm-5" for="email">Cancel Date:</label>
-                              <div class="col-sm-7">
+                              <div class="col-sm-7 no-pad-right">
                                   <div class="input-group">
                                       <input type="text" class="form-control datepicker-autoclose" placeholder="mm/dd/yyyy"> <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                                     </div>
@@ -1325,7 +1336,7 @@
 													<td class="product-description">
                             <P>Auvergne Tunic, 1S,1M,1L,1XL</P>
                             <ul class="cart-min">
-                                <li>Minimum Quantity: <span>2</span></li>
+                                <li>Min. Qty: <span>2</span></li>
                                 <li>|</li>
                                 <li>Min. Sell Multiple: <span>1</span></li>
                                 <li>|</li>
@@ -1450,7 +1461,8 @@
 										</div>
 									</div>
 								</div>
-						</div>
+            </div>
+              
 					</div>
 				</div>
 			</div>

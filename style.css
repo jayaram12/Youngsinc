@@ -233,7 +233,7 @@ select {
   margin-right: 4px;
 }
 /* .header-top-right {
- border-left: 1px solid #c5c5c5; 
+ border-left: 1px solid #c5c5c5;
 } */
 .header-top-right ul {
   float: left;
@@ -819,7 +819,7 @@ select {
   margin-top: 38px;
 }
 .single-product {
-   overflow: hidden; 
+   overflow: hidden;
   border:1px solid #e2e2e2;
 }
 .product-photo {
@@ -4269,10 +4269,7 @@ h1.thank-you {
 }
 .product-list-new{
   z-index: 99;
-  width: auto !important;
-  position: absolute;
-  top: 10px;
-  right: 4px;
+  width: auto !important; float:right;
 }
 .product-list-bestseller{
   z-index: 99;
@@ -4481,7 +4478,7 @@ h1.thank-you {
 .brands-menu{width:700px !important;}
 .brands-menu span{width:36% !important;}
 .brands-menu span.mega-menu-photo{width:28% !important;}
- .cust-sign {border-right: 1px solid #c5c5c5;} 
+ .cust-sign {border-right: 1px solid #c5c5c5;}
 .new-customers{border: 1px solid #ccc;padding:40px;overflow: hidden;min-height:445px;}
 .registered-customers {margin-top:35px;}
 .register-click{float: right;margin-top: 15px;}
@@ -4501,7 +4498,7 @@ h1.thank-you {
 .upload-btn{background: #006680 none repeat scroll 0 0;
   font-weight: normal;
   text-transform: inherit;
-  color:#fff; 
+  color:#fff;
   padding:10px;
   display: inline;
   line-height: 30px;
@@ -5991,7 +5988,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   border-radius: 0px;
   height: 292px;
 }
-.order-item-body img{    
+.order-item-body img{
   margin: 10px auto;
   height: 100%;
 }
@@ -6150,7 +6147,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   .mb-no-pad-left{padding-left:0px !important;}
   .mb-no-pad-right{padding-right:0px !important}
   .mb-no-pad-lr{padding-left:1px !important;padding-right:1px !important;}
-  
+
   }
   @media only screen and (max-width: 440px) and (min-width: 420px){
     .search-width{width: 295px;}
@@ -6235,7 +6232,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
     .single-product-description h4{font-size:18px !important;}
     .prd-qty-txt{font-size:20px !important;}
     .single-pro-add-cart a{font-size:17px !important}
-    
+
   }
   @media only screen and (max-width: 991px) and (min-width: 600px){
     .tb-mrg-top-50{margin-top:50px;}
@@ -6252,7 +6249,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   }
   @media only screen and (max-width: 1439px) and (min-width: 320px){
     .promotion-code, .cart-totals{margin-top:30px !important;}
-    
+
   }
   /* tabs view margin top css */
   @media only screen and (max-width: 1024px) and (min-width: 600px){
@@ -6798,7 +6795,7 @@ i:focus, i:active, a:focus, button {outline:0;}
 }
 .upload .upload-files .body {
   text-align: center;
-  /* padding: 20px 0 0px 0; 
+  /* padding: 20px 0 0px 0;
   margin-top:30px; */
 }
 .upload-btn-img{
@@ -7651,7 +7648,7 @@ i:focus, i:active, a:focus, button {outline:0;}
   height: 34px;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -7911,7 +7908,7 @@ section p{}
 }
 
 @media only screen and (min-width: 375px) and (max-width: 424px){
-  
+
   .cart-plus-minus div {right:1px;}
 }
 
@@ -8346,7 +8343,7 @@ section p{}
   width: 138px;
 }
 .sort-control{
-  
+
   float: right;
   margin-top: 5px;
   margin-bottom: 0px !important;
@@ -8534,7 +8531,7 @@ box-shadow: rgba(255,255,255, 0.75) 1.5em 0 0 0, rgba(255,255,255, 0.75) 1.1em 1
 /* Absolute Center Spinner */
 
 
-/* Custom CSS 05-02-2019  
+/* Custom CSS 05-02-2019
 .terms-conditions {overflow:hidden;}
 .terms-conditions .title-3 {font-size:18px !important; font-weight:500;}
 .terms-conditions .title-3:before {background: #006680 none repeat scroll 0 0;
@@ -8613,7 +8610,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
   left: 85px;
 }
 
-/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t
  follow these rules. Every browser that supports :checked also supports :not(), so
  it doesn’t make the test unnecessarily selective */
 .rating:not(:checked) > input {
